@@ -160,7 +160,11 @@ def get_parent_process_info():
         return None, None
 
     grandparent = parent.parent()
-    target_proc = grandparent if grandparent else parent
+    if grandparent.exe().endswith('.exe'):
+        target_proc = parent  # windows
+    else:
+        target_proc = grandparent if grandparent else parent  # nix
+
     try:
         exe_path = target_proc.exe()
         logging.info(f"Checked process executable path: {exe_path}")
