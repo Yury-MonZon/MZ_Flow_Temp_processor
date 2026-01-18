@@ -1,40 +1,38 @@
-# MZ Flow Temp Processor
+# 🔥 MZ Flow Temp Processor
 
-A Python post-processor for 3D printer G-code files, implementing advanced flow and temperature smoothing for improved print quality and layer adhesion.
+Advanced G-code post-processor that intelligently smooths flow and adjusts temperature for superior 3D print quality and layer adhesion.
 
 ![Benchy temperature visualization](images/benchy_temp.png)
 ![Graphs](images/graphs.png)
 
----
-
 ## Features
 
-- Extracts extrusion moves and calculates flow rates from G-code.
-- Smooths flow and dynamically adjusts nozzle temperature based on predicted flow demand.
-- Clamps feedrate to avoid exceeding the printer's maximum volumetric flow capability.
-- Real-time plotting of flow and temperature profiles.
-- Integrates as a post-processing script with popular slicers (OrcaSlicer for now, others to come).
-- Reads required print and script-specific parameters from G-code comments or config blocks.
-- Optionally relaunches the slicer viewer after processing.
+- **🌊 Flow Smoothing**: Extracts extrusion moves and smooths flow transitions for better print quality
+- **🌡️ Dynamic Temperature Control**: Adjusts nozzle temperature based on actual flow demand with gradual transitions
+- **⚡ Feedrate Clamping**: Prevents exceeding printer's maximum volumetric flow capability
+- **📊 Real-time Visualization**: Live plotting of flow and temperature profiles
+- **🔗 Slicer Integration**: Works as post-processing script (OrcaSlicer tested)
+- **⚙️ Automatic Configuration**: Reads parameters from G-code comments or config blocks
+- **👀 Viewer Relaunch**: Optionally relaunches slicer viewer after processing
 
----
+## Quick Start
 
-## Installation
+### Installation
 
-**Requirements:**
-- Python 3
-- numpy
-- matplotlib
-- PyQt5
-- psutil
+**Python 3 required with these packages:**
+- `numpy`
+- `matplotlib`
+- `PyQt5`
+- `psutil`
 
 **Install dependencies:**
 
-Ubuntu/Debian Linux:
+Ubuntu/Debian:
 ```bash
 sudo apt install python3-matplotlib python3-numpy python3-pyqt5 python3-psutil
 ```
-Arch/Cachyos Linux:
+
+Arch/Cachyos:
 ```bash
 sudo pacman -S python-matplotlib python-numpy python-pyqt5 python-psutil
 ```
@@ -44,185 +42,133 @@ Windows:
 pip install matplotlib numpy PyQt5 psutil
 ```
 
----
-
-## Usage
+### Basic Usage
 
 ```bash
 python mz_flow_temp.py <input.gcode>
 ```
-or
-```bash
-python3 mz_flow_temp.py <input.gcode>
-```
 
----
+## OrcaSlicer Integration
 
-## Slicer Integration Guide
+### 1. Configure Machine G-code
 
-### OrcaSlicer
+Go to **Printer Settings > Machine G-code** and add:
 
-1. Go to **Printer Settings > Machine G-code** and add:
+- At the **end** of **Machine start G-code**: `; MZ FLOW TEMP START`
+- At the **beginning** of **Machine end G-code**: `; MZ FLOW TEMP END`
 
-    ```; MZ FLOW TEMP START``` at the **end** of **Machine start G-code**
+![Machine G-code](images/start_end.png)
 
-    and
+### 2. Add Script Settings
 
-    ```; MZ FLOW TEMP END``` at the **beginning** of **Machine end G-code**
-
-    ![Machine G-code](images/start_end.png)
-
-2. Then go to **Printer Settings > Notes** and add:
-    ```
-    mz_flow_temp_sec_per_c_heating = 6
-    mz_flow_temp_sec_per_c_cooling = 4
-    mz_flow_temp_launch_viewer = true
-    ```
-    ![Printer notes](images/printer_notes.png)
-
-3. In the **Filament profile**, set your own values (these will be used by the script):
-
-    ![Low High temp range](images/low_high_temp.png)
-    ![First layer temp](images/first_layer_temp.png)
-    ![Max flow rate](images/max_vfr.png)
-    ![Min print speed](images/min_print_speed.png)
-
-4. Add the command to **Print process > Others > Post-processing scripts** (adjust the path as needed):
-
-    **for Linux/MacOS**
-    ```bash
-    python <path to script>/mz_flow_temp.py
-    ```
-    or
-    ```bash
-    python3 <path to script>/mz_flow_temp.py
-    ```
-
-    **for Windows**
-    
-    get full path to python.exe run this in cmd:
-    ```cmd
-    where python
-    ```
-    and paste it here
-    ```cmd
-    "C:\Users\<YOUR_USER_NAME>\AppData\Local\Programs\Python\Python313\python.exe"  <path to script>/mz_flow_temp.py
-    ```
-
-    ![Post script](images/post_script.png)
-
----
-
-## ⚠️ Note about OrcaSlicer Viewer ⚠️
-
-**OrcaSlicer does not display the post-processed G-code after the script runs.**  
-
-To work around this, the script can automatically relaunch OrcaSlicer as a viewer for the processed file after processing is complete (unless you close the plot window with ESC).  
-
-This ensures you see the updated G-code and temperature/flow changes in the slicer preview.
-
-If you do not want the viewer to relaunch, simply close the plot window with the ESC key or disable this function permanently with
-```mz_flow_temp_launch_viewer = false```
-
-## Viewer Launch Behavior
-
-- **If you close the plot window with the ESC key:**  
-  The viewer will **not** be launched.
-- **If you close the plot window with the window close (cross) icon or press Q:**  
-  The viewer **will** be launched (if enabled in settings).
-
-This allows you to skip launching the viewer if you want to quickly exit after reviewing the plot.
-
----
-
-### Other Slicers
-
-- The script is designed to work with OrcaSlicer. Other slicers might work but not tested yet.
-
----
-
-## Required G-code Parameters
-
-Ensure your G-code includes the following parameters:
-
-```gcode
-; nozzle_temperature_range_high = 260
-; nozzle_temperature_range_low = 220
-; filament_diameter = 1.75
-; slow_down_min_speed = 30
-; filament_max_volumetric_speed = 12  
-; nozzle_temperature_initial_layer = 240
-; initial_layer_print_height = 0.2
-```
-
-And in your printer_notes block, include:
-
+In **Printer Settings > Notes**, add:
 ```
 mz_flow_temp_sec_per_c_heating = 6
 mz_flow_temp_sec_per_c_cooling = 4
 mz_flow_temp_launch_viewer = true
 ```
 
----
+![Printer notes](images/printer_notes.png)
+
+### 3. Configure Filament Settings
+
+Set these values in your **Filament profile**:
+- Temperature ranges (low/high)
+- First layer temperature
+- Maximum volumetric flow rate
+- Minimum print speed
+
+![Filament settings](images/low_high_temp.png) ![First layer temp](images/first_layer_temp.png) ![Max flow rate](images/max_vfr.png) ![Min print speed](images/min_print_speed.png)
+
+### 4. Add Post-processing Script
+
+In **Print process > Others > Post-processing scripts**:
+
+**Linux/MacOS:**
+```bash
+python <path to script>/mz_flow_temp.py
+```
+
+**Windows:**
+1. Find Python path: `where python`
+2. Add full command: `"C:\Users\<USER>\AppData\Local\Programs\Python\Python313\python.exe" <path to script>/mz_flow_temp.py`
+
+![Post script](images/post_script.png)
+
+## Viewer Behavior
+
+**Important:** OrcaSlicer doesn't automatically show post-processed G-code. The script can relaunch the viewer to display changes.
+
+- **ESC key**: Close plot without launching viewer
+- **Window close/Q key**: Close plot and launch viewer (if enabled)
+
+Disable viewer: `mz_flow_temp_launch_viewer = false`
+
+## Required Parameters
+
+Your G-code must include:
+
+```gcode
+; nozzle_temperature_range_high = 260
+; nozzle_temperature_range_low = 220
+; filament_diameter = 1.75
+; slow_down_min_speed = 30
+; filament_max_volumetric_speed = 12
+; nozzle_temperature_initial_layer = 240
+; initial_layer_print_height = 0.2
+```
+
+Plus in printer notes:
+```
+mz_flow_temp_sec_per_c_heating = 6
+mz_flow_temp_sec_per_c_cooling = 4
+mz_flow_temp_launch_viewer = true
+```
 
 ## How It Works
 
-- The script parses your G-code, extracts extrusion moves, and calculates flow rates.
-- It smooths flow transitions and dynamically adjusts nozzle temperature based on predicted flow demand.
-- Feedrate is clamped to avoid exceeding the printer's maximum volumetric flow.
-- Real-time plots visualize flow and temperature profiles during processing.
-- The processed G-code is saved, and optionally, your slicer viewer is launched.
+1. **Parse G-code**: Extract extrusion moves and calculate flow rates
+2. **Smooth Flow**: Apply smoothing algorithms for better flow consistency
+3. **Adjust Temperature**: Modify temperature according to actual flow demand
+4. **Clamp Feedrate**: Ensure printer limits aren't exceeded
+5. **Visualize**: Display real-time flow and temperature profiles
+6. **Save & Launch**: Write processed G-code and optionally open viewer
 
-## What to expect
+## Expected Results
 
-This tool automatically analyzes your print and makes small adjustments to the flow and nozzle temperature to help your printer keep up with changes in flow. 
-
-Temperature changes are made gradually, not instantly, because the printer's heater takes time to respond - so you won't see sudden jumps, but smooth transitions. This helps prevent issues like under extrusion and improves layer bonding, especially on complex or fast prints. 
-
-After running the script you can preview the changes in your slicer if enabled.
-
----
+The tool smooths flow consistency and adjusts temperature according to actual flow demand, helping your printer handle variations effectively. This prevents under-extrusion and improves layer bonding, especially for complex or fast prints.
 
 ## Exit Codes
 
-| Code | Meaning                                 |
-|------|-----------------------------------------|
-| 0    | Success                                 |
-| 1    | Incorrect usage (missing arguments)     |
-| 2    | Input file not found                    |
-| 3    | Missing EXECUTABLE_BLOCK markers        |
-| 4    | Missing MZ FLOW TEMP markers            |
-| 5    | Error parsing settings from G-code      |
-| 6    | Missing required parameters             |
-| 7    | No moves found in G-code                |
-| 8    | Error writing processed G-code file     |
-| 9    | Unhandled exception                     |
-
----
+| Code | Description |
+|------|-------------|
+| 0 | Success |
+| 1 | Incorrect usage |
+| 2 | Input file not found |
+| 3 | Missing EXECUTABLE_BLOCK markers |
+| 4 | Missing MZ FLOW TEMP markers |
+| 5 | Error parsing settings |
+| 6 | Missing required parameters |
+| 7 | No moves found in G-code |
+| 8 | Error writing output file |
+| 9 | Unhandled exception |
 
 ## Troubleshooting
 
-- **No plots or output:** Ensure all dependencies are installed and your G-code includes the required parameters and markers.
-- **Script not running in slicer:** Double-check the post-processing script path and permissions.
-- **Incorrect temperature/flow:** Verify your filament and printer settings in the slicer match your hardware.
-
----
+- **No plots/output**: Check dependencies and G-code parameters/markers
+- **Script not running**: Verify post-processing script path and permissions
+- **Incorrect adjustments**: Ensure filament/printer settings match hardware
 
 ## License
 
 GPL v3
 
----
-## Support the project
+## Support
+
 [![Donate](https://storage.ko-fi.com/cdn/fullLogoKofi.png)](https://ko-fi.com/yurymonzon)
 
-If you found this project useful, consider supporting my work with a small donation: https://ko-fi.com/yurymonzon Your support is greatly appreciated!
-
----
+If this project helps you, consider supporting my work: https://ko-fi.com/yurymonzon
 
 ## Author
 
-Developed by Yury MonZon with inspiration and ideas from BELAYEL Salim, creator of the original temperature controller application https://github.com/sb53systems/G-Code-Flow-Temperature-Controller . Support him too!
-
-
-
+Developed by Yury MonZon, inspired by BELAYEL Salim's original temperature controller: https://github.com/sb53systems/G-Code-Flow-Temperature-Controller
