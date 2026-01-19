@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """mz_flow_temp.py
 
-Author: Yury MonZon 
+Author: Yury MonZon
 
 A Python post-processor for 3D printer G-code files, implementing flow and temperature smoothing for improved print quality.
 
@@ -34,7 +34,7 @@ Requirements:
 - PyQt5
 - psutil
 
-Install dependencies: 
+Install dependencies:
 Linux: sudo apt install python3-matplotlib python3-numpy python3-pyqt5 python3-psutil
 Win: pip install matplotlib numpy PyQt5 psutil
 
@@ -60,7 +60,7 @@ Make sure your G-code profile includes the required parameters:
   ; nozzle_temperature_range_low = 220
   ; filament_diameter = 1.75
   ; slow_down_min_speed = 30
-  ; filament_max_volumetric_speed = 12  
+  ; filament_max_volumetric_speed = 12
   ; nozzle_temperature_initial_layer = 240
   ; initial_layer_print_height = 0.2
 
@@ -79,7 +79,7 @@ import numpy as np
 import psutil
 import subprocess
 import time
-import logging 
+import logging
 import matplotlib
 from datetime import datetime
 matplotlib.use('Qt5Agg')
@@ -356,7 +356,7 @@ def parse_settings_from_gcode(filename):
                 for note_line in notes_content.split('\\n'):
                     note_line = note_line.strip()
                     for key in script_settings_keys:
-                        if note_line.startswith(key + ' ='):
+                        if note_line.startswith(f'{key} ='):
                             val = note_line.split('=', 1)[1].strip()
                             if key.endswith('launch_viewer'):
                                 script_settings[key] = val.lower() == 'true'
@@ -372,16 +372,18 @@ def parse_settings_from_gcode(filename):
                 content = line[2:].lstrip()
                 if content:
                     for key in print_settings_keys:
-                        if key in content:
-                            parts = content.split('=', 1)
-                            if len(parts) == 2:
-                                value_str = parts[1].strip()
-                                if value_str and (value_str[0].isdigit() or value_str[0] in '+-.'):
-                                    try:
-                                        print_settings[key] = float(value_str)
-                                        logging.info(f"Found setting in G-code: {key} = {print_settings[key]}")
-                                    except ValueError:
-                                        logging.warning(f"Could not parse value for {key}: {parts[1]}")
+                        if key not in content:
+                            continue
+                        parts = content.split('=', 1)
+                        if len(parts) != 2:
+                            continue
+                        value_str = parts[1].strip().split(",")[0]
+                        if value_str and (value_str[0].isdigit() or value_str[0] in '+-.'):
+                            try:
+                                print_settings[key] = float(value_str)
+                                logging.info(f"Found setting in G-code: {key} = {print_settings[key]}")
+                            except ValueError:
+                                logging.warning(f"Could not parse value for {key}: {parts[1]}")
     except Exception as e:
         logging.error(f"Error parsing settings from G-code: {e}")
         sys.exit(5)
@@ -746,7 +748,7 @@ def main():
         else:
             logging.error("Processing failed!")
             sys.exit(8)
-        
+
         # Only launch viewer if not closed with ESC
         if settings.get('mz_flow_temp_launch_viewer', False) and not esc_pressed:
             _, parent_exe = get_parent_process_info()
