@@ -48,6 +48,15 @@ pip install matplotlib numpy PyQt5 psutil
 python mz_flow_temp.py <input.gcode>
 ```
 
+## Debug Mode
+
+By default, the script shows informational messages in terminal (if run manually). A log file is created only when an error occurs.
+
+**Enable debug logging:**
+Create an empty file called `DEBUG_ON` in the script folder.
+
+This enables verbose debug output and creates a detailed log file for troubleshooting.
+
 ## OrcaSlicer Integration
 
 ### 1. Configure Machine G-code

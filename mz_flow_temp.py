@@ -27,6 +27,9 @@ Features:
 - Optionally relaunches the slicer or viewer after processing.
 Usage:
     python mz_flow_temp.py <input.gcode>
+
+Options:
+    Create DEBUG_ON file in script folder to enable debug logging
 Requirements:
 - Python 3
 - numpy
@@ -83,30 +86,11 @@ import time
 import logging
 import matplotlib
 from datetime import datetime
-
-matplotlib.use("Qt5Agg")
 import matplotlib.pyplot as plt
 
+matplotlib.use("Qt5Agg")
+matplotlib.set_loglevel("warning")
 plt.style.use("ggplot")
-
-# Setup logging
-# Get current date/time for log file name
-now_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-gcode_file = sys.argv[1] if len(sys.argv) > 1 else "unknown"
-gcode_base = os.path.splitext(os.path.basename(gcode_file))[0]
-log_path = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    f"mz_flow_temp_{now_str}_{gcode_base}.log",
-)
-logging.basicConfig(
-    level=logging.INFO,
-    format="[%(asctime)s] %(levelname)s: %(message)s",
-    datefmt="%H:%M:%S",
-    handlers=[
-        logging.FileHandler(log_path, mode="w", encoding="utf-8"),
-        logging.StreamHandler(),
-    ],
-)
 
 RE_MOVE = re.compile(r"G0?1[ \t]+([^;]*)", re.IGNORECASE)
 RE_X = re.compile(r"X([-+]?[0-9]*\.?[0-9]+)")
@@ -298,10 +282,6 @@ def update_realtime_plot():
 
 def add_data_point(time_val, flow, final_flow, final_temp, max_flow, ideal_temp):
     global plotting_data
-    # Debug: Log the values being plotted
-    logging.debug(
-        f"add_data_point: time={time_val:.2f}, flow={flow:.3f}, final_flow={final_flow:.3f}, final_temp={final_temp:.2f}, max_flow={max_flow:.3f}, ideal_temp={ideal_temp:.2f}"
-    )
     plotting_data["times"].append(time_val)
     plotting_data["flows"].append(flow)
     plotting_data["final_flows"].append(final_flow)
@@ -520,10 +500,6 @@ def process_moves_pressure_equalizer(moves):
         flow[valid] = (de[valid] * area) / dt[valid]
         for i, m in enumerate(moves):
             m.flow = flow[i]
-            if m.extruding and flow[i] > 0:
-                logging.debug(
-                    f"Move {i}: de={de[i]:.5f}, dt={dt[i]:.5f}, area={area:.5f}, flow={flow[i]:.3f}, F={m.f}"
-                )
     else:
         logging.info("Vectorized calculation skipped: not enough moves.")
 
@@ -551,8 +527,7 @@ def process_moves_pressure_equalizer(moves):
     setup_realtime_plot()
     moves_with_time = []
     for i, move in enumerate(moves):
-        if i >= 0:
-            moves_with_time.append((move, move.move_time, move.extruding, i))
+        moves_with_time.append((move, move.move_time, move.extruding, i))
     update_counter = 0
     plot_update_counter = 0
     first_update_done = False
@@ -813,9 +788,6 @@ def save_processed_gcode(filename, moves, mz_start=None, mz_end=None):
                         + "\n"
                     )
                     processed_lines.append(modified_line)
-                    logging.debug(
-                        f"G-code line {i}: clamped_feedrate={move.clamped_feedrate:.2f}, final_flow={move.final_flow:.3f}, raw_flow={move.flow:.3f}"
-                    )
                 else:
                     processed_lines.append(line)
             else:
@@ -878,10 +850,39 @@ def get_marker_indices(filename):
     return mz_start, mz_end
 
 
+def setup_logging(log_path, level):
+    logging.basicConfig(
+        level=level,
+        format="[%(asctime)s] %(levelname)s: %(message)s",
+        datefmt="%H:%M:%S",
+        handlers=[
+            logging.FileHandler(log_path, mode="w", encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+
+
 def main():
-    global settings
-    logging.info("Welcome to MZ Flow Temp G-code post-processor")
+    global settings, log_path
+
+    debug_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "DEBUG_ON")
+    debug_mode = os.path.isfile(debug_file)
+
+    now_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+    gcode_file = sys.argv[1] if len(sys.argv) > 1 else "unknown"
+    gcode_base = os.path.splitext(os.path.basename(gcode_file))[0]
+    log_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        f"mz_flow_temp_{now_str}_{gcode_base}.log",
+    )
+
+    if debug_mode:
+        setup_logging(log_path, logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
+
     try:
+        logging.info("Welcome to MZ Flow Temp G-code post-processor")
         if len(sys.argv) < 2:
             logging.error("Usage: python mz_flow_temp.py <input.gcode>")
             sys.exit(1)
@@ -926,9 +927,9 @@ def main():
                     f"Launching viewer process: {parent_exe} {viewer_filename}"
                 )
                 try:
-                    args = [str(parent_exe), str(viewer_filename)]
-                    logging.debug(f"Launching viewer process with args: {args}")
-                    proc = subprocess.Popen(args)
+                    viewer_args = [str(parent_exe), str(viewer_filename)]
+                    logging.debug(f"Launching viewer process with args: {viewer_args}")
+                    proc = subprocess.Popen(viewer_args)
                     logging.debug(f"subprocess.Popen returned: {proc}")
                 except Exception as e:
                     logging.warning(f"Failed to launch parent process: {e}")
@@ -939,6 +940,8 @@ def main():
     except SystemExit:
         raise
     except Exception as e:
+        if not debug_mode:
+            setup_logging(log_path, logging.DEBUG)
         logging.error(f"Unhandled exception: {e}")
         sys.exit(9)
 
