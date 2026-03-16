@@ -7,8 +7,8 @@ Advanced G-code post-processor that intelligently smooths flow and adjusts tempe
 
 ## Features
 
-- **🌊 Flow Smoothing**: Extracts extrusion moves and smooths flow transitions for better print quality
-- **🌡️ Dynamic Temperature Control**: Adjusts nozzle temperature based on actual flow demand with gradual transitions
+- **🌊 Flow Smoothing**: Uses a duration-weighted lookahead window to predict upcoming flow demand and smooth feedrate transitions
+- **🌡️ Dynamic Temperature Control**: Adjusts nozzle temperature ahead of actual flow changes - lookahead window is automatically sized to cover the full temperature range transition time
 - **⚡ Feedrate Clamping**: Prevents exceeding printer's maximum volumetric flow capability
 - **📊 Real-time Visualization**: Live plotting of flow and temperature profiles
 - **🔗 Slicer Integration**: Works as post-processing script (OrcaSlicer tested)
@@ -77,6 +77,8 @@ mz_flow_temp_sec_per_c_cooling = 4
 mz_flow_temp_launch_viewer = true
 ```
 
+ **Note:** `sec_per_c_heating` and `sec_per_c_cooling` control how many seconds it takes the nozzle to change 1°C. These values also determine the lookahead window size - the script automatically looks far enough ahead to start temperature transitions in time. Larger values = slower transitions = larger lookahead window.
+
 ![Printer notes](images/printer_notes.png)
 
 ### 3. Configure Filament Settings
@@ -136,16 +138,16 @@ mz_flow_temp_launch_viewer = true
 
 ## How It Works
 
-1. **Parse G-code**: Extract extrusion moves and calculate flow rates
-2. **Smooth Flow**: Apply smoothing algorithms for better flow consistency
-3. **Adjust Temperature**: Modify temperature according to actual flow demand
-4. **Clamp Feedrate**: Ensure printer limits aren't exceeded
-5. **Visualize**: Display real-time flow and temperature profiles
-6. **Save & Launch**: Write processed G-code and optionally open viewer
+1. **Parse G-code**: Extract all moves and calculate XYZ distances, move times, and per-move flow rates
+2. **Lookahead**: For each move, compute a duration-weighted average flow over the upcoming window (sized to cover the full temp range transition). Travel moves are excluded from the average
+3. **Adjust Temperature**: Track a smoothed temperature that ramps toward the lookahead target at the configured `sec_per_c` rate, starting from `nozzle_temperature_range_low`
+4. **Clamp Feedrate**: Where lookahead flow exceeds what the current temperature can support, reduce feedrate proportionally - with a minimum speed floor and short-move exemption
+5. **Visualize**: Display input flow, output flow, ideal temperature, and actual output temperature in real time
+6. **Save & Launch**: Write M104 temperature commands and adjusted feedrates into the G-code, optionally relaunch slicer viewer
 
 ## Expected Results
 
-The tool smooths flow consistency and adjusts temperature according to actual flow demand, helping your printer handle variations effectively. This prevents under-extrusion and improves layer bonding, especially for complex or fast prints.
+Temperature changes are predicted ahead of time based on upcoming flow demand, so the nozzle is already at the right temperature when it needs to be - not catching up after the fact. Feedrate is reduced when the nozzle is too cold to safely handle the requested flow, preventing over-extrusion and pressure spikes. Most effective on prints with large infill-to-perimeter transitions such as the Benchy hull line.
 
 ## Exit Codes
 
@@ -164,9 +166,12 @@ The tool smooths flow consistency and adjusts temperature according to actual fl
 
 ## Troubleshooting
 
-- **No plots/output**: Check dependencies and G-code parameters/markers
-- **Script not running**: Verify post-processing script path and permissions
-- **Incorrect adjustments**: Ensure filament/printer settings match hardware
+ - **No plots/output**: Check dependencies and verify G-code contains all required parameters and markers
+ - **Script not running**: Verify post-processing script path and Python executable permissions
+ - **Temperature not changing enough**: Your `nozzle_temperature_range_high` and `nozzle_temperature_range_low` may be too close together - widen the range in your filament profile
+ - **Temperature reacting too slowly**: Decrease `sec_per_c_heating` / `sec_per_c_cooling` values
+ - **Temperature reacting too aggressively**: Increase `sec_per_c_heating` / `sec_per_c_cooling` values
+ - **Incorrect adjustments**: Ensure `filament_max_volumetric_speed` is accurately calibrated for your filament - an incorrect value skews the entire flow-to-temperature mapping
 
 ## License
 
