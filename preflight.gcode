@@ -571,95 +571,71 @@ G1 E-2 F2400 ; retract
 G1 Z.3 F720 ; lift
 G1 X127.753 Y127.191 F30000 ; move to first layer point
 G1 F720
-M104 S200
-M104 S200
-M104 S200
-M104 S200
 G1 E2 F2400 ;  ; unretract
 M204 S500 ; adjust acceleration
 ;TYPE:Skirt/Brim
 ;WIDTH:0.5
-G1 X130.139 Y125.52 E.15827 F600 ; skirt
-G1 X132.888 Y124.558 E.15824 F600 ; skirt
-G1 X135 Y124.347 E.11532 F600 ; skirt
-M104 S201
-M104 S201
-M104 S201
-G1 X165 Y124.347 E1.62999 F600 ; skirt
-G1 X167.885 Y124.745 E.15823 F600 ; skirt
-G1 X170.555 Y125.909 E.15826 F600 ; skirt
-G1 X172.809 Y127.753 E.15823 F600 ; skirt
-G1 X174.48 Y130.139 E.15827 F600 ; skirt
-G1 X175.442 Y132.888 E.15824 F600 ; skirt
-G1 X175.653 Y135 E.11532 F600 ; skirt
-G1 X175.653 Y165 E1.62999 F600 ; skirt
-M104 S202
-M104 S202
-M104 S202
-G1 X175.255 Y167.885 E.15823 F600 ; skirt
-G1 X174.091 Y170.555 E.15826 F600 ; skirt
-G1 X172.247 Y172.809 E.15823 F600 ; skirt
-G1 X169.861 Y174.48 E.15827 F600 ; skirt
-G1 X167.112 Y175.442 E.15824 F600 ; skirt
-G1 X165 Y175.653 E.11532 F600 ; skirt
-M104 S201
-G1 X135 Y175.653 E1.62999 F600 ; skirt
-G1 X132.115 Y175.255 E.15823 F600 ; skirt
-G1 X129.445 Y174.091 E.15826 F600 ; skirt
-G1 X127.191 Y172.247 E.15823 F600 ; skirt
-G1 X125.52 Y169.861 E.15827 F600 ; skirt
-G1 X124.558 Y167.112 E.15824 F600 ; skirt
-M104 S203
-M104 S203
-M104 S203
-G1 X124.347 Y165 E.11532 F600 ; skirt
-G1 X124.347 Y135 E1.62999 F600 ; skirt
-G1 X124.745 Y132.115 E.15823 F600 ; skirt
-G1 X125.909 Y129.445 E.15826 F600 ; skirt
-G1 X127.715 Y127.237 E.15499 F600 ; skirt
+G1 X130.139 Y125.52 E.15827 ; skirt
+G1 X132.888 Y124.558 E.15824 ; skirt
+G1 X135 Y124.347 E.11532 ; skirt
+G1 X165 Y124.347 E1.62999 ; skirt
+G1 X167.885 Y124.745 E.15823 ; skirt
+G1 X170.555 Y125.909 E.15826 ; skirt
+G1 X172.809 Y127.753 E.15823 ; skirt
+G1 X174.48 Y130.139 E.15827 ; skirt
+G1 X175.442 Y132.888 E.15824 ; skirt
+G1 X175.653 Y135 E.11532 ; skirt
+G1 X175.653 Y165 E1.62999 ; skirt
+G1 X175.255 Y167.885 E.15823 ; skirt
+G1 X174.091 Y170.555 E.15826 ; skirt
+G1 X172.247 Y172.809 E.15823 ; skirt
+G1 X169.861 Y174.48 E.15827 ; skirt
+G1 X167.112 Y175.442 E.15824 ; skirt
+G1 X165 Y175.653 E.11532 ; skirt
+G1 X135 Y175.653 E1.62999 ; skirt
+G1 X132.115 Y175.255 E.15823 ; skirt
+G1 X129.445 Y174.091 E.15826 ; skirt
+G1 X127.191 Y172.247 E.15823 ; skirt
+G1 X125.52 Y169.861 E.15827 ; skirt
+G1 X124.558 Y167.112 E.15824 ; skirt
+G1 X124.347 Y165 E.11532 ; skirt
+G1 X124.347 Y135 E1.62999 ; skirt
+G1 X124.745 Y132.115 E.15823 ; skirt
+G1 X125.909 Y129.445 E.15826 ; skirt
+G1 X127.715 Y127.237 E.15499 ; skirt
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X128.181 Y127.391 F30000 ; move to first skirt point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X130.55 Y125.802 E.15499 F600 ; skirt
-G1 X133.265 Y124.931 E.15492 F600 ; skirt
-G1 X135 Y124.782 E.09461 F600 ; skirt
-M104 S204
-M104 S204
-M104 S204
-G1 X165 Y124.782 E1.62999 F600 ; skirt
-G1 X167.824 Y125.18 E.15495 F600 ; skirt
-G1 X170.428 Y126.343 E.15495 F600 ; skirt
-G1 X172.609 Y128.181 E.15497 F600 ; skirt
-G1 X174.198 Y130.55 E.15499 F600 ; skirt
-G1 X175.069 Y133.265 E.15492 F600 ; skirt
-G1 X175.218 Y135 E.09461 F600 ; skirt
-M104 S205
-M104 S205
-M104 S205
-G1 X175.218 Y165 E1.62999 F600 ; skirt
-G1 X174.82 Y167.824 E.15495 F600 ; skirt
-G1 X173.657 Y170.428 E.15495 F600 ; skirt
-G1 X171.819 Y172.609 E.15497 F600 ; skirt
-G1 X169.45 Y174.198 E.15499 F600 ; skirt
-G1 X166.735 Y175.069 E.15492 F600 ; skirt
-G1 X165 Y175.218 E.09461 F600 ; skirt
-G1 X135 Y175.218 E1.62999 F600 ; skirt
-G1 X132.176 Y174.82 E.15495 F600 ; skirt
-G1 X129.572 Y173.657 E.15495 F600 ; skirt
-G1 X127.391 Y171.819 E.15497 F600 ; skirt
-M104 S206
-M104 S206
-M104 S206
-G1 X125.802 Y169.45 E.15499 F600 ; skirt
-G1 X124.931 Y166.735 E.15492 F600 ; skirt
-G1 X124.782 Y165 E.09461 F600 ; skirt
-M104 S202
-G1 X124.782 Y135 E1.62999 F600 ; skirt
-G1 X125.18 Y132.176 E.15495 F600 ; skirt
-G1 X126.343 Y129.572 E.15495 F600 ; skirt
-G1 X128.142 Y127.436 E.15173 F600 ; skirt
+G1 X130.55 Y125.802 E.15499 ; skirt
+G1 X133.265 Y124.931 E.15492 ; skirt
+G1 X135 Y124.782 E.09461 ; skirt
+G1 X165 Y124.782 E1.62999 ; skirt
+G1 X167.824 Y125.18 E.15495 ; skirt
+G1 X170.428 Y126.343 E.15495 ; skirt
+G1 X172.609 Y128.181 E.15497 ; skirt
+G1 X174.198 Y130.55 E.15499 ; skirt
+G1 X175.069 Y133.265 E.15492 ; skirt
+G1 X175.218 Y135 E.09461 ; skirt
+G1 X175.218 Y165 E1.62999 ; skirt
+G1 X174.82 Y167.824 E.15495 ; skirt
+G1 X173.657 Y170.428 E.15495 ; skirt
+G1 X171.819 Y172.609 E.15497 ; skirt
+G1 X169.45 Y174.198 E.15499 ; skirt
+G1 X166.735 Y175.069 E.15492 ; skirt
+G1 X165 Y175.218 E.09461 ; skirt
+G1 X135 Y175.218 E1.62999 ; skirt
+G1 X132.176 Y174.82 E.15495 ; skirt
+G1 X129.572 Y173.657 E.15495 ; skirt
+G1 X127.391 Y171.819 E.15497 ; skirt
+G1 X125.802 Y169.45 E.15499 ; skirt
+G1 X124.931 Y166.735 E.15492 ; skirt
+G1 X124.782 Y165 E.09461 ; skirt
+G1 X124.782 Y135 E1.62999 ; skirt
+G1 X125.18 Y132.176 E.15495 ; skirt
+G1 X126.343 Y129.572 E.15495 ; skirt
+G1 X128.142 Y127.436 E.15173 ; skirt
 M204 S6000 ; adjust acceleration
 ;REGION_AREA:888.04
 G1 E-2 ; retract
@@ -669,52 +645,39 @@ G1 E2 F2400 ;  ; unretract
 M204 S500 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.436
-M104 S207
-M104 S207
-M104 S207
-G1 X163.343 Y163.343 E1.23434 F600 ; perimeter
-G1 X136.657 Y163.343 E1.23564 F600 ; perimeter
-M104 S208
-M104 S208
-M104 S208
-G1 X136.657 Y136.657 E1.23564 F600 ; perimeter
+G1 X163.343 Y163.343 E1.23434 ; perimeter
+G1 X136.657 Y163.343 E1.23564 ; perimeter
+G1 X136.657 Y136.657 E1.23564 ; perimeter
 M73 P1 R27
-G1 X163.311 Y136.657 E1.23416 F600 ; perimeter
+G1 X163.311 Y136.657 E1.23416 ; perimeter
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.779 Y136.25 F30000 ; move to first perimeter point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.779 Y163.779 E1.27467 F600 ; perimeter
-G1 X136.221 Y163.779 E1.27602 F600 ; perimeter
-G1 X136.221 Y136.221 E1.27602 F600 ; perimeter
-M104 S203
-G1 X163.747 Y136.221 E1.27453 F600 ; perimeter
+G1 X163.779 Y163.779 E1.27467 ; perimeter
+G1 X136.221 Y163.779 E1.27602 ; perimeter
+G1 X136.221 Y136.221 E1.27602 ; perimeter
+G1 X163.747 Y136.221 E1.27453 ; perimeter
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.214 Y135.815 F30000 ; move to first perimeter point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S209
-M104 S209
-M104 S209
-G1 X164.214 Y164.214 E1.31496 F600 ; perimeter
-G1 X135.786 Y164.214 E1.3163 F600 ; perimeter
-G1 X135.786 Y135.786 E1.3163 F621 ; perimeter
-G1 X164.183 Y135.786 E1.31486 F646 ; perimeter
+G1 X164.214 Y164.214 E1.31496 ; perimeter
+G1 X135.786 Y164.214 E1.3163 ; perimeter
+G1 X135.786 Y135.786 E1.3163 ; perimeter
+G1 X164.183 Y135.786 E1.31486 ; perimeter
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.65 Y135.38 F30000 ; move to first perimeter point
 M204 S500 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F2400
-G1 X164.65 Y164.65 E1.35529 F672 ; perimeter
-M104 S210
-M104 S210
-M104 S210
-G1 X135.35 Y164.65 E1.35668 F699 ; perimeter
-G1 X135.35 Y135.35 E1.35668 F725 ; perimeter
-G1 X164.62 Y135.35 E1.35529 F751 ; perimeter
+G1 X164.65 Y164.65 E1.35529 ; perimeter
+G1 X135.35 Y164.65 E1.35668 ; perimeter
+G1 X135.35 Y135.35 E1.35668 ; perimeter
+G1 X164.62 Y135.35 E1.35529 ; perimeter
 M204 S6000 ; adjust acceleration
 G1 X164.648 Y135.749 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -726,532 +689,504 @@ M204 S500 ; adjust acceleration
 ;WIDTH:0.501
 ;REGION_AREA:695.95
 ;FILL_PATTERN:2
-G1 X163.169 Y137.829 E.07693 F640 ; infill
+G1 X163.169 Y137.829 E.07693 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y138.447 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S204
-G1 X161.553 Y136.831 E.12457 F641 ; infill
+G1 X161.553 Y136.831 E.12457 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X160.934 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y139.066 E.17228 F644 ; infill
+G1 X163.169 Y139.066 E.17228 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y139.684 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X160.316 Y136.831 E.21992 F647 ; infill
+G1 X160.316 Y136.831 E.21992 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X159.698 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y140.302 E.26756 F651 ; infill
+G1 X163.169 Y140.302 E.26756 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y140.92 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X159.08 Y136.831 E.3152 F655 ; infill
+G1 X159.08 Y136.831 E.3152 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X158.462 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y141.538 E.36284 F660 ; infill
+G1 X163.169 Y141.538 E.36284 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y142.156 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X157.844 Y136.831 E.41048 F666 ; infill
+G1 X157.844 Y136.831 E.41048 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X157.226 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y142.774 E.45811 F672 ; infill
+G1 X163.169 Y142.774 E.45811 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y143.392 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X156.608 Y136.831 E.50575 F680 ; infill
+G1 X156.608 Y136.831 E.50575 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X155.99 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S211
-M104 S211
-M104 S211
-G1 X163.169 Y144.01 E.55339 F687 ; infill
+G1 X163.169 Y144.01 E.55339 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y144.628 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X155.372 Y136.831 E.60103 F696 ; infill
+G1 X155.372 Y136.831 E.60103 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X154.754 Y136.831 F30000 ; move to first infill point
 M73 P2 R27
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y145.246 E.64867 F705 ; infill
+G1 X163.169 Y145.246 E.64867 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y145.864 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X154.136 Y136.831 E.69631 F715 ; infill
+G1 X154.136 Y136.831 E.69631 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X153.518 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y146.482 E.74395 F725 ; infill
+G1 X163.169 Y146.482 E.74395 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y147.1 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X152.9 Y136.831 E.79158 F736 ; infill
+G1 X152.9 Y136.831 E.79158 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X152.282 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y147.718 E.83922 F748 ; infill
+G1 X163.169 Y147.718 E.83922 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y148.336 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X151.664 Y136.831 E.88686 F760 ; infill
+G1 X151.664 Y136.831 E.88686 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X151.046 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y148.954 E.9345 F774 ; infill
+G1 X163.169 Y148.954 E.9345 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y149.572 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X150.428 Y136.831 E.98214 F787 ; infill
+G1 X150.428 Y136.831 E.98214 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X149.81 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y150.19 E1.02978 F802 ; infill
+G1 X163.169 Y150.19 E1.02978 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y150.808 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S212
-M104 S212
-M104 S212
-G1 X149.192 Y136.831 E1.07741 F817 ; infill
+G1 X149.192 Y136.831 E1.07741 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X148.574 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S205
-G1 X163.169 Y151.426 E1.12505 F833 ; infill
+G1 X163.169 Y151.426 E1.12505 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y152.044 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X147.956 Y136.831 E1.17269 F849 ; infill
+G1 X147.956 Y136.831 E1.17269 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X147.338 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y152.662 E1.22033 F866 ; infill
+G1 X163.169 Y152.662 E1.22033 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y153.28 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X146.72 Y136.831 E1.26797 F884 ; infill
+G1 X146.72 Y136.831 E1.26797 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X146.102 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y153.898 E1.31561 F903 ; infill
+G1 X163.169 Y153.898 E1.31561 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y154.516 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X145.484 Y136.831 E1.36324 F922 ; infill
+G1 X145.484 Y136.831 E1.36324 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X144.866 Y136.831 F30000 ; move to first infill point
 M73 P2 R26
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S213
-M104 S213
-M104 S213
-G1 X163.169 Y155.134 E1.41088 F941 ; infill
+G1 X163.169 Y155.134 E1.41088 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y155.752 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X144.248 Y136.831 E1.45852 F962 ; infill
+G1 X144.248 Y136.831 E1.45852 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X143.629 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y156.371 E1.50624 F983 ; infill
+G1 X163.169 Y156.371 E1.50624 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y156.989 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X143.011 Y136.831 E1.55387 F1005 ; infill
+G1 X143.011 Y136.831 E1.55387 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X142.393 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S206
-G1 X163.169 Y157.607 E1.60151 F1027 ; infill
+G1 X163.169 Y157.607 E1.60151 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y158.225 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X141.775 Y136.831 E1.64915 F1050 ; infill
+G1 X141.775 Y136.831 E1.64915 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X141.157 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y158.843 E1.69679 F1074 ; infill
+G1 X163.169 Y158.843 E1.69679 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y159.461 F30000 ; move to first infill point
 M73 P3 R26
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S214
-M104 S214
-M104 S214
-G1 X140.539 Y136.831 E1.74443 F1099 ; infill
+G1 X140.539 Y136.831 E1.74443 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X139.921 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y160.079 E1.79207 F1124 ; infill
+G1 X163.169 Y160.079 E1.79207 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y160.697 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X139.303 Y136.831 E1.83971 F1149 ; infill
+G1 X139.303 Y136.831 E1.83971 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X138.685 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y161.315 E1.88734 F1176 ; infill
+G1 X163.169 Y161.315 E1.88734 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.169 Y161.933 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S207
-G1 X138.067 Y136.831 E1.93498 F1203 ; infill
+G1 X138.067 Y136.831 E1.93498 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X137.449 Y136.831 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X163.169 Y162.551 E1.98262 F1231 ; infill
+G1 X163.169 Y162.551 E1.98262 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.118 Y163.118 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S215
-M104 S215
-M104 S215
-G1 X136.882 Y136.882 E2.0224 F1259 ; infill
+G1 X136.882 Y136.882 E2.0224 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y137.449 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X162.551 Y163.169 E1.98262 F1287 ; infill
+G1 X162.551 Y163.169 E1.98262 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X161.933 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y138.067 E1.93498 F1314 ; infill
+G1 X136.831 Y138.067 E1.93498 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y138.685 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X161.315 Y163.169 E1.88734 F1340 ; infill
+G1 X161.315 Y163.169 E1.88734 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X160.697 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y139.303 E1.83971 F1366 ; infill
+G1 X136.831 Y139.303 E1.83971 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y139.921 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S208
-G1 X160.079 Y163.169 E1.79207 F1391 ; infill
+G1 X160.079 Y163.169 E1.79207 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X159.461 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y140.539 E1.74443 F1416 ; infill
+G1 X136.831 Y140.539 E1.74443 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y141.157 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X158.843 Y163.169 E1.69679 F1440 ; infill
+G1 X158.843 Y163.169 E1.69679 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X158.225 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S216
-M104 S216
-M104 S216
-G1 X136.831 Y141.775 E1.64915 F1463 ; infill
+G1 X136.831 Y141.775 E1.64915 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y142.393 F30000 ; move to first infill point
 M73 P4 R26
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X157.607 Y163.169 E1.60151 F1485 ; infill
+G1 X157.607 Y163.169 E1.60151 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X156.989 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y143.011 E1.55387 F1507 ; infill
+G1 X136.831 Y143.011 E1.55387 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y143.629 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X156.371 Y163.169 E1.50624 F1528 ; infill
+G1 X156.371 Y163.169 E1.50624 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X155.752 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y144.248 E1.45852 F1549 ; infill
+G1 X136.831 Y144.248 E1.45852 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y144.866 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S209
-G1 X155.134 Y163.169 E1.41088 F1568 ; infill
+G1 X155.134 Y163.169 E1.41088 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X154.516 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y145.484 E1.36324 F1587 ; infill
+G1 X136.831 Y145.484 E1.36324 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y146.102 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X153.898 Y163.169 E1.31561 F1606 ; infill
+G1 X153.898 Y163.169 E1.31561 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X153.28 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y146.72 E1.26797 F1624 ; infill
+G1 X136.831 Y146.72 E1.26797 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y147.338 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X152.662 Y163.169 E1.22033 F1641 ; infill
+G1 X152.662 Y163.169 E1.22033 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X152.044 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S217
-M104 S217
-M104 S217
-G1 X136.831 Y147.956 E1.17269 F1657 ; infill
+G1 X136.831 Y147.956 E1.17269 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y148.574 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X151.426 Y163.169 E1.12505 F1673 ; infill
+G1 X151.426 Y163.169 E1.12505 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X150.808 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y149.192 E1.07741 F1688 ; infill
+G1 X136.831 Y149.192 E1.07741 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y149.81 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X150.19 Y163.169 E1.02978 F1703 ; infill
+G1 X150.19 Y163.169 E1.02978 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X149.572 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y150.428 E.98214 F1716 ; infill
+G1 X136.831 Y150.428 E.98214 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y151.046 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X148.954 Y163.169 E.9345 F1729 ; infill
+G1 X148.954 Y163.169 E.9345 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X148.336 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-M104 S210
-G1 X136.831 Y151.664 E.88686 F1742 ; infill
+G1 X136.831 Y151.664 E.88686 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y152.282 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X147.718 Y163.169 E.83922 F1754 ; infill
+G1 X147.718 Y163.169 E.83922 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X147.1 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y152.9 E.79158 F1765 ; infill
+G1 X136.831 Y152.9 E.79158 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y153.518 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X146.482 Y163.169 E.74395 F1775 ; infill
+G1 X146.482 Y163.169 E.74395 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X145.864 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y154.136 E.69631 F1785 ; infill
+G1 X136.831 Y154.136 E.69631 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y154.754 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X145.246 Y163.169 E.64867 F1794 ; infill
+G1 X145.246 Y163.169 E.64867 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X144.628 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y155.372 E.60103 F1803 ; infill
+G1 X136.831 Y155.372 E.60103 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y155.99 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X144.01 Y163.169 E.55339 F1810 ; infill
+G1 X144.01 Y163.169 E.55339 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X143.392 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y156.608 E.50575 F1817 ; infill
+G1 X136.831 Y156.608 E.50575 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y157.226 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X142.774 Y163.169 E.45811 F1824 ; infill
+G1 X142.774 Y163.169 E.45811 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X142.156 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y157.844 E.41048 F1830 ; infill
+G1 X136.831 Y157.844 E.41048 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y158.462 F30000 ; move to first infill point
 M73 P5 R26
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X141.538 Y163.169 E.36284 F1835 ; infill
+G1 X141.538 Y163.169 E.36284 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X140.92 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y159.08 E.3152 F1839 ; infill
+G1 X136.831 Y159.08 E.3152 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y159.698 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X140.302 Y163.169 E.26756 F1843 ; infill
+G1 X140.302 Y163.169 E.26756 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X139.684 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y160.316 E.21992 F1846 ; infill
+G1 X136.831 Y160.316 E.21992 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y160.934 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X139.066 Y163.169 E.17228 F1849 ; infill
+G1 X139.066 Y163.169 E.17228 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X138.447 Y163.169 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X136.831 Y161.553 E.12457 F1850 ; infill
+G1 X136.831 Y161.553 E.12457 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.831 Y162.171 F30000 ; move to first infill point
 M204 S500 ; adjust acceleration
 G1 F2400
-G1 X137.829 Y163.169 E.07693 F1852 ; infill
+G1 X137.829 Y163.169 E.07693 ; infill
 M204 S6000 ; adjust acceleration
 M106 S255 ; enable fan
 ;LAYER_CHANGE:2
@@ -1273,46 +1208,42 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F3347 ; perimeter
-M104 S218
-M104 S218
-M104 S218
-G1 X136.446 Y163.554 E.82083 F3356 ; perimeter
-G1 X136.446 Y136.446 E.82083 F3365 ; perimeter
-G1 X163.494 Y136.446 E.81901 F3374 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F3383 ; perimeter
-G1 X136.039 Y163.961 E.84548 F3393 ; perimeter
-G1 X136.039 Y136.039 E.84548 F3402 ; perimeter
-G1 X163.901 Y136.039 E.84366 F3411 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F3421 ; perimeter
-G1 X135.632 Y164.368 E.87012 F3431 ; perimeter
-G1 X135.632 Y135.632 E.87012 F3440 ; perimeter
-G1 X164.308 Y135.632 E.86831 F3450 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
 G1 X164.775 Y135.814 E.01783 ; perimeter
-G1 X164.775 Y164.186 E.8591 F3459 ; perimeter
+G1 X164.775 Y164.186 E.8591 ; perimeter
 G1 X164.775 Y164.775 E.01783 ; perimeter
 G1 X164.186 Y164.775 E.01783 ; perimeter
-M104 S211
-G1 X135.814 Y164.775 E.8591 F3469 ; perimeter
+G1 X135.814 Y164.775 E.8591 ; perimeter
 G1 X135.225 Y164.775 E.01783 ; perimeter
 G1 X135.225 Y164.186 E.01783 ; perimeter
-G1 X135.225 Y135.814 E.8591 F3479 ; perimeter
+G1 X135.225 Y135.814 E.8591 ; perimeter
 G1 X135.225 Y135.225 E.01783 ; perimeter
 G1 X135.814 Y135.225 E.01783 ; perimeter
-G1 X164.186 Y135.225 E.8591 F3489 ; perimeter
+G1 X164.186 Y135.225 E.8591 ; perimeter
 G1 X164.715 Y135.225 E.01602 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -1327,195 +1258,184 @@ M204 S6000 ; adjust acceleration
 G1 F8766
 G1 X137.364 Y136.792 E.03646 ; infill
 G1 X137.944 Y136.792 E.01981 ; infill
-G1 X136.792 Y137.944 E.05563 F3098 ; infill
+G1 X136.792 Y137.944 E.05563 ; infill
 G1 X136.792 Y138.525 E.01984 ; infill
-G1 X138.525 Y136.792 E.08369 F3099 ; infill
+G1 X138.525 Y136.792 E.08369 ; infill
 G1 X139.106 Y136.792 E.01984 ; infill
-G1 X136.792 Y139.106 E.11175 F3100 ; infill
+G1 X136.792 Y139.106 E.11175 ; infill
 G1 X136.792 Y139.687 E.01984 ; infill
-G1 X139.687 Y136.792 E.1398 F3102 ; infill
+G1 X139.687 Y136.792 E.1398 ; infill
 G1 X140.267 Y136.792 E.01981 ; infill
-G1 X136.792 Y140.267 E.16781 F3104 ; infill
+G1 X136.792 Y140.267 E.16781 ; infill
 G1 X136.792 Y140.848 E.01984 ; infill
-G1 X140.848 Y136.792 E.19587 F3106 ; infill
+G1 X140.848 Y136.792 E.19587 ; infill
 G1 X141.429 Y136.792 E.01984 ; infill
-G1 X136.792 Y141.429 E.22393 F3108 ; infill
+G1 X136.792 Y141.429 E.22393 ; infill
 G1 X136.792 Y142.01 E.01984 ; infill
-G1 X142.01 Y136.792 E.25198 F3111 ; infill
+G1 X142.01 Y136.792 E.25198 ; infill
 G1 X142.591 Y136.792 E.01984 ; infill
-G1 X136.792 Y142.591 E.28004 F3114 ; infill
+G1 X136.792 Y142.591 E.28004 ; infill
 G1 X136.792 Y143.171 E.01981 ; infill
-G1 X143.171 Y136.792 E.30805 F3117 ; infill
+G1 X143.171 Y136.792 E.30805 ; infill
 G1 X143.752 Y136.792 E.01984 ; infill
-G1 X136.792 Y143.752 E.3361 F3120 ; infill
+G1 X136.792 Y143.752 E.3361 ; infill
 G1 X136.792 Y144.333 E.01984 ; infill
-G1 X144.333 Y136.792 E.36416 F3124 ; infill
+G1 X144.333 Y136.792 E.36416 ; infill
 G1 X144.914 Y136.792 E.01984 ; infill
-G1 X136.792 Y144.914 E.39222 F3128 ; infill
+G1 X136.792 Y144.914 E.39222 ; infill
 G1 X136.792 Y145.494 E.01981 ; infill
-G1 X145.494 Y136.792 E.42023 F3132 ; infill
+G1 X145.494 Y136.792 E.42023 ; infill
 G1 X146.075 Y136.792 E.01984 ; infill
-G1 X136.792 Y146.075 E.44828 F3137 ; infill
+G1 X136.792 Y146.075 E.44828 ; infill
 G1 X136.792 Y146.656 E.01984 ; infill
-G1 X146.656 Y136.792 E.47634 F3142 ; infill
+G1 X146.656 Y136.792 E.47634 ; infill
 G1 X147.237 Y136.792 E.01984 ; infill
-M104 S219
-M104 S219
-M104 S219
-G1 X136.792 Y147.237 E.5044 F3147 ; infill
+G1 X136.792 Y147.237 E.5044 ; infill
 G1 X136.792 Y147.817 E.01981 ; infill
-G1 X147.817 Y136.792 E.53241 F3152 ; infill
+G1 X147.817 Y136.792 E.53241 ; infill
 G1 X148.398 Y136.792 E.01984 ; infill
-G1 X136.792 Y148.398 E.56046 F3158 ; infill
+G1 X136.792 Y148.398 E.56046 ; infill
 G1 X136.792 Y148.979 E.01984 ; infill
-G1 X148.979 Y136.792 E.58852 F3164 ; infill
+G1 X148.979 Y136.792 E.58852 ; infill
 G1 X149.56 Y136.792 E.01984 ; infill
-G1 X136.792 Y149.56 E.61658 F3170 ; infill
+G1 X136.792 Y149.56 E.61658 ; infill
 G1 X136.792 Y150.14 E.01981 ; infill
-G1 X150.141 Y136.792 E.64461 F3177 ; infill
+G1 X150.141 Y136.792 E.64461 ; infill
 G1 X150.721 Y136.792 E.01981 ; infill
-G1 X136.792 Y150.721 E.67264 F3183 ; infill
+G1 X136.792 Y150.721 E.67264 ; infill
 G1 X136.792 Y151.302 E.01984 ; infill
-G1 X151.302 Y136.792 E.7007 F3190 ; infill
+G1 X151.302 Y136.792 E.7007 ; infill
 G1 X151.883 Y136.792 E.01984 ; infill
-G1 X136.792 Y151.883 E.72876 F3198 ; infill
+G1 X136.792 Y151.883 E.72876 ; infill
 G1 X136.792 Y152.464 E.01984 ; infill
-G1 X152.464 Y136.792 E.75682 F3205 ; infill
+G1 X152.464 Y136.792 E.75682 ; infill
 G1 X153.044 Y136.792 E.01981 ; infill
-G1 X136.792 Y153.044 E.78482 F3213 ; infill
+G1 X136.792 Y153.044 E.78482 ; infill
 G1 X136.792 Y153.625 E.01984 ; infill
-G1 X153.625 Y136.792 E.81288 F3221 ; infill
+G1 X153.625 Y136.792 E.81288 ; infill
 G1 X154.206 Y136.792 E.01984 ; infill
-G1 X136.792 Y154.206 E.84094 F3230 ; infill
+G1 X136.792 Y154.206 E.84094 ; infill
 G1 X136.792 Y154.787 E.01984 ; infill
-G1 X154.787 Y136.792 E.869 F3238 ; infill
+G1 X154.787 Y136.792 E.869 ; infill
 G1 X155.367 Y136.792 E.01981 ; infill
-G1 X136.792 Y155.367 E.897 F3247 ; infill
+G1 X136.792 Y155.367 E.897 ; infill
 G1 X136.792 Y155.948 E.01984 ; infill
-G1 X155.948 Y136.792 E.92506 F3256 ; infill
+G1 X155.948 Y136.792 E.92506 ; infill
 G1 X156.529 Y136.792 E.01984 ; infill
-G1 X136.792 Y156.529 E.95312 F3266 ; infill
+G1 X136.792 Y156.529 E.95312 ; infill
 G1 X136.792 Y157.11 E.01984 ; infill
-G1 X157.11 Y136.792 E.98118 F3276 ; infill
+G1 X157.11 Y136.792 E.98118 ; infill
 G1 X157.69 Y136.792 E.01981 ; infill
-G1 X136.792 Y157.69 E1.00918 F3286 ; infill
+G1 X136.792 Y157.69 E1.00918 ; infill
 G1 X136.792 Y158.271 E.01984 ; infill
-G1 X158.271 Y136.792 E1.03724 F3296 ; infill
+G1 X158.271 Y136.792 E1.03724 ; infill
 G1 X158.852 Y136.792 E.01984 ; infill
-G1 X136.792 Y158.852 E1.0653 F3307 ; infill
+G1 X136.792 Y158.852 E1.0653 ; infill
 G1 X136.792 Y159.433 E.01984 ; infill
-G1 X159.433 Y136.792 E1.09336 F3318 ; infill
+G1 X159.433 Y136.792 E1.09336 ; infill
 G1 X160.014 Y136.792 E.01984 ; infill
-M104 S220
-M104 S220
-M104 S220
-G1 X136.792 Y160.014 E1.12141 F3329 ; infill
+G1 X136.792 Y160.014 E1.12141 ; infill
 G1 X136.792 Y160.594 E.01981 ; infill
-G1 X160.594 Y136.792 E1.14942 F3340 ; infill
+G1 X160.594 Y136.792 E1.14942 ; infill
 G1 X161.175 Y136.792 E.01984 ; infill
-G1 X136.792 Y161.175 E1.17748 F3352 ; infill
+G1 X136.792 Y161.175 E1.17748 ; infill
 G1 X136.792 Y161.756 E.01984 ; infill
-M104 S212
-G1 X161.756 Y136.792 E1.20553 F3364 ; infill
+G1 X161.756 Y136.792 E1.20553 ; infill
 G1 X162.337 Y136.792 E.01984 ; infill
 M73 P6 R26
-G1 X136.792 Y162.337 E1.23359 F3376 ; infill
+G1 X136.792 Y162.337 E1.23359 ; infill
 G1 X136.792 Y162.917 E.01981 ; infill
-G1 X162.917 Y136.792 E1.2616 F3389 ; infill
+G1 X162.917 Y136.792 E1.2616 ; infill
 G1 X163.208 Y136.792 E.00994 ; infill
 G1 X163.208 Y137.083 E.00994 ; infill
-G1 X137.083 Y163.208 E1.2616 F3401 ; infill
+G1 X137.083 Y163.208 E1.2616 ; infill
 G1 X137.663 Y163.208 E.01981 ; infill
-G1 X163.208 Y137.663 E1.23359 F3413 ; infill
+G1 X163.208 Y137.663 E1.23359 ; infill
 G1 X163.208 Y138.244 E.01984 ; infill
-G1 X138.244 Y163.208 E1.20553 F3425 ; infill
+G1 X138.244 Y163.208 E1.20553 ; infill
 G1 X138.825 Y163.208 E.01984 ; infill
-G1 X163.208 Y138.825 E1.17748 F3437 ; infill
+G1 X163.208 Y138.825 E1.17748 ; infill
 G1 X163.208 Y139.406 E.01984 ; infill
-G1 X139.406 Y163.208 E1.14942 F3448 ; infill
+G1 X139.406 Y163.208 E1.14942 ; infill
 G1 X139.986 Y163.208 E.01981 ; infill
-G1 X163.208 Y139.986 E1.12141 F3459 ; infill
+G1 X163.208 Y139.986 E1.12141 ; infill
 G1 X163.208 Y140.567 E.01984 ; infill
-G1 X140.567 Y163.208 E1.09336 F3470 ; infill
+G1 X140.567 Y163.208 E1.09336 ; infill
 G1 X141.148 Y163.208 E.01984 ; infill
-G1 X163.208 Y141.148 E1.0653 F3481 ; infill
+G1 X163.208 Y141.148 E1.0653 ; infill
 G1 X163.208 Y141.729 E.01984 ; infill
-G1 X141.729 Y163.208 E1.03724 F3491 ; infill
+G1 X141.729 Y163.208 E1.03724 ; infill
 G1 X142.31 Y163.208 E.01984 ; infill
 M73 P6 R25
-G1 X163.208 Y142.31 E1.00918 F3501 ; infill
+G1 X163.208 Y142.31 E1.00918 ; infill
 G1 X163.208 Y142.89 E.01981 ; infill
-M104 S221
-M104 S221
-M104 S221
-G1 X142.89 Y163.208 E.98118 F3511 ; infill
+G1 X142.89 Y163.208 E.98118 ; infill
 G1 X143.471 Y163.208 E.01984 ; infill
-G1 X163.208 Y143.471 E.95312 F3521 ; infill
+G1 X163.208 Y143.471 E.95312 ; infill
 G1 X163.208 Y144.052 E.01984 ; infill
-G1 X144.052 Y163.208 E.92506 F3530 ; infill
+G1 X144.052 Y163.208 E.92506 ; infill
 G1 X144.633 Y163.208 E.01984 ; infill
-G1 X163.208 Y144.633 E.897 F3539 ; infill
+G1 X163.208 Y144.633 E.897 ; infill
 G1 X163.208 Y145.213 E.01981 ; infill
-G1 X145.213 Y163.208 E.869 F3547 ; infill
+G1 X145.213 Y163.208 E.869 ; infill
 G1 X145.794 Y163.208 E.01984 ; infill
-G1 X163.208 Y145.794 E.84094 F3556 ; infill
+G1 X163.208 Y145.794 E.84094 ; infill
 G1 X163.208 Y146.375 E.01984 ; infill
-G1 X146.375 Y163.208 E.81288 F3564 ; infill
+G1 X146.375 Y163.208 E.81288 ; infill
 G1 X146.956 Y163.208 E.01984 ; infill
-G1 X163.208 Y146.956 E.78482 F3572 ; infill
+G1 X163.208 Y146.956 E.78482 ; infill
 G1 X163.208 Y147.536 E.01981 ; infill
-G1 X147.536 Y163.208 E.75682 F3579 ; infill
+G1 X147.536 Y163.208 E.75682 ; infill
 G1 X148.117 Y163.208 E.01984 ; infill
-G1 X163.208 Y148.117 E.72876 F3587 ; infill
+G1 X163.208 Y148.117 E.72876 ; infill
 G1 X163.208 Y148.698 E.01984 ; infill
-G1 X148.698 Y163.208 E.7007 F3594 ; infill
+G1 X148.698 Y163.208 E.7007 ; infill
 G1 X149.279 Y163.208 E.01984 ; infill
-G1 X163.208 Y149.279 E.67264 F3601 ; infill
+G1 X163.208 Y149.279 E.67264 ; infill
 G1 X163.208 Y149.86 E.01984 ; infill
-G1 X149.859 Y163.208 E.64461 F3607 ; infill
+G1 X149.859 Y163.208 E.64461 ; infill
 G1 X150.44 Y163.208 E.01984 ; infill
-G1 X163.208 Y150.44 E.61658 F3613 ; infill
+G1 X163.208 Y150.44 E.61658 ; infill
 G1 X163.208 Y151.021 E.01984 ; infill
-G1 X151.021 Y163.208 E.58852 F3619 ; infill
+G1 X151.021 Y163.208 E.58852 ; infill
 G1 X151.602 Y163.208 E.01984 ; infill
-G1 X163.208 Y151.602 E.56046 F3625 ; infill
+G1 X163.208 Y151.602 E.56046 ; infill
 G1 X163.208 Y152.183 E.01984 ; infill
-G1 X152.183 Y163.208 E.53241 F3630 ; infill
+G1 X152.183 Y163.208 E.53241 ; infill
 G1 X152.763 Y163.208 E.01981 ; infill
-G1 X163.208 Y152.763 E.5044 F3635 ; infill
+G1 X163.208 Y152.763 E.5044 ; infill
 G1 X163.208 Y153.344 E.01984 ; infill
-G1 X153.344 Y163.208 E.47634 F3640 ; infill
+G1 X153.344 Y163.208 E.47634 ; infill
 G1 X153.925 Y163.208 E.01984 ; infill
-G1 X163.208 Y153.925 E.44828 F3645 ; infill
+G1 X163.208 Y153.925 E.44828 ; infill
 G1 X163.208 Y154.506 E.01984 ; infill
-G1 X154.506 Y163.208 E.42023 F3649 ; infill
+G1 X154.506 Y163.208 E.42023 ; infill
 G1 X155.086 Y163.208 E.01981 ; infill
-M104 S213
-G1 X163.208 Y155.086 E.39222 F3653 ; infill
+G1 X163.208 Y155.086 E.39222 ; infill
 G1 X163.208 Y155.667 E.01984 ; infill
-G1 X155.667 Y163.208 E.36416 F3657 ; infill
+G1 X155.667 Y163.208 E.36416 ; infill
 G1 X156.248 Y163.208 E.01984 ; infill
-G1 X163.208 Y156.248 E.3361 F3660 ; infill
+G1 X163.208 Y156.248 E.3361 ; infill
 G1 X163.208 Y156.829 E.01984 ; infill
-G1 X156.829 Y163.208 E.30805 F3663 ; infill
+G1 X156.829 Y163.208 E.30805 ; infill
 G1 X157.409 Y163.208 E.01981 ; infill
-G1 X163.208 Y157.409 E.28004 F3666 ; infill
+G1 X163.208 Y157.409 E.28004 ; infill
 G1 X163.208 Y157.99 E.01984 ; infill
-G1 X157.99 Y163.208 E.25198 F3669 ; infill
+G1 X157.99 Y163.208 E.25198 ; infill
 G1 X158.571 Y163.208 E.01984 ; infill
-G1 X163.208 Y158.571 E.22393 F3671 ; infill
+G1 X163.208 Y158.571 E.22393 ; infill
 G1 X163.208 Y159.152 E.01984 ; infill
-G1 X159.152 Y163.208 E.19587 F3674 ; infill
+G1 X159.152 Y163.208 E.19587 ; infill
 G1 X159.733 Y163.208 E.01984 ; infill
-G1 X163.208 Y159.733 E.16781 F3675 ; infill
+G1 X163.208 Y159.733 E.16781 ; infill
 G1 X163.208 Y160.313 E.01981 ; infill
-G1 X160.313 Y163.208 E.1398 F3677 ; infill
+G1 X160.313 Y163.208 E.1398 ; infill
 G1 X160.894 Y163.208 E.01984 ; infill
-G1 X163.208 Y160.894 E.11175 F3678 ; infill
+G1 X163.208 Y160.894 E.11175 ; infill
 G1 X163.208 Y161.475 E.01984 ; infill
-G1 X161.475 Y163.208 E.08369 F3679 ; infill
+G1 X161.475 Y163.208 E.08369 ; infill
 G1 X162.056 Y163.208 E.01984 ; infill
-G1 X163.208 Y162.056 E.05563 F3680 ; infill
+G1 X163.208 Y162.056 E.05563 ; infill
 G1 X163.208 Y162.636 E.01981 ; infill
 G1 X162.453 Y163.391 E.03646 ; infill
 ;LAYER_CHANGE:3
@@ -1536,38 +1456,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F4163 ; perimeter
-G1 X136.446 Y163.554 E.82083 F4172 ; perimeter
-G1 X136.446 Y136.446 E.82083 F4182 ; perimeter
-M104 S222
-M104 S222
-M104 S222
-G1 X163.494 Y136.446 E.81901 F4191 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F4200 ; perimeter
-G1 X136.039 Y163.961 E.84548 F4209 ; perimeter
-G1 X136.039 Y136.039 E.84548 F4219 ; perimeter
-G1 X163.901 Y136.039 E.84366 F4228 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F4237 ; perimeter
-G1 X135.632 Y164.368 E.87012 F4247 ; perimeter
-G1 X135.632 Y135.632 E.87012 F4257 ; perimeter
-G1 X164.308 Y135.632 E.86831 F4266 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F4276 ; perimeter
-G1 X135.225 Y164.775 E.89477 F4286 ; perimeter
-G1 X135.225 Y135.225 E.89477 F4296 ; perimeter
-G1 X164.715 Y135.225 E.89295 F4306 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -1580,192 +1497,184 @@ M204 S6000 ; adjust acceleration
 G1 F8766
 G1 X162.636 Y136.792 E.03646 ; infill
 G1 X162.056 Y136.792 E.01981 ; infill
-G1 X163.208 Y137.944 E.05563 F3819 ; infill
+G1 X163.208 Y137.944 E.05563 ; infill
 G1 X163.208 Y138.525 E.01984 ; infill
-G1 X161.475 Y136.792 E.08369 F3820 ; infill
+G1 X161.475 Y136.792 E.08369 ; infill
 G1 X160.894 Y136.792 E.01984 ; infill
-G1 X163.208 Y139.106 E.11175 F3822 ; infill
+G1 X163.208 Y139.106 E.11175 ; infill
 G1 X163.208 Y139.687 E.01984 ; infill
-G1 X160.313 Y136.792 E.1398 F3823 ; infill
+G1 X160.313 Y136.792 E.1398 ; infill
 G1 X159.733 Y136.792 E.01981 ; infill
 M73 P7 R25
-G1 X163.208 Y140.267 E.16781 F3825 ; infill
+G1 X163.208 Y140.267 E.16781 ; infill
 G1 X163.208 Y140.848 E.01984 ; infill
-G1 X159.152 Y136.792 E.19587 F3827 ; infill
+G1 X159.152 Y136.792 E.19587 ; infill
 G1 X158.571 Y136.792 E.01984 ; infill
-G1 X163.208 Y141.429 E.22393 F3829 ; infill
+G1 X163.208 Y141.429 E.22393 ; infill
 G1 X163.208 Y142.01 E.01984 ; infill
-G1 X157.99 Y136.792 E.25198 F3832 ; infill
+G1 X157.99 Y136.792 E.25198 ; infill
 G1 X157.409 Y136.792 E.01984 ; infill
-G1 X163.208 Y142.591 E.28004 F3835 ; infill
+G1 X163.208 Y142.591 E.28004 ; infill
 G1 X163.208 Y143.171 E.01981 ; infill
-G1 X156.829 Y136.792 E.30805 F3838 ; infill
+G1 X156.829 Y136.792 E.30805 ; infill
 G1 X156.248 Y136.792 E.01984 ; infill
-G1 X163.208 Y143.752 E.3361 F3842 ; infill
+G1 X163.208 Y143.752 E.3361 ; infill
 G1 X163.208 Y144.333 E.01984 ; infill
-G1 X155.667 Y136.792 E.36416 F3846 ; infill
+G1 X155.667 Y136.792 E.36416 ; infill
 G1 X155.086 Y136.792 E.01984 ; infill
-G1 X163.208 Y144.914 E.39222 F3850 ; infill
+G1 X163.208 Y144.914 E.39222 ; infill
 G1 X163.208 Y145.494 E.01981 ; infill
-G1 X154.506 Y136.792 E.42023 F3854 ; infill
+G1 X154.506 Y136.792 E.42023 ; infill
 G1 X153.925 Y136.792 E.01984 ; infill
-G1 X163.208 Y146.075 E.44828 F3858 ; infill
+G1 X163.208 Y146.075 E.44828 ; infill
 G1 X163.208 Y146.656 E.01984 ; infill
-G1 X153.344 Y136.792 E.47634 F3863 ; infill
+G1 X153.344 Y136.792 E.47634 ; infill
 G1 X152.763 Y136.792 E.01984 ; infill
-G1 X163.208 Y147.237 E.5044 F3868 ; infill
+G1 X163.208 Y147.237 E.5044 ; infill
 G1 X163.208 Y147.817 E.01981 ; infill
-G1 X152.183 Y136.792 E.53241 F3874 ; infill
+G1 X152.183 Y136.792 E.53241 ; infill
 G1 X151.602 Y136.792 E.01984 ; infill
-G1 X163.208 Y148.398 E.56046 F3880 ; infill
+G1 X163.208 Y148.398 E.56046 ; infill
 G1 X163.208 Y148.979 E.01984 ; infill
-G1 X151.021 Y136.792 E.58852 F3885 ; infill
+G1 X151.021 Y136.792 E.58852 ; infill
 G1 X150.44 Y136.792 E.01984 ; infill
-G1 X163.208 Y149.56 E.61658 F3892 ; infill
+G1 X163.208 Y149.56 E.61658 ; infill
 G1 X163.208 Y150.141 E.01984 ; infill
-G1 X149.86 Y136.792 E.64461 F3898 ; infill
+G1 X149.86 Y136.792 E.64461 ; infill
 G1 X149.279 Y136.792 E.01984 ; infill
-G1 X163.208 Y150.721 E.67264 F3905 ; infill
+G1 X163.208 Y150.721 E.67264 ; infill
 G1 X163.208 Y151.302 E.01984 ; infill
-G1 X148.698 Y136.792 E.7007 F3912 ; infill
+G1 X148.698 Y136.792 E.7007 ; infill
 G1 X148.117 Y136.792 E.01984 ; infill
-G1 X163.208 Y151.883 E.72876 F3919 ; infill
+G1 X163.208 Y151.883 E.72876 ; infill
 G1 X163.208 Y152.464 E.01984 ; infill
-G1 X147.536 Y136.792 E.75682 F3927 ; infill
+G1 X147.536 Y136.792 E.75682 ; infill
 G1 X146.956 Y136.792 E.01981 ; infill
-G1 X163.208 Y153.044 E.78482 F3935 ; infill
+G1 X163.208 Y153.044 E.78482 ; infill
 G1 X163.208 Y153.625 E.01984 ; infill
-M104 S223
-M104 S223
-M104 S223
-G1 X146.375 Y136.792 E.81288 F3943 ; infill
+G1 X146.375 Y136.792 E.81288 ; infill
 G1 X145.794 Y136.792 E.01984 ; infill
-M104 S214
-G1 X163.208 Y154.206 E.84094 F3951 ; infill
+G1 X163.208 Y154.206 E.84094 ; infill
 G1 X163.208 Y154.787 E.01984 ; infill
-G1 X145.213 Y136.792 E.869 F3960 ; infill
+G1 X145.213 Y136.792 E.869 ; infill
 G1 X144.633 Y136.792 E.01981 ; infill
-G1 X163.208 Y155.367 E.897 F3969 ; infill
+G1 X163.208 Y155.367 E.897 ; infill
 G1 X163.208 Y155.948 E.01984 ; infill
-G1 X144.052 Y136.792 E.92506 F3978 ; infill
+G1 X144.052 Y136.792 E.92506 ; infill
 G1 X143.471 Y136.792 E.01984 ; infill
-G1 X163.208 Y156.529 E.95312 F3988 ; infill
+G1 X163.208 Y156.529 E.95312 ; infill
 G1 X163.208 Y157.11 E.01984 ; infill
-G1 X142.89 Y136.792 E.98118 F3997 ; infill
+G1 X142.89 Y136.792 E.98118 ; infill
 G1 X142.31 Y136.792 E.01981 ; infill
-G1 X163.208 Y157.69 E1.00918 F4007 ; infill
+G1 X163.208 Y157.69 E1.00918 ; infill
 G1 X163.208 Y158.271 E.01984 ; infill
-G1 X141.729 Y136.792 E1.03724 F4018 ; infill
+G1 X141.729 Y136.792 E1.03724 ; infill
 G1 X141.148 Y136.792 E.01984 ; infill
-G1 X163.208 Y158.852 E1.0653 F4028 ; infill
+G1 X163.208 Y158.852 E1.0653 ; infill
 G1 X163.208 Y159.433 E.01984 ; infill
-G1 X140.567 Y136.792 E1.09336 F4039 ; infill
+G1 X140.567 Y136.792 E1.09336 ; infill
 G1 X139.986 Y136.792 E.01984 ; infill
-G1 X163.208 Y160.014 E1.12141 F4050 ; infill
+G1 X163.208 Y160.014 E1.12141 ; infill
 G1 X163.208 Y160.594 E.01981 ; infill
-G1 X139.406 Y136.792 E1.14942 F4062 ; infill
+G1 X139.406 Y136.792 E1.14942 ; infill
 G1 X138.825 Y136.792 E.01984 ; infill
-G1 X163.208 Y161.175 E1.17748 F4073 ; infill
+G1 X163.208 Y161.175 E1.17748 ; infill
 G1 X163.208 Y161.756 E.01984 ; infill
-G1 X138.244 Y136.792 E1.20553 F4085 ; infill
+G1 X138.244 Y136.792 E1.20553 ; infill
 G1 X137.663 Y136.792 E.01984 ; infill
-G1 X163.208 Y162.337 E1.23359 F4098 ; infill
+G1 X163.208 Y162.337 E1.23359 ; infill
 G1 X163.208 Y162.917 E.01981 ; infill
-G1 X137.083 Y136.792 E1.2616 F4110 ; infill
+G1 X137.083 Y136.792 E1.2616 ; infill
 G1 X136.792 Y136.792 E.00994 ; infill
 G1 X136.792 Y137.083 E.00994 ; infill
-G1 X162.917 Y163.208 E1.2616 F4123 ; infill
+G1 X162.917 Y163.208 E1.2616 ; infill
 G1 X162.337 Y163.208 E.01981 ; infill
-G1 X136.792 Y137.663 E1.23359 F4135 ; infill
+G1 X136.792 Y137.663 E1.23359 ; infill
 G1 X136.792 Y138.244 E.01984 ; infill
-G1 X161.756 Y163.208 E1.20553 F4147 ; infill
+G1 X161.756 Y163.208 E1.20553 ; infill
 G1 X161.175 Y163.208 E.01984 ; infill
-G1 X136.792 Y138.825 E1.17748 F4158 ; infill
+G1 X136.792 Y138.825 E1.17748 ; infill
 G1 X136.792 Y139.406 E.01984 ; infill
-G1 X160.594 Y163.208 E1.14942 F4170 ; infill
+G1 X160.594 Y163.208 E1.14942 ; infill
 G1 X160.014 Y163.208 E.01981 ; infill
-G1 X136.792 Y139.986 E1.12141 F4181 ; infill
+G1 X136.792 Y139.986 E1.12141 ; infill
 G1 X136.792 Y140.567 E.01984 ; infill
-M104 S224
-M104 S224
-M104 S224
-G1 X159.433 Y163.208 E1.09336 F4192 ; infill
+G1 X159.433 Y163.208 E1.09336 ; infill
 G1 X158.852 Y163.208 E.01984 ; infill
-G1 X136.792 Y141.148 E1.0653 F4202 ; infill
+G1 X136.792 Y141.148 E1.0653 ; infill
 G1 X136.792 Y141.729 E.01984 ; infill
-G1 X158.271 Y163.208 E1.03724 F4213 ; infill
+G1 X158.271 Y163.208 E1.03724 ; infill
 G1 X157.69 Y163.208 E.01984 ; infill
-G1 X136.792 Y142.31 E1.00918 F4223 ; infill
+G1 X136.792 Y142.31 E1.00918 ; infill
 G1 X136.792 Y142.89 E.01981 ; infill
-G1 X157.11 Y163.208 E.98118 F4233 ; infill
+G1 X157.11 Y163.208 E.98118 ; infill
 G1 X156.529 Y163.208 E.01984 ; infill
-M104 S215
-G1 X136.792 Y143.471 E.95312 F4242 ; infill
+G1 X136.792 Y143.471 E.95312 ; infill
 G1 X136.792 Y144.052 E.01984 ; infill
-G1 X155.948 Y163.208 E.92506 F4251 ; infill
+G1 X155.948 Y163.208 E.92506 ; infill
 G1 X155.367 Y163.208 E.01984 ; infill
-G1 X136.792 Y144.633 E.897 F4260 ; infill
+G1 X136.792 Y144.633 E.897 ; infill
 G1 X136.792 Y145.213 E.01981 ; infill
-G1 X154.787 Y163.208 E.869 F4269 ; infill
+G1 X154.787 Y163.208 E.869 ; infill
 G1 X154.206 Y163.208 E.01984 ; infill
-G1 X136.792 Y145.794 E.84094 F4277 ; infill
+G1 X136.792 Y145.794 E.84094 ; infill
 G1 X136.792 Y146.375 E.01984 ; infill
-G1 X153.625 Y163.208 E.81288 F4286 ; infill
+G1 X153.625 Y163.208 E.81288 ; infill
 G1 X153.044 Y163.208 E.01984 ; infill
-G1 X136.792 Y146.956 E.78482 F4293 ; infill
+G1 X136.792 Y146.956 E.78482 ; infill
 G1 X136.792 Y147.536 E.01981 ; infill
-G1 X152.464 Y163.208 E.75682 F4301 ; infill
+G1 X152.464 Y163.208 E.75682 ; infill
 G1 X151.883 Y163.208 E.01984 ; infill
-G1 X136.792 Y148.117 E.72876 F4308 ; infill
+G1 X136.792 Y148.117 E.72876 ; infill
 G1 X136.792 Y148.698 E.01984 ; infill
-G1 X151.302 Y163.208 E.7007 F4315 ; infill
+G1 X151.302 Y163.208 E.7007 ; infill
 G1 X150.721 Y163.208 E.01984 ; infill
 M73 P8 R25
-G1 X136.792 Y149.279 E.67264 F4322 ; infill
+G1 X136.792 Y149.279 E.67264 ; infill
 G1 X136.792 Y149.86 E.01984 ; infill
-G1 X150.141 Y163.208 E.64461 F4329 ; infill
+G1 X150.141 Y163.208 E.64461 ; infill
 G1 X149.56 Y163.208 E.01984 ; infill
-G1 X136.792 Y150.44 E.61658 F4335 ; infill
+G1 X136.792 Y150.44 E.61658 ; infill
 G1 X136.792 Y151.021 E.01984 ; infill
-G1 X148.979 Y163.208 E.58852 F4341 ; infill
+G1 X148.979 Y163.208 E.58852 ; infill
 G1 X148.398 Y163.208 E.01984 ; infill
-G1 X136.792 Y151.602 E.56046 F4346 ; infill
+G1 X136.792 Y151.602 E.56046 ; infill
 G1 X136.792 Y152.183 E.01984 ; infill
-G1 X147.817 Y163.208 E.53241 F4352 ; infill
+G1 X147.817 Y163.208 E.53241 ; infill
 G1 X147.237 Y163.208 E.01981 ; infill
-G1 X136.792 Y152.763 E.5044 F4357 ; infill
+G1 X136.792 Y152.763 E.5044 ; infill
 G1 X136.792 Y153.344 E.01984 ; infill
-G1 X146.656 Y163.208 E.47634 F4362 ; infill
+G1 X146.656 Y163.208 E.47634 ; infill
 G1 X146.075 Y163.208 E.01984 ; infill
-G1 X136.792 Y153.925 E.44828 F4366 ; infill
+G1 X136.792 Y153.925 E.44828 ; infill
 G1 X136.792 Y154.506 E.01984 ; infill
-G1 X145.494 Y163.208 E.42023 F4371 ; infill
+G1 X145.494 Y163.208 E.42023 ; infill
 G1 X144.914 Y163.208 E.01981 ; infill
-G1 X136.792 Y155.086 E.39222 F4375 ; infill
+G1 X136.792 Y155.086 E.39222 ; infill
 G1 X136.792 Y155.667 E.01984 ; infill
-G1 X144.333 Y163.208 E.36416 F4378 ; infill
+G1 X144.333 Y163.208 E.36416 ; infill
 G1 X143.752 Y163.208 E.01984 ; infill
-G1 X136.792 Y156.248 E.3361 F4382 ; infill
+G1 X136.792 Y156.248 E.3361 ; infill
 G1 X136.792 Y156.829 E.01984 ; infill
-G1 X143.171 Y163.208 E.30805 F4385 ; infill
+G1 X143.171 Y163.208 E.30805 ; infill
 G1 X142.591 Y163.208 E.01981 ; infill
-G1 X136.792 Y157.409 E.28004 F4388 ; infill
+G1 X136.792 Y157.409 E.28004 ; infill
 G1 X136.792 Y157.99 E.01984 ; infill
-G1 X142.01 Y163.208 E.25198 F4391 ; infill
+G1 X142.01 Y163.208 E.25198 ; infill
 G1 X141.429 Y163.208 E.01984 ; infill
-G1 X136.792 Y158.571 E.22393 F4393 ; infill
+G1 X136.792 Y158.571 E.22393 ; infill
 G1 X136.792 Y159.152 E.01984 ; infill
-G1 X140.848 Y163.208 E.19587 F4395 ; infill
+G1 X140.848 Y163.208 E.19587 ; infill
 G1 X140.267 Y163.208 E.01984 ; infill
-G1 X136.792 Y159.733 E.16781 F4397 ; infill
+G1 X136.792 Y159.733 E.16781 ; infill
 G1 X136.792 Y160.313 E.01981 ; infill
-G1 X139.687 Y163.208 E.1398 F4399 ; infill
+G1 X139.687 Y163.208 E.1398 ; infill
 G1 X139.106 Y163.208 E.01984 ; infill
-G1 X136.792 Y160.894 E.11175 F4400 ; infill
+G1 X136.792 Y160.894 E.11175 ; infill
 G1 X136.792 Y161.475 E.01984 ; infill
-G1 X138.525 Y163.208 E.08369 F4401 ; infill
+G1 X138.525 Y163.208 E.08369 ; infill
 G1 X137.944 Y163.208 E.01984 ; infill
-G1 X136.792 Y162.056 E.05563 F4402 ; infill
+G1 X136.792 Y162.056 E.05563 ; infill
 G1 X136.792 Y162.636 E.01981 ; infill
 G1 X137.547 Y163.391 E.03646 ; infill
 ;LAYER_CHANGE:4
@@ -1786,39 +1695,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F4978 ; perimeter
-G1 X136.446 Y163.554 E.82083 F4987 ; perimeter
-G1 X136.446 Y136.446 E.82083 F4996 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5005 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5015 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5024 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5033 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5043 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-M104 S225
-M104 S225
-M104 S225
-G1 X164.368 Y164.368 E.87012 F5052 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5062 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5071 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5081 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5091 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5101 ; perimeter
-M104 S216
-G1 X135.225 Y135.225 E.89477 F5111 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5120 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -1830,46 +1735,46 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 ;FILL_PATTERN:17
 G1 F8843
-G1 X163.208 Y139.709 E.0677 F4581 ; infill
-G1 X161.524 Y136.792 E.11401 F4583 ; infill
+G1 X163.208 Y139.709 E.0677 ; infill
+G1 X161.524 Y136.792 E.11401 ; infill
 G1 X161.386 Y136.792 E.00467 ; infill
-G1 X146.135 Y163.208 E1.03247 F4593 ; infill
+G1 X146.135 Y163.208 E1.03247 ; infill
 G1 X146.228 Y163.208 E.00315 ; infill
-G1 X136.792 Y146.865 E.63878 F4599 ; infill
+G1 X136.792 Y146.865 E.63878 ; infill
 G1 X136.792 Y146.743 E.00413 ; infill
-G1 X163.208 Y146.743 E.89415 F4608 ; infill
+G1 X163.208 Y146.743 E.89415 ; infill
 G1 X163.208 Y146.865 E.00413 ; infill
-G1 X153.772 Y163.208 E.63878 F4614 ; infill
+G1 X153.772 Y163.208 E.63878 ; infill
 G1 X153.865 Y163.208 E.00315 ; infill
-G1 X138.614 Y136.792 E1.03247 F4625 ; infill
+G1 X138.614 Y136.792 E1.03247 ; infill
 G1 X138.476 Y136.792 E.00467 ; infill
-G1 X136.792 Y139.709 E.11401 F4626 ; infill
+G1 X136.792 Y139.709 E.11401 ; infill
 G1 X136.792 Y140.129 E.01422 ; infill
-G1 X163.208 Y140.129 E.89415 F4635 ; infill
-G1 X163.208 Y142.129 E.0677 F4635 ; infill
+G1 X163.208 Y140.129 E.89415 ; infill
+G1 X163.208 Y142.129 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.936 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.936 E.0677 F4637 ; infill
-G1 X153.887 Y136.792 E.631 F4643 ; infill
+G1 X163.208 Y152.936 E.0677 ; infill
+G1 X153.887 Y136.792 E.631 ; infill
 G1 X153.75 Y136.792 E.00464 ; infill
-G1 X138.499 Y163.208 E1.03247 F4653 ; infill
+G1 X138.499 Y163.208 E1.03247 ; infill
 G1 X138.591 Y163.208 E.00311 ; infill
-G1 X136.792 Y160.092 E.12179 F4655 ; infill
+G1 X136.792 Y160.092 E.12179 ; infill
 G1 X136.792 Y159.97 E.00413 ; infill
-G1 X163.208 Y159.97 E.89415 F4663 ; infill
+G1 X163.208 Y159.97 E.89415 ; infill
 G1 X163.208 Y160.092 E.00413 ; infill
-G1 X161.409 Y163.208 E.12179 F4665 ; infill
+G1 X161.409 Y163.208 E.12179 ; infill
 G1 X161.501 Y163.208 E.00311 ; infill
-G1 X146.25 Y136.792 E1.03247 F4675 ; infill
+G1 X146.25 Y136.792 E1.03247 ; infill
 G1 X146.113 Y136.792 E.00464 ; infill
-G1 X136.792 Y152.936 E.631 F4681 ; infill
+G1 X136.792 Y152.936 E.631 ; infill
 G1 X136.792 Y153.357 E.01425 ; infill
-G1 X163.208 Y153.357 E.89415 F4690 ; infill
-G1 X163.208 Y155.357 E.0677 F4691 ; infill
+G1 X163.208 Y153.357 E.89415 ; infill
+G1 X163.208 Y155.357 E.0677 ; infill
 ;LAYER_CHANGE:5
 ;Z:1.1
 ;HEIGHT:0.2
@@ -1888,36 +1793,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5256 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5265 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5274 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5283 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5292 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5301 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5311 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5320 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5330 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5339 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5349 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5358 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5368 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5378 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
 M73 P9 R25
-G1 X135.225 Y135.225 E.89477 F5388 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5398 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -1928,46 +1833,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y146.602 E.0677 F4830 ; infill
-G1 X136.792 Y146.602 E.89415 F4839 ; infill
+G1 X163.208 Y146.602 E.0677 ; infill
+G1 X136.792 Y146.602 E.89415 ; infill
 G1 X136.792 Y147.148 E.01848 ; infill
-M104 S226
-M104 S226
-M104 S226
-G1 X146.065 Y163.208 E.62772 F4845 ; infill
+G1 X146.065 Y163.208 E.62772 ; infill
 G1 X146.299 Y163.208 E.00792 ; infill
-G1 X161.55 Y136.792 E1.03247 F4856 ; infill
+G1 X161.55 Y136.792 E1.03247 ; infill
 G1 X161.361 Y136.792 E.0064 ; infill
-G1 X163.208 Y139.988 E.12495 F4857 ; infill
-M104 S217
-G1 X136.792 Y139.988 E.89415 F4866 ; infill
-G1 X138.64 Y136.792 E.12496 F4867 ; infill
+G1 X163.208 Y139.988 E.12495 ; infill
+G1 X136.792 Y139.988 E.89415 ; infill
+G1 X138.64 Y136.792 E.12496 ; infill
 G1 X138.45 Y136.792 E.00643 ; infill
-G1 X153.701 Y163.208 E1.03247 F4877 ; infill
+G1 X153.701 Y163.208 E1.03247 ; infill
 G1 X153.936 Y163.208 E.00795 ; infill
-G1 X163.208 Y147.148 E.6277 F4884 ; infill
-G1 X163.208 Y149.148 E.0677 F4884 ; infill
+G1 X163.208 Y147.148 E.6277 ; infill
+G1 X163.208 Y149.148 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.829 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.829 E.0677 F4886 ; infill
-G1 X136.792 Y159.829 E.89415 F4894 ; infill
+G1 X163.208 Y159.829 E.0677 ; infill
+G1 X136.792 Y159.829 E.89415 ; infill
 G1 X136.792 Y160.375 E.01848 ; infill
-G1 X138.428 Y163.208 E.11073 F4896 ; infill
+G1 X138.428 Y163.208 E.11073 ; infill
 G1 X138.662 Y163.208 E.00792 ; infill
-G1 X153.913 Y136.792 E1.03247 F4906 ; infill
+G1 X153.913 Y136.792 E1.03247 ; infill
 G1 X153.724 Y136.792 E.0064 ; infill
-G1 X163.208 Y153.219 E.64205 F4912 ; infill
-G1 X136.792 Y153.219 E.89415 F4921 ; infill
-G1 X146.276 Y136.792 E.64205 F4928 ; infill
+G1 X163.208 Y153.219 E.64205 ; infill
+G1 X136.792 Y153.219 E.89415 ; infill
+G1 X146.276 Y136.792 E.64205 ; infill
 G1 X146.087 Y136.792 E.0064 ; infill
-G1 X161.338 Y163.208 E1.03247 F4938 ; infill
+G1 X161.338 Y163.208 E1.03247 ; infill
 G1 X161.572 Y163.208 E.00792 ; infill
-G1 X163.208 Y160.375 E.11073 F4939 ; infill
-G1 X163.208 Y162.375 E.0677 F4939 ; infill
+G1 X163.208 Y160.375 E.11073 ; infill
+G1 X163.208 Y162.375 E.0677 ; infill
 ;LAYER_CHANGE:6
 ;Z:1.3
 ;HEIGHT:0.2
@@ -1986,35 +1887,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5535 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5544 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5553 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5562 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5571 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5580 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5590 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5599 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5609 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5618 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5628 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5637 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5647 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5657 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5667 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5677 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2025,48 +1926,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y146.46 E.0677 F5080 ; infill
-G1 X136.792 Y146.46 E.89415 F5089 ; infill
+G1 X163.208 Y146.46 E.0677 ; infill
+G1 X136.792 Y146.46 E.89415 ; infill
 G1 X136.792 Y147.431 E.03287 ; infill
-G1 X145.901 Y163.208 E.61665 F5095 ; infill
+G1 X145.901 Y163.208 E.61665 ; infill
 G1 X146.462 Y163.208 E.01899 ; infill
-G1 X161.713 Y136.792 E1.03247 F5105 ; infill
+G1 X161.713 Y136.792 E1.03247 ; infill
 G1 X161.197 Y136.792 E.01747 ; infill
-G1 X163.208 Y140.274 E.13611 F5107 ; infill
+G1 X163.208 Y140.274 E.13611 ; infill
 G1 X163.208 Y139.847 E.01445 ; infill
-G1 X136.792 Y139.846 E.89415 F5116 ; infill
+G1 X136.792 Y139.846 E.89415 ; infill
 G1 X136.792 Y140.275 E.01452 ; infill
-G1 X138.803 Y136.792 E.13614 F5117 ; infill
+G1 X138.803 Y136.792 E.13614 ; infill
 G1 X138.287 Y136.792 E.01747 ; infill
-G1 X153.538 Y163.208 E1.03247 F5128 ; infill
+G1 X153.538 Y163.208 E1.03247 ; infill
 G1 X154.099 Y163.208 E.01899 ; infill
-G1 X163.208 Y147.431 E.61665 F5134 ; infill
-G1 X163.208 Y149.431 E.0677 F5134 ; infill
+G1 X163.208 Y147.431 E.61665 ; infill
+G1 X163.208 Y149.431 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.687 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.687 E.0677 F5136 ; infill
-G1 X136.792 Y159.687 E.89415 F5145 ; infill
+G1 X163.208 Y159.687 E.0677 ; infill
+G1 X136.792 Y159.687 E.89415 ; infill
 G1 X136.792 Y160.658 E.03287 ; infill
-G1 X138.265 Y163.208 E.09968 F5146 ; infill
+G1 X138.265 Y163.208 E.09968 ; infill
 G1 X138.825 Y163.208 E.01896 ; infill
-G1 X154.076 Y136.792 E1.03247 F5157 ; infill
+G1 X154.076 Y136.792 E1.03247 ; infill
 G1 X153.561 Y136.792 E.01743 ; infill
-M104 S218
-G1 X163.208 Y153.502 E.65311 F5163 ; infill
+G1 X163.208 Y153.502 E.65311 ; infill
 G1 X163.208 Y153.074 E.01449 ; infill
-G1 X136.792 Y153.074 E.89415 F5172 ; infill
+G1 X136.792 Y153.074 E.89415 ; infill
 G1 X136.792 Y153.502 E.01449 ; infill
 M73 P9 R24
-G1 X146.439 Y136.792 E.65311 F5179 ; infill
+G1 X146.439 Y136.792 E.65311 ; infill
 G1 X145.924 Y136.792 E.01743 ; infill
-G1 X161.175 Y163.208 E1.03247 F5189 ; infill
+G1 X161.175 Y163.208 E1.03247 ; infill
 G1 X161.736 Y163.208 E.01899 ; infill
-G1 X163.208 Y160.658 E.09966 F5190 ; infill
-G1 X163.208 Y162.658 E.0677 F5191 ; infill
+G1 X163.208 Y160.658 E.09966 ; infill
+G1 X163.208 Y162.658 E.0677 ; infill
 ;LAYER_CHANGE:7
 ;Z:1.5
 ;HEIGHT:0.2
@@ -2085,39 +1985,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5815 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5824 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5834 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5843 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5852 ; perimeter
-M104 S227
-M104 S227
-M104 S227
-G1 X136.039 Y163.961 E.84548 F5861 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5871 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5880 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M73 P10 R24
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5889 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5899 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5909 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5918 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5928 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5938 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5948 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5958 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2128,46 +2025,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y146.319 E.0677 F5331 ; infill
-G1 X136.792 Y146.319 E.89415 F5340 ; infill
+G1 X163.208 Y146.319 E.0677 ; infill
+G1 X136.792 Y146.319 E.89415 ; infill
 G1 X136.792 Y147.713 E.04719 ; infill
-G1 X145.738 Y163.208 E.60563 F5346 ; infill
+G1 X145.738 Y163.208 E.60563 ; infill
 G1 X146.625 Y163.208 E.03002 ; infill
-G1 X161.876 Y136.792 E1.03247 F5357 ; infill
+G1 X161.876 Y136.792 E1.03247 ; infill
 G1 X161.034 Y136.792 E.0285 ; infill
-G1 X163.208 Y140.557 E.14716 F5359 ; infill
+G1 X163.208 Y140.557 E.14716 ; infill
 G1 X163.208 Y139.705 E.02884 ; infill
-G1 X136.792 Y139.705 E.89415 F5368 ; infill
+G1 X136.792 Y139.705 E.89415 ; infill
 G1 X136.792 Y140.558 E.02887 ; infill
-G1 X138.966 Y136.792 E.14719 F5369 ; infill
+G1 X138.966 Y136.792 E.14719 ; infill
 G1 X138.124 Y136.792 E.0285 ; infill
-G1 X153.375 Y163.208 E1.03247 F5380 ; infill
+G1 X153.375 Y163.208 E1.03247 ; infill
 G1 X154.262 Y163.208 E.03002 ; infill
-G1 X163.208 Y147.713 E.60563 F5386 ; infill
-G1 X163.208 Y149.713 E.0677 F5386 ; infill
+G1 X163.208 Y147.713 E.60563 ; infill
+G1 X163.208 Y149.713 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.546 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.546 E.0677 F5388 ; infill
-G1 X136.792 Y159.546 E.89415 F5397 ; infill
+G1 X163.208 Y159.546 E.0677 ; infill
+G1 X136.792 Y159.546 E.89415 ; infill
 G1 X136.792 Y160.941 E.04722 ; infill
-G1 X138.101 Y163.208 E.08861 F5398 ; infill
+G1 X138.101 Y163.208 E.08861 ; infill
 G1 X138.989 Y163.208 E.03006 ; infill
-G1 X154.24 Y136.792 E1.03247 F5409 ; infill
+G1 X154.24 Y136.792 E1.03247 ; infill
 G1 X153.397 Y136.792 E.02853 ; infill
-G1 X163.208 Y153.785 E.66418 F5416 ; infill
+G1 X163.208 Y153.785 E.66418 ; infill
 G1 X163.208 Y152.932 E.02887 ; infill
-G1 X136.792 Y152.932 E.89415 F5425 ; infill
+G1 X136.792 Y152.932 E.89415 ; infill
 G1 X136.792 Y153.785 E.02887 ; infill
-G1 X146.603 Y136.792 E.66418 F5431 ; infill
+G1 X146.603 Y136.792 E.66418 ; infill
 G1 X145.76 Y136.792 E.02853 ; infill
-G1 X161.012 Y163.208 E1.03249 F5442 ; infill
+G1 X161.012 Y163.208 E1.03249 ; infill
 G1 X161.899 Y163.208 E.03002 ; infill
-G1 X163.208 Y160.941 E.08861 F5443 ; infill
-G1 X163.208 Y162.941 E.0677 F5444 ; infill
+G1 X163.208 Y160.941 E.08861 ; infill
+G1 X163.208 Y162.941 E.0677 ; infill
 ;LAYER_CHANGE:8
 ;Z:1.7
 ;HEIGHT:0.2
@@ -2186,36 +2083,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-M104 S219
-G1 X163.554 Y163.554 E.82083 F6098 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6107 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6116 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6125 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6135 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6144 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6153 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6163 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6172 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6182 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6191 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6201 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6211 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6221 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6231 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6240 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2226,47 +2122,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y146.177 E.0677 F5584 ; infill
-G1 X136.792 Y146.177 E.89415 F5593 ; infill
-G1 X136.792 Y147.996 E.06157 F5593 ; infill
-G1 X145.575 Y163.208 E.59457 F5599 ; infill
+G1 X163.208 Y146.177 E.0677 ; infill
+G1 X136.792 Y146.177 E.89415 ; infill
+G1 X136.792 Y147.996 E.06157 ; infill
+G1 X145.575 Y163.208 E.59457 ; infill
 G1 X146.789 Y163.208 E.04109 ; infill
-G1 X162.04 Y136.792 E1.03247 F5610 ; infill
+G1 X162.04 Y136.792 E1.03247 ; infill
 G1 X160.871 Y136.792 E.03957 ; infill
-G1 X163.208 Y140.84 E.15822 F5612 ; infill
+G1 X163.208 Y140.84 E.15822 ; infill
 G1 X163.208 Y139.564 E.04319 ; infill
-G1 X136.792 Y139.564 E.89415 F5621 ; infill
+G1 X136.792 Y139.564 E.89415 ; infill
 G1 X136.792 Y140.84 E.04319 ; infill
-G1 X139.129 Y136.792 E.15822 F5623 ; infill
+G1 X139.129 Y136.792 E.15822 ; infill
 G1 X137.96 Y136.792 E.03957 ; infill
-G1 X153.211 Y163.208 E1.03247 F5634 ; infill
+G1 X153.211 Y163.208 E1.03247 ; infill
 G1 X154.425 Y163.208 E.04109 ; infill
-G1 X163.208 Y147.996 E.59457 F5640 ; infill
-G1 X163.208 Y149.996 E.0677 F5640 ; infill
+G1 X163.208 Y147.996 E.59457 ; infill
+G1 X163.208 Y149.996 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.405 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.405 E.0677 F5642 ; infill
-G1 X136.792 Y159.405 E.89415 F5651 ; infill
-G1 X136.792 Y161.223 E.06154 F5651 ; infill
-G1 X137.938 Y163.208 E.07758 F5652 ; infill
+G1 X163.208 Y159.405 E.0677 ; infill
+G1 X136.792 Y159.405 E.89415 ; infill
+G1 X136.792 Y161.223 E.06154 ; infill
+G1 X137.938 Y163.208 E.07758 ; infill
 G1 X139.152 Y163.208 E.04109 ; infill
-G1 X154.403 Y136.792 E1.03247 F5663 ; infill
+G1 X154.403 Y136.792 E1.03247 ; infill
 G1 X153.234 Y136.792 E.03957 ; infill
-G1 X163.208 Y154.067 E.6752 F5670 ; infill
+G1 X163.208 Y154.067 E.6752 ; infill
 G1 X163.208 Y152.791 E.04319 ; infill
-G1 X136.792 Y152.791 E.89415 F5679 ; infill
+G1 X136.792 Y152.791 E.89415 ; infill
 G1 X136.792 Y154.067 E.04319 ; infill
-G1 X146.766 Y136.792 E.6752 F5686 ; infill
+G1 X146.766 Y136.792 E.6752 ; infill
 G1 X145.597 Y136.792 E.03957 ; infill
-G1 X160.848 Y163.208 E1.03247 F5697 ; infill
+G1 X160.848 Y163.208 E1.03247 ; infill
 G1 X162.062 Y163.208 E.04109 ; infill
 M73 P11 R24
-G1 X163.208 Y161.223 E.07758 F5698 ; infill
-G1 X163.192 Y163.208 E.06719 F5699 ; infill
+G1 X163.208 Y161.223 E.07758 ; infill
+G1 X163.192 Y163.208 E.06719 ; infill
 ;LAYER_CHANGE:9
 ;Z:1.9
 ;HEIGHT:0.2
@@ -2285,39 +2181,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6383 ; perimeter
-M104 S228
-M104 S228
-M104 S228
-G1 X136.446 Y163.554 E.82083 F6392 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6401 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6410 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6419 ; perimeter
-M104 S220
-G1 X136.039 Y163.961 E.84548 F6429 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6438 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6447 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6457 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6466 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6476 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6486 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6496 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6505 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6515 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6525 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2328,46 +2220,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y146.036 E.0677 F5838 ; infill
-G1 X136.792 Y146.036 E.89415 F5847 ; infill
-G1 X136.792 Y148.279 E.07592 F5848 ; infill
-G1 X145.411 Y163.208 E.5835 F5854 ; infill
-G1 X146.952 Y163.208 E.05216 F5855 ; infill
-G1 X162.203 Y136.792 E1.03247 F5865 ; infill
-G1 X160.707 Y136.792 E.05064 F5865 ; infill
-G1 X163.208 Y141.123 E.16929 F5867 ; infill
-G1 X163.208 Y139.422 E.05758 F5867 ; infill
-G1 X136.792 Y139.422 E.89415 F5876 ; infill
-G1 X136.792 Y141.123 E.05758 F5876 ; infill
-G1 X139.293 Y136.792 E.16929 F5878 ; infill
-G1 X137.797 Y136.792 E.05064 F5879 ; infill
-G1 X153.048 Y163.208 E1.03247 F5889 ; infill
-G1 X154.589 Y163.208 E.05216 F5890 ; infill
-G1 X163.208 Y148.279 E.5835 F5895 ; infill
-G1 X163.208 Y150.279 E.0677 F5896 ; infill
+G1 X163.208 Y146.036 E.0677 ; infill
+G1 X136.792 Y146.036 E.89415 ; infill
+G1 X136.792 Y148.279 E.07592 ; infill
+G1 X145.411 Y163.208 E.5835 ; infill
+G1 X146.952 Y163.208 E.05216 ; infill
+G1 X162.203 Y136.792 E1.03247 ; infill
+G1 X160.707 Y136.792 E.05064 ; infill
+G1 X163.208 Y141.123 E.16929 ; infill
+G1 X163.208 Y139.422 E.05758 ; infill
+G1 X136.792 Y139.422 E.89415 ; infill
+G1 X136.792 Y141.123 E.05758 ; infill
+G1 X139.293 Y136.792 E.16929 ; infill
+G1 X137.797 Y136.792 E.05064 ; infill
+G1 X153.048 Y163.208 E1.03247 ; infill
+G1 X154.589 Y163.208 E.05216 ; infill
+G1 X163.208 Y148.279 E.5835 ; infill
+G1 X163.208 Y150.279 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.263 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.263 E.0677 F5897 ; infill
-G1 X136.792 Y159.263 E.89415 F5906 ; infill
-G1 X136.792 Y161.506 E.07592 F5907 ; infill
-G1 X137.775 Y163.208 E.06653 F5907 ; infill
-G1 X139.315 Y163.208 E.05213 F5908 ; infill
-G1 X154.566 Y136.792 E1.03247 F5918 ; infill
-G1 X153.071 Y136.792 E.0506 F5919 ; infill
-G1 X163.208 Y154.35 E.68626 F5925 ; infill
-G1 X163.208 Y152.65 E.05754 F5926 ; infill
-G1 X136.792 Y152.649 E.89415 F5935 ; infill
-G1 X136.792 Y154.35 E.05758 F5935 ; infill
-G1 X146.929 Y136.792 E.68626 F5942 ; infill
-G1 X145.434 Y136.792 E.0506 F5943 ; infill
-G1 X160.685 Y163.208 E1.03247 F5953 ; infill
-G1 X162.225 Y163.208 E.05213 F5953 ; infill
-G1 X163.208 Y161.506 E.06653 F5954 ; infill
-G1 X163.208 Y163.208 E.05761 F5955 ; infill
+G1 X163.208 Y159.263 E.0677 ; infill
+G1 X136.792 Y159.263 E.89415 ; infill
+G1 X136.792 Y161.506 E.07592 ; infill
+G1 X137.775 Y163.208 E.06653 ; infill
+G1 X139.315 Y163.208 E.05213 ; infill
+G1 X154.566 Y136.792 E1.03247 ; infill
+G1 X153.071 Y136.792 E.0506 ; infill
+G1 X163.208 Y154.35 E.68626 ; infill
+G1 X163.208 Y152.65 E.05754 ; infill
+G1 X136.792 Y152.649 E.89415 ; infill
+G1 X136.792 Y154.35 E.05758 ; infill
+G1 X146.929 Y136.792 E.68626 ; infill
+G1 X145.434 Y136.792 E.0506 ; infill
+G1 X160.685 Y163.208 E1.03247 ; infill
+G1 X162.225 Y163.208 E.05213 ; infill
+G1 X163.208 Y161.506 E.06653 ; infill
+G1 X163.208 Y163.208 E.05761 ; infill
 G1 X162.909 Y163.208 E.01012 ; infill
 ;LAYER_CHANGE:10
 ;Z:2.1
@@ -2387,36 +2279,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6669 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6678 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6687 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6696 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6706 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6715 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6724 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6734 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6743 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6753 ; perimeter
-M104 S221
-G1 X135.632 Y135.632 E.87012 F6763 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6772 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6782 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6792 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6802 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6812 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2427,47 +2318,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y145.894 E.0677 F6095 ; infill
-G1 X136.792 Y145.894 E.89415 F6104 ; infill
-G1 X136.792 Y148.562 E.09031 F6105 ; infill
-G1 X145.248 Y163.208 E.57244 F6110 ; infill
-G1 X147.115 Y163.208 E.0632 F6110 ; infill
-G1 X162.366 Y136.792 E1.03247 F6121 ; infill
-G1 X160.544 Y136.792 E.06167 F6122 ; infill
-G1 X163.208 Y141.406 E.18034 F6123 ; infill
-G1 X163.208 Y139.281 E.07193 F6124 ; infill
-G1 X136.792 Y139.281 E.89415 F6133 ; infill
-G1 X136.792 Y141.406 E.07193 F6134 ; infill
-G1 X139.456 Y136.792 E.18034 F6135 ; infill
-G1 X137.634 Y136.792 E.06167 F6136 ; infill
-G1 X152.885 Y163.208 E1.03247 F6146 ; infill
-G1 X154.752 Y163.208 E.0632 F6146 ; infill
-G1 X163.208 Y148.562 E.57244 F6153 ; infill
+G1 X163.208 Y145.894 E.0677 ; infill
+G1 X136.792 Y145.894 E.89415 ; infill
+G1 X136.792 Y148.562 E.09031 ; infill
+G1 X145.248 Y163.208 E.57244 ; infill
+G1 X147.115 Y163.208 E.0632 ; infill
+G1 X162.366 Y136.792 E1.03247 ; infill
+G1 X160.544 Y136.792 E.06167 ; infill
+G1 X163.208 Y141.406 E.18034 ; infill
+G1 X163.208 Y139.281 E.07193 ; infill
+G1 X136.792 Y139.281 E.89415 ; infill
+G1 X136.792 Y141.406 E.07193 ; infill
+G1 X139.456 Y136.792 E.18034 ; infill
+G1 X137.634 Y136.792 E.06167 ; infill
+G1 X152.885 Y163.208 E1.03247 ; infill
+G1 X154.752 Y163.208 E.0632 ; infill
+G1 X163.208 Y148.562 E.57244 ; infill
 M73 P12 R24
-G1 X163.208 Y150.562 E.0677 F6153 ; infill
+G1 X163.208 Y150.562 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y157.122 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y159.122 E.0677 F6154 ; infill
-G1 X136.792 Y159.122 E.89415 F6163 ; infill
-G1 X136.792 Y161.789 E.09027 F6164 ; infill
-G1 X137.611 Y163.208 E.05546 F6164 ; infill
-G1 X139.479 Y163.208 E.06323 F6165 ; infill
-G1 X154.73 Y136.792 E1.03247 F6175 ; infill
-G1 X152.907 Y136.792 E.06171 F6176 ; infill
-G1 X163.208 Y154.633 E.69733 F6183 ; infill
-G1 X163.208 Y152.508 E.07193 F6184 ; infill
-G1 X136.792 Y152.508 E.89415 F6192 ; infill
-G1 X136.792 Y154.633 E.07193 F6193 ; infill
-G1 X147.093 Y136.792 E.69733 F6200 ; infill
-G1 X145.271 Y136.792 E.06167 F6201 ; infill
-G1 X160.522 Y163.208 E1.03247 F6211 ; infill
-G1 X162.389 Y163.208 E.0632 F6211 ; infill
-G1 X163.208 Y161.789 E.05546 F6212 ; infill
-G1 X163.208 Y159.789 E.0677 F6212 ; infill
+G1 X163.208 Y159.122 E.0677 ; infill
+G1 X136.792 Y159.122 E.89415 ; infill
+G1 X136.792 Y161.789 E.09027 ; infill
+G1 X137.611 Y163.208 E.05546 ; infill
+G1 X139.479 Y163.208 E.06323 ; infill
+G1 X154.73 Y136.792 E1.03247 ; infill
+G1 X152.907 Y136.792 E.06171 ; infill
+G1 X163.208 Y154.633 E.69733 ; infill
+G1 X163.208 Y152.508 E.07193 ; infill
+G1 X136.792 Y152.508 E.89415 ; infill
+G1 X136.792 Y154.633 E.07193 ; infill
+G1 X147.093 Y136.792 E.69733 ; infill
+G1 X145.271 Y136.792 E.06167 ; infill
+G1 X160.522 Y163.208 E1.03247 ; infill
+G1 X162.389 Y163.208 E.0632 ; infill
+G1 X163.208 Y161.789 E.05546 ; infill
+G1 X163.208 Y159.789 E.0677 ; infill
 ;LAYER_CHANGE:11
 ;Z:2.3
 ;HEIGHT:0.2
@@ -2486,39 +2377,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6957 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6966 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6975 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6984 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6994 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7003 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7012 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7022 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7031 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7041 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7051 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7060 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7070 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7080 ; perimeter
-M104 S222
-M104 S229
-M104 S229
-M104 S229
-G1 X135.225 Y135.225 E.89477 F7090 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7100 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2529,46 +2416,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y145.753 E.0677 F6352 ; infill
-G1 X136.792 Y145.753 E.89415 F6361 ; infill
-G1 X136.792 Y148.845 E.10466 F6362 ; infill
-G1 X145.085 Y163.208 E.56139 F6368 ; infill
-G1 X147.279 Y163.208 E.07426 F6369 ; infill
-G1 X162.53 Y136.792 E1.03247 F6379 ; infill
-G1 X160.381 Y136.792 E.07274 F6380 ; infill
-G1 X163.208 Y141.689 E.1914 F6381 ; infill
-G1 X163.208 Y139.139 E.08631 F6383 ; infill
-G1 X136.792 Y139.139 E.89415 F6391 ; infill
-G1 X136.792 Y141.689 E.08631 F6392 ; infill
-G1 X139.619 Y136.792 E.1914 F6394 ; infill
-G1 X137.47 Y136.792 E.07274 F6395 ; infill
-G1 X152.722 Y163.208 E1.03249 F6405 ; infill
-G1 X154.915 Y163.208 E.07423 F6405 ; infill
-G1 X163.208 Y148.845 E.56139 F6411 ; infill
-G1 X163.208 Y150.845 E.0677 F6411 ; infill
+G1 X163.208 Y145.753 E.0677 ; infill
+G1 X136.792 Y145.753 E.89415 ; infill
+G1 X136.792 Y148.845 E.10466 ; infill
+G1 X145.085 Y163.208 E.56139 ; infill
+G1 X147.279 Y163.208 E.07426 ; infill
+G1 X162.53 Y136.792 E1.03247 ; infill
+G1 X160.381 Y136.792 E.07274 ; infill
+G1 X163.208 Y141.689 E.1914 ; infill
+G1 X163.208 Y139.139 E.08631 ; infill
+G1 X136.792 Y139.139 E.89415 ; infill
+G1 X136.792 Y141.689 E.08631 ; infill
+G1 X139.619 Y136.792 E.1914 ; infill
+G1 X137.47 Y136.792 E.07274 ; infill
+G1 X152.722 Y163.208 E1.03249 ; infill
+G1 X154.915 Y163.208 E.07423 ; infill
+G1 X163.208 Y148.845 E.56139 ; infill
+G1 X163.208 Y150.845 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y156.98 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y158.98 E.0677 F6413 ; infill
-G1 X136.792 Y158.98 E.89415 F6422 ; infill
-G1 X136.792 Y162.072 E.10466 F6423 ; infill
+G1 X163.208 Y158.98 E.0677 ; infill
+G1 X136.792 Y158.98 E.89415 ; infill
+G1 X136.792 Y162.072 E.10466 ; infill
 G1 X137.448 Y163.208 E.0444 ; infill
-G1 X139.642 Y163.208 E.07426 F6424 ; infill
-G1 X154.893 Y136.792 E1.03247 F6434 ; infill
-G1 X152.744 Y136.792 E.07274 F6435 ; infill
-G1 X163.208 Y154.916 E.70838 F6442 ; infill
-G1 X163.208 Y152.367 E.08628 F6443 ; infill
-G1 X136.792 Y152.367 E.89415 F6451 ; infill
-G1 X136.792 Y154.916 E.08628 F6452 ; infill
-G1 X147.256 Y136.792 E.70838 F6459 ; infill
-G1 X145.107 Y136.792 E.07274 F6460 ; infill
-G1 X160.358 Y163.208 E1.03247 F6470 ; infill
-G1 X162.552 Y163.208 E.07426 F6471 ; infill
+G1 X139.642 Y163.208 E.07426 ; infill
+G1 X154.893 Y136.792 E1.03247 ; infill
+G1 X152.744 Y136.792 E.07274 ; infill
+G1 X163.208 Y154.916 E.70838 ; infill
+G1 X163.208 Y152.367 E.08628 ; infill
+G1 X136.792 Y152.367 E.89415 ; infill
+G1 X136.792 Y154.916 E.08628 ; infill
+G1 X147.256 Y136.792 E.70838 ; infill
+G1 X145.107 Y136.792 E.07274 ; infill
+G1 X160.358 Y163.208 E1.03247 ; infill
+G1 X162.552 Y163.208 E.07426 ; infill
 G1 X163.208 Y162.072 E.0444 ; infill
-G1 X163.208 Y160.072 E.0677 F6472 ; infill
+G1 X163.208 Y160.072 E.0677 ; infill
 ;LAYER_CHANGE:12
 ;Z:2.5
 ;HEIGHT:0.2
@@ -2587,35 +2474,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7247 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7256 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7265 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7274 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7284 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7293 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7302 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7312 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7321 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7331 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7340 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7350 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7360 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7370 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7380 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7390 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 M73 P13 R24
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -2627,47 +2514,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y145.612 E.0677 F6612 ; infill
-G1 X136.792 Y145.612 E.89415 F6621 ; infill
-G1 X136.792 Y149.128 E.11901 F6622 ; infill
-G1 X144.922 Y163.208 E.55034 F6627 ; infill
-G1 X147.442 Y163.208 E.0853 F6628 ; infill
-M104 S223
-G1 X162.693 Y136.792 E1.03247 F6638 ; infill
-G1 X160.218 Y136.792 E.08378 F6639 ; infill
-G1 X163.208 Y141.971 E.20242 F6641 ; infill
-G1 X163.208 Y138.998 E.10063 F6642 ; infill
-G1 X136.792 Y138.998 E.89415 F6651 ; infill
-G1 X136.792 Y141.972 E.10067 F6652 ; infill
-G1 X139.783 Y136.792 E.20247 F6654 ; infill
-G1 X137.307 Y136.792 E.08381 F6655 ; infill
-G1 X152.558 Y163.208 E1.03247 F6665 ; infill
-G1 X155.079 Y163.208 E.08533 F6666 ; infill
-G1 X163.208 Y149.128 E.55032 F6671 ; infill
-G1 X163.208 Y147.128 E.0677 F6672 ; infill
+G1 X163.208 Y145.612 E.0677 ; infill
+G1 X136.792 Y145.612 E.89415 ; infill
+G1 X136.792 Y149.128 E.11901 ; infill
+G1 X144.922 Y163.208 E.55034 ; infill
+G1 X147.442 Y163.208 E.0853 ; infill
+G1 X162.693 Y136.792 E1.03247 ; infill
+G1 X160.218 Y136.792 E.08378 ; infill
+G1 X163.208 Y141.971 E.20242 ; infill
+G1 X163.208 Y138.998 E.10063 ; infill
+G1 X136.792 Y138.998 E.89415 ; infill
+G1 X136.792 Y141.972 E.10067 ; infill
+G1 X139.783 Y136.792 E.20247 ; infill
+G1 X137.307 Y136.792 E.08381 ; infill
+G1 X152.558 Y163.208 E1.03247 ; infill
+G1 X155.079 Y163.208 E.08533 ; infill
+G1 X163.208 Y149.128 E.55032 ; infill
+G1 X163.208 Y147.128 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y156.839 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y158.839 E.0677 F6673 ; infill
-G1 X136.792 Y158.839 E.89415 F6682 ; infill
-G1 X136.792 Y162.355 E.11901 F6684 ; infill
+G1 X163.208 Y158.839 E.0677 ; infill
+G1 X136.792 Y158.839 E.89415 ; infill
+G1 X136.792 Y162.355 E.11901 ; infill
 G1 X137.285 Y163.208 E.03335 ; infill
-G1 X139.805 Y163.208 E.0853 F6684 ; infill
-G1 X155.056 Y136.792 E1.03247 F6695 ; infill
-G1 X152.581 Y136.792 E.08378 F6695 ; infill
-G1 X163.208 Y155.199 E.71944 F6703 ; infill
-G1 X163.208 Y152.225 E.10067 F6703 ; infill
-G1 X136.792 Y152.225 E.89415 F6712 ; infill
-G1 X136.792 Y155.199 E.10067 F6713 ; infill
-G1 X147.419 Y136.792 E.71944 F6720 ; infill
-G1 X144.944 Y136.792 E.08378 F6721 ; infill
-G1 X160.195 Y163.208 E1.03247 F6732 ; infill
-G1 X162.715 Y163.208 E.0853 F6732 ; infill
+G1 X139.805 Y163.208 E.0853 ; infill
+G1 X155.056 Y136.792 E1.03247 ; infill
+G1 X152.581 Y136.792 E.08378 ; infill
+G1 X163.208 Y155.199 E.71944 ; infill
+G1 X163.208 Y152.225 E.10067 ; infill
+G1 X136.792 Y152.225 E.89415 ; infill
+G1 X136.792 Y155.199 E.10067 ; infill
+G1 X147.419 Y136.792 E.71944 ; infill
+G1 X144.944 Y136.792 E.08378 ; infill
+G1 X160.195 Y163.208 E1.03247 ; infill
+G1 X162.715 Y163.208 E.0853 ; infill
 G1 X163.208 Y162.355 E.03335 ; infill
-G1 X163.208 Y160.355 E.0677 F6733 ; infill
+G1 X163.208 Y160.355 E.0677 ; infill
 ;LAYER_CHANGE:13
 ;Z:2.7
 ;HEIGHT:0.2
@@ -2686,36 +2572,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7540 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7549 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7558 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7567 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7576 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7585 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7595 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
 M73 P13 R23
-G1 X163.901 Y136.039 E.84366 F7604 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7614 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7623 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7633 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7642 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7652 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7662 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7672 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7682 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2726,56 +2612,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X139.946 Y136.792 E.0677 F6874 ; infill
-G1 X136.792 Y142.255 E.21352 F6877 ; infill
-G1 X136.792 Y145.47 E.10882 F6878 ; infill
-G1 X163.208 Y145.47 E.89415 F6887 ; infill
-G1 X163.208 Y142.254 E.10886 F6888 ; infill
-G1 X160.054 Y136.792 E.21349 F6890 ; infill
-G1 X158.054 Y136.792 E.0677 F6890 ; infill
+G1 X139.946 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.255 E.21352 ; infill
+G1 X136.792 Y145.47 E.10882 ; infill
+G1 X163.208 Y145.47 E.89415 ; infill
+G1 X163.208 Y142.254 E.10886 ; infill
+G1 X160.054 Y136.792 E.21349 ; infill
+G1 X158.054 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y160.638 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.638 E.0677 F6893 ; infill
+G1 X163.208 Y162.638 E.0677 ; infill
 G1 X162.879 Y163.208 E.02228 ; infill
-G1 X160.032 Y163.208 E.09637 F6895 ; infill
-G1 X144.781 Y136.792 E1.03247 F6905 ; infill
-G1 X147.583 Y136.792 E.09484 F6906 ; infill
-G1 X136.792 Y155.482 E.73051 F6913 ; infill
-G1 X136.792 Y158.697 E.10882 F6914 ; infill
-G1 X163.208 Y158.697 E.89415 F6923 ; infill
-G1 X163.208 Y155.482 E.10882 F6924 ; infill
-M104 S224
-G1 X152.417 Y136.792 E.73051 F6931 ; infill
-G1 X155.219 Y136.792 E.09484 F6932 ; infill
-G1 X139.968 Y163.208 E1.03247 F6942 ; infill
-G1 X137.121 Y163.208 E.09637 F6943 ; infill
+G1 X160.032 Y163.208 E.09637 ; infill
+G1 X144.781 Y136.792 E1.03247 ; infill
+G1 X147.583 Y136.792 E.09484 ; infill
+G1 X136.792 Y155.482 E.73051 ; infill
+G1 X136.792 Y158.697 E.10882 ; infill
+G1 X163.208 Y158.697 E.89415 ; infill
+G1 X163.208 Y155.482 E.10882 ; infill
+G1 X152.417 Y136.792 E.73051 ; infill
+G1 X155.219 Y136.792 E.09484 ; infill
+G1 X139.968 Y163.208 E1.03247 ; infill
+G1 X137.121 Y163.208 E.09637 ; infill
 G1 X136.792 Y162.638 E.02228 ; infill
-G1 X136.792 Y160.638 E.0677 F6944 ; infill
+G1 X136.792 Y160.638 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.758 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.758 Y163.208 E.0677 F6945 ; infill
-G1 X136.792 Y149.41 E.53929 F6951 ; infill
-G1 X136.792 Y152.084 E.09051 F6952 ; infill
-G1 X163.208 Y152.084 E.89415 F6960 ; infill
-G1 X163.208 Y149.411 E.09048 F6961 ; infill
-G1 X155.242 Y163.208 E.53926 F6967 ; infill
-G1 X152.395 Y163.208 E.09637 F6967 ; infill
-G1 X137.144 Y136.792 E1.03247 F6978 ; infill
+G1 X144.758 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.41 E.53929 ; infill
+G1 X136.792 Y152.084 E.09051 ; infill
+G1 X163.208 Y152.084 E.89415 ; infill
+G1 X163.208 Y149.411 E.09048 ; infill
+G1 X155.242 Y163.208 E.53926 ; infill
+G1 X152.395 Y163.208 E.09637 ; infill
+G1 X137.144 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.01191 ; infill
-G1 X136.792 Y138.857 E.0699 F6978 ; infill
-G1 X163.208 Y138.857 E.89415 F6987 ; infill
-G1 X163.208 Y136.792 E.0699 F6988 ; infill
+G1 X136.792 Y138.857 E.0699 ; infill
+G1 X163.208 Y138.857 E.89415 ; infill
+G1 X163.208 Y136.792 E.0699 ; infill
 G1 X162.856 Y136.792 E.01191 ; infill
-G1 X147.605 Y163.208 E1.03247 F6998 ; infill
-G1 X149.605 Y163.208 E.0677 F6999 ; infill
+G1 X147.605 Y163.208 E1.03247 ; infill
+G1 X149.605 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:14
 ;Z:2.9
 ;HEIGHT:0.2
@@ -2794,36 +2679,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7837 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7846 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7855 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
 M73 P14 R23
-G1 X163.494 Y136.446 E.81901 F7864 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7874 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7883 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7892 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7902 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7911 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7921 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7930 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7940 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7950 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7960 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7970 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7979 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2834,56 +2719,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X140.109 Y136.792 E.0677 F7141 ; infill
-G1 X136.792 Y142.538 E.22458 F7143 ; infill
-G1 X136.792 Y145.329 E.09447 F7144 ; infill
-G1 X163.208 Y145.329 E.89415 F7153 ; infill
-G1 X163.208 Y142.537 E.09451 F7154 ; infill
-G1 X159.891 Y136.792 E.22455 F7156 ; infill
-G1 X157.891 Y136.792 E.0677 F7157 ; infill
+G1 X140.109 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.538 E.22458 ; infill
+G1 X136.792 Y145.329 E.09447 ; infill
+G1 X163.208 Y145.329 E.89415 ; infill
+G1 X163.208 Y142.537 E.09451 ; infill
+G1 X159.891 Y136.792 E.22455 ; infill
+G1 X157.891 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y160.921 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.921 E.0677 F7160 ; infill
+G1 X163.208 Y162.921 E.0677 ; infill
 G1 X163.042 Y163.208 E.01122 ; infill
-G1 X159.868 Y163.208 E.10744 F7161 ; infill
-G1 X144.617 Y136.792 E1.03247 F7171 ; infill
-G1 X147.746 Y136.792 E.10591 F7172 ; infill
-G1 X136.792 Y155.765 E.74156 F7180 ; infill
-G1 X136.792 Y158.556 E.09447 F7181 ; infill
-G1 X163.208 Y158.556 E.89415 F7189 ; infill
-G1 X163.208 Y155.765 E.09447 F7190 ; infill
-G1 X152.254 Y136.792 E.74156 F7198 ; infill
-G1 X155.383 Y136.792 E.10591 F7199 ; infill
-G1 X140.132 Y163.208 E1.03247 F7209 ; infill
-G1 X136.958 Y163.208 E.10744 F7210 ; infill
+G1 X159.868 Y163.208 E.10744 ; infill
+G1 X144.617 Y136.792 E1.03247 ; infill
+G1 X147.746 Y136.792 E.10591 ; infill
+G1 X136.792 Y155.765 E.74156 ; infill
+G1 X136.792 Y158.556 E.09447 ; infill
+G1 X163.208 Y158.556 E.89415 ; infill
+G1 X163.208 Y155.765 E.09447 ; infill
+G1 X152.254 Y136.792 E.74156 ; infill
+G1 X155.383 Y136.792 E.10591 ; infill
+G1 X140.132 Y163.208 E1.03247 ; infill
+G1 X136.958 Y163.208 E.10744 ; infill
 G1 X136.792 Y162.92 E.01125 ; infill
-G1 X136.792 Y160.92 E.0677 F7210 ; infill
+G1 X136.792 Y160.92 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.595 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.595 Y163.208 E.0677 F7212 ; infill
-G1 X136.792 Y149.693 E.52824 F7217 ; infill
-G1 X136.792 Y151.942 E.07613 F7217 ; infill
-M104 S225
-G1 X163.208 Y151.942 E.89415 F7227 ; infill
-G1 X163.208 Y149.693 E.07613 F7227 ; infill
-G1 X155.405 Y163.208 E.52824 F7233 ; infill
-G1 X152.232 Y163.208 E.1074 F7234 ; infill
-G1 X136.981 Y136.792 E1.03247 F7244 ; infill
+G1 X144.595 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.693 E.52824 ; infill
+G1 X136.792 Y151.942 E.07613 ; infill
+G1 X163.208 Y151.942 E.89415 ; infill
+G1 X163.208 Y149.693 E.07613 ; infill
+G1 X155.405 Y163.208 E.52824 ; infill
+G1 X152.232 Y163.208 E.1074 ; infill
+G1 X136.981 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.0064 ; infill
-G1 X136.792 Y138.715 E.06509 F7245 ; infill
-G1 X163.208 Y138.715 E.89415 F7253 ; infill
-G1 X163.208 Y136.792 E.06509 F7254 ; infill
+G1 X136.792 Y138.715 E.06509 ; infill
+G1 X163.208 Y138.715 E.89415 ; infill
+G1 X163.208 Y136.792 E.06509 ; infill
 G1 X163.019 Y136.792 E.0064 ; infill
-G1 X147.768 Y163.208 E1.03247 F7264 ; infill
-G1 X149.768 Y163.208 E.0677 F7265 ; infill
+G1 X147.768 Y163.208 E1.03247 ; infill
+G1 X149.768 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:15
 ;Z:3.1
 ;HEIGHT:0.2
@@ -2902,38 +2786,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8134 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8143 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8152 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8161 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8171 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8180 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8189 ; perimeter
-M104 S230
-M104 S230
-M104 S230
-G1 X163.901 Y136.039 E.84366 F8199 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8208 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8218 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8228 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8237 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8247 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8257 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8267 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8277 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -2944,53 +2825,52 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X140.273 Y136.792 E.0677 F7407 ; infill
-G1 X136.792 Y142.82 E.23562 F7409 ; infill
-G1 X136.792 Y145.187 E.08012 F7410 ; infill
-G1 X163.208 Y145.187 E.89415 F7419 ; infill
-G1 X163.208 Y142.82 E.08012 F7420 ; infill
-G1 X159.728 Y136.792 E.2356 F7422 ; infill
-G1 X157.728 Y136.792 E.0677 F7422 ; infill
+G1 X140.273 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.82 E.23562 ; infill
+G1 X136.792 Y145.187 E.08012 ; infill
+G1 X163.208 Y145.187 E.89415 ; infill
+G1 X163.208 Y142.82 E.08012 ; infill
+G1 X159.728 Y136.792 E.2356 ; infill
+G1 X157.728 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y161.203 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.205 Y163.208 E.06787 F7425 ; infill
-G1 X159.705 Y163.208 E.11847 F7427 ; infill
-G1 X144.454 Y136.792 E1.03247 F7437 ; infill
-G1 X147.909 Y136.792 E.11695 F7438 ; infill
-G1 X136.792 Y156.047 E.75259 F7445 ; infill
-G1 X136.792 Y158.415 E.08015 F7447 ; infill
-G1 X163.208 Y158.415 E.89415 F7455 ; infill
-G1 X163.208 Y156.047 E.08015 F7456 ; infill
-G1 X152.091 Y136.792 E.75259 F7463 ; infill
+G1 X163.205 Y163.208 E.06787 ; infill
+G1 X159.705 Y163.208 E.11847 ; infill
+G1 X144.454 Y136.792 E1.03247 ; infill
+G1 X147.909 Y136.792 E.11695 ; infill
+G1 X136.792 Y156.047 E.75259 ; infill
+G1 X136.792 Y158.415 E.08015 ; infill
+G1 X163.208 Y158.415 E.89415 ; infill
+G1 X163.208 Y156.047 E.08015 ; infill
+G1 X152.091 Y136.792 E.75259 ; infill
 M73 P15 R23
-G1 X155.546 Y136.792 E.11695 F7464 ; infill
-G1 X140.295 Y163.208 E1.03247 F7475 ; infill
-G1 X136.795 Y163.208 E.11847 F7476 ; infill
-G1 X136.792 Y161.203 E.06787 F7476 ; infill
+G1 X155.546 Y136.792 E.11695 ; infill
+G1 X140.295 Y163.208 E1.03247 ; infill
+G1 X136.795 Y163.208 E.11847 ; infill
+G1 X136.792 Y161.203 E.06787 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.432 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.432 Y163.208 E.0677 F7477 ; infill
-G1 X136.792 Y149.976 E.51718 F7483 ; infill
-G1 X136.792 Y151.801 E.06177 F7484 ; infill
-G1 X163.208 Y151.801 E.89415 F7492 ; infill
-G1 X163.208 Y149.976 E.06177 F7493 ; infill
-G1 X155.569 Y163.208 E.51717 F7498 ; infill
-G1 X152.068 Y163.208 E.1185 F7499 ; infill
-G1 X136.792 Y136.792 E1.03289 F7509 ; infill
-G1 X136.792 Y138.574 E.06032 F7510 ; infill
-M104 S226
-G1 X163.208 Y138.574 E.89415 F7519 ; infill
-G1 X163.208 Y136.792 E.06032 F7519 ; infill
-G1 X147.932 Y163.208 E1.03289 F7529 ; infill
-G1 X149.932 Y163.208 E.0677 F7530 ; infill
+G1 X144.432 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.976 E.51718 ; infill
+G1 X136.792 Y151.801 E.06177 ; infill
+G1 X163.208 Y151.801 E.89415 ; infill
+G1 X163.208 Y149.976 E.06177 ; infill
+G1 X155.569 Y163.208 E.51717 ; infill
+G1 X152.068 Y163.208 E.1185 ; infill
+G1 X136.792 Y136.792 E1.03289 ; infill
+G1 X136.792 Y138.574 E.06032 ; infill
+G1 X163.208 Y138.574 E.89415 ; infill
+G1 X163.208 Y136.792 E.06032 ; infill
+G1 X147.932 Y163.208 E1.03289 ; infill
+G1 X149.932 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:16
 ;Z:3.3
 ;HEIGHT:0.2
@@ -3009,35 +2889,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8431 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8440 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8449 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8458 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8467 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8477 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8486 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8495 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8505 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8514 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8524 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8534 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8544 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8553 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8563 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8573 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3048,42 +2928,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.564 Y136.792 E.0677 F7670 ; infill
-G1 X163.208 Y143.103 E.24667 F7673 ; infill
-G1 X163.208 Y145.046 E.06577 F7673 ; infill
-G1 X136.792 Y145.046 E.89415 F7682 ; infill
-G1 X136.792 Y143.103 E.06577 F7683 ; infill
-G1 X140.436 Y136.792 E.24667 F7685 ; infill
-G1 X138.436 Y136.792 E.0677 F7686 ; infill
+G1 X159.564 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.103 E.24667 ; infill
+G1 X163.208 Y145.046 E.06577 ; infill
+G1 X136.792 Y145.046 E.89415 ; infill
+G1 X136.792 Y143.103 E.06577 ; infill
+G1 X140.436 Y136.792 E.24667 ; infill
+G1 X138.436 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.095 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.095 Y163.208 E.0677 F7689 ; infill
-G1 X163.208 Y137.032 E1.0231 F7699 ; infill
+G1 X148.095 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.032 E1.0231 ; infill
 G1 X163.208 Y138.432 E.04739 ; infill
-G1 X136.792 Y138.432 E.89415 F7709 ; infill
+G1 X136.792 Y138.432 E.89415 ; infill
 G1 X136.792 Y137.032 E.04739 ; infill
-G1 X151.905 Y163.208 E1.0231 F7719 ; infill
-G1 X155.732 Y163.208 E.12954 F7720 ; infill
-G1 X163.208 Y150.259 E.50611 F7725 ; infill
+G1 X151.905 Y163.208 E1.0231 ; infill
+G1 X155.732 Y163.208 E.12954 ; infill
+G1 X163.208 Y150.259 E.50611 ; infill
 G1 X163.208 Y151.66 E.04742 ; infill
-G1 X136.792 Y151.66 E.89415 F7735 ; infill
+G1 X136.792 Y151.66 E.89415 ; infill
 G1 X136.792 Y150.259 E.04742 ; infill
-G1 X144.268 Y163.208 E.50611 F7740 ; infill
-G1 X140.458 Y163.208 E.12896 F7742 ; infill
-G1 X155.709 Y136.792 E1.03247 F7751 ; infill
-G1 X151.928 Y136.792 E.12798 F7753 ; infill
-G1 X163.208 Y156.33 E.76364 F7760 ; infill
-G1 X163.208 Y158.273 E.06577 F7761 ; infill
-G1 X136.792 Y158.273 E.89415 F7770 ; infill
-G1 X136.792 Y156.33 E.06577 F7770 ; infill
-G1 X148.072 Y136.792 E.76364 F7778 ; infill
-G1 X144.291 Y136.792 E.12798 F7779 ; infill
-G1 X159.542 Y163.208 E1.03247 F7789 ; infill
-G1 X161.542 Y163.208 E.0677 F7790 ; infill
+G1 X144.268 Y163.208 E.50611 ; infill
+G1 X140.458 Y163.208 E.12896 ; infill
+G1 X155.709 Y136.792 E1.03247 ; infill
+G1 X151.928 Y136.792 E.12798 ; infill
+G1 X163.208 Y156.33 E.76364 ; infill
+G1 X163.208 Y158.273 E.06577 ; infill
+G1 X136.792 Y158.273 E.89415 ; infill
+G1 X136.792 Y156.33 E.06577 ; infill
+G1 X148.072 Y136.792 E.76364 ; infill
+G1 X144.291 Y136.792 E.12798 ; infill
+G1 X159.542 Y163.208 E1.03247 ; infill
+G1 X161.542 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:17
 ;Z:3.5
 ;HEIGHT:0.2
@@ -3102,36 +2982,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8721 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8730 ; perimeter
-M104 S227
-G1 X136.446 Y136.446 E.82083 F8739 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8748 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8757 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8767 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8776 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8785 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8795 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8805 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8814 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8824 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8834 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8844 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8853 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8863 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 M73 P16 R23
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -3143,42 +3022,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.401 Y136.792 E.0677 F7929 ; infill
-G1 X163.208 Y143.386 E.25773 F7932 ; infill
-G1 X163.208 Y144.905 E.05142 F7932 ; infill
-G1 X136.792 Y144.904 E.89415 F7942 ; infill
-G1 X136.792 Y143.386 E.05138 F7943 ; infill
-G1 X140.599 Y136.792 E.25773 F7945 ; infill
-G1 X144.127 Y136.792 E.11942 F7946 ; infill
-G1 X159.379 Y163.208 E1.03249 F7956 ; infill
-G1 X155.895 Y163.208 E.11793 F7957 ; infill
-G1 X163.208 Y150.542 E.49506 F7962 ; infill
+G1 X159.401 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.386 E.25773 ; infill
+G1 X163.208 Y144.905 E.05142 ; infill
+G1 X136.792 Y144.904 E.89415 ; infill
+G1 X136.792 Y143.386 E.05138 ; infill
+G1 X140.599 Y136.792 E.25773 ; infill
+G1 X144.127 Y136.792 E.11942 ; infill
+G1 X159.379 Y163.208 E1.03249 ; infill
+G1 X155.895 Y163.208 E.11793 ; infill
+G1 X163.208 Y150.542 E.49506 ; infill
 G1 X163.208 Y151.518 E.03304 ; infill
-G1 X136.792 Y151.518 E.89415 F7971 ; infill
+G1 X136.792 Y151.518 E.89415 ; infill
 G1 X136.792 Y150.542 E.03304 ; infill
-G1 X144.105 Y163.208 E.49506 F7976 ; infill
-G1 X140.622 Y163.208 E.1179 F7977 ; infill
-G1 X155.873 Y136.792 E1.03247 F7988 ; infill
-G1 X151.764 Y136.792 E.13908 F7989 ; infill
-G1 X163.208 Y156.613 E.77471 F7997 ; infill
-G1 X163.208 Y158.132 E.05142 F7997 ; infill
-G1 X136.792 Y158.132 E.89415 F8006 ; infill
-G1 X136.792 Y156.613 E.05142 F8006 ; infill
-G1 X148.236 Y136.792 E.77471 F8014 ; infill
-G1 X146.236 Y136.792 E.0677 F8015 ; infill
+G1 X144.105 Y163.208 E.49506 ; infill
+G1 X140.622 Y163.208 E.1179 ; infill
+G1 X155.873 Y136.792 E1.03247 ; infill
+G1 X151.764 Y136.792 E.13908 ; infill
+G1 X163.208 Y156.613 E.77471 ; infill
+G1 X163.208 Y158.132 E.05142 ; infill
+G1 X136.792 Y158.132 E.89415 ; infill
+G1 X136.792 Y156.613 E.05142 ; infill
+G1 X148.236 Y136.792 E.77471 ; infill
+G1 X146.236 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.258 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.258 Y163.208 E.0677 F8018 ; infill
-G1 X163.208 Y137.315 E1.01205 F8028 ; infill
+G1 X148.258 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.315 E1.01205 ; infill
 G1 X163.208 Y138.291 E.03304 ; infill
-G1 X136.792 Y138.291 E.89415 F8037 ; infill
+G1 X136.792 Y138.291 E.89415 ; infill
 G1 X136.792 Y137.315 E.03304 ; infill
-G1 X151.742 Y163.208 E1.01205 F8047 ; infill
-G1 X153.742 Y163.208 E.0677 F8048 ; infill
+G1 X151.742 Y163.208 E1.01205 ; infill
+G1 X153.742 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:18
 ;Z:3.7
 ;HEIGHT:0.2
@@ -3197,36 +3076,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9010 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9019 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9028 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9037 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9046 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9056 ; perimeter
-M104 S228
-G1 X136.039 Y136.039 E.84548 F9065 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9074 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9084 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9093 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9103 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9112 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9122 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9132 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9142 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9152 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3237,42 +3115,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.238 Y136.792 E.0677 F8188 ; infill
-G1 X163.208 Y143.669 E.26878 F8191 ; infill
+G1 X159.238 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.669 E.26878 ; infill
 G1 X163.208 Y144.763 E.03703 ; infill
-G1 X136.792 Y144.763 E.89415 F8200 ; infill
+G1 X136.792 Y144.763 E.89415 ; infill
 G1 X136.792 Y143.669 E.03703 ; infill
-G1 X140.762 Y136.792 E.26878 F8203 ; infill
-G1 X143.964 Y136.792 E.10838 F8204 ; infill
-G1 X159.215 Y163.208 E1.03247 F8214 ; infill
-G1 X156.058 Y163.208 E.10686 F8215 ; infill
-G1 X163.208 Y150.825 E.484 F8220 ; infill
+G1 X140.762 Y136.792 E.26878 ; infill
+G1 X143.964 Y136.792 E.10838 ; infill
+G1 X159.215 Y163.208 E1.03247 ; infill
+G1 X156.058 Y163.208 E.10686 ; infill
+G1 X163.208 Y150.825 E.484 ; infill
 G1 X163.208 Y151.377 E.01868 ; infill
-G1 X136.792 Y151.377 E.89415 F8229 ; infill
+G1 X136.792 Y151.377 E.89415 ; infill
 G1 X136.792 Y150.825 E.01868 ; infill
-G1 X143.942 Y163.208 E.484 F8234 ; infill
-G1 X140.785 Y163.208 E.10686 F8235 ; infill
-G1 X156.036 Y136.792 E1.03247 F8245 ; infill
-G1 X151.601 Y136.792 E.15012 F8247 ; infill
-G1 X163.208 Y156.896 E.78577 F8254 ; infill
+G1 X143.942 Y163.208 E.484 ; infill
+G1 X140.785 Y163.208 E.10686 ; infill
+G1 X156.036 Y136.792 E1.03247 ; infill
+G1 X151.601 Y136.792 E.15012 ; infill
+G1 X163.208 Y156.896 E.78577 ; infill
 G1 X163.208 Y157.99 E.03703 ; infill
-G1 X136.792 Y157.99 E.89415 F8264 ; infill
+G1 X136.792 Y157.99 E.89415 ; infill
 G1 X136.792 Y156.896 E.03703 ; infill
-G1 X148.399 Y136.792 E.78577 F8272 ; infill
-G1 X146.399 Y136.792 E.0677 F8272 ; infill
+G1 X148.399 Y136.792 E.78577 ; infill
+G1 X146.399 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.422 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.422 Y163.208 E.0677 F8275 ; infill
-G1 X163.208 Y137.597 E1.001 F8285 ; infill
+G1 X148.422 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.597 E1.001 ; infill
 G1 X163.208 Y138.15 E.01872 ; infill
-G1 X136.792 Y138.149 E.89415 F8294 ; infill
+G1 X136.792 Y138.149 E.89415 ; infill
 G1 X136.792 Y137.597 E.01868 ; infill
-G1 X151.579 Y163.208 E1.00102 F8304 ; infill
-G1 X153.579 Y163.208 E.0677 F8305 ; infill
+G1 X151.579 Y163.208 E1.00102 ; infill
+G1 X153.579 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:19
 ;Z:3.9
 ;HEIGHT:0.2
@@ -3291,38 +3169,37 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9297 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9306 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9315 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9324 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9333 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9343 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9352 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9361 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M73 P17 R23
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9371 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9381 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
 M73 P17 R22
-G1 X135.632 Y135.632 E.87012 F9390 ; perimeter
-M104 S229
-G1 X164.308 Y135.632 E.86831 F9400 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9410 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9420 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9429 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9439 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3333,42 +3210,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.074 Y136.792 E.0677 F8445 ; infill
-G1 X163.208 Y143.951 E.27982 F8448 ; infill
+G1 X159.074 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.951 E.27982 ; infill
 G1 X163.208 Y144.622 E.02271 ; infill
-G1 X136.792 Y144.622 E.89415 F8457 ; infill
+G1 X136.792 Y144.622 E.89415 ; infill
 G1 X136.792 Y143.952 E.02268 ; infill
-G1 X140.926 Y136.792 E.27985 F8460 ; infill
-G1 X143.801 Y136.792 E.09732 F8460 ; infill
-G1 X159.052 Y163.208 E1.03247 F8471 ; infill
-G1 X156.222 Y163.208 E.09579 F8472 ; infill
-G1 X163.208 Y151.108 E.47293 F8477 ; infill
+G1 X140.926 Y136.792 E.27985 ; infill
+G1 X143.801 Y136.792 E.09732 ; infill
+G1 X159.052 Y163.208 E1.03247 ; infill
+G1 X156.222 Y163.208 E.09579 ; infill
+G1 X163.208 Y151.108 E.47293 ; infill
 G1 X163.208 Y151.235 E.0043 ; infill
-G1 X136.792 Y151.235 E.89415 F8485 ; infill
+G1 X136.792 Y151.235 E.89415 ; infill
 G1 X136.792 Y151.107 E.00433 ; infill
-G1 X143.778 Y163.208 E.47296 F8490 ; infill
-G1 X140.948 Y163.208 E.09579 F8491 ; infill
-G1 X156.199 Y136.792 E1.03247 F8501 ; infill
-G1 X151.438 Y136.792 E.16115 F8503 ; infill
-G1 X163.208 Y157.179 E.79682 F8511 ; infill
+G1 X143.778 Y163.208 E.47296 ; infill
+G1 X140.948 Y163.208 E.09579 ; infill
+G1 X156.199 Y136.792 E1.03247 ; infill
+G1 X151.438 Y136.792 E.16115 ; infill
+G1 X163.208 Y157.179 E.79682 ; infill
 G1 X163.208 Y157.849 E.02268 ; infill
-G1 X136.792 Y157.849 E.89415 F8520 ; infill
+G1 X136.792 Y157.849 E.89415 ; infill
 G1 X136.792 Y157.179 E.02268 ; infill
-G1 X148.562 Y136.792 E.79682 F8528 ; infill
-G1 X146.562 Y136.792 E.0677 F8528 ; infill
+G1 X148.562 Y136.792 E.79682 ; infill
+G1 X146.562 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.585 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.585 Y163.208 E.0677 F8531 ; infill
-G1 X163.208 Y137.88 E.98995 F8541 ; infill
+G1 X148.585 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.88 E.98995 ; infill
 G1 X163.208 Y138.008 E.00433 ; infill
-G1 X136.792 Y138.008 E.89415 F8550 ; infill
+G1 X136.792 Y138.008 E.89415 ; infill
 G1 X136.792 Y137.88 E.00433 ; infill
-G1 X151.415 Y163.208 E.98995 F8560 ; infill
-G1 X153.415 Y163.208 E.0677 F8560 ; infill
+G1 X151.415 Y163.208 E.98995 ; infill
+G1 X153.415 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:20
 ;Z:4.1
 ;HEIGHT:0.2
@@ -3387,36 +3264,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9583 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9592 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9601 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9610 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9619 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9629 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9638 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9647 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9657 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9666 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9676 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9686 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9696 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9705 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9715 ; perimeter
-M104 S230
-G1 X164.715 Y135.225 E.89295 F9725 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3427,42 +3303,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.911 Y136.792 E.0677 F8700 ; infill
-G1 X163.208 Y144.234 E.29088 F8704 ; infill
+G1 X158.911 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.234 E.29088 ; infill
 G1 X163.208 Y144.48 E.00833 ; infill
-G1 X136.792 Y144.48 E.89415 F8713 ; infill
+G1 X136.792 Y144.48 E.89415 ; infill
 G1 X136.792 Y144.235 E.00829 ; infill
-G1 X141.089 Y136.792 E.29091 F8715 ; infill
-G1 X143.638 Y136.792 E.08628 F8716 ; infill
-G1 X158.889 Y163.208 E1.03247 F8726 ; infill
-G1 X156.385 Y163.208 E.08476 F8727 ; infill
-G1 X163.208 Y151.39 E.46191 F8732 ; infill
+G1 X141.089 Y136.792 E.29091 ; infill
+G1 X143.638 Y136.792 E.08628 ; infill
+G1 X158.889 Y163.208 E1.03247 ; infill
+G1 X156.385 Y163.208 E.08476 ; infill
+G1 X163.208 Y151.39 E.46191 ; infill
 G1 X163.208 Y151.094 E.01002 ; infill
-G1 X136.792 Y151.094 E.89415 F8741 ; infill
+G1 X136.792 Y151.094 E.89415 ; infill
 G1 X136.792 Y151.39 E.01002 ; infill
-G1 X143.615 Y163.208 E.46191 F8745 ; infill
-G1 X141.112 Y163.208 E.08472 F8747 ; infill
-G1 X156.363 Y136.792 E1.03247 F8756 ; infill
-G1 X151.274 Y136.792 E.17226 F8758 ; infill
-G1 X163.208 Y157.462 E.80789 F8766 ; infill
+G1 X143.615 Y163.208 E.46191 ; infill
+G1 X141.112 Y163.208 E.08472 ; infill
+G1 X156.363 Y136.792 E1.03247 ; infill
+G1 X151.274 Y136.792 E.17226 ; infill
+G1 X163.208 Y157.462 E.80789 ; infill
 G1 X163.208 Y157.707 E.00829 ; infill
-G1 X136.792 Y157.707 E.89415 F8775 ; infill
+G1 X136.792 Y157.707 E.89415 ; infill
 G1 X136.792 Y157.462 E.00829 ; infill
-G1 X148.726 Y136.792 E.80789 F8783 ; infill
-G1 X146.726 Y136.792 E.0677 F8783 ; infill
+G1 X148.726 Y136.792 E.80789 ; infill
+G1 X146.726 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.748 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.748 Y163.208 E.0677 F8787 ; infill
-G1 X163.208 Y138.163 E.97889 F8797 ; infill
+G1 X148.748 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.163 E.97889 ; infill
 G1 X163.208 Y137.867 E.01002 ; infill
-G1 X136.792 Y137.867 E.89415 F8805 ; infill
+G1 X136.792 Y137.867 E.89415 ; infill
 G1 X136.792 Y138.163 E.01002 ; infill
-G1 X151.252 Y163.208 E.97889 F8815 ; infill
-G1 X153.252 Y163.208 E.0677 F8816 ; infill
+G1 X151.252 Y163.208 E.97889 ; infill
+G1 X153.252 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:21
 ;Z:4.3
 ;HEIGHT:0.2
@@ -3482,35 +3358,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9868 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9877 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9882 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9882 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9882 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9882 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9882 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9882 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9882 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9881 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9881 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9881 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9881 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9881 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9881 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9881 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3521,42 +3397,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.748 Y136.792 E.0677 F8839 ; infill
-G1 X163.208 Y144.517 E.30193 F8839 ; infill
+G1 X158.748 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.517 E.30193 ; infill
 G1 X163.208 Y144.339 E.00603 ; infill
-G1 X136.792 Y144.339 E.89415 F8839 ; infill
+G1 X136.792 Y144.339 E.89415 ; infill
 G1 X136.792 Y144.517 E.00603 ; infill
-G1 X141.252 Y136.792 E.30193 F8839 ; infill
-G1 X143.474 Y136.792 E.07521 F8839 ; infill
-G1 X158.725 Y163.208 E1.03247 F8839 ; infill
-G1 X156.548 Y163.208 E.07369 F8839 ; infill
-G1 X163.208 Y151.673 E.45085 F8839 ; infill
+G1 X141.252 Y136.792 E.30193 ; infill
+G1 X143.474 Y136.792 E.07521 ; infill
+G1 X158.725 Y163.208 E1.03247 ; infill
+G1 X156.548 Y163.208 E.07369 ; infill
+G1 X163.208 Y151.673 E.45085 ; infill
 G1 X163.208 Y150.952 E.0244 ; infill
-G1 X136.792 Y150.952 E.89415 F8839 ; infill
+G1 X136.792 Y150.952 E.89415 ; infill
 G1 X136.792 Y151.673 E.0244 ; infill
-G1 X143.452 Y163.208 E.45085 F8839 ; infill
-G1 X141.275 Y163.208 E.07369 F8839 ; infill
-G1 X156.526 Y136.792 E1.03247 F8839 ; infill
-G1 X151.111 Y136.792 E.18329 F8839 ; infill
-G1 X163.208 Y157.744 E.81892 F8839 ; infill
+G1 X143.452 Y163.208 E.45085 ; infill
+G1 X141.275 Y163.208 E.07369 ; infill
+G1 X156.526 Y136.792 E1.03247 ; infill
+G1 X151.111 Y136.792 E.18329 ; infill
+G1 X163.208 Y157.744 E.81892 ; infill
 G1 X163.208 Y157.566 E.00603 ; infill
-G1 X136.792 Y157.566 E.89415 F8839 ; infill
+G1 X136.792 Y157.566 E.89415 ; infill
 G1 X136.792 Y157.744 E.00603 ; infill
-G1 X148.889 Y136.792 E.81892 F8839 ; infill
-G1 X146.889 Y136.792 E.0677 F8839 ; infill
+G1 X148.889 Y136.792 E.81892 ; infill
+G1 X146.889 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.912 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.912 Y163.208 E.0677 F8839 ; infill
-G1 X163.208 Y138.446 E.96782 F8839 ; infill
+G1 X148.912 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.446 E.96782 ; infill
 G1 X163.208 Y137.725 E.0244 ; infill
-G1 X136.792 Y137.725 E.89415 F8839 ; infill
+G1 X136.792 Y137.725 E.89415 ; infill
 G1 X136.792 Y138.446 E.0244 ; infill
-G1 X151.089 Y163.208 E.96784 F8839 ; infill
-G1 X153.089 Y163.208 E.0677 F8838 ; infill
+G1 X151.089 Y163.208 E.96784 ; infill
+G1 X153.089 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:22
 ;Z:4.5
 ;HEIGHT:0.2
@@ -3575,35 +3451,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9880 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9880 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9880 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9880 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9880 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9880 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9880 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9880 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9880 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9880 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9880 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9880 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9880 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9880 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9880 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9880 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3614,43 +3490,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.585 Y136.792 E.0677 F8837 ; infill
-G1 X163.208 Y144.8 E.31299 F8838 ; infill
+G1 X158.585 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.8 E.31299 ; infill
 G1 X163.208 Y144.197 E.02041 ; infill
-G1 X136.792 Y144.197 E.89415 F8838 ; infill
+G1 X136.792 Y144.197 E.89415 ; infill
 G1 X136.792 Y144.8 E.02041 ; infill
-G1 X141.416 Y136.792 E.313 F8838 ; infill
-G1 X143.311 Y136.792 E.06414 F8838 ; infill
-G1 X158.562 Y163.208 E1.03247 F8838 ; infill
-G1 X156.712 Y163.208 E.06262 F8838 ; infill
-G1 X163.208 Y151.956 E.43978 F8838 ; infill
+G1 X141.416 Y136.792 E.313 ; infill
+G1 X143.311 Y136.792 E.06414 ; infill
+G1 X158.562 Y163.208 E1.03247 ; infill
+G1 X156.712 Y163.208 E.06262 ; infill
+G1 X163.208 Y151.956 E.43978 ; infill
 G1 X163.208 Y150.811 E.03876 ; infill
-G1 X136.792 Y150.811 E.89415 F8838 ; infill
+G1 X136.792 Y150.811 E.89415 ; infill
 G1 X136.792 Y151.956 E.03876 ; infill
-G1 X143.289 Y163.208 E.4398 F8838 ; infill
-G1 X141.438 Y163.208 E.06265 F8838 ; infill
-G1 X156.689 Y136.792 E1.03247 F8837 ; infill
-G1 X150.948 Y136.792 E.19433 F8837 ; infill
-G1 X163.208 Y158.027 E.82997 F8837 ; infill
+G1 X143.289 Y163.208 E.4398 ; infill
+G1 X141.438 Y163.208 E.06265 ; infill
+G1 X156.689 Y136.792 E1.03247 ; infill
+G1 X150.948 Y136.792 E.19433 ; infill
+G1 X163.208 Y158.027 E.82997 ; infill
 G1 X163.208 Y157.425 E.02038 ; infill
-G1 X136.792 Y157.425 E.89415 F8837 ; infill
+G1 X136.792 Y157.425 E.89415 ; infill
 G1 X136.792 Y158.027 E.02038 ; infill
 M73 P19 R22
-G1 X149.052 Y136.792 E.82997 F8837 ; infill
-G1 X147.052 Y136.792 E.0677 F8837 ; infill
+G1 X149.052 Y136.792 E.82997 ; infill
+G1 X147.052 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X147.075 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X149.075 Y163.208 E.0677 F8837 ; infill
-G1 X163.208 Y138.729 E.95677 F8837 ; infill
+G1 X149.075 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.729 E.95677 ; infill
 G1 X163.208 Y137.584 E.03876 ; infill
-G1 X136.792 Y137.584 E.89415 F8837 ; infill
+G1 X136.792 Y137.584 E.89415 ; infill
 G1 X136.792 Y138.729 E.03876 ; infill
-G1 X150.925 Y163.208 E.95677 F8837 ; infill
-G1 X152.925 Y163.208 E.0677 F8837 ; infill
+G1 X150.925 Y163.208 E.95677 ; infill
+G1 X152.925 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:23
 ;Z:4.7
 ;HEIGHT:0.2
@@ -3669,35 +3545,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9879 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9878 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9878 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9878 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9878 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9878 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9878 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9878 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9878 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9878 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9878 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9878 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9878 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9878 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9878 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9877 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3708,12 +3584,12 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y139.012 E.0677 F8836 ; infill
-G1 X150.762 Y163.208 E.94571 F8836 ; infill
-G1 X149.238 Y163.208 E.05159 F8835 ; infill
-G1 X163.208 Y139.012 E.94571 F8836 ; infill
-G1 X163.208 Y137.442 E.05314 F8836 ; infill
-G1 X136.792 Y137.442 E.89415 F8836 ; infill
+G1 X136.792 Y139.012 E.0677 ; infill
+G1 X150.762 Y163.208 E.94571 ; infill
+G1 X149.238 Y163.208 E.05159 ; infill
+G1 X163.208 Y139.012 E.94571 ; infill
+G1 X163.208 Y137.442 E.05314 ; infill
+G1 X136.792 Y137.442 E.89415 ; infill
 G1 X136.792 Y136.792 E.022 ; infill
 G1 X138.142 Y136.792 E.0457 ; infill
 G1 E-2 F2400 ; retract
@@ -3722,36 +3598,36 @@ G1 X147.216 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X149.216 Y136.792 E.0677 F8835 ; infill
-G1 X136.792 Y158.31 E.84105 F8836 ; infill
+G1 X149.216 Y136.792 E.0677 ; infill
+G1 X136.792 Y158.31 E.84105 ; infill
 G1 X136.792 Y157.283 E.03476 ; infill
-G1 X163.208 Y157.283 E.89415 F8836 ; infill
+G1 X163.208 Y157.283 E.89415 ; infill
 G1 X163.208 Y158.31 E.03476 ; infill
-G1 X150.784 Y136.792 E.84105 F8836 ; infill
-G1 X152.784 Y136.792 E.0677 F8835 ; infill
+G1 X150.784 Y136.792 E.84105 ; infill
+G1 X152.784 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y148.67 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y150.67 E.0677 F8835 ; infill
-G1 X136.792 Y150.67 E.89415 F8835 ; infill
-G1 X136.792 Y152.239 E.05311 F8835 ; infill
-G1 X143.125 Y163.208 E.42873 F8835 ; infill
-G1 X141.601 Y163.208 E.05159 F8835 ; infill
-G1 X156.852 Y136.792 E1.03247 F8835 ; infill
-G1 X158.421 Y136.792 E.05311 F8835 ; infill
-G1 X163.208 Y145.083 E.32406 F8835 ; infill
+G1 X163.208 Y150.67 E.0677 ; infill
+G1 X136.792 Y150.67 E.89415 ; infill
+G1 X136.792 Y152.239 E.05311 ; infill
+G1 X143.125 Y163.208 E.42873 ; infill
+G1 X141.601 Y163.208 E.05159 ; infill
+G1 X156.852 Y136.792 E1.03247 ; infill
+G1 X158.421 Y136.792 E.05311 ; infill
+G1 X163.208 Y145.083 E.32406 ; infill
 G1 X163.208 Y144.056 E.03476 ; infill
-G1 X136.792 Y144.056 E.89415 F8835 ; infill
+G1 X136.792 Y144.056 E.89415 ; infill
 G1 X136.792 Y145.083 E.03476 ; infill
-G1 X141.579 Y136.792 E.32406 F8835 ; infill
-G1 X143.148 Y136.792 E.05311 F8835 ; infill
-G1 X158.399 Y163.208 E1.03247 F8835 ; infill
-G1 X156.875 Y163.208 E.05159 F8834 ; infill
-G1 X163.208 Y152.239 E.42873 F8835 ; infill
-G1 X163.208 Y154.239 E.0677 F8835 ; infill
+G1 X141.579 Y136.792 E.32406 ; infill
+G1 X143.148 Y136.792 E.05311 ; infill
+G1 X158.399 Y163.208 E1.03247 ; infill
+G1 X156.875 Y163.208 E.05159 ; infill
+G1 X163.208 Y152.239 E.42873 ; infill
+G1 X163.208 Y154.239 E.0677 ; infill
 ;LAYER_CHANGE:24
 ;Z:4.9
 ;HEIGHT:0.2
@@ -3770,35 +3646,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9876 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9876 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9876 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9876 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9876 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9876 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9876 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9876 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9876 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9876 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9875 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9875 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9875 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9875 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9875 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9875 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3809,44 +3685,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y150.528 E.0677 F8833 ; infill
-G1 X136.792 Y150.528 E.89415 F8834 ; infill
+G1 X163.208 Y150.528 E.0677 ; infill
+G1 X136.792 Y150.528 E.89415 ; infill
 M73 P20 R22
-G1 X136.792 Y152.522 E.06749 F8834 ; infill
-G1 X142.962 Y163.208 E.41767 F8834 ; infill
+G1 X136.792 Y152.522 E.06749 ; infill
+G1 X142.962 Y163.208 E.41767 ; infill
 G1 X141.765 Y163.208 E.04052 ; infill
-G1 X157.016 Y136.792 E1.03247 F8834 ; infill
+G1 X157.016 Y136.792 E1.03247 ; infill
 G1 X158.258 Y136.792 E.04204 ; infill
-G1 X163.208 Y145.366 E.33511 F8834 ; infill
+G1 X163.208 Y145.366 E.33511 ; infill
 G1 X163.208 Y143.915 E.04911 ; infill
-G1 X136.792 Y143.915 E.89415 F8833 ; infill
+G1 X136.792 Y143.915 E.89415 ; infill
 G1 X136.792 Y145.366 E.04911 ; infill
-G1 X141.742 Y136.792 E.33511 F8833 ; infill
+G1 X141.742 Y136.792 E.33511 ; infill
 G1 X142.984 Y136.792 E.04204 ; infill
-G1 X158.236 Y163.208 E1.03249 F8833 ; infill
+G1 X158.236 Y163.208 E1.03249 ; infill
 G1 X157.038 Y163.208 E.04055 ; infill
-G1 X163.208 Y152.522 E.41767 F8833 ; infill
-G1 X163.208 Y157.142 E.15638 F8833 ; infill
-G1 X136.792 Y157.142 E.89415 F8833 ; infill
+G1 X163.208 Y152.522 E.41767 ; infill
+G1 X163.208 Y157.142 E.15638 ; infill
+G1 X136.792 Y157.142 E.89415 ; infill
 G1 X136.792 Y158.593 E.04911 ; infill
-G1 X149.379 Y136.792 E.8521 F8833 ; infill
+G1 X149.379 Y136.792 E.8521 ; infill
 G1 X150.621 Y136.792 E.04204 ; infill
-G1 X163.208 Y158.593 E.8521 F8833 ; infill
-G1 X163.208 Y160.593 E.0677 F8833 ; infill
+G1 X163.208 Y158.593 E.8521 ; infill
+G1 X163.208 Y160.593 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y141.294 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y139.294 E.0677 F8833 ; infill
-G1 X150.599 Y163.208 E.93469 F8833 ; infill
+G1 X136.792 Y139.294 E.0677 ; infill
+G1 X150.599 Y163.208 E.93469 ; infill
 G1 X149.401 Y163.208 E.04055 ; infill
-G1 X163.208 Y139.294 E.93469 F8833 ; infill
-G1 X163.208 Y137.301 E.06746 F8833 ; infill
-G1 X136.792 Y137.301 E.89415 F8833 ; infill
+G1 X163.208 Y139.294 E.93469 ; infill
+G1 X163.208 Y137.301 E.06746 ; infill
+G1 X136.792 Y137.301 E.89415 ; infill
 G1 X136.792 Y136.792 E.01723 ; infill
-G1 X138.284 Y136.792 E.0505 F8833 ; infill
+G1 X138.284 Y136.792 E.0505 ; infill
 ;LAYER_CHANGE:25
 ;Z:5.1
 ;HEIGHT:0.2
@@ -3865,35 +3741,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9874 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9873 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9873 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9873 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9873 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9873 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9873 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9873 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9873 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9873 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9873 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9872 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9872 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9872 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9872 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9872 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -3904,44 +3780,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y150.387 E.0677 F8831 ; infill
-G1 X136.792 Y150.387 E.89415 F8831 ; infill
-G1 X136.792 Y152.805 E.08185 F8831 ; infill
-G1 X142.799 Y163.208 E.40662 F8831 ; infill
+G1 X163.208 Y150.387 E.0677 ; infill
+G1 X136.792 Y150.387 E.89415 ; infill
+G1 X136.792 Y152.805 E.08185 ; infill
+G1 X142.799 Y163.208 E.40662 ; infill
 G1 X141.928 Y163.208 E.02948 ; infill
-G1 X157.179 Y136.792 E1.03247 F8831 ; infill
+G1 X157.179 Y136.792 E1.03247 ; infill
 G1 X158.095 Y136.792 E.03101 ; infill
-G1 X163.208 Y145.648 E.34614 F8831 ; infill
-G1 X163.208 Y143.773 E.06347 F8830 ; infill
-G1 X136.792 Y143.773 E.89415 F8831 ; infill
-G1 X136.792 Y145.649 E.0635 F8831 ; infill
-G1 X141.906 Y136.792 E.34618 F8831 ; infill
+G1 X163.208 Y145.648 E.34614 ; infill
+G1 X163.208 Y143.773 E.06347 ; infill
+G1 X136.792 Y143.773 E.89415 ; infill
+G1 X136.792 Y145.649 E.0635 ; infill
+G1 X141.906 Y136.792 E.34618 ; infill
 M73 P20 R21
 G1 X142.821 Y136.792 E.03097 ; infill
-G1 X158.072 Y163.208 E1.03247 F8831 ; infill
+G1 X158.072 Y163.208 E1.03247 ; infill
 G1 X157.202 Y163.208 E.02945 ; infill
-G1 X163.208 Y152.805 E.4066 F8830 ; infill
-G1 X163.208 Y157 E.142 F8830 ; infill
-G1 X136.792 Y157 E.89415 F8830 ; infill
-G1 X136.792 Y158.876 E.0635 F8830 ; infill
-G1 X149.542 Y136.792 E.86315 F8830 ; infill
+G1 X163.208 Y152.805 E.4066 ; infill
+G1 X163.208 Y157 E.142 ; infill
+G1 X136.792 Y157 E.89415 ; infill
+G1 X136.792 Y158.876 E.0635 ; infill
+G1 X149.542 Y136.792 E.86315 ; infill
 G1 X150.458 Y136.792 E.03101 ; infill
-G1 X163.208 Y158.876 E.86315 F8830 ; infill
-G1 X163.208 Y160.876 E.0677 F8830 ; infill
+G1 X163.208 Y158.876 E.86315 ; infill
+G1 X163.208 Y160.876 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y141.577 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y139.577 E.0677 F8830 ; infill
-G1 X150.435 Y163.208 E.92362 F8830 ; infill
+G1 X136.792 Y139.577 E.0677 ; infill
+G1 X150.435 Y163.208 E.92362 ; infill
 G1 X149.565 Y163.208 E.02945 ; infill
-G1 X163.208 Y139.577 E.92362 F8830 ; infill
-G1 X163.208 Y137.16 E.08181 F8830 ; infill
-G1 X136.792 Y137.159 E.89415 F8830 ; infill
+G1 X163.208 Y139.577 E.92362 ; infill
+G1 X163.208 Y137.16 E.08181 ; infill
+G1 X136.792 Y137.159 E.89415 ; infill
 G1 X136.792 Y136.792 E.01242 ; infill
-G1 X138.425 Y136.792 E.05528 F8829 ; infill
+G1 X138.425 Y136.792 E.05528 ; infill
 ;LAYER_CHANGE:26
 ;Z:5.3
 ;HEIGHT:0.2
@@ -3960,36 +3836,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9870 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9870 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9870 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9870 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9870 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9870 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9869 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9869 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9869 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9869 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
 M73 P21 R21
-G1 X135.632 Y135.632 E.87012 F9869 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9869 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9869 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9869 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9869 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9868 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4000,48 +3876,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.159 E.87421 F8828 ; infill
-G1 X163.208 Y156.859 E.07785 F8828 ; infill
-G1 X136.792 Y156.859 E.89415 F8828 ; infill
-G1 X136.792 Y159.159 E.07785 F8828 ; infill
-G1 X149.705 Y136.792 E.87421 F8828 ; infill
+G1 X163.208 Y159.159 E.87421 ; infill
+G1 X163.208 Y156.859 E.07785 ; infill
+G1 X136.792 Y156.859 E.89415 ; infill
+G1 X136.792 Y159.159 E.07785 ; infill
+G1 X149.705 Y136.792 E.87421 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.658 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.909 Y163.208 E1.03247 F8827 ; infill
+G1 X157.909 Y163.208 E1.03247 ; infill
 G1 X157.365 Y163.208 E.01841 ; infill
-G1 X163.208 Y153.087 E.39558 F8827 ; infill
-G1 X163.208 Y150.245 E.0962 F8827 ; infill
-G1 X136.792 Y150.245 E.89415 F8827 ; infill
-G1 X136.792 Y153.087 E.0962 F8827 ; infill
-G1 X142.635 Y163.208 E.39558 F8827 ; infill
+G1 X163.208 Y153.087 E.39558 ; infill
+G1 X163.208 Y150.245 E.0962 ; infill
+G1 X136.792 Y150.245 E.89415 ; infill
+G1 X136.792 Y153.087 E.0962 ; infill
+G1 X142.635 Y163.208 E.39558 ; infill
 G1 X142.091 Y163.208 E.01841 ; infill
-G1 X157.342 Y136.792 E1.03247 F8827 ; infill
+G1 X157.342 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.931 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y145.931 E.35721 F8827 ; infill
-G1 X163.208 Y143.632 E.07782 F8827 ; infill
-G1 X136.792 Y143.632 E.89415 F8827 ; infill
-G1 X136.792 Y145.932 E.07785 F8827 ; infill
-G1 X142.069 Y136.792 E.35724 F8827 ; infill
+G1 X163.208 Y145.931 E.35721 ; infill
+G1 X163.208 Y143.632 E.07782 ; infill
+G1 X136.792 Y143.632 E.89415 ; infill
+G1 X136.792 Y145.932 E.07785 ; infill
+G1 X142.069 Y136.792 E.35724 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y139.018 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y137.018 E.0677 F8826 ; infill
-G1 X163.208 Y137.018 E.89415 F8827 ; infill
-G1 X163.208 Y139.86 E.0962 F8826 ; infill
-G1 X149.728 Y163.208 E.91256 F8827 ; infill
+G1 X136.792 Y137.018 E.0677 ; infill
+G1 X163.208 Y137.018 E.89415 ; infill
+G1 X163.208 Y139.86 E.0962 ; infill
+G1 X149.728 Y163.208 E.91256 ; infill
 G1 X150.272 Y163.208 E.01841 ; infill
-G1 X136.792 Y139.86 E.91256 F8826 ; infill
-G1 X136.792 Y141.86 E.0677 F8826 ; infill
+G1 X136.792 Y139.86 E.91256 ; infill
+G1 X136.792 Y141.86 E.0677 ; infill
 ;LAYER_CHANGE:27
 ;Z:5.5
 ;HEIGHT:0.2
@@ -4060,35 +3936,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9866 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9866 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9866 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9866 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9866 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9866 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9866 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9866 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9865 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9865 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9865 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9865 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9865 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9865 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9864 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9864 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4099,48 +3975,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.441 E.88525 F8824 ; infill
-G1 X163.208 Y156.718 E.09217 F8824 ; infill
-G1 X136.792 Y156.718 E.89415 F8824 ; infill
-G1 X136.792 Y159.441 E.09217 F8824 ; infill
-G1 X149.869 Y136.792 E.88525 F8824 ; infill
+G1 X163.208 Y159.441 E.88525 ; infill
+G1 X163.208 Y156.718 E.09217 ; infill
+G1 X136.792 Y156.718 E.89415 ; infill
+G1 X136.792 Y159.441 E.09217 ; infill
+G1 X149.869 Y136.792 E.88525 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.494 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.746 Y163.208 E1.03249 F8824 ; infill
+G1 X157.746 Y163.208 E1.03249 ; infill
 G1 X157.528 Y163.208 E.00738 ; infill
-G1 X163.208 Y153.37 E.38452 F8824 ; infill
-G1 X163.208 Y150.104 E.11055 F8823 ; infill
-G1 X136.792 Y150.104 E.89415 F8823 ; infill
-G1 X136.792 Y153.37 E.11055 F8823 ; infill
-G1 X142.472 Y163.208 E.38452 F8823 ; infill
+G1 X163.208 Y153.37 E.38452 ; infill
+G1 X163.208 Y150.104 E.11055 ; infill
+G1 X136.792 Y150.104 E.89415 ; infill
+G1 X136.792 Y153.37 E.11055 ; infill
+G1 X142.472 Y163.208 E.38452 ; infill
 G1 X142.255 Y163.208 E.00735 ; infill
-G1 X157.506 Y136.792 E1.03247 F8823 ; infill
+G1 X157.506 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.768 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y146.214 E.36826 F8823 ; infill
-G1 X163.208 Y143.49 E.0922 F8823 ; infill
-G1 X136.792 Y143.49 E.89415 F8823 ; infill
-G1 X136.792 Y146.214 E.0922 F8823 ; infill
-G1 X142.232 Y136.792 E.36826 F8823 ; infill
+G1 X163.208 Y146.214 E.36826 ; infill
+G1 X163.208 Y143.49 E.0922 ; infill
+G1 X136.792 Y143.49 E.89415 ; infill
+G1 X136.792 Y146.214 E.0922 ; infill
+G1 X142.232 Y136.792 E.36826 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y138.877 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y136.877 E.0677 F8823 ; infill
-G1 X163.208 Y136.877 E.89415 F8823 ; infill
-G1 X163.208 Y140.143 E.11055 F8823 ; infill
-G1 X149.891 Y163.208 E.90151 F8823 ; infill
+G1 X136.792 Y136.877 E.0677 ; infill
+G1 X163.208 Y136.877 E.89415 ; infill
+G1 X163.208 Y140.143 E.11055 ; infill
+G1 X149.891 Y163.208 E.90151 ; infill
 G1 X150.109 Y163.208 E.00738 ; infill
-G1 X136.792 Y140.143 E.90151 F8822 ; infill
-G1 X136.792 Y142.143 E.0677 F8822 ; infill
+G1 X136.792 Y140.143 E.90151 ; infill
+G1 X136.792 Y142.143 E.0677 ; infill
 ;LAYER_CHANGE:28
 ;Z:5.7
 ;HEIGHT:0.2
@@ -4160,35 +4036,35 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.407
 G1 F9886
 M73 P22 R21
-G1 X163.554 Y163.554 E.82083 F9862 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9862 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9862 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9862 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9861 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9861 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9861 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9861 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9861 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9861 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9860 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9860 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9860 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9860 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9860 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9860 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4199,48 +4075,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.724 E.0677 F8820 ; infill
-G1 X149.968 Y136.792 E.89631 F8820 ; infill
+G1 X163.208 Y159.724 E.0677 ; infill
+G1 X149.968 Y136.792 E.89631 ; infill
 G1 X150.032 Y136.792 E.00217 ; infill
-G1 X136.792 Y159.724 E.89631 F8820 ; infill
-G1 X136.792 Y163.19 E.11732 F8820 ; infill
-G1 X163.208 Y163.19 E.89415 F8819 ; infill
-G1 X163.208 Y161.19 E.0677 F8819 ; infill
+G1 X136.792 Y159.724 E.89631 ; infill
+G1 X136.792 Y163.19 E.11732 ; infill
+G1 X163.208 Y163.19 E.89415 ; infill
+G1 X163.208 Y161.19 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.691 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y153.653 E.37347 F8819 ; infill
-G1 X163.208 Y156.576 E.09894 F8819 ; infill
-G1 X136.792 Y156.576 E.89415 F8819 ; infill
-G1 X136.792 Y153.653 E.09894 F8819 ; infill
-G1 X142.309 Y163.208 E.37347 F8819 ; infill
+G1 X163.208 Y153.653 E.37347 ; infill
+G1 X163.208 Y156.576 E.09894 ; infill
+G1 X136.792 Y156.576 E.89415 ; infill
+G1 X136.792 Y153.653 E.09894 ; infill
+G1 X142.309 Y163.208 E.37347 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.418 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.669 Y136.792 E1.03247 F8819 ; infill
+G1 X157.669 Y136.792 E1.03247 ; infill
 G1 X157.605 Y136.792 E.00217 ; infill
-G1 X163.208 Y146.497 E.37932 F8819 ; infill
-G1 X163.208 Y149.963 E.11732 F8819 ; infill
-G1 X136.792 Y149.962 E.89415 F8819 ; infill
-G1 X136.792 Y146.497 E.11729 F8818 ; infill
-G1 X142.395 Y136.792 E.37932 F8819 ; infill
+G1 X163.208 Y146.497 E.37932 ; infill
+G1 X163.208 Y149.963 E.11732 ; infill
+G1 X136.792 Y149.962 E.89415 ; infill
+G1 X136.792 Y146.497 E.11729 ; infill
+G1 X142.395 Y136.792 E.37932 ; infill
 G1 X142.331 Y136.792 E.00217 ; infill
-G1 X157.582 Y163.208 E1.03247 F8819 ; infill
+G1 X157.582 Y163.208 E1.03247 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.055 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.426 E.89044 F8818 ; infill
-G1 X163.208 Y143.349 E.09894 F8818 ; infill
-G1 X136.792 Y143.349 E.89415 F8818 ; infill
-G1 X136.792 Y140.426 E.09894 F8818 ; infill
-G1 X149.946 Y163.208 E.89045 F8818 ; infill
+G1 X163.208 Y140.426 E.89044 ; infill
+G1 X163.208 Y143.349 E.09894 ; infill
+G1 X136.792 Y143.349 E.89415 ; infill
+G1 X136.792 Y140.426 E.09894 ; infill
+G1 X149.946 Y163.208 E.89045 ; infill
 ;LAYER_CHANGE:29
 ;Z:5.9
 ;HEIGHT:0.2
@@ -4259,35 +4135,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9857 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9857 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9857 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9856 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9856 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9856 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9856 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9856 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9856 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9855 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9855 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9855 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9855 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9854 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9854 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9854 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4298,49 +4174,49 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y160.007 E.0677 F8815 ; infill
-G1 X149.805 Y136.792 E.90736 F8815 ; infill
+G1 X163.208 Y160.007 E.0677 ; infill
+G1 X149.805 Y136.792 E.90736 ; infill
 G1 X150.195 Y136.792 E.0132 ; infill
-G1 X136.792 Y160.007 E.90736 F8815 ; infill
-G1 X136.792 Y163.048 E.10293 F8815 ; infill
-G1 X163.208 Y163.048 E.89415 F8815 ; infill
-G1 X163.208 Y161.048 E.0677 F8814 ; infill
+G1 X136.792 Y160.007 E.90736 ; infill
+G1 X136.792 Y163.048 E.10293 ; infill
+G1 X163.208 Y163.048 E.89415 ; infill
+G1 X163.208 Y161.048 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.855 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y153.936 E.3624 F8814 ; infill
-G1 X163.208 Y156.435 E.08459 F8814 ; infill
-G1 X136.792 Y156.435 E.89415 F8814 ; infill
-G1 X136.792 Y153.936 E.08459 F8814 ; infill
-G1 X142.145 Y163.208 E.3624 F8814 ; infill
+G1 X163.208 Y153.936 E.3624 ; infill
+G1 X163.208 Y156.435 E.08459 ; infill
+G1 X136.792 Y156.435 E.89415 ; infill
+G1 X136.792 Y153.936 E.08459 ; infill
+G1 X142.145 Y163.208 E.3624 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.581 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.832 Y136.792 E1.03247 F8814 ; infill
+G1 X157.832 Y136.792 E1.03247 ; infill
 G1 X157.441 Y136.792 E.01323 ; infill
-G1 X163.208 Y146.78 E.39039 F8814 ; infill
-G1 X163.208 Y149.821 E.10293 F8814 ; infill
-G1 X136.792 Y149.821 E.89415 F8814 ; infill
+G1 X163.208 Y146.78 E.39039 ; infill
+G1 X163.208 Y149.821 E.10293 ; infill
+G1 X136.792 Y149.821 E.89415 ; infill
 M73 P23 R21
-G1 X136.792 Y146.78 E.10293 F8814 ; infill
-G1 X142.559 Y136.792 E.39039 F8814 ; infill
+G1 X136.792 Y146.78 E.10293 ; infill
+G1 X142.559 Y136.792 E.39039 ; infill
 G1 X142.168 Y136.792 E.01323 ; infill
-G1 X157.419 Y163.208 E1.03247 F8813 ; infill
+G1 X157.419 Y163.208 E1.03247 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.218 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.709 E.87938 F8813 ; infill
-G1 X163.208 Y143.207 E.08455 F8814 ; infill
-G1 X136.792 Y143.207 E.89415 F8813 ; infill
-G1 X136.792 Y140.709 E.08455 F8813 ; infill
-G1 X149.782 Y163.208 E.87938 F8813 ; infill
+G1 X163.208 Y140.709 E.87938 ; infill
+G1 X163.208 Y143.207 E.08455 ; infill
+G1 X136.792 Y143.207 E.89415 ; infill
+G1 X136.792 Y140.709 E.08455 ; infill
+G1 X149.782 Y163.208 E.87938 ; infill
 ;LAYER_CHANGE:30
 ;Z:6.1
 ;HEIGHT:0.2
@@ -4359,35 +4235,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9851 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9851 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9851 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9851 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9850 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9850 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9850 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9850 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9850 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9849 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9849 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9849 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9849 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9848 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9848 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9848 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4398,48 +4274,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y160.29 E.0677 F8809 ; infill
-G1 X149.641 Y136.792 E.91843 F8809 ; infill
+G1 X163.208 Y160.29 E.0677 ; infill
+G1 X149.641 Y136.792 E.91843 ; infill
 G1 X150.359 Y136.792 E.0243 ; infill
-G1 X136.792 Y160.29 E.91843 F8809 ; infill
-G1 X136.792 Y162.907 E.08858 F8809 ; infill
-G1 X163.208 Y162.907 E.89415 F8809 ; infill
-G1 X163.208 Y160.907 E.0677 F8808 ; infill
+G1 X136.792 Y160.29 E.91843 ; infill
+G1 X136.792 Y162.907 E.08858 ; infill
+G1 X163.208 Y162.907 E.89415 ; infill
+G1 X163.208 Y160.907 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X158.018 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y154.219 E.35134 F8809 ; infill
-G1 X163.208 Y156.293 E.0702 F8809 ; infill
-G1 X136.792 Y156.293 E.89415 F8809 ; infill
-G1 X136.792 Y154.219 E.0702 F8809 ; infill
-G1 X141.982 Y163.208 E.35134 F8808 ; infill
+G1 X163.208 Y154.219 E.35134 ; infill
+G1 X163.208 Y156.293 E.0702 ; infill
+G1 X136.792 Y156.293 E.89415 ; infill
+G1 X136.792 Y154.219 E.0702 ; infill
+G1 X141.982 Y163.208 E.35134 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.744 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.995 Y136.792 E1.03247 F8808 ; infill
+G1 X157.995 Y136.792 E1.03247 ; infill
 G1 X157.278 Y136.792 E.02427 ; infill
-G1 X163.208 Y147.063 E.40145 F8808 ; infill
-G1 X163.208 Y149.68 E.08858 F8808 ; infill
-G1 X136.792 Y149.68 E.89415 F8808 ; infill
-G1 X136.792 Y147.063 E.08858 F8808 ; infill
-G1 X142.722 Y136.792 E.40145 F8808 ; infill
+G1 X163.208 Y147.063 E.40145 ; infill
+G1 X163.208 Y149.68 E.08858 ; infill
+G1 X136.792 Y149.68 E.89415 ; infill
+G1 X136.792 Y147.063 E.08858 ; infill
+G1 X142.722 Y136.792 E.40145 ; infill
 G1 X142.004 Y136.792 E.0243 ; infill
-G1 X157.256 Y163.208 E1.03249 F8808 ; infill
+G1 X157.256 Y163.208 E1.03249 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.381 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.992 E.86833 F8807 ; infill
-G1 X163.208 Y143.066 E.0702 F8808 ; infill
-G1 X136.792 Y143.066 E.89415 F8807 ; infill
-G1 X136.792 Y140.992 E.0702 F8808 ; infill
-G1 X149.619 Y163.208 E.86833 F8807 ; infill
+G1 X163.208 Y140.992 E.86833 ; infill
+G1 X163.208 Y143.066 E.0702 ; infill
+G1 X136.792 Y143.066 E.89415 ; infill
+G1 X136.792 Y140.992 E.0702 ; infill
+G1 X149.619 Y163.208 E.86833 ; infill
 ;LAYER_CHANGE:31
 ;Z:6.3
 ;HEIGHT:0.2
@@ -4458,35 +4334,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9845 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9845 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9844 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9844 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9844 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9844 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9843 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9843 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9843 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9843 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9843 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9842 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9842 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9842 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9841 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9841 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4497,44 +4373,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y141.274 E.0677 F8803 ; infill
-G1 X150.545 Y163.208 E.85729 F8803 ; infill
+G1 X163.208 Y141.274 E.0677 ; infill
+G1 X150.545 Y163.208 E.85729 ; infill
 G1 X149.456 Y163.208 E.03686 ; infill
 M73 P24 R21
-G1 X136.792 Y141.274 E.8573 F8803 ; infill
-G1 X136.792 Y142.925 E.05588 F8804 ; infill
-G1 X163.208 Y142.925 E.89415 F8803 ; infill
-G1 X163.208 Y147.345 E.14961 F8803 ; infill
-G1 X157.115 Y136.792 E.41247 F8803 ; infill
+G1 X136.792 Y141.274 E.8573 ; infill
+G1 X136.792 Y142.925 E.05588 ; infill
+G1 X163.208 Y142.925 E.89415 ; infill
+G1 X163.208 Y147.345 E.14961 ; infill
+G1 X157.115 Y136.792 E.41247 ; infill
 G1 X158.159 Y136.792 E.03534 ; infill
-G1 X142.908 Y163.208 E1.03247 F8802 ; infill
+G1 X142.908 Y163.208 E1.03247 ; infill
 G1 X141.819 Y163.208 E.03686 ; infill
-G1 X136.792 Y154.502 E.34029 F8802 ; infill
-G1 X136.792 Y156.152 E.05585 F8802 ; infill
-G1 X163.208 Y156.152 E.89415 F8802 ; infill
-G1 X163.208 Y154.502 E.05585 F8802 ; infill
-G1 X158.181 Y163.208 E.34029 F8802 ; infill
+G1 X136.792 Y154.502 E.34029 ; infill
+G1 X136.792 Y156.152 E.05585 ; infill
+G1 X163.208 Y156.152 E.89415 ; infill
+G1 X163.208 Y154.502 E.05585 ; infill
+G1 X158.181 Y163.208 E.34029 ; infill
 G1 X157.092 Y163.208 E.03686 ; infill
-G1 X141.841 Y136.792 E1.03247 F8802 ; infill
+G1 X141.841 Y136.792 E1.03247 ; infill
 G1 X142.885 Y136.792 E.03534 ; infill
-G1 X136.792 Y147.346 E.4125 F8802 ; infill
-G1 X136.792 Y149.538 E.0742 F8801 ; infill
-G1 X163.208 Y149.538 E.89415 F8801 ; infill
-G1 X163.208 Y151.538 E.0677 F8801 ; infill
+G1 X136.792 Y147.346 E.4125 ; infill
+G1 X136.792 Y149.538 E.0742 ; infill
+G1 X163.208 Y149.538 E.89415 ; infill
+G1 X163.208 Y151.538 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y158.573 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y160.573 E.0677 F8801 ; infill
-G1 X149.478 Y136.792 E.92949 F8801 ; infill
+G1 X163.208 Y160.573 E.0677 ; infill
+G1 X149.478 Y136.792 E.92949 ; infill
 G1 X150.522 Y136.792 E.03534 ; infill
-G1 X136.792 Y160.573 E.92949 F8801 ; infill
-G1 X136.792 Y162.765 E.0742 F8800 ; infill
-G1 X163.208 Y162.766 E.89415 F8801 ; infill
+G1 X136.792 Y160.573 E.92949 ; infill
+G1 X136.792 Y162.765 E.0742 ; infill
+G1 X163.208 Y162.766 E.89415 ; infill
 G1 X163.208 Y163.208 E.01496 ; infill
-G1 X161.65 Y163.208 E.05274 F8800 ; infill
+G1 X161.65 Y163.208 E.05274 ; infill
 ;LAYER_CHANGE:32
 ;Z:6.5
 ;HEIGHT:0.2
@@ -4554,35 +4430,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9838 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9837 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9837 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9837 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9837 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9836 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9836 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9836 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9836 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9835 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9835 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9835 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9834 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9834 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9834 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9833 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4593,35 +4469,35 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y147.628 E.0677 F8796 ; infill
-G1 X156.951 Y136.792 E.42354 F8797 ; infill
+G1 X163.208 Y147.628 E.0677 ; infill
+G1 X156.951 Y136.792 E.42354 ; infill
 G1 X158.322 Y136.792 E.04641 ; infill
-G1 X143.071 Y163.208 E1.03247 F8796 ; infill
+G1 X143.071 Y163.208 E1.03247 ; infill
 G1 X141.655 Y163.208 E.04793 ; infill
-G1 X136.792 Y154.784 E.32924 F8796 ; infill
+G1 X136.792 Y154.784 E.32924 ; infill
 G1 X136.792 Y156.01 E.0415 ; infill
-G1 X163.208 Y156.01 E.89415 F8796 ; infill
+G1 X163.208 Y156.01 E.89415 ; infill
 G1 X163.208 Y154.784 E.0415 ; infill
-G1 X158.344 Y163.208 E.32926 F8796 ; infill
+G1 X158.344 Y163.208 E.32926 ; infill
 G1 X156.929 Y163.208 E.0479 ; infill
-G1 X141.678 Y136.792 E1.03247 F8796 ; infill
+G1 X141.678 Y136.792 E1.03247 ; infill
 G1 X143.049 Y136.792 E.04641 ; infill
-G1 X136.792 Y147.629 E.42357 F8795 ; infill
-G1 X136.792 Y149.397 E.05984 F8796 ; infill
-G1 X163.208 Y149.397 E.89415 F8795 ; infill
-G1 X163.208 Y151.397 E.0677 F8795 ; infill
+G1 X136.792 Y147.629 E.42357 ; infill
+G1 X136.792 Y149.397 E.05984 ; infill
+G1 X163.208 Y149.397 E.89415 ; infill
+G1 X163.208 Y151.397 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y158.856 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y160.856 E.0677 F8795 ; infill
-G1 X149.315 Y136.792 E.94054 F8795 ; infill
+G1 X163.208 Y160.856 E.0677 ; infill
+G1 X149.315 Y136.792 E.94054 ; infill
 G1 X150.685 Y136.792 E.04637 ; infill
-G1 X136.792 Y160.856 E.94054 F8794 ; infill
-G1 X136.792 Y162.624 E.05984 F8795 ; infill
-G1 X163.208 Y162.624 E.89415 F8794 ; infill
+G1 X136.792 Y160.856 E.94054 ; infill
+G1 X136.792 Y162.624 E.05984 ; infill
+G1 X163.208 Y162.624 E.89415 ; infill
 G1 X163.208 Y163.208 E.01977 ; infill
 G1 X161.791 Y163.208 E.04796 ; infill
 G1 E-2 F2400 ; retract
@@ -4630,13 +4506,13 @@ G1 X152.708 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X150.708 Y163.208 E.0677 F8794 ; infill
-G1 X163.208 Y141.557 E.84623 F8794 ; infill
+G1 X150.708 Y163.208 E.0677 ; infill
+G1 X163.208 Y141.557 E.84623 ; infill
 G1 X163.208 Y142.783 E.0415 ; infill
-G1 X136.792 Y142.783 E.89415 F8794 ; infill
+G1 X136.792 Y142.783 E.89415 ; infill
 G1 X136.792 Y141.557 E.0415 ; infill
-G1 X149.292 Y163.208 E.84623 F8793 ; infill
-G1 X147.292 Y163.208 E.0677 F8793 ; infill
+G1 X149.292 Y163.208 E.84623 ; infill
+G1 X147.292 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:33
 ;Z:6.7
 ;HEIGHT:0.2
@@ -4655,36 +4531,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9829 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9829 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9829 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9829 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9828 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9828 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9828 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9827 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9827 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9827 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9827 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
 M73 P25 R20
-G1 X164.308 Y135.632 E.86831 F9826 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9826 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9826 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9825 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9825 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4695,42 +4571,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.849 Y136.792 E.0677 F8789 ; infill
-G1 X136.792 Y161.139 E.95161 F8789 ; infill
+G1 X150.849 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.139 E.95161 ; infill
 G1 X136.792 Y162.483 E.04549 ; infill
-G1 X163.208 Y162.483 E.89415 F8788 ; infill
+G1 X163.208 Y162.483 E.89415 ; infill
 G1 X163.208 Y161.139 E.04549 ; infill
-G1 X149.151 Y136.792 E.95161 F8788 ; infill
-G1 X147.151 Y136.792 E.0677 F8788 ; infill
+G1 X149.151 Y136.792 E.95161 ; infill
+G1 X147.151 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X152.871 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X150.871 Y163.208 E.0677 F8788 ; infill
-G1 X163.208 Y141.84 E.83518 F8788 ; infill
+G1 X150.871 Y163.208 E.0677 ; infill
+G1 X163.208 Y141.84 E.83518 ; infill
 G1 X163.208 Y142.642 E.02715 ; infill
-G1 X136.792 Y142.642 E.89415 F8787 ; infill
+G1 X136.792 Y142.642 E.89415 ; infill
 G1 X136.792 Y141.84 E.02715 ; infill
-G1 X149.129 Y163.208 E.83518 F8787 ; infill
-G1 X143.234 Y163.208 E.19954 F8787 ; infill
-G1 X158.485 Y136.792 E1.03247 F8787 ; infill
-G1 X156.788 Y136.792 E.05744 F8787 ; infill
-G1 X163.208 Y147.911 E.4346 F8787 ; infill
+G1 X149.129 Y163.208 E.83518 ; infill
+G1 X143.234 Y163.208 E.19954 ; infill
+G1 X158.485 Y136.792 E1.03247 ; infill
+G1 X156.788 Y136.792 E.05744 ; infill
+G1 X163.208 Y147.911 E.4346 ; infill
 G1 X163.208 Y149.255 E.04549 ; infill
-G1 X136.792 Y149.255 E.89415 F8786 ; infill
+G1 X136.792 Y149.255 E.89415 ; infill
 G1 X136.792 Y147.911 E.04549 ; infill
-G1 X143.212 Y136.792 E.4346 F8786 ; infill
-G1 X141.515 Y136.792 E.05744 F8786 ; infill
-G1 X156.766 Y163.208 E1.03247 F8786 ; infill
-G1 X158.508 Y163.208 E.05896 F8786 ; infill
-G1 X163.208 Y155.067 E.31819 F8786 ; infill
+G1 X143.212 Y136.792 E.4346 ; infill
+G1 X141.515 Y136.792 E.05744 ; infill
+G1 X156.766 Y163.208 E1.03247 ; infill
+G1 X158.508 Y163.208 E.05896 ; infill
+G1 X163.208 Y155.067 E.31819 ; infill
 G1 X163.208 Y155.869 E.02715 ; infill
-G1 X136.792 Y155.869 E.89415 F8786 ; infill
+G1 X136.792 Y155.869 E.89415 ; infill
 G1 X136.792 Y155.067 E.02715 ; infill
-G1 X141.492 Y163.208 E.31819 F8785 ; infill
-G1 X139.492 Y163.208 E.0677 F8785 ; infill
+G1 X141.492 Y163.208 E.31819 ; infill
+G1 X139.492 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:34
 ;Z:6.9
 ;HEIGHT:0.2
@@ -4749,35 +4625,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9821 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9820 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9820 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9819 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9819 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9819 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9819 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9818 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9818 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9818 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9817 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9817 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9817 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9816 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9816 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9816 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4788,42 +4664,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.012 Y136.792 E.0677 F8780 ; infill
-G1 X136.792 Y161.421 E.96264 F8780 ; infill
+G1 X151.012 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.421 E.96264 ; infill
 G1 X136.792 Y162.341 E.03114 ; infill
-G1 X163.208 Y162.341 E.89415 F8780 ; infill
+G1 X163.208 Y162.341 E.89415 ; infill
 G1 X163.208 Y161.421 E.03114 ; infill
-G1 X148.988 Y136.792 E.96264 F8780 ; infill
-G1 X146.988 Y136.792 E.0677 F8779 ; infill
+G1 X148.988 Y136.792 E.96264 ; infill
+G1 X146.988 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.034 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.034 Y163.208 E.0677 F8779 ; infill
-G1 X163.208 Y142.123 E.82412 F8779 ; infill
+G1 X151.034 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.123 E.82412 ; infill
 G1 X163.208 Y142.5 E.01276 ; infill
-G1 X136.792 Y142.5 E.89415 F8779 ; infill
+G1 X136.792 Y142.5 E.89415 ; infill
 G1 X136.792 Y142.123 E.01276 ; infill
-G1 X148.966 Y163.208 E.82412 F8778 ; infill
-G1 X143.398 Y163.208 E.18847 F8778 ; infill
-G1 X158.649 Y136.792 E1.03247 F8778 ; infill
-G1 X156.625 Y136.792 E.06851 F8778 ; infill
-G1 X163.208 Y148.194 E.44565 F8778 ; infill
+G1 X148.966 Y163.208 E.82412 ; infill
+G1 X143.398 Y163.208 E.18847 ; infill
+G1 X158.649 Y136.792 E1.03247 ; infill
+G1 X156.625 Y136.792 E.06851 ; infill
+G1 X163.208 Y148.194 E.44565 ; infill
 G1 X163.208 Y149.114 E.03114 ; infill
-G1 X136.792 Y149.114 E.89415 F8778 ; infill
+G1 X136.792 Y149.114 E.89415 ; infill
 G1 X136.792 Y148.194 E.03114 ; infill
-G1 X143.375 Y136.792 E.44565 F8777 ; infill
-G1 X141.351 Y136.792 E.06851 F8777 ; infill
-G1 X156.602 Y163.208 E1.03247 F8777 ; infill
-G1 X158.671 Y163.208 E.07003 F8778 ; infill
-G1 X163.208 Y155.35 E.30713 F8777 ; infill
+G1 X143.375 Y136.792 E.44565 ; infill
+G1 X141.351 Y136.792 E.06851 ; infill
+G1 X156.602 Y163.208 E1.03247 ; infill
+G1 X158.671 Y163.208 E.07003 ; infill
+G1 X163.208 Y155.35 E.30713 ; infill
 G1 X163.208 Y155.728 E.01279 ; infill
-G1 X136.792 Y155.728 E.89415 F8777 ; infill
+G1 X136.792 Y155.728 E.89415 ; infill
 G1 X136.792 Y155.35 E.01279 ; infill
-G1 X141.329 Y163.208 E.30713 F8777 ; infill
-G1 X139.329 Y163.208 E.0677 F8776 ; infill
+G1 X141.329 Y163.208 E.30713 ; infill
+G1 X139.329 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:35
 ;Z:7.1
 ;HEIGHT:0.2
@@ -4842,36 +4718,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9811 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9810 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
 M73 P26 R20
-G1 X136.446 Y136.446 E.82083 F9810 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9810 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9809 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9809 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9809 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9808 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9808 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9808 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9807 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9807 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9807 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9806 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9806 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9805 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4882,38 +4758,38 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.175 Y136.792 E.0677 F8771 ; infill
-G1 X136.792 Y161.704 E.97369 F8771 ; infill
+G1 X151.175 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.704 E.97369 ; infill
 G1 X136.792 Y162.2 E.01679 ; infill
-G1 X163.208 Y162.2 E.89415 F8771 ; infill
+G1 X163.208 Y162.2 E.89415 ; infill
 G1 X163.208 Y161.704 E.01679 ; infill
-G1 X148.825 Y136.792 E.97369 F8770 ; infill
-G1 X146.825 Y136.792 E.0677 F8770 ; infill
+G1 X148.825 Y136.792 E.97369 ; infill
+G1 X146.825 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.198 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.198 Y163.208 E.0677 F8770 ; infill
-G1 X163.208 Y142.359 E.81443 F8770 ; infill
-G1 X136.792 Y142.359 E.89415 F8770 ; infill
-G1 X148.802 Y163.208 E.81443 F8769 ; infill
-G1 X143.561 Y163.208 E.1774 F8769 ; infill
-G1 X158.812 Y136.792 E1.03247 F8769 ; infill
-G1 X156.462 Y136.792 E.07954 F8769 ; infill
-G1 X163.208 Y148.477 E.45671 F8768 ; infill
+G1 X151.198 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.359 E.81443 ; infill
+G1 X136.792 Y142.359 E.89415 ; infill
+G1 X148.802 Y163.208 E.81443 ; infill
+G1 X143.561 Y163.208 E.1774 ; infill
+G1 X158.812 Y136.792 E1.03247 ; infill
+G1 X156.462 Y136.792 E.07954 ; infill
+G1 X163.208 Y148.477 E.45671 ; infill
 G1 X163.208 Y148.973 E.01679 ; infill
-G1 X136.792 Y148.973 E.89415 F8768 ; infill
+G1 X136.792 Y148.973 E.89415 ; infill
 G1 X136.792 Y148.477 E.01679 ; infill
-G1 X143.538 Y136.792 E.45671 F8768 ; infill
-G1 X141.188 Y136.792 E.07954 F8768 ; infill
-G1 X156.439 Y163.208 E1.03247 F8767 ; infill
-G1 X158.834 Y163.208 E.08107 F8767 ; infill
-G1 X163.208 Y155.586 E.29746 F8767 ; infill
-G1 X136.792 Y155.586 E.89415 F8767 ; infill
-G1 X141.166 Y163.208 E.29746 F8767 ; infill
-G1 X139.166 Y163.208 E.0677 F8767 ; infill
+G1 X143.538 Y136.792 E.45671 ; infill
+G1 X141.188 Y136.792 E.07954 ; infill
+G1 X156.439 Y163.208 E1.03247 ; infill
+G1 X158.834 Y163.208 E.08107 ; infill
+G1 X163.208 Y155.586 E.29746 ; infill
+G1 X136.792 Y155.586 E.89415 ; infill
+G1 X141.166 Y163.208 E.29746 ; infill
+G1 X139.166 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:36
 ;Z:7.3
 ;HEIGHT:0.2
@@ -4932,35 +4808,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9800 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9799 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9799 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9799 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9798 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9798 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9798 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9797 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9797 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9797 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9796 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9796 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9795 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9795 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9794 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9794 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -4971,39 +4847,39 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.338 Y136.792 E.0677 F8761 ; infill
-G1 X136.792 Y162.058 E.98683 F8761 ; infill
-G1 X163.208 Y162.058 E.89415 F8761 ; infill
-G1 X148.662 Y136.792 E.98683 F8760 ; infill
-G1 X146.662 Y136.792 E.0677 F8760 ; infill
+G1 X151.338 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.058 E.98683 ; infill
+G1 X163.208 Y162.058 E.89415 ; infill
+G1 X148.662 Y136.792 E.98683 ; infill
+G1 X146.662 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.361 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.361 Y163.208 E.0677 F8759 ; infill
-G1 X163.208 Y142.689 E.802 F8760 ; infill
+G1 X151.361 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.689 E.802 ; infill
 G1 X163.208 Y142.218 E.01594 ; infill
-G1 X136.792 Y142.217 E.89415 F8759 ; infill
+G1 X136.792 Y142.217 E.89415 ; infill
 G1 X136.792 Y142.689 E.01598 ; infill
-G1 X148.639 Y163.208 E.802 F8759 ; infill
-G1 X143.724 Y163.208 E.16637 F8759 ; infill
-G1 X158.975 Y136.792 E1.03247 F8759 ; infill
-G1 X156.298 Y136.792 E.09061 F8759 ; infill
-G1 X163.208 Y148.831 E.46986 F8758 ; infill
-G1 X136.792 Y148.831 E.89415 F8758 ; infill
-G1 X143.702 Y136.792 E.46986 F8758 ; infill
+G1 X148.639 Y163.208 E.802 ; infill
+G1 X143.724 Y163.208 E.16637 ; infill
+G1 X158.975 Y136.792 E1.03247 ; infill
+G1 X156.298 Y136.792 E.09061 ; infill
+G1 X163.208 Y148.831 E.46986 ; infill
+G1 X136.792 Y148.831 E.89415 ; infill
+G1 X143.702 Y136.792 E.46986 ; infill
 M73 P27 R20
-G1 X141.025 Y136.792 E.09061 F8758 ; infill
-G1 X156.276 Y163.208 E1.03247 F8757 ; infill
-G1 X158.998 Y163.208 E.09214 F8757 ; infill
-G1 X163.208 Y155.916 E.28501 F8757 ; infill
+G1 X141.025 Y136.792 E.09061 ; infill
+G1 X156.276 Y163.208 E1.03247 ; infill
+G1 X158.998 Y163.208 E.09214 ; infill
+G1 X163.208 Y155.916 E.28501 ; infill
 G1 X163.208 Y155.445 E.01594 ; infill
-G1 X136.792 Y155.445 E.89415 F8757 ; infill
+G1 X136.792 Y155.445 E.89415 ; infill
 G1 X136.792 Y155.916 E.01594 ; infill
-G1 X141.002 Y163.208 E.28501 F8756 ; infill
-G1 X139.002 Y163.208 E.0677 F8756 ; infill
+G1 X141.002 Y163.208 E.28501 ; infill
+G1 X139.002 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:37
 ;Z:7.5
 ;HEIGHT:0.2
@@ -5022,35 +4898,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9788 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9788 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9787 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9787 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9787 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9786 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9786 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9785 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9785 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9785 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9784 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9784 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9783 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9783 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9782 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9782 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5061,42 +4937,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.502 Y136.792 E.0677 F8750 ; infill
-G1 X136.792 Y162.27 E.99582 F8750 ; infill
+G1 X151.502 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.27 E.99582 ; infill
 G1 X136.792 Y161.917 E.01195 ; infill
-G1 X163.208 Y161.917 E.89415 F8750 ; infill
+G1 X163.208 Y161.917 E.89415 ; infill
 G1 X163.208 Y162.27 E.01195 ; infill
-G1 X148.498 Y136.792 E.99582 F8749 ; infill
-G1 X146.498 Y136.792 E.0677 F8749 ; infill
+G1 X148.498 Y136.792 E.99582 ; infill
+G1 X146.498 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.524 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.524 Y163.208 E.0677 F8748 ; infill
-G1 X163.208 Y142.971 E.79097 F8749 ; infill
+G1 X151.524 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.971 E.79097 ; infill
 G1 X163.208 Y142.076 E.03029 ; infill
-G1 X136.792 Y142.076 E.89415 F8748 ; infill
+G1 X136.792 Y142.076 E.89415 ; infill
 G1 X136.792 Y142.971 E.03029 ; infill
-G1 X148.476 Y163.208 E.79097 F8748 ; infill
-G1 X143.888 Y163.208 E.1553 F8748 ; infill
-G1 X159.139 Y136.792 E1.03247 F8747 ; infill
-G1 X156.135 Y136.792 E.10168 F8747 ; infill
-G1 X163.208 Y149.043 E.47883 F8747 ; infill
+G1 X148.476 Y163.208 E.79097 ; infill
+G1 X143.888 Y163.208 E.1553 ; infill
+G1 X159.139 Y136.792 E1.03247 ; infill
+G1 X156.135 Y136.792 E.10168 ; infill
+G1 X163.208 Y149.043 E.47883 ; infill
 G1 X163.208 Y148.69 E.01195 ; infill
-G1 X136.792 Y148.69 E.89415 F8747 ; infill
+G1 X136.792 Y148.69 E.89415 ; infill
 G1 X136.792 Y149.043 E.01195 ; infill
-G1 X143.865 Y136.792 E.47883 F8746 ; infill
-G1 X140.861 Y136.792 E.10168 F8747 ; infill
-G1 X156.113 Y163.208 E1.03249 F8746 ; infill
-G1 X159.161 Y163.208 E.10317 F8746 ; infill
-G1 X163.208 Y156.199 E.27395 F8746 ; infill
+G1 X143.865 Y136.792 E.47883 ; infill
+G1 X140.861 Y136.792 E.10168 ; infill
+G1 X156.113 Y163.208 E1.03249 ; infill
+G1 X159.161 Y163.208 E.10317 ; infill
+G1 X163.208 Y156.199 E.27395 ; infill
 G1 X163.208 Y155.303 E.03033 ; infill
-G1 X136.792 Y155.303 E.89415 F8745 ; infill
+G1 X136.792 Y155.303 E.89415 ; infill
 G1 X136.792 Y156.199 E.03033 ; infill
-G1 X140.839 Y163.208 E.27395 F8745 ; infill
-G1 X138.839 Y163.208 E.0677 F8745 ; infill
+G1 X140.839 Y163.208 E.27395 ; infill
+G1 X138.839 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:38
 ;Z:7.7
 ;HEIGHT:0.2
@@ -5115,36 +4991,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9775 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9775 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9774 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9774 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9773 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9773 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9773 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9772 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9772 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9772 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9771 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9771 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9770 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9770 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
 M73 P27 R19
-G1 X135.225 Y135.225 E.89477 F9769 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9769 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5155,13 +5031,13 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.665 Y136.792 E.0677 F8738 ; infill
-G1 X136.792 Y162.553 E1.00687 F8738 ; infill
+G1 X151.665 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.553 E1.00687 ; infill
 G1 X136.792 Y161.775 E.02633 ; infill
-G1 X163.208 Y161.776 E.89415 F8738 ; infill
+G1 X163.208 Y161.776 E.89415 ; infill
 G1 X163.208 Y162.553 E.0263 ; infill
-G1 X148.335 Y136.792 E1.00687 F8737 ; infill
-G1 X146.335 Y136.792 E.0677 F8737 ; infill
+G1 X148.335 Y136.792 E1.00687 ; infill
+G1 X146.335 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M73 P28 R19
 M204 S15000 ; adjust acceleration
@@ -5169,29 +5045,29 @@ G1 X153.688 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.688 Y163.208 E.0677 F8737 ; infill
-G1 X163.208 Y143.254 E.7799 F8737 ; infill
+G1 X151.688 Y163.208 E.0677 ; infill
+G1 X163.208 Y143.254 E.7799 ; infill
 G1 X163.208 Y141.935 E.04465 ; infill
-G1 X136.792 Y141.935 E.89415 F8736 ; infill
+G1 X136.792 Y141.935 E.89415 ; infill
 G1 X136.792 Y143.254 E.04465 ; infill
-G1 X148.313 Y163.208 E.77992 F8735 ; infill
-G1 X144.051 Y163.208 E.14426 F8736 ; infill
-G1 X159.302 Y136.792 E1.03247 F8735 ; infill
-G1 X155.972 Y136.792 E.11272 F8735 ; infill
-G1 X163.208 Y149.325 E.48986 F8735 ; infill
+G1 X148.313 Y163.208 E.77992 ; infill
+G1 X144.051 Y163.208 E.14426 ; infill
+G1 X159.302 Y136.792 E1.03247 ; infill
+G1 X155.972 Y136.792 E.11272 ; infill
+G1 X163.208 Y149.325 E.48986 ; infill
 G1 X163.208 Y148.548 E.0263 ; infill
-G1 X136.792 Y148.548 E.89415 F8734 ; infill
+G1 X136.792 Y148.548 E.89415 ; infill
 G1 X136.792 Y149.326 E.02633 ; infill
-G1 X144.028 Y136.792 E.48989 F8734 ; infill
-G1 X140.698 Y136.792 E.11272 F8734 ; infill
-G1 X155.949 Y163.208 E1.03247 F8734 ; infill
-G1 X159.324 Y163.208 E.11424 F8734 ; infill
-G1 X163.208 Y156.481 E.26293 F8733 ; infill
+G1 X144.028 Y136.792 E.48989 ; infill
+G1 X140.698 Y136.792 E.11272 ; infill
+G1 X155.949 Y163.208 E1.03247 ; infill
+G1 X159.324 Y163.208 E.11424 ; infill
+G1 X163.208 Y156.481 E.26293 ; infill
 G1 X163.208 Y155.162 E.04465 ; infill
-G1 X136.792 Y155.162 E.89415 F8733 ; infill
+G1 X136.792 Y155.162 E.89415 ; infill
 G1 X136.792 Y156.482 E.04468 ; infill
-G1 X140.676 Y163.208 E.2629 F8733 ; infill
-G1 X138.676 Y163.208 E.0677 F8732 ; infill
+G1 X140.676 Y163.208 E.2629 ; infill
+G1 X138.676 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:39
 ;Z:7.9
 ;HEIGHT:0.2
@@ -5210,35 +5086,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9761 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9761 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9760 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9760 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9759 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9759 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9759 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9758 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9758 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9757 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9757 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9756 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9756 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9755 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9755 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9754 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5249,42 +5125,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.828 Y136.792 E.0677 F8725 ; infill
-G1 X136.792 Y162.836 E1.01793 F8725 ; infill
+G1 X151.828 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.836 E1.01793 ; infill
 G1 X136.792 Y161.634 E.04069 ; infill
-G1 X163.208 Y161.634 E.89415 F8724 ; infill
+G1 X163.208 Y161.634 E.89415 ; infill
 G1 X163.208 Y162.836 E.04069 ; infill
-G1 X148.172 Y136.792 E1.01793 F8724 ; infill
-G1 X146.172 Y136.792 E.0677 F8724 ; infill
+G1 X148.172 Y136.792 E1.01793 ; infill
+G1 X146.172 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X138.512 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.512 Y163.208 E.0677 F8723 ; infill
-G1 X136.792 Y156.764 E.25186 F8724 ; infill
-G1 X136.792 Y155.02 E.05903 F8724 ; infill
-G1 X163.208 Y155.02 E.89415 F8723 ; infill
-G1 X163.208 Y156.764 E.05903 F8723 ; infill
-G1 X159.488 Y163.208 E.25186 F8723 ; infill
-G1 X155.786 Y163.208 E.12531 F8723 ; infill
-G1 X140.535 Y136.792 E1.03247 F8722 ; infill
-G1 X144.192 Y136.792 E.12379 F8722 ; infill
-G1 X136.792 Y149.608 E.50093 F8722 ; infill
+G1 X140.512 Y163.208 E.0677 ; infill
+G1 X136.792 Y156.764 E.25186 ; infill
+G1 X136.792 Y155.02 E.05903 ; infill
+G1 X163.208 Y155.02 E.89415 ; infill
+G1 X163.208 Y156.764 E.05903 ; infill
+G1 X159.488 Y163.208 E.25186 ; infill
+G1 X155.786 Y163.208 E.12531 ; infill
+G1 X140.535 Y136.792 E1.03247 ; infill
+G1 X144.192 Y136.792 E.12379 ; infill
+G1 X136.792 Y149.608 E.50093 ; infill
 G1 X136.792 Y148.407 E.04065 ; infill
-G1 X163.208 Y148.407 E.89415 F8722 ; infill
+G1 X163.208 Y148.407 E.89415 ; infill
 G1 X163.208 Y149.608 E.04065 ; infill
-G1 X155.808 Y136.792 E.50093 F8721 ; infill
-G1 X159.465 Y136.792 E.12379 F8721 ; infill
-G1 X144.214 Y163.208 E1.03247 F8721 ; infill
-G1 X148.149 Y163.208 E.1332 F8720 ; infill
-G1 X136.792 Y143.537 E.76884 F8720 ; infill
-G1 X136.792 Y141.793 E.05903 F8720 ; infill
-G1 X163.208 Y141.793 E.89415 F8720 ; infill
-G1 X163.208 Y143.537 E.05903 F8720 ; infill
-G1 X151.851 Y163.208 E.76884 F8719 ; infill
-G1 X153.851 Y163.208 E.0677 F8719 ; infill
+G1 X155.808 Y136.792 E.50093 ; infill
+G1 X159.465 Y136.792 E.12379 ; infill
+G1 X144.214 Y163.208 E1.03247 ; infill
+G1 X148.149 Y163.208 E.1332 ; infill
+G1 X136.792 Y143.537 E.76884 ; infill
+G1 X136.792 Y141.793 E.05903 ; infill
+G1 X163.208 Y141.793 E.89415 ; infill
+G1 X163.208 Y143.537 E.05903 ; infill
+G1 X151.851 Y163.208 E.76884 ; infill
+G1 X153.851 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:40
 ;Z:8.1
 ;HEIGHT:0.2
@@ -5303,36 +5179,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9746 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9746 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9745 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9745 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9744 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9744 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9743 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9743 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9742 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9742 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9741 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9741 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
 M73 P29 R19
-G1 X164.775 Y164.775 E.89477 F9740 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9740 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9739 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9738 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5343,42 +5219,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.992 Y136.792 E.0677 F8711 ; infill
-G1 X136.792 Y163.118 E1.02897 F8711 ; infill
-G1 X136.792 Y161.493 E.055 F8712 ; infill
-G1 X163.208 Y161.493 E.89415 F8710 ; infill
-G1 X163.208 Y163.118 E.055 F8711 ; infill
-G1 X148.008 Y136.792 E1.02897 F8710 ; infill
-G1 X144.355 Y136.792 E.12365 F8709 ; infill
-G1 X136.792 Y149.891 E.51198 F8709 ; infill
-G1 X136.792 Y148.265 E.05504 F8709 ; infill
-G1 X163.208 Y148.265 E.89415 F8709 ; infill
-G1 X163.208 Y149.891 E.05504 F8709 ; infill
-G1 X155.645 Y136.792 E.51198 F8709 ; infill
-G1 X159.628 Y136.792 E.13482 F8708 ; infill
-G1 X144.377 Y163.208 E1.03247 F8708 ; infill
-G1 X147.986 Y163.208 E.12216 F8708 ; infill
-G1 X136.792 Y143.82 E.75779 F8707 ; infill
-G1 X136.792 Y141.652 E.07338 F8708 ; infill
-G1 X163.208 Y141.652 E.89415 F8707 ; infill
-G1 X163.208 Y143.82 E.07338 F8707 ; infill
-G1 X152.014 Y163.208 E.75779 F8706 ; infill
-G1 X155.623 Y163.208 E.12216 F8706 ; infill
-G1 X140.372 Y136.792 E1.03247 F8706 ; infill
-G1 X138.372 Y136.792 E.0677 F8705 ; infill
+G1 X151.992 Y136.792 E.0677 ; infill
+G1 X136.792 Y163.118 E1.02897 ; infill
+G1 X136.792 Y161.493 E.055 ; infill
+G1 X163.208 Y161.493 E.89415 ; infill
+G1 X163.208 Y163.118 E.055 ; infill
+G1 X148.008 Y136.792 E1.02897 ; infill
+G1 X144.355 Y136.792 E.12365 ; infill
+G1 X136.792 Y149.891 E.51198 ; infill
+G1 X136.792 Y148.265 E.05504 ; infill
+G1 X163.208 Y148.265 E.89415 ; infill
+G1 X163.208 Y149.891 E.05504 ; infill
+G1 X155.645 Y136.792 E.51198 ; infill
+G1 X159.628 Y136.792 E.13482 ; infill
+G1 X144.377 Y163.208 E1.03247 ; infill
+G1 X147.986 Y163.208 E.12216 ; infill
+G1 X136.792 Y143.82 E.75779 ; infill
+G1 X136.792 Y141.652 E.07338 ; infill
+G1 X163.208 Y141.652 E.89415 ; infill
+G1 X163.208 Y143.82 E.07338 ; infill
+G1 X152.014 Y163.208 E.75779 ; infill
+G1 X155.623 Y163.208 E.12216 ; infill
+G1 X140.372 Y136.792 E1.03247 ; infill
+G1 X138.372 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.349 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.349 Y163.208 E.0677 F8705 ; infill
-G1 X136.792 Y157.047 E.2408 F8706 ; infill
-G1 X136.792 Y154.879 E.07338 F8705 ; infill
-G1 X163.208 Y154.879 E.89415 F8705 ; infill
-G1 X163.208 Y157.047 E.07338 F8705 ; infill
-G1 X159.651 Y163.208 E.2408 F8705 ; infill
-G1 X157.651 Y163.208 E.0677 F8704 ; infill
+G1 X140.349 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.047 E.2408 ; infill
+G1 X136.792 Y154.879 E.07338 ; infill
+G1 X163.208 Y154.879 E.89415 ; infill
+G1 X163.208 Y157.047 E.07338 ; infill
+G1 X159.651 Y163.208 E.2408 ; infill
+G1 X157.651 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:41
 ;Z:8.3
 ;HEIGHT:0.2
@@ -5397,35 +5273,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9730 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9729 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9729 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9728 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9728 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9727 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9726 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9726 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9726 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9725 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9725 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9724 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9723 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9723 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9722 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9722 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5436,56 +5312,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.155 Y136.792 E.0677 F8696 ; infill
-M104 S229
-G1 X136.904 Y163.208 E1.03247 F8696 ; infill
+G1 X152.155 Y136.792 E.0677 ; infill
+G1 X136.904 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.00379 ; infill
-G1 X136.792 Y161.351 E.06286 F8695 ; infill
-G1 X163.208 Y161.351 E.89415 F8695 ; infill
-G1 X163.208 Y163.208 E.06286 F8695 ; infill
+G1 X136.792 Y161.351 E.06286 ; infill
+G1 X163.208 Y161.351 E.89415 ; infill
+G1 X163.208 Y163.208 E.06286 ; infill
 G1 X163.096 Y163.208 E.00379 ; infill
-G1 X147.845 Y136.792 E1.03247 F8695 ; infill
-G1 X144.518 Y136.792 E.11261 F8695 ; infill
-G1 X136.792 Y150.174 E.52304 F8694 ; infill
-G1 X136.792 Y148.124 E.06939 F8694 ; infill
-G1 X163.208 Y148.124 E.89415 F8694 ; infill
-G1 X163.208 Y150.174 E.06939 F8693 ; infill
-G1 X155.482 Y136.792 E.52304 F8693 ; infill
-G1 X157.482 Y136.792 E.0677 F8693 ; infill
+G1 X147.845 Y136.792 E1.03247 ; infill
+G1 X144.518 Y136.792 E.11261 ; infill
+G1 X136.792 Y150.174 E.52304 ; infill
+G1 X136.792 Y148.124 E.06939 ; infill
+G1 X163.208 Y148.124 E.89415 ; infill
+G1 X163.208 Y150.174 E.06939 ; infill
+G1 X155.482 Y136.792 E.52304 ; infill
+G1 X157.482 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y138.947 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y136.947 E.0677 F8693 ; infill
+G1 X163.208 Y136.947 E.0677 ; infill
 G1 X163.119 Y136.792 E.00605 ; infill
-G1 X159.792 Y136.792 E.11261 F8693 ; infill
-G1 X144.541 Y163.208 E1.03247 F8692 ; infill
-G1 X147.823 Y163.208 E.11109 F8692 ; infill
-G1 X136.792 Y144.103 E.74674 F8692 ; infill
-G1 X136.792 Y141.51 E.08777 F8691 ; infill
-G1 X163.208 Y141.51 E.89415 F8691 ; infill
-G1 X163.208 Y144.103 E.08777 F8691 ; infill
-G1 X152.178 Y163.208 E.74672 F8691 ; infill
-G1 X155.459 Y163.208 E.11106 F8690 ; infill
-G1 X140.208 Y136.792 E1.03247 F8690 ; infill
-G1 X136.882 Y136.792 E.11258 F8690 ; infill
+G1 X159.792 Y136.792 E.11261 ; infill
+G1 X144.541 Y163.208 E1.03247 ; infill
+G1 X147.823 Y163.208 E.11109 ; infill
+G1 X136.792 Y144.103 E.74674 ; infill
+G1 X136.792 Y141.51 E.08777 ; infill
+G1 X163.208 Y141.51 E.89415 ; infill
+G1 X163.208 Y144.103 E.08777 ; infill
+G1 X152.178 Y163.208 E.74672 ; infill
+G1 X155.459 Y163.208 E.11106 ; infill
+G1 X140.208 Y136.792 E1.03247 ; infill
+G1 X136.882 Y136.792 E.11258 ; infill
 G1 X136.792 Y136.947 E.00607 ; infill
-G1 X136.792 Y138.947 E.0677 F8689 ; infill
+G1 X136.792 Y138.947 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.186 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.186 Y163.208 E.0677 F8689 ; infill
-G1 X136.792 Y157.33 E.22975 F8689 ; infill
-G1 X136.792 Y154.738 E.08774 F8689 ; infill
-G1 X163.208 Y154.738 E.89415 F8689 ; infill
-G1 X163.208 Y157.33 E.08774 F8688 ; infill
-G1 X159.814 Y163.208 E.22975 F8689 ; infill
-G1 X157.814 Y163.208 E.0677 F8688 ; infill
+G1 X140.186 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.33 E.22975 ; infill
+G1 X136.792 Y154.738 E.08774 ; infill
+G1 X163.208 Y154.738 E.89415 ; infill
+G1 X163.208 Y157.33 E.08774 ; infill
+G1 X159.814 Y163.208 E.22975 ; infill
+G1 X157.814 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:42
 ;Z:8.5
 ;HEIGHT:0.2
@@ -5505,35 +5380,35 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.407
 G1 F9886
 M73 P30 R19
-G1 X163.554 Y163.554 E.82083 F9712 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9711 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9711 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9710 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9710 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9709 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9708 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9708 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9707 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9707 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9706 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9706 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9705 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9704 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9704 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9703 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5544,55 +5419,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.318 Y136.792 E.0677 F8680 ; infill
-G1 X137.067 Y163.208 E1.03247 F8679 ; infill
+G1 X152.318 Y136.792 E.0677 ; infill
+G1 X137.067 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.00931 ; infill
-G1 X136.792 Y161.21 E.06763 F8679 ; infill
-G1 X163.208 Y161.21 E.89415 F8679 ; infill
-G1 X163.208 Y163.208 E.06763 F8678 ; infill
+G1 X136.792 Y161.21 E.06763 ; infill
+G1 X163.208 Y161.21 E.89415 ; infill
+G1 X163.208 Y163.208 E.06763 ; infill
 G1 X162.933 Y163.208 E.00931 ; infill
-G1 X147.682 Y136.792 E1.03247 F8678 ; infill
-G1 X144.682 Y136.792 E.10155 F8677 ; infill
-G1 X136.792 Y150.457 E.53411 F8677 ; infill
-G1 X136.792 Y147.983 E.08374 F8678 ; infill
-G1 X163.208 Y147.983 E.89415 F8677 ; infill
-G1 X163.208 Y150.457 E.08374 F8677 ; infill
-G1 X155.318 Y136.792 E.53411 F8676 ; infill
-G1 X157.318 Y136.792 E.0677 F8676 ; infill
+G1 X147.682 Y136.792 E1.03247 ; infill
+G1 X144.682 Y136.792 E.10155 ; infill
+G1 X136.792 Y150.457 E.53411 ; infill
+G1 X136.792 Y147.983 E.08374 ; infill
+G1 X163.208 Y147.983 E.89415 ; infill
+G1 X163.208 Y150.457 E.08374 ; infill
+G1 X155.318 Y136.792 E.53411 ; infill
+G1 X157.318 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y139.229 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.229 E.0677 F8676 ; infill
+G1 X163.208 Y137.229 E.0677 ; infill
 G1 X162.955 Y136.792 E.01709 ; infill
-G1 X159.955 Y136.792 E.10155 F8676 ; infill
-G1 X144.704 Y163.208 E1.03247 F8676 ; infill
-G1 X147.659 Y163.208 E.10002 F8676 ; infill
-G1 X136.792 Y144.386 E.73566 F8675 ; infill
-G1 X136.792 Y141.369 E.10212 F8675 ; infill
-G1 X163.208 Y141.369 E.89415 F8674 ; infill
-G1 X163.208 Y144.386 E.10212 F8674 ; infill
-G1 X152.341 Y163.208 E.73566 F8674 ; infill
-G1 X155.296 Y163.208 E.10002 F8674 ; infill
-G1 X140.045 Y136.792 E1.03247 F8673 ; infill
-G1 X137.045 Y136.792 E.10155 F8673 ; infill
+G1 X159.955 Y136.792 E.10155 ; infill
+G1 X144.704 Y163.208 E1.03247 ; infill
+G1 X147.659 Y163.208 E.10002 ; infill
+G1 X136.792 Y144.386 E.73566 ; infill
+G1 X136.792 Y141.369 E.10212 ; infill
+G1 X163.208 Y141.369 E.89415 ; infill
+G1 X163.208 Y144.386 E.10212 ; infill
+G1 X152.341 Y163.208 E.73566 ; infill
+G1 X155.296 Y163.208 E.10002 ; infill
+G1 X140.045 Y136.792 E1.03247 ; infill
+G1 X137.045 Y136.792 E.10155 ; infill
 G1 X136.792 Y137.23 E.01712 ; infill
-G1 X136.792 Y139.23 E.0677 F8673 ; infill
+G1 X136.792 Y139.23 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.022 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.022 Y163.208 E.0677 F8672 ; infill
-G1 X136.792 Y157.613 E.21868 F8672 ; infill
-G1 X136.792 Y154.596 E.10212 F8672 ; infill
-G1 X163.208 Y154.596 E.89415 F8672 ; infill
-G1 X163.208 Y157.613 E.10212 F8672 ; infill
-G1 X159.977 Y163.208 E.21869 F8672 ; infill
-G1 X157.977 Y163.208 E.0677 F8671 ; infill
+G1 X140.022 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.613 E.21868 ; infill
+G1 X136.792 Y154.596 E.10212 ; infill
+G1 X163.208 Y154.596 E.89415 ; infill
+G1 X163.208 Y157.613 E.10212 ; infill
+G1 X159.977 Y163.208 E.21869 ; infill
+G1 X157.977 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:43
 ;Z:8.7
 ;HEIGHT:0.2
@@ -5611,35 +5486,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9693 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9692 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9692 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9691 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9690 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9690 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9689 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9688 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9688 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9687 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9687 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9686 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9686 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9685 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9684 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9684 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5650,56 +5525,56 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X139.859 Y163.208 E.0677 F8662 ; infill
-G1 X136.792 Y157.896 E.20762 F8662 ; infill
-G1 X136.792 Y154.455 E.11647 F8662 ; infill
-G1 X163.208 Y154.455 E.89415 F8661 ; infill
-G1 X163.208 Y157.896 E.11647 F8661 ; infill
-G1 X160.141 Y163.208 E.20762 F8661 ; infill
-G1 X158.141 Y163.208 E.0677 F8661 ; infill
+G1 X139.859 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.896 E.20762 ; infill
+G1 X136.792 Y154.455 E.11647 ; infill
+G1 X163.208 Y154.455 E.89415 ; infill
+G1 X163.208 Y157.896 E.11647 ; infill
+G1 X160.141 Y163.208 E.20762 ; infill
+G1 X158.141 Y163.208 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y139.512 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.512 E.0677 F8660 ; infill
+G1 X163.208 Y137.512 E.0677 ; infill
 G1 X162.792 Y136.792 E.02815 ; infill
-G1 X160.118 Y136.792 E.09051 F8661 ; infill
-G1 X144.867 Y163.208 E1.03247 F8660 ; infill
-G1 X147.496 Y163.208 E.08899 F8660 ; infill
-G1 X136.792 Y144.668 E.72464 F8660 ; infill
-G1 X136.792 Y147.841 E.1074 F8660 ; infill
+G1 X160.118 Y136.792 E.09051 ; infill
+G1 X144.867 Y163.208 E1.03247 ; infill
+G1 X147.496 Y163.208 E.08899 ; infill
+G1 X136.792 Y144.668 E.72464 ; infill
+G1 X136.792 Y147.841 E.1074 ; infill
 M73 P31 R19
-G1 X163.208 Y147.841 E.89415 F8659 ; infill
-G1 X163.208 Y150.74 E.09813 F8658 ; infill
-G1 X155.155 Y136.792 E.54516 F8658 ; infill
-G1 X152.482 Y136.792 E.09048 F8658 ; infill
-G1 X137.231 Y163.208 E1.03247 F8658 ; infill
+G1 X163.208 Y147.841 E.89415 ; infill
+G1 X163.208 Y150.74 E.09813 ; infill
+G1 X155.155 Y136.792 E.54516 ; infill
+G1 X152.482 Y136.792 E.09048 ; infill
+G1 X137.231 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.01486 ; infill
-G1 X136.792 Y161.068 E.07244 F8657 ; infill
-G1 X163.208 Y161.068 E.89415 F8657 ; infill
-G1 X163.208 Y163.208 E.07244 F8656 ; infill
+G1 X136.792 Y161.068 E.07244 ; infill
+G1 X163.208 Y161.068 E.89415 ; infill
+G1 X163.208 Y163.208 E.07244 ; infill
 G1 X162.769 Y163.208 E.01486 ; infill
-G1 X147.518 Y136.792 E1.03247 F8656 ; infill
-G1 X144.845 Y136.792 E.09048 F8656 ; infill
-G1 X136.792 Y150.74 E.54516 F8655 ; infill
-G1 X136.792 Y152.74 E.0677 F8655 ; infill
+G1 X147.518 Y136.792 E1.03247 ; infill
+G1 X144.845 Y136.792 E.09048 ; infill
+G1 X136.792 Y150.74 E.54516 ; infill
+G1 X136.792 Y152.74 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y139.228 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y141.228 E.0677 F8655 ; infill
-G1 X163.208 Y141.228 E.89415 F8655 ; infill
-G1 X163.208 Y144.669 E.11647 F8655 ; infill
-G1 X152.504 Y163.208 E.72461 F8654 ; infill
-G1 X155.133 Y163.208 E.08899 F8654 ; infill
-G1 X139.882 Y136.792 E1.03247 F8653 ; infill
-G1 X137.208 Y136.792 E.09051 F8653 ; infill
+G1 X136.792 Y141.228 E.0677 ; infill
+G1 X163.208 Y141.228 E.89415 ; infill
+G1 X163.208 Y144.669 E.11647 ; infill
+G1 X152.504 Y163.208 E.72461 ; infill
+G1 X155.133 Y163.208 E.08899 ; infill
+G1 X139.882 Y136.792 E1.03247 ; infill
+G1 X137.208 Y136.792 E.09051 ; infill
 G1 X136.792 Y137.513 E.02818 ; infill
-G1 X136.792 Y139.228 E.05805 F8653 ; infill
+G1 X136.792 Y139.228 E.05805 ; infill
 ;LAYER_CHANGE:44
 ;Z:8.9
 ;HEIGHT:0.2
@@ -5718,35 +5593,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9672 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9671 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9671 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9670 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9669 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9669 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9668 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9668 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9667 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9666 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9665 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9665 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9664 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9664 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9662 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9662 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 M73 P31 R18
 G1 E-2 F2400 ; retract
@@ -5758,46 +5633,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y137.795 E.0677 F8643 ; infill
+G1 X163.208 Y137.795 E.0677 ; infill
 G1 X162.629 Y136.792 E.0392 ; infill
-G1 X160.282 Y136.792 E.07944 F8643 ; infill
-G1 X145.031 Y163.208 E1.03247 F8642 ; infill
-G1 X147.333 Y163.208 E.07792 F8642 ; infill
-G1 X136.792 Y144.951 E.71358 F8642 ; infill
-G1 X136.792 Y147.7 E.09305 F8642 ; infill
-G1 X163.208 Y147.7 E.89415 F8641 ; infill
-G1 X163.208 Y144.951 E.09305 F8641 ; infill
-G1 X152.667 Y163.208 E.71358 F8641 ; infill
-G1 X154.969 Y163.208 E.07792 F8640 ; infill
-G1 X139.718 Y136.792 E1.03247 F8640 ; infill
-G1 X137.371 Y136.792 E.07944 F8640 ; infill
+G1 X160.282 Y136.792 E.07944 ; infill
+G1 X145.031 Y163.208 E1.03247 ; infill
+G1 X147.333 Y163.208 E.07792 ; infill
+G1 X136.792 Y144.951 E.71358 ; infill
+G1 X136.792 Y147.7 E.09305 ; infill
+G1 X163.208 Y147.7 E.89415 ; infill
+G1 X163.208 Y144.951 E.09305 ; infill
+G1 X152.667 Y163.208 E.71358 ; infill
+G1 X154.969 Y163.208 E.07792 ; infill
+G1 X139.718 Y136.792 E1.03247 ; infill
+G1 X137.371 Y136.792 E.07944 ; infill
 G1 X136.792 Y137.795 E.0392 ; infill
-G1 X136.792 Y141.086 E.1114 F8639 ; infill
-G1 X163.208 Y141.086 E.89415 F8639 ; infill
-G1 X163.208 Y143.086 E.0677 F8638 ; infill
+G1 X136.792 Y141.086 E.1114 ; infill
+G1 X163.208 Y141.086 E.89415 ; infill
+G1 X163.208 Y143.086 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.022 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.022 E.0677 F8638 ; infill
-G1 X154.992 Y136.792 E.55619 F8638 ; infill
-G1 X152.645 Y136.792 E.07944 F8638 ; infill
-G1 X137.394 Y163.208 E1.03247 F8637 ; infill
-G1 X139.696 Y163.208 E.07792 F8637 ; infill
-G1 X136.792 Y158.179 E.19657 F8637 ; infill
-G1 X136.792 Y160.927 E.09302 F8637 ; infill
-G1 X163.208 Y160.927 E.89415 F8636 ; infill
-G1 X163.208 Y158.178 E.09305 F8636 ; infill
-G1 X160.304 Y163.208 E.1966 F8636 ; infill
-G1 X162.606 Y163.208 E.07792 F8636 ; infill
-G1 X147.355 Y136.792 E1.03247 F8635 ; infill
-G1 X145.008 Y136.792 E.07944 F8635 ; infill
-G1 X136.792 Y151.023 E.55622 F8635 ; infill
-G1 X136.792 Y154.313 E.11136 F8635 ; infill
-G1 X163.208 Y154.313 E.89415 F8634 ; infill
-G1 X163.208 Y156.313 E.0677 F8634 ; infill
+G1 X163.208 Y151.022 E.0677 ; infill
+G1 X154.992 Y136.792 E.55619 ; infill
+G1 X152.645 Y136.792 E.07944 ; infill
+G1 X137.394 Y163.208 E1.03247 ; infill
+G1 X139.696 Y163.208 E.07792 ; infill
+G1 X136.792 Y158.179 E.19657 ; infill
+G1 X136.792 Y160.927 E.09302 ; infill
+G1 X163.208 Y160.927 E.89415 ; infill
+G1 X163.208 Y158.178 E.09305 ; infill
+G1 X160.304 Y163.208 E.1966 ; infill
+G1 X162.606 Y163.208 E.07792 ; infill
+G1 X147.355 Y136.792 E1.03247 ; infill
+G1 X145.008 Y136.792 E.07944 ; infill
+G1 X136.792 Y151.023 E.55622 ; infill
+G1 X136.792 Y154.313 E.11136 ; infill
+G1 X163.208 Y154.313 E.89415 ; infill
+G1 X163.208 Y156.313 E.0677 ; infill
 ;LAYER_CHANGE:45
 ;Z:9.1
 ;HEIGHT:0.2
@@ -5816,36 +5691,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9651 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9650 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9649 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9648 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9647 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9647 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9646 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9646 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9645 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9644 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9644 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9643 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M73 P32 R18
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9642 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9641 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9641 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9640 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5856,46 +5731,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y138.078 E.0677 F8623 ; infill
-G1 X162.465 Y136.792 E.05027 F8624 ; infill
-G1 X160.445 Y136.792 E.06837 F8624 ; infill
-G1 X145.194 Y163.208 E1.03247 F8622 ; infill
-G1 X147.169 Y163.208 E.06685 F8622 ; infill
-G1 X136.792 Y145.234 E.70251 F8622 ; infill
-G1 X136.792 Y147.558 E.07866 F8622 ; infill
-G1 X163.208 Y147.558 E.89415 F8621 ; infill
-G1 X163.208 Y145.234 E.07866 F8621 ; infill
-G1 X152.831 Y163.208 E.70251 F8620 ; infill
-G1 X154.806 Y163.208 E.06685 F8620 ; infill
-G1 X139.555 Y136.792 E1.03247 F8619 ; infill
-G1 X137.535 Y136.792 E.06837 F8620 ; infill
-G1 X136.792 Y138.078 E.05027 F8620 ; infill
-G1 X136.792 Y140.945 E.09704 F8620 ; infill
-G1 X163.208 Y140.945 E.89415 F8619 ; infill
-G1 X163.208 Y142.945 E.0677 F8618 ; infill
+G1 X163.208 Y138.078 E.0677 ; infill
+G1 X162.465 Y136.792 E.05027 ; infill
+G1 X160.445 Y136.792 E.06837 ; infill
+G1 X145.194 Y163.208 E1.03247 ; infill
+G1 X147.169 Y163.208 E.06685 ; infill
+G1 X136.792 Y145.234 E.70251 ; infill
+G1 X136.792 Y147.558 E.07866 ; infill
+G1 X163.208 Y147.558 E.89415 ; infill
+G1 X163.208 Y145.234 E.07866 ; infill
+G1 X152.831 Y163.208 E.70251 ; infill
+G1 X154.806 Y163.208 E.06685 ; infill
+G1 X139.555 Y136.792 E1.03247 ; infill
+G1 X137.535 Y136.792 E.06837 ; infill
+G1 X136.792 Y138.078 E.05027 ; infill
+G1 X136.792 Y140.945 E.09704 ; infill
+G1 X163.208 Y140.945 E.89415 ; infill
+G1 X163.208 Y142.945 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.305 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.305 E.0677 F8618 ; infill
-G1 X154.829 Y136.792 E.56724 F8618 ; infill
-G1 X152.808 Y136.792 E.06841 F8618 ; infill
-G1 X137.557 Y163.208 E1.03247 F8617 ; infill
-G1 X139.533 Y163.208 E.06689 F8616 ; infill
-G1 X136.792 Y158.461 E.18554 F8617 ; infill
-G1 X136.792 Y160.786 E.0787 F8616 ; infill
-G1 X163.208 Y160.786 E.89415 F8616 ; infill
-G1 X163.208 Y158.461 E.0787 F8616 ; infill
-G1 X160.467 Y163.208 E.18554 F8616 ; infill
-G1 X162.443 Y163.208 E.06689 F8615 ; infill
-G1 X147.192 Y136.792 E1.03247 F8615 ; infill
-G1 X145.171 Y136.792 E.06841 F8615 ; infill
-G1 X136.792 Y151.306 E.56727 F8615 ; infill
-G1 X136.792 Y154.172 E.09701 F8614 ; infill
-G1 X163.208 Y154.172 E.89415 F8613 ; infill
-G1 X163.208 Y156.172 E.0677 F8613 ; infill
+G1 X163.208 Y151.305 E.0677 ; infill
+G1 X154.829 Y136.792 E.56724 ; infill
+G1 X152.808 Y136.792 E.06841 ; infill
+G1 X137.557 Y163.208 E1.03247 ; infill
+G1 X139.533 Y163.208 E.06689 ; infill
+G1 X136.792 Y158.461 E.18554 ; infill
+G1 X136.792 Y160.786 E.0787 ; infill
+G1 X163.208 Y160.786 E.89415 ; infill
+G1 X163.208 Y158.461 E.0787 ; infill
+G1 X160.467 Y163.208 E.18554 ; infill
+G1 X162.443 Y163.208 E.06689 ; infill
+G1 X147.192 Y136.792 E1.03247 ; infill
+G1 X145.171 Y136.792 E.06841 ; infill
+G1 X136.792 Y151.306 E.56727 ; infill
+G1 X136.792 Y154.172 E.09701 ; infill
+G1 X163.208 Y154.172 E.89415 ; infill
+G1 X163.208 Y156.172 E.0677 ; infill
 ;LAYER_CHANGE:46
 ;Z:9.3
 ;HEIGHT:0.2
@@ -5914,35 +5789,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9628 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9627 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9626 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9625 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9625 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9624 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9623 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9622 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9622 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9621 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9620 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9619 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9619 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9618 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9617 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9616 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -5954,46 +5829,46 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 G1 F8843
 G1 X163.208 Y136.792 E.01459 ; infill
-G1 X163.208 Y138.361 E.05311 F8602 ; infill
-G1 X162.302 Y136.792 E.06133 F8602 ; infill
-G1 X160.608 Y136.792 E.05734 F8602 ; infill
-G1 X145.357 Y163.208 E1.03247 F8602 ; infill
-G1 X147.006 Y163.208 E.05582 F8601 ; infill
-G1 X136.792 Y145.517 E.69146 F8601 ; infill
-G1 X136.792 Y147.417 E.06431 F8601 ; infill
-G1 X163.208 Y147.417 E.89415 F8600 ; infill
-G1 X163.208 Y145.517 E.06431 F8600 ; infill
-G1 X152.994 Y163.208 E.69146 F8599 ; infill
-G1 X154.643 Y163.208 E.05582 F8599 ; infill
-G1 X139.392 Y136.792 E1.03247 F8599 ; infill
-G1 X137.698 Y136.792 E.05734 F8598 ; infill
-G1 X136.792 Y138.361 E.06133 F8598 ; infill
-G1 X136.792 Y140.803 E.08266 F8598 ; infill
-G1 X163.208 Y140.803 E.89415 F8598 ; infill
-G1 X163.208 Y142.803 E.0677 F8597 ; infill
+G1 X163.208 Y138.361 E.05311 ; infill
+G1 X162.302 Y136.792 E.06133 ; infill
+G1 X160.608 Y136.792 E.05734 ; infill
+G1 X145.357 Y163.208 E1.03247 ; infill
+G1 X147.006 Y163.208 E.05582 ; infill
+G1 X136.792 Y145.517 E.69146 ; infill
+G1 X136.792 Y147.417 E.06431 ; infill
+G1 X163.208 Y147.417 E.89415 ; infill
+G1 X163.208 Y145.517 E.06431 ; infill
+G1 X152.994 Y163.208 E.69146 ; infill
+G1 X154.643 Y163.208 E.05582 ; infill
+G1 X139.392 Y136.792 E1.03247 ; infill
+G1 X137.698 Y136.792 E.05734 ; infill
+G1 X136.792 Y138.361 E.06133 ; infill
+G1 X136.792 Y140.803 E.08266 ; infill
+G1 X163.208 Y140.803 E.89415 ; infill
+G1 X163.208 Y142.803 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.588 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.588 E.0677 F8597 ; infill
-G1 X154.665 Y136.792 E.57831 F8596 ; infill
-G1 X152.971 Y136.792 E.05734 F8596 ; infill
-G1 X137.72 Y163.208 E1.03247 F8596 ; infill
-G1 X139.369 Y163.208 E.05582 F8595 ; infill
-G1 X136.792 Y158.744 E.17447 F8596 ; infill
-G1 X136.792 Y160.644 E.06431 F8596 ; infill
-G1 X163.208 Y160.644 E.89415 F8595 ; infill
-G1 X163.208 Y158.744 E.06431 F8595 ; infill
-G1 X160.631 Y163.208 E.17447 F8595 ; infill
-G1 X162.28 Y163.208 E.05582 F8594 ; infill
-G1 X147.029 Y136.792 E1.03247 F8594 ; infill
-G1 X145.335 Y136.792 E.05734 F8593 ; infill
-G1 X136.792 Y151.588 E.57831 F8593 ; infill
-G1 X136.792 Y154.031 E.08269 F8593 ; infill
-G1 X163.208 Y154.031 E.89415 F8593 ; infill
-G1 X163.208 Y156.031 E.0677 F8592 ; infill
+G1 X163.208 Y151.588 E.0677 ; infill
+G1 X154.665 Y136.792 E.57831 ; infill
+G1 X152.971 Y136.792 E.05734 ; infill
+G1 X137.72 Y163.208 E1.03247 ; infill
+G1 X139.369 Y163.208 E.05582 ; infill
+G1 X136.792 Y158.744 E.17447 ; infill
+G1 X136.792 Y160.644 E.06431 ; infill
+G1 X163.208 Y160.644 E.89415 ; infill
+G1 X163.208 Y158.744 E.06431 ; infill
+G1 X160.631 Y163.208 E.17447 ; infill
+G1 X162.28 Y163.208 E.05582 ; infill
+G1 X147.029 Y136.792 E1.03247 ; infill
+G1 X145.335 Y136.792 E.05734 ; infill
+G1 X136.792 Y151.588 E.57831 ; infill
+G1 X136.792 Y154.031 E.08269 ; infill
+G1 X163.208 Y154.031 E.89415 ; infill
+G1 X163.208 Y156.031 E.0677 ; infill
 ;LAYER_CHANGE:47
 ;Z:9.5
 ;HEIGHT:0.2
@@ -6012,36 +5887,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9604 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9603 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9602 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9601 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M73 P33 R18
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9601 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9600 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9599 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9599 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9598 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9597 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9596 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9595 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9594 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9593 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9593 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9591 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6053,46 +5928,46 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 G1 F8843
 G1 X163.208 Y136.792 E.00504 ; infill
-G1 X163.208 Y138.644 E.06269 F8579 ; infill
-G1 X162.139 Y136.792 E.07238 F8580 ; infill
+G1 X163.208 Y138.644 E.06269 ; infill
+G1 X162.139 Y136.792 E.07238 ; infill
 G1 X160.772 Y136.792 E.04627 ; infill
-G1 X145.521 Y163.208 E1.03247 F8579 ; infill
+G1 X145.521 Y163.208 E1.03247 ; infill
 G1 X146.843 Y163.208 E.04475 ; infill
-G1 X136.792 Y145.8 E.6804 F8578 ; infill
-G1 X136.792 Y147.275 E.04993 F8578 ; infill
-G1 X163.208 Y147.276 E.89415 F8578 ; infill
-G1 X163.208 Y145.8 E.04996 F8578 ; infill
-G1 X153.157 Y163.208 E.6804 F8577 ; infill
+G1 X136.792 Y145.8 E.6804 ; infill
+G1 X136.792 Y147.275 E.04993 ; infill
+G1 X163.208 Y147.276 E.89415 ; infill
+G1 X163.208 Y145.8 E.04996 ; infill
+G1 X153.157 Y163.208 E.6804 ; infill
 G1 X154.48 Y163.208 E.04478 ; infill
-G1 X139.228 Y136.792 E1.03249 F8576 ; infill
+G1 X139.228 Y136.792 E1.03249 ; infill
 G1 X137.861 Y136.792 E.04627 ; infill
-G1 X136.792 Y138.644 E.07238 F8576 ; infill
-G1 X136.792 Y140.662 E.06831 F8576 ; infill
-G1 X163.208 Y140.662 E.89415 F8575 ; infill
-G1 X163.208 Y142.662 E.0677 F8575 ; infill
+G1 X136.792 Y138.644 E.07238 ; infill
+G1 X136.792 Y140.662 E.06831 ; infill
+G1 X163.208 Y140.662 E.89415 ; infill
+G1 X163.208 Y142.662 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.871 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.871 E.0677 F8575 ; infill
-G1 X154.502 Y136.792 E.58937 F8575 ; infill
+G1 X163.208 Y151.871 E.0677 ; infill
+G1 X154.502 Y136.792 E.58937 ; infill
 G1 X153.135 Y136.792 E.04627 ; infill
-G1 X137.884 Y163.208 E1.03247 F8574 ; infill
+G1 X137.884 Y163.208 E1.03247 ; infill
 G1 X139.206 Y163.208 E.04475 ; infill
-G1 X136.792 Y159.027 E.16342 F8573 ; infill
-G1 X136.792 Y160.503 E.04996 F8573 ; infill
-G1 X163.208 Y160.503 E.89415 F8573 ; infill
-G1 X163.208 Y159.027 E.04996 F8573 ; infill
-G1 X160.794 Y163.208 E.16342 F8572 ; infill
+G1 X136.792 Y159.027 E.16342 ; infill
+G1 X136.792 Y160.503 E.04996 ; infill
+G1 X163.208 Y160.503 E.89415 ; infill
+G1 X163.208 Y159.027 E.04996 ; infill
+G1 X160.794 Y163.208 E.16342 ; infill
 G1 X162.116 Y163.208 E.04475 ; infill
-G1 X146.865 Y136.792 E1.03247 F8572 ; infill
+G1 X146.865 Y136.792 E1.03247 ; infill
 G1 X145.498 Y136.792 E.04627 ; infill
-G1 X136.792 Y151.871 E.58937 F8571 ; infill
-G1 X136.792 Y153.889 E.06831 F8570 ; infill
-G1 X163.208 Y153.889 E.89415 F8570 ; infill
-G1 X163.208 Y155.889 E.0677 F8570 ; infill
+G1 X136.792 Y151.871 E.58937 ; infill
+G1 X136.792 Y153.889 E.06831 ; infill
+G1 X163.208 Y153.889 E.89415 ; infill
+G1 X163.208 Y155.889 E.0677 ; infill
 ;LAYER_CHANGE:48
 ;Z:9.7
 ;HEIGHT:0.2
@@ -6111,35 +5986,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9579 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9578 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9577 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9577 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9576 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9574 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9574 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9573 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9572 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9571 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9571 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9570 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9569 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9568 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9566 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9566 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6150,47 +6025,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y138.927 E.0677 F8557 ; infill
-G1 X161.975 Y136.792 E.08345 F8557 ; infill
+G1 X163.208 Y138.927 E.0677 ; infill
+G1 X161.975 Y136.792 E.08345 ; infill
 G1 X160.935 Y136.792 E.0352 ; infill
-G1 X145.684 Y163.208 E1.03247 F8556 ; infill
+G1 X145.684 Y163.208 E1.03247 ; infill
 G1 X146.679 Y163.208 E.03368 ; infill
-G1 X136.792 Y146.083 E.66933 F8556 ; infill
+G1 X136.792 Y146.083 E.66933 ; infill
 G1 X136.792 Y147.134 E.03558 ; infill
-G1 X163.208 Y147.134 E.89415 F8554 ; infill
+G1 X163.208 Y147.134 E.89415 ; infill
 G1 X163.208 Y146.083 E.03558 ; infill
-G1 X153.321 Y163.208 E.66933 F8554 ; infill
+G1 X153.321 Y163.208 E.66933 ; infill
 G1 X154.316 Y163.208 E.03368 ; infill
-G1 X139.065 Y136.792 E1.03247 F8553 ; infill
+G1 X139.065 Y136.792 E1.03247 ; infill
 G1 X138.025 Y136.792 E.0352 ; infill
-G1 X136.792 Y138.927 E.08345 F8553 ; infill
-G1 X136.792 Y140.52 E.05392 F8553 ; infill
-G1 X163.208 Y140.52 E.89415 F8552 ; infill
-G1 X163.208 Y142.52 E.0677 F8552 ; infill
+G1 X136.792 Y138.927 E.08345 ; infill
+G1 X136.792 Y140.52 E.05392 ; infill
+G1 X163.208 Y140.52 E.89415 ; infill
+G1 X163.208 Y142.52 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.154 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.154 E.0677 F8552 ; infill
-G1 X154.339 Y136.792 E.60042 F8551 ; infill
+G1 X163.208 Y152.154 E.0677 ; infill
+G1 X154.339 Y136.792 E.60042 ; infill
 G1 X153.298 Y136.792 E.03524 ; infill
-G1 X138.047 Y163.208 E1.03247 F8551 ; infill
+G1 X138.047 Y163.208 E1.03247 ; infill
 G1 X139.043 Y163.208 E.03371 ; infill
-G1 X136.792 Y159.31 E.15236 F8550 ; infill
+G1 X136.792 Y159.31 E.15236 ; infill
 G1 X136.792 Y160.361 E.03558 ; infill
-G1 X163.208 Y160.361 E.89415 F8549 ; infill
+G1 X163.208 Y160.361 E.89415 ; infill
 G1 X163.208 Y159.31 E.03558 ; infill
 M73 P34 R18
-G1 X160.957 Y163.208 E.15236 F8549 ; infill
+G1 X160.957 Y163.208 E.15236 ; infill
 G1 X161.953 Y163.208 E.03371 ; infill
-G1 X146.702 Y136.792 E1.03247 F8548 ; infill
+G1 X146.702 Y136.792 E1.03247 ; infill
 G1 X145.661 Y136.792 E.03524 ; infill
-G1 X136.792 Y152.154 E.60042 F8548 ; infill
-G1 X136.792 Y153.748 E.05396 F8547 ; infill
-G1 X163.208 Y153.748 E.89415 F8547 ; infill
-G1 X163.208 Y155.748 E.0677 F8546 ; infill
+G1 X136.792 Y152.154 E.60042 ; infill
+G1 X136.792 Y153.748 E.05396 ; infill
+G1 X163.208 Y153.748 E.89415 ; infill
+G1 X163.208 Y155.748 E.0677 ; infill
 ;LAYER_CHANGE:49
 ;Z:9.9
 ;HEIGHT:0.2
@@ -6209,35 +6084,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9553 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9552 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9551 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9550 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9549 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9548 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9548 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9547 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9546 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9545 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9543 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9542 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9542 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9541 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9540 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9539 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6248,46 +6123,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y139.21 E.0677 F8532 ; infill
-G1 X161.812 Y136.792 E.09451 F8532 ; infill
+G1 X163.208 Y139.21 E.0677 ; infill
+G1 X161.812 Y136.792 E.09451 ; infill
 G1 X161.098 Y136.792 E.02417 ; infill
-G1 X145.847 Y163.208 E1.03247 F8532 ; infill
+G1 X145.847 Y163.208 E1.03247 ; infill
 G1 X146.516 Y163.208 E.02264 ; infill
-G1 X136.792 Y146.366 E.65828 F8532 ; infill
+G1 X136.792 Y146.366 E.65828 ; infill
 G1 X136.792 Y146.993 E.02122 ; infill
-G1 X163.208 Y146.993 E.89415 F8530 ; infill
+G1 X163.208 Y146.993 E.89415 ; infill
 G1 X163.208 Y146.366 E.02122 ; infill
-G1 X153.484 Y163.208 E.65828 F8530 ; infill
+G1 X153.484 Y163.208 E.65828 ; infill
 G1 X154.153 Y163.208 E.02264 ; infill
-G1 X138.902 Y136.792 E1.03247 F8529 ; infill
+G1 X138.902 Y136.792 E1.03247 ; infill
 G1 X138.188 Y136.792 E.02417 ; infill
-G1 X136.792 Y139.21 E.09451 F8528 ; infill
+G1 X136.792 Y139.21 E.09451 ; infill
 G1 X136.792 Y140.379 E.03957 ; infill
-G1 X163.208 Y140.379 E.89415 F8527 ; infill
-G1 X163.208 Y142.379 E.0677 F8527 ; infill
+G1 X163.208 Y140.379 E.89415 ; infill
+G1 X163.208 Y142.379 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.437 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.437 E.0677 F8527 ; infill
-G1 X154.175 Y136.792 E.61149 F8527 ; infill
+G1 X163.208 Y152.437 E.0677 ; infill
+G1 X154.175 Y136.792 E.61149 ; infill
 G1 X153.461 Y136.792 E.02417 ; infill
-G1 X138.21 Y163.208 E1.03247 F8526 ; infill
+G1 X138.21 Y163.208 E1.03247 ; infill
 G1 X138.879 Y163.208 E.02264 ; infill
-G1 X136.792 Y159.593 E.14129 F8525 ; infill
+G1 X136.792 Y159.593 E.14129 ; infill
 G1 X136.792 Y160.22 E.02122 ; infill
-G1 X163.208 Y160.22 E.89415 F8525 ; infill
+G1 X163.208 Y160.22 E.89415 ; infill
 G1 X163.208 Y159.593 E.02122 ; infill
-G1 X161.121 Y163.208 E.14129 F8525 ; infill
+G1 X161.121 Y163.208 E.14129 ; infill
 G1 X161.79 Y163.208 E.02264 ; infill
-G1 X146.539 Y136.792 E1.03247 F8524 ; infill
+G1 X146.539 Y136.792 E1.03247 ; infill
 G1 X145.825 Y136.792 E.02417 ; infill
-G1 X136.792 Y152.437 E.61149 F8523 ; infill
+G1 X136.792 Y152.437 E.61149 ; infill
 G1 X136.792 Y153.606 E.03957 ; infill
-G1 X163.208 Y153.606 E.89415 F8522 ; infill
-G1 X163.208 Y155.606 E.0677 F8521 ; infill
+G1 X163.208 Y153.606 E.89415 ; infill
+G1 X163.208 Y155.606 E.0677 ; infill
 ;LAYER_CHANGE:50
 ;Z:10.1
 ;HEIGHT:0.2
@@ -6306,35 +6181,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9526 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9525 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9524 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9522 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9522 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9521 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9520 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9519 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9518 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9517 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9516 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9515 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9513 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9513 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9512 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9511 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6345,48 +6220,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y139.492 E.0677 F8507 ; infill
-G1 X161.649 Y136.792 E.10553 F8508 ; infill
+G1 X163.208 Y139.492 E.0677 ; infill
+G1 X161.649 Y136.792 E.10553 ; infill
 G1 X161.261 Y136.792 E.01313 ; infill
-G1 X146.01 Y163.208 E1.03247 F8507 ; infill
+G1 X146.01 Y163.208 E1.03247 ; infill
 G1 X146.353 Y163.208 E.01161 ; infill
-G1 X136.792 Y146.648 E.64725 F8506 ; infill
+G1 X136.792 Y146.648 E.64725 ; infill
 G1 X136.792 Y146.851 E.00687 ; infill
-G1 X163.208 Y146.851 E.89415 F8505 ; infill
+G1 X163.208 Y146.851 E.89415 ; infill
 G1 X163.208 Y146.648 E.00687 ; infill
-G1 X153.647 Y163.208 E.64725 F8504 ; infill
+G1 X153.647 Y163.208 E.64725 ; infill
 G1 X153.99 Y163.208 E.01161 ; infill
-G1 X138.739 Y136.792 E1.03247 F8503 ; infill
+G1 X138.739 Y136.792 E1.03247 ; infill
 G1 X138.351 Y136.792 E.01313 ; infill
 M73 P35 R18
-G1 X136.792 Y139.492 E.10553 F8503 ; infill
+G1 X136.792 Y139.492 E.10553 ; infill
 G1 X136.792 Y140.238 E.02525 ; infill
-G1 X163.208 Y140.238 E.89415 F8502 ; infill
-G1 X163.208 Y142.238 E.0677 F8501 ; infill
+G1 X163.208 Y140.238 E.89415 ; infill
+G1 X163.208 Y142.238 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.719 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.719 E.0677 F8501 ; infill
-G1 X154.012 Y136.792 E.62252 F8501 ; infill
+G1 X163.208 Y152.719 E.0677 ; infill
+G1 X154.012 Y136.792 E.62252 ; infill
 G1 X153.625 Y136.792 E.0131 ; infill
-G1 X138.374 Y163.208 E1.03247 F8500 ; infill
+G1 X138.374 Y163.208 E1.03247 ; infill
 G1 X138.716 Y163.208 E.01158 ; infill
-G1 X136.792 Y159.876 E.13024 F8499 ; infill
+G1 X136.792 Y159.876 E.13024 ; infill
 G1 X136.792 Y160.078 E.00684 ; infill
 M73 P35 R17
-G1 X163.208 Y160.079 E.89415 F8500 ; infill
+G1 X163.208 Y160.079 E.89415 ; infill
 G1 X163.208 Y159.876 E.00687 ; infill
-G1 X161.284 Y163.208 E.13024 F8499 ; infill
+G1 X161.284 Y163.208 E.13024 ; infill
 G1 X161.626 Y163.208 E.01158 ; infill
-G1 X146.375 Y136.792 E1.03247 F8498 ; infill
+G1 X146.375 Y136.792 E1.03247 ; infill
 G1 X145.988 Y136.792 E.0131 ; infill
-G1 X136.792 Y152.72 E.62255 F8497 ; infill
+G1 X136.792 Y152.72 E.62255 ; infill
 G1 X136.792 Y153.465 E.02522 ; infill
-G1 X163.208 Y153.465 E.89415 F8496 ; infill
-G1 X163.208 Y155.465 E.0677 F8496 ; infill
+G1 X163.208 Y153.465 E.89415 ; infill
+G1 X163.208 Y155.465 E.0677 ; infill
 ;LAYER_CHANGE:51
 ;Z:10.3
 ;HEIGHT:0.2
@@ -6405,35 +6280,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9497 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9496 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9495 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9494 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9493 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9492 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9491 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9490 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9489 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9488 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9487 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9486 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9484 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9484 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9483 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9482 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6444,42 +6319,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y139.775 E.0677 F8481 ; infill
-G1 X161.486 Y136.792 E.11659 F8481 ; infill
+G1 X163.208 Y139.775 E.0677 ; infill
+G1 X161.486 Y136.792 E.11659 ; infill
 G1 X161.425 Y136.792 E.00206 ; infill
-G1 X146.174 Y163.208 E1.03247 F8480 ; infill
-G1 X136.792 Y146.931 E.63593 F8480 ; infill
+G1 X146.174 Y163.208 E1.03247 ; infill
+G1 X136.792 Y146.931 E.63593 ; infill
 G1 X136.792 Y146.71 E.00748 ; infill
-G1 X163.208 Y146.71 E.89415 F8479 ; infill
+G1 X163.208 Y146.71 E.89415 ; infill
 G1 X163.208 Y146.931 E.00748 ; infill
-G1 X153.81 Y163.208 E.6362 F8478 ; infill
-G1 X138.575 Y136.792 E1.0322 F8477 ; infill
+G1 X153.81 Y163.208 E.6362 ; infill
+G1 X138.575 Y136.792 E1.0322 ; infill
 G1 X138.514 Y136.792 E.00206 ; infill
-G1 X136.792 Y139.775 E.11659 F8476 ; infill
+G1 X136.792 Y139.775 E.11659 ; infill
 G1 X136.792 Y140.096 E.01087 ; infill
-G1 X163.208 Y140.096 E.89415 F8476 ; infill
-G1 X163.208 Y142.096 E.0677 F8475 ; infill
+G1 X163.208 Y140.096 E.89415 ; infill
+G1 X163.208 Y142.096 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y151.002 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y153.002 E.0677 F8475 ; infill
-G1 X153.849 Y136.792 E.63357 F8475 ; infill
+G1 X163.208 Y153.002 E.0677 ; infill
+G1 X153.849 Y136.792 E.63357 ; infill
 G1 X153.788 Y136.792 E.00206 ; infill
-G1 X138.553 Y163.208 E1.0322 F8474 ; infill
-G1 X136.792 Y160.158 E.11921 F8474 ; infill
+G1 X138.553 Y163.208 E1.0322 ; infill
+G1 X136.792 Y160.158 E.11921 ; infill
 G1 X136.792 Y159.937 E.00748 ; infill
-G1 X163.208 Y159.937 E.89415 F8473 ; infill
+G1 X163.208 Y159.937 E.89415 ; infill
 G1 X163.208 Y160.158 E.00748 ; infill
-G1 X161.447 Y163.208 E.11921 F8473 ; infill
-G1 X146.212 Y136.792 E1.0322 F8472 ; infill
+G1 X161.447 Y163.208 E.11921 ; infill
+G1 X146.212 Y136.792 E1.0322 ; infill
 G1 X146.151 Y136.792 E.00206 ; infill
-G1 X136.792 Y153.003 E.6336 F8471 ; infill
+G1 X136.792 Y153.003 E.6336 ; infill
 G1 X136.792 Y153.323 E.01083 ; infill
-G1 X163.208 Y153.323 E.89415 F8470 ; infill
-G1 X163.208 Y155.323 E.0677 F8469 ; infill
+G1 X163.208 Y153.323 E.89415 ; infill
+G1 X163.208 Y155.323 E.0677 ; infill
 ;LAYER_CHANGE:52
 ;Z:10.5
 ;HEIGHT:0.2
@@ -6498,35 +6373,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9467 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9465 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9465 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9464 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9463 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9462 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9461 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9460 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9459 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9458 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9457 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9456 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9454 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9454 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9453 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9451 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6537,47 +6412,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.568 E.0677 F8454 ; infill
-G1 X163.208 Y146.568 E.89415 F8453 ; infill
+G1 X136.792 Y146.568 E.0677 ; infill
+G1 X163.208 Y146.568 E.89415 ; infill
 M73 P36 R17
 G1 X163.208 Y147.214 E.02187 ; infill
-G1 X153.974 Y163.208 E.62513 F8453 ; infill
+G1 X153.974 Y163.208 E.62513 ; infill
 G1 X153.663 Y163.208 E.01053 ; infill
-G1 X138.412 Y136.792 E1.03247 F8452 ; infill
+G1 X138.412 Y136.792 E1.03247 ; infill
 G1 X138.678 Y136.792 E.009 ; infill
-G1 X136.792 Y140.058 E.12766 F8451 ; infill
+G1 X136.792 Y140.058 E.12766 ; infill
 G1 X136.792 Y139.955 E.00349 ; infill
-G1 X163.208 Y139.955 E.89415 F8450 ; infill
+G1 X163.208 Y139.955 E.89415 ; infill
 G1 X163.208 Y140.058 E.00349 ; infill
-G1 X161.322 Y136.792 E.12766 F8450 ; infill
+G1 X161.322 Y136.792 E.12766 ; infill
 G1 X161.588 Y136.792 E.009 ; infill
-G1 X146.337 Y163.208 E1.03247 F8449 ; infill
+G1 X146.337 Y163.208 E1.03247 ; infill
 G1 X146.026 Y163.208 E.01053 ; infill
-G1 X136.792 Y147.214 E.62513 F8448 ; infill
-G1 X136.792 Y149.214 E.0677 F8448 ; infill
+G1 X136.792 Y147.214 E.62513 ; infill
+G1 X136.792 Y149.214 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.796 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.796 E.0677 F8448 ; infill
-G1 X163.208 Y159.796 E.89415 F8447 ; infill
+G1 X136.792 Y159.796 E.0677 ; infill
+G1 X163.208 Y159.796 E.89415 ; infill
 G1 X163.208 Y160.441 E.02183 ; infill
-G1 X161.61 Y163.208 E.10816 F8446 ; infill
+G1 X161.61 Y163.208 E.10816 ; infill
 G1 X161.3 Y163.208 E.01049 ; infill
-G1 X146.049 Y136.792 E1.03247 F8446 ; infill
+G1 X146.049 Y136.792 E1.03247 ; infill
 G1 X146.315 Y136.792 E.009 ; infill
-G1 X136.792 Y153.285 E.64465 F8444 ; infill
+G1 X136.792 Y153.285 E.64465 ; infill
 G1 X136.792 Y153.182 E.00349 ; infill
-G1 X163.208 Y153.182 E.89415 F8444 ; infill
+G1 X163.208 Y153.182 E.89415 ; infill
 G1 X163.208 Y153.285 E.00349 ; infill
-G1 X153.685 Y136.792 E.64465 F8443 ; infill
+G1 X153.685 Y136.792 E.64465 ; infill
 G1 X153.951 Y136.792 E.009 ; infill
-G1 X138.7 Y163.208 E1.03247 F8442 ; infill
+G1 X138.7 Y163.208 E1.03247 ; infill
 G1 X138.389 Y163.208 E.01053 ; infill
-G1 X136.792 Y160.441 E.10814 F8442 ; infill
-G1 X136.792 Y162.441 E.0677 F8441 ; infill
+G1 X136.792 Y160.441 E.10814 ; infill
+G1 X136.792 Y162.441 E.0677 ; infill
 ;LAYER_CHANGE:53
 ;Z:10.7
 ;HEIGHT:0.2
@@ -6596,35 +6471,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9436 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9434 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9433 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9432 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9431 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9430 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9429 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9428 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9427 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9426 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9425 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9424 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9422 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9422 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9420 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9419 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6635,46 +6510,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.427 E.0677 F8425 ; infill
-G1 X163.208 Y146.427 E.89415 F8424 ; infill
+G1 X136.792 Y146.427 E.0677 ; infill
+G1 X163.208 Y146.427 E.89415 ; infill
 G1 X163.208 Y147.497 E.03622 ; infill
-G1 X154.137 Y163.208 E.61407 F8424 ; infill
+G1 X154.137 Y163.208 E.61407 ; infill
 G1 X153.5 Y163.208 E.02156 ; infill
-G1 X138.249 Y136.792 E1.03247 F8423 ; infill
+G1 X138.249 Y136.792 E1.03247 ; infill
 G1 X138.841 Y136.792 E.02004 ; infill
-G1 X136.792 Y140.341 E.13871 F8423 ; infill
+G1 X136.792 Y140.341 E.13871 ; infill
 G1 X136.792 Y139.813 E.01787 ; infill
-G1 X163.208 Y139.813 E.89415 F8422 ; infill
+G1 X163.208 Y139.813 E.89415 ; infill
 G1 X163.208 Y140.341 E.01787 ; infill
-G1 X161.159 Y136.792 E.13871 F8421 ; infill
+G1 X161.159 Y136.792 E.13871 ; infill
 G1 X161.751 Y136.792 E.02004 ; infill
-G1 X146.5 Y163.208 E1.03247 F8420 ; infill
+G1 X146.5 Y163.208 E1.03247 ; infill
 G1 X145.863 Y163.208 E.02156 ; infill
-G1 X136.792 Y147.497 E.61407 F8419 ; infill
-G1 X136.792 Y149.497 E.0677 F8419 ; infill
+G1 X136.792 Y147.497 E.61407 ; infill
+G1 X136.792 Y149.497 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.654 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.654 E.0677 F8419 ; infill
-G1 X163.208 Y159.654 E.89415 F8418 ; infill
+G1 X136.792 Y159.654 E.0677 ; infill
+G1 X163.208 Y159.654 E.89415 ; infill
 G1 X163.208 Y160.724 E.03622 ; infill
-G1 X161.774 Y163.208 E.09709 F8417 ; infill
+G1 X161.774 Y163.208 E.09709 ; infill
 G1 X161.136 Y163.208 E.0216 ; infill
-G1 X145.885 Y136.792 E1.03247 F8417 ; infill
+G1 X145.885 Y136.792 E1.03247 ; infill
 G1 X146.478 Y136.792 E.02007 ; infill
-G1 X136.792 Y153.568 E.6557 F8416 ; infill
+G1 X136.792 Y153.568 E.6557 ; infill
 G1 X136.792 Y153.041 E.01784 ; infill
-G1 X163.208 Y153.041 E.89415 F8415 ; infill
+G1 X163.208 Y153.041 E.89415 ; infill
 G1 X163.208 Y153.568 E.01784 ; infill
-G1 X153.522 Y136.792 E.6557 F8413 ; infill
+G1 X153.522 Y136.792 E.6557 ; infill
 G1 X154.115 Y136.792 E.02007 ; infill
-G1 X138.864 Y163.208 E1.03247 F8412 ; infill
+G1 X138.864 Y163.208 E1.03247 ; infill
 G1 X138.226 Y163.208 E.0216 ; infill
-G1 X136.792 Y160.724 E.09709 F8411 ; infill
-G1 X136.792 Y162.724 E.0677 F8411 ; infill
+G1 X136.792 Y160.724 E.09709 ; infill
+G1 X136.792 Y162.724 E.0677 ; infill
 ;LAYER_CHANGE:54
 ;Z:10.9
 ;HEIGHT:0.2
@@ -6693,37 +6568,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9402 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9402 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9400 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9399 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9398 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9397 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9395 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9395 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9394 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9393 ; perimeter
-M104 S228
-G1 X135.632 Y135.632 E.87012 F9391 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9390 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M73 P37 R17
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9389 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9388 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9387 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9386 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6734,46 +6608,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.285 E.0677 F8395 ; infill
-G1 X163.208 Y146.286 E.89415 F8394 ; infill
-G1 X163.208 Y147.78 E.05057 F8394 ; infill
-G1 X154.3 Y163.208 E.60302 F8394 ; infill
+G1 X136.792 Y146.285 E.0677 ; infill
+G1 X163.208 Y146.286 E.89415 ; infill
+G1 X163.208 Y147.78 E.05057 ; infill
+G1 X154.3 Y163.208 E.60302 ; infill
 G1 X153.336 Y163.208 E.03263 ; infill
-G1 X138.085 Y136.792 E1.03247 F8393 ; infill
+G1 X138.085 Y136.792 E1.03247 ; infill
 G1 X139.004 Y136.792 E.03111 ; infill
-G1 X136.792 Y140.624 E.14977 F8392 ; infill
+G1 X136.792 Y140.624 E.14977 ; infill
 G1 X136.792 Y139.672 E.03222 ; infill
-G1 X163.208 Y139.672 E.89415 F8391 ; infill
+G1 X163.208 Y139.672 E.89415 ; infill
 G1 X163.208 Y140.624 E.03222 ; infill
-G1 X160.996 Y136.792 E.14977 F8391 ; infill
+G1 X160.996 Y136.792 E.14977 ; infill
 G1 X161.915 Y136.792 E.03111 ; infill
-G1 X146.664 Y163.208 E1.03247 F8390 ; infill
+G1 X146.664 Y163.208 E1.03247 ; infill
 G1 X145.7 Y163.208 E.03263 ; infill
-G1 X136.792 Y147.78 E.60302 F8389 ; infill
-G1 X136.792 Y149.78 E.0677 F8388 ; infill
+G1 X136.792 Y147.78 E.60302 ; infill
+G1 X136.792 Y149.78 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.513 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.513 E.0677 F8388 ; infill
-G1 X163.208 Y159.513 E.89415 F8388 ; infill
-G1 X163.208 Y161.007 E.05057 F8387 ; infill
-G1 X161.937 Y163.208 E.08603 F8387 ; infill
+G1 X136.792 Y159.513 E.0677 ; infill
+G1 X163.208 Y159.513 E.89415 ; infill
+G1 X163.208 Y161.007 E.05057 ; infill
+G1 X161.937 Y163.208 E.08603 ; infill
 G1 X160.973 Y163.208 E.03263 ; infill
-G1 X145.722 Y136.792 E1.03247 F8386 ; infill
+G1 X145.722 Y136.792 E1.03247 ; infill
 G1 X146.641 Y136.792 E.03111 ; infill
-G1 X136.792 Y153.851 E.66675 F8385 ; infill
+G1 X136.792 Y153.851 E.66675 ; infill
 G1 X136.792 Y152.899 E.03222 ; infill
-G1 X163.208 Y152.899 E.89415 F8384 ; infill
+G1 X163.208 Y152.899 E.89415 ; infill
 G1 X163.208 Y153.851 E.03222 ; infill
-G1 X153.359 Y136.792 E.66675 F8383 ; infill
+G1 X153.359 Y136.792 E.66675 ; infill
 G1 X154.278 Y136.792 E.03111 ; infill
-G1 X139.027 Y163.208 E1.03247 F8382 ; infill
+G1 X139.027 Y163.208 E1.03247 ; infill
 G1 X138.063 Y163.208 E.03263 ; infill
-G1 X136.792 Y161.007 E.08603 F8382 ; infill
-G1 X136.792 Y163.007 E.0677 F8381 ; infill
+G1 X136.792 Y161.007 E.08603 ; infill
+G1 X136.792 Y163.007 E.0677 ; infill
 ;LAYER_CHANGE:55
 ;Z:11.1
 ;HEIGHT:0.2
@@ -6792,35 +6666,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9368 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9367 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9366 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9364 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9364 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9362 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9361 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9360 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9359 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9357 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9356 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9355 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9354 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9353 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9351 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9350 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6831,46 +6705,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.144 E.0677 F8364 ; infill
-G1 X163.208 Y146.144 E.89415 F8363 ; infill
-G1 X163.208 Y148.063 E.06496 F8362 ; infill
-G1 X154.464 Y163.208 E.59195 F8362 ; infill
+G1 X136.792 Y146.144 E.0677 ; infill
+G1 X163.208 Y146.144 E.89415 ; infill
+G1 X163.208 Y148.063 E.06496 ; infill
+G1 X154.464 Y163.208 E.59195 ; infill
 G1 X153.173 Y163.208 E.0437 ; infill
-G1 X137.922 Y136.792 E1.03247 F8361 ; infill
+G1 X137.922 Y136.792 E1.03247 ; infill
 G1 X139.168 Y136.792 E.04218 ; infill
-G1 X136.792 Y140.907 E.16084 F8361 ; infill
+G1 X136.792 Y140.907 E.16084 ; infill
 G1 X136.792 Y139.53 E.04661 ; infill
-G1 X163.208 Y139.531 E.89415 F8360 ; infill
+G1 X163.208 Y139.531 E.89415 ; infill
 G1 X163.208 Y140.907 E.04658 ; infill
-G1 X160.832 Y136.792 E.16084 F8359 ; infill
+G1 X160.832 Y136.792 E.16084 ; infill
 G1 X162.078 Y136.792 E.04218 ; infill
-G1 X146.827 Y163.208 E1.03247 F8358 ; infill
+G1 X146.827 Y163.208 E1.03247 ; infill
 G1 X145.536 Y163.208 E.0437 ; infill
-G1 X136.792 Y148.063 E.59195 F8357 ; infill
-G1 X136.792 Y150.063 E.0677 F8357 ; infill
+G1 X136.792 Y148.063 E.59195 ; infill
+G1 X136.792 Y150.063 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.371 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.371 E.0677 F8356 ; infill
-G1 X163.208 Y159.371 E.89415 F8356 ; infill
-G1 X163.208 Y161.29 E.06496 F8355 ; infill
-G1 X162.1 Y163.208 E.07498 F8355 ; infill
+G1 X136.792 Y159.371 E.0677 ; infill
+G1 X163.208 Y159.371 E.89415 ; infill
+G1 X163.208 Y161.29 E.06496 ; infill
+G1 X162.1 Y163.208 E.07498 ; infill
 G1 X160.81 Y163.208 E.04366 ; infill
-G1 X145.559 Y136.792 E1.03247 F8355 ; infill
+G1 X145.559 Y136.792 E1.03247 ; infill
 G1 X146.804 Y136.792 E.04214 ; infill
-G1 X136.792 Y154.134 E.67781 F8353 ; infill
+G1 X136.792 Y154.134 E.67781 ; infill
 G1 X136.792 Y152.758 E.04658 ; infill
-G1 X163.208 Y152.758 E.89415 F8352 ; infill
+G1 X163.208 Y152.758 E.89415 ; infill
 G1 X163.208 Y154.134 E.04658 ; infill
-G1 X153.196 Y136.792 E.67781 F8351 ; infill
+G1 X153.196 Y136.792 E.67781 ; infill
 G1 X154.441 Y136.792 E.04214 ; infill
-G1 X139.19 Y163.208 E1.03247 F8350 ; infill
+G1 X139.19 Y163.208 E1.03247 ; infill
 G1 X137.9 Y163.208 E.04366 ; infill
-G1 X136.792 Y161.29 E.07498 F8349 ; infill
-G1 X136.792 Y163.208 E.06492 F8350 ; infill
+G1 X136.792 Y161.29 E.07498 ; infill
+G1 X136.792 Y163.208 E.06492 ; infill
 G1 X136.874 Y163.208 E.00278 ; infill
 ;LAYER_CHANGE:56
 ;Z:11.3
@@ -6890,36 +6764,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9332 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9331 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
 M73 P38 R17
-G1 X136.446 Y136.446 E.82083 F9330 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9329 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9328 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9326 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9325 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9324 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9322 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9322 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9320 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9319 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9317 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9316 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9315 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9313 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -6930,46 +6804,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.003 E.0677 F8331 ; infill
-G1 X163.208 Y146.003 E.89415 F8330 ; infill
-G1 X163.208 Y148.345 E.07927 F8330 ; infill
-G1 X154.627 Y163.208 E.58092 F8329 ; infill
-G1 X153.01 Y163.208 E.05473 F8329 ; infill
-G1 X137.759 Y136.792 E1.03247 F8328 ; infill
-G1 X139.331 Y136.792 E.05321 F8328 ; infill
-G1 X136.792 Y141.189 E.17186 F8328 ; infill
-G1 X136.792 Y139.389 E.06093 F8326 ; infill
-G1 X163.208 Y139.389 E.89415 F8326 ; infill
-G1 X163.208 Y141.189 E.06093 F8325 ; infill
-G1 X160.669 Y136.792 E.17186 F8326 ; infill
-G1 X162.241 Y136.792 E.05321 F8326 ; infill
-G1 X146.99 Y163.208 E1.03247 F8324 ; infill
-G1 X145.373 Y163.208 E.05473 F8324 ; infill
-G1 X136.792 Y148.345 E.58092 F8324 ; infill
-G1 X136.792 Y150.345 E.0677 F8323 ; infill
+G1 X136.792 Y146.003 E.0677 ; infill
+G1 X163.208 Y146.003 E.89415 ; infill
+G1 X163.208 Y148.345 E.07927 ; infill
+G1 X154.627 Y163.208 E.58092 ; infill
+G1 X153.01 Y163.208 E.05473 ; infill
+G1 X137.759 Y136.792 E1.03247 ; infill
+G1 X139.331 Y136.792 E.05321 ; infill
+G1 X136.792 Y141.189 E.17186 ; infill
+G1 X136.792 Y139.389 E.06093 ; infill
+G1 X163.208 Y139.389 E.89415 ; infill
+G1 X163.208 Y141.189 E.06093 ; infill
+G1 X160.669 Y136.792 E.17186 ; infill
+G1 X162.241 Y136.792 E.05321 ; infill
+G1 X146.99 Y163.208 E1.03247 ; infill
+G1 X145.373 Y163.208 E.05473 ; infill
+G1 X136.792 Y148.345 E.58092 ; infill
+G1 X136.792 Y150.345 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.23 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.23 E.0677 F8323 ; infill
-G1 X163.208 Y159.23 E.89415 F8323 ; infill
-G1 X163.208 Y161.573 E.07931 F8322 ; infill
-G1 X162.264 Y163.208 E.0639 F8323 ; infill
-G1 X160.647 Y163.208 E.05473 F8323 ; infill
-G1 X145.396 Y136.792 E1.03247 F8322 ; infill
-G1 X146.968 Y136.792 E.05321 F8321 ; infill
-G1 X136.792 Y154.417 E.68888 F8320 ; infill
-G1 X136.792 Y152.616 E.06096 F8320 ; infill
-G1 X163.208 Y152.616 E.89415 F8319 ; infill
-G1 X163.208 Y154.417 E.06096 F8319 ; infill
-G1 X153.032 Y136.792 E.68888 F8318 ; infill
-G1 X154.604 Y136.792 E.05321 F8318 ; infill
-G1 X139.353 Y163.208 E1.03247 F8317 ; infill
-G1 X137.736 Y163.208 E.05473 F8317 ; infill
-G1 X136.792 Y161.573 E.0639 F8317 ; infill
-G1 X136.792 Y163.208 E.05534 F8317 ; infill
+G1 X136.792 Y159.23 E.0677 ; infill
+G1 X163.208 Y159.23 E.89415 ; infill
+G1 X163.208 Y161.573 E.07931 ; infill
+G1 X162.264 Y163.208 E.0639 ; infill
+G1 X160.647 Y163.208 E.05473 ; infill
+G1 X145.396 Y136.792 E1.03247 ; infill
+G1 X146.968 Y136.792 E.05321 ; infill
+G1 X136.792 Y154.417 E.68888 ; infill
+G1 X136.792 Y152.616 E.06096 ; infill
+G1 X163.208 Y152.616 E.89415 ; infill
+G1 X163.208 Y154.417 E.06096 ; infill
+G1 X153.032 Y136.792 E.68888 ; infill
+G1 X154.604 Y136.792 E.05321 ; infill
+G1 X139.353 Y163.208 E1.03247 ; infill
+G1 X137.736 Y163.208 E.05473 ; infill
+G1 X136.792 Y161.573 E.0639 ; infill
+G1 X136.792 Y163.208 E.05534 ; infill
 G1 X137.157 Y163.208 E.01235 ; infill
 ;LAYER_CHANGE:57
 ;Z:11.5
@@ -6989,36 +6863,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9295 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9294 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9293 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9292 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9290 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9288 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9288 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9287 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M73 P38 R16
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9285 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9284 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9282 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9281 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9280 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9278 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9278 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9275 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7029,47 +6903,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y145.861 E.0677 F8297 ; infill
-G1 X163.208 Y145.861 E.89415 F8296 ; infill
-G1 X163.208 Y148.628 E.09366 F8295 ; infill
-G1 X154.79 Y163.208 E.56987 F8295 ; infill
-G1 X152.847 Y163.208 E.06577 F8294 ; infill
-G1 X137.595 Y136.792 E1.03249 F8294 ; infill
-G1 X139.494 Y136.792 E.06428 F8294 ; infill
-G1 X136.792 Y141.472 E.18292 F8294 ; infill
-G1 X136.792 Y139.248 E.07528 F8293 ; infill
-G1 X163.208 Y139.248 E.89415 F8292 ; infill
-G1 X163.208 Y141.472 E.07528 F8291 ; infill
-G1 X160.506 Y136.792 E.18292 F8291 ; infill
-G1 X162.405 Y136.792 E.06428 F8291 ; infill
-G1 X147.154 Y163.208 E1.03247 F8290 ; infill
-G1 X145.21 Y163.208 E.0658 F8290 ; infill
-G1 X136.792 Y148.628 E.56987 F8290 ; infill
-G1 X136.792 Y150.628 E.0677 F8289 ; infill
+G1 X136.792 Y145.861 E.0677 ; infill
+G1 X163.208 Y145.861 E.89415 ; infill
+G1 X163.208 Y148.628 E.09366 ; infill
+G1 X154.79 Y163.208 E.56987 ; infill
+G1 X152.847 Y163.208 E.06577 ; infill
+G1 X137.595 Y136.792 E1.03249 ; infill
+G1 X139.494 Y136.792 E.06428 ; infill
+G1 X136.792 Y141.472 E.18292 ; infill
+G1 X136.792 Y139.248 E.07528 ; infill
+G1 X163.208 Y139.248 E.89415 ; infill
+G1 X163.208 Y141.472 E.07528 ; infill
+G1 X160.506 Y136.792 E.18292 ; infill
+G1 X162.405 Y136.792 E.06428 ; infill
+G1 X147.154 Y163.208 E1.03247 ; infill
+G1 X145.21 Y163.208 E.0658 ; infill
+G1 X136.792 Y148.628 E.56987 ; infill
+G1 X136.792 Y150.628 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.088 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.088 E.0677 F8288 ; infill
-G1 X163.208 Y159.089 E.89415 F8288 ; infill
+G1 X136.792 Y159.088 E.0677 ; infill
+G1 X163.208 Y159.089 E.89415 ; infill
 M73 P39 R16
-G1 X163.208 Y161.855 E.09363 F8288 ; infill
-G1 X162.427 Y163.208 E.05288 F8288 ; infill
-G1 X160.483 Y163.208 E.0658 F8288 ; infill
-G1 X145.232 Y136.792 E1.03247 F8286 ; infill
-G1 X147.131 Y136.792 E.06428 F8286 ; infill
-G1 X136.792 Y154.7 E.69994 F8286 ; infill
-G1 X136.792 Y152.475 E.07531 F8286 ; infill
-G1 X163.208 Y152.475 E.89415 F8284 ; infill
-G1 X163.208 Y154.699 E.07528 F8284 ; infill
-G1 X152.869 Y136.792 E.69991 F8283 ; infill
-G1 X154.768 Y136.792 E.06428 F8283 ; infill
-G1 X139.517 Y163.208 E1.03247 F8282 ; infill
-G1 X137.573 Y163.208 E.0658 F8282 ; infill
-G1 X136.792 Y161.856 E.05285 F8282 ; infill
-G1 X136.792 Y159.856 E.0677 F8281 ; infill
+G1 X163.208 Y161.855 E.09363 ; infill
+G1 X162.427 Y163.208 E.05288 ; infill
+G1 X160.483 Y163.208 E.0658 ; infill
+G1 X145.232 Y136.792 E1.03247 ; infill
+G1 X147.131 Y136.792 E.06428 ; infill
+G1 X136.792 Y154.7 E.69994 ; infill
+G1 X136.792 Y152.475 E.07531 ; infill
+G1 X163.208 Y152.475 E.89415 ; infill
+G1 X163.208 Y154.699 E.07528 ; infill
+G1 X152.869 Y136.792 E.69991 ; infill
+G1 X154.768 Y136.792 E.06428 ; infill
+G1 X139.517 Y163.208 E1.03247 ; infill
+G1 X137.573 Y163.208 E.0658 ; infill
+G1 X136.792 Y161.856 E.05285 ; infill
+G1 X136.792 Y159.856 E.0677 ; infill
 ;LAYER_CHANGE:58
 ;Z:11.7
 ;HEIGHT:0.2
@@ -7088,35 +6962,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9256 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9255 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9254 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9253 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9251 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9250 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9248 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9248 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9246 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9245 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9244 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9242 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9241 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9240 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9238 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9236 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7127,46 +7001,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y145.72 E.0677 F8261 ; infill
-G1 X163.208 Y145.72 E.89415 F8262 ; infill
-G1 X163.208 Y148.911 E.10801 F8260 ; infill
-G1 X154.954 Y163.208 E.5588 F8260 ; infill
-G1 X152.683 Y163.208 E.07687 F8260 ; infill
-G1 X137.432 Y136.792 E1.03247 F8259 ; infill
-G1 X139.658 Y136.792 E.07535 F8258 ; infill
-G1 X136.792 Y141.755 E.19399 F8258 ; infill
-G1 X136.792 Y139.106 E.08967 F8258 ; infill
-G1 X163.208 Y139.106 E.89415 F8257 ; infill
-G1 X163.208 Y141.755 E.08967 F8255 ; infill
-G1 X160.342 Y136.792 E.19399 F8256 ; infill
-G1 X162.568 Y136.792 E.07535 F8255 ; infill
-G1 X147.317 Y163.208 E1.03247 F8255 ; infill
-G1 X145.046 Y163.208 E.07687 F8254 ; infill
-G1 X136.792 Y148.911 E.5588 F8254 ; infill
-G1 X136.792 Y150.911 E.0677 F8253 ; infill
+G1 X136.792 Y145.72 E.0677 ; infill
+G1 X163.208 Y145.72 E.89415 ; infill
+G1 X163.208 Y148.911 E.10801 ; infill
+G1 X154.954 Y163.208 E.5588 ; infill
+G1 X152.683 Y163.208 E.07687 ; infill
+G1 X137.432 Y136.792 E1.03247 ; infill
+G1 X139.658 Y136.792 E.07535 ; infill
+G1 X136.792 Y141.755 E.19399 ; infill
+G1 X136.792 Y139.106 E.08967 ; infill
+G1 X163.208 Y139.106 E.89415 ; infill
+G1 X163.208 Y141.755 E.08967 ; infill
+G1 X160.342 Y136.792 E.19399 ; infill
+G1 X162.568 Y136.792 E.07535 ; infill
+G1 X147.317 Y163.208 E1.03247 ; infill
+G1 X145.046 Y163.208 E.07687 ; infill
+G1 X136.792 Y148.911 E.5588 ; infill
+G1 X136.792 Y150.911 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y156.947 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y158.947 E.0677 F8253 ; infill
-G1 X163.208 Y158.947 E.89415 F8252 ; infill
-G1 X163.208 Y162.138 E.10801 F8252 ; infill
+G1 X136.792 Y158.947 E.0677 ; infill
+G1 X163.208 Y158.947 E.89415 ; infill
+G1 X163.208 Y162.138 E.10801 ; infill
 G1 X162.59 Y163.208 E.04183 ; infill
-G1 X160.32 Y163.208 E.07684 F8251 ; infill
-G1 X145.069 Y136.792 E1.03247 F8251 ; infill
-G1 X147.294 Y136.792 E.07531 F8251 ; infill
-G1 X136.792 Y154.982 E.71096 F8250 ; infill
-G1 X136.792 Y152.333 E.08967 F8249 ; infill
-G1 X163.208 Y152.333 E.89415 F8249 ; infill
-G1 X163.208 Y154.982 E.08967 F8248 ; infill
-G1 X152.706 Y136.792 E.71096 F8247 ; infill
-G1 X154.931 Y136.792 E.07531 F8247 ; infill
-G1 X139.68 Y163.208 E1.03247 F8246 ; infill
-G1 X137.41 Y163.208 E.07684 F8245 ; infill
+G1 X160.32 Y163.208 E.07684 ; infill
+G1 X145.069 Y136.792 E1.03247 ; infill
+G1 X147.294 Y136.792 E.07531 ; infill
+G1 X136.792 Y154.982 E.71096 ; infill
+G1 X136.792 Y152.333 E.08967 ; infill
+G1 X163.208 Y152.333 E.89415 ; infill
+G1 X163.208 Y154.982 E.08967 ; infill
+G1 X152.706 Y136.792 E.71096 ; infill
+G1 X154.931 Y136.792 E.07531 ; infill
+G1 X139.68 Y163.208 E1.03247 ; infill
+G1 X137.41 Y163.208 E.07684 ; infill
 G1 X136.792 Y162.138 E.04183 ; infill
-G1 X136.792 Y160.138 E.0677 F8245 ; infill
+G1 X136.792 Y160.138 E.0677 ; infill
 ;LAYER_CHANGE:59
 ;Z:11.9
 ;HEIGHT:0.2
@@ -7185,35 +7059,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9216 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9214 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9214 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9212 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9211 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9210 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9208 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9207 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9206 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9204 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9203 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9201 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9200 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9199 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9197 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9195 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 M73 P40 R16
 G1 E-2 F2400 ; retract
@@ -7225,46 +7099,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y145.578 E.0677 F8225 ; infill
-G1 X136.792 Y145.578 E.89415 F8225 ; infill
-G1 X136.792 Y142.038 E.11982 F8225 ; infill
-G1 X139.821 Y136.792 E.20504 F8224 ; infill
-G1 X137.269 Y136.792 E.08638 F8224 ; infill
-G1 X152.52 Y163.208 E1.03247 F8223 ; infill
-G1 X155.117 Y163.208 E.08791 F8222 ; infill
-G1 X163.208 Y149.194 E.54774 F8222 ; infill
-G1 X163.208 Y152.192 E.10148 F8221 ; infill
-G1 X136.792 Y152.192 E.89415 F8220 ; infill
-G1 X136.792 Y149.194 E.10148 F8219 ; infill
-G1 X144.883 Y163.208 E.54774 F8219 ; infill
-G1 X147.48 Y163.208 E.08791 F8218 ; infill
-G1 X162.731 Y136.792 E1.03247 F8218 ; infill
-G1 X160.179 Y136.792 E.08638 F8217 ; infill
-G1 X163.208 Y142.038 E.20504 F8217 ; infill
-G1 X163.208 Y138.965 E.10402 F8216 ; infill
-G1 X136.792 Y138.965 E.89415 F8216 ; infill
-G1 X136.792 Y140.965 E.0677 F8215 ; infill
+G1 X163.208 Y145.578 E.0677 ; infill
+G1 X136.792 Y145.578 E.89415 ; infill
+G1 X136.792 Y142.038 E.11982 ; infill
+G1 X139.821 Y136.792 E.20504 ; infill
+G1 X137.269 Y136.792 E.08638 ; infill
+G1 X152.52 Y163.208 E1.03247 ; infill
+G1 X155.117 Y163.208 E.08791 ; infill
+G1 X163.208 Y149.194 E.54774 ; infill
+G1 X163.208 Y152.192 E.10148 ; infill
+G1 X136.792 Y152.192 E.89415 ; infill
+G1 X136.792 Y149.194 E.10148 ; infill
+G1 X144.883 Y163.208 E.54774 ; infill
+G1 X147.48 Y163.208 E.08791 ; infill
+G1 X162.731 Y136.792 E1.03247 ; infill
+G1 X160.179 Y136.792 E.08638 ; infill
+G1 X163.208 Y142.038 E.20504 ; infill
+G1 X163.208 Y138.965 E.10402 ; infill
+G1 X136.792 Y138.965 E.89415 ; infill
+G1 X136.792 Y140.965 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y160.421 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y162.421 E.0677 F8214 ; infill
+G1 X136.792 Y162.421 E.0677 ; infill
 G1 X137.246 Y163.208 E.03075 ; infill
-G1 X139.843 Y163.208 E.08791 F8214 ; infill
-G1 X155.094 Y136.792 E1.03247 F8214 ; infill
-G1 X152.542 Y136.792 E.08638 F8213 ; infill
-G1 X163.208 Y155.265 E.72203 F8213 ; infill
-G1 X163.208 Y158.806 E.11986 F8212 ; infill
-G1 X136.792 Y158.806 E.89415 F8211 ; infill
-G1 X136.792 Y155.265 E.11986 F8211 ; infill
-G1 X147.458 Y136.792 E.72203 F8210 ; infill
-G1 X144.906 Y136.792 E.08638 F8209 ; infill
-G1 X160.157 Y163.208 E1.03247 F8209 ; infill
-G1 X162.754 Y163.208 E.08791 F8208 ; infill
+G1 X139.843 Y163.208 E.08791 ; infill
+G1 X155.094 Y136.792 E1.03247 ; infill
+G1 X152.542 Y136.792 E.08638 ; infill
+G1 X163.208 Y155.265 E.72203 ; infill
+G1 X163.208 Y158.806 E.11986 ; infill
+G1 X136.792 Y158.806 E.89415 ; infill
+G1 X136.792 Y155.265 E.11986 ; infill
+G1 X147.458 Y136.792 E.72203 ; infill
+G1 X144.906 Y136.792 E.08638 ; infill
+G1 X160.157 Y163.208 E1.03247 ; infill
+G1 X162.754 Y163.208 E.08791 ; infill
 G1 X163.208 Y162.421 E.03075 ; infill
-G1 X163.208 Y160.421 E.0677 F8208 ; infill
+G1 X163.208 Y160.421 E.0677 ; infill
 ;LAYER_CHANGE:60
 ;Z:12.1
 ;HEIGHT:0.2
@@ -7283,35 +7157,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9174 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9172 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9171 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9170 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9168 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9168 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9166 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9165 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9164 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9162 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9160 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9159 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9158 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9157 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9155 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9153 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7322,55 +7196,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X139.984 Y136.792 E.0677 F8187 ; infill
-G1 X136.792 Y142.321 E.2161 F8188 ; infill
-G1 X136.792 Y145.437 E.10547 F8188 ; infill
-G1 X163.208 Y145.437 E.89415 F8187 ; infill
-G1 X163.208 Y142.321 E.10547 F8186 ; infill
-G1 X160.016 Y136.792 E.2161 F8186 ; infill
-G1 X158.016 Y136.792 E.0677 F8185 ; infill
+G1 X139.984 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.321 E.2161 ; infill
+G1 X136.792 Y145.437 E.10547 ; infill
+G1 X163.208 Y145.437 E.89415 ; infill
+G1 X163.208 Y142.321 E.10547 ; infill
+G1 X160.016 Y136.792 E.2161 ; infill
+G1 X158.016 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y160.704 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.704 E.0677 F8185 ; infill
+G1 X163.208 Y162.704 E.0677 ; infill
 G1 X162.917 Y163.208 E.0197 ; infill
-G1 X159.993 Y163.208 E.09897 F8185 ; infill
-G1 X144.742 Y136.792 E1.03247 F8184 ; infill
-G1 X147.621 Y136.792 E.09745 F8183 ; infill
-G1 X136.792 Y155.548 E.73309 F8182 ; infill
-G1 X136.792 Y158.664 E.10547 F8182 ; infill
-G1 X163.208 Y158.664 E.89415 F8181 ; infill
-G1 X163.208 Y155.548 E.10547 F8181 ; infill
-G1 X152.379 Y136.792 E.73309 F8180 ; infill
-G1 X155.258 Y136.792 E.09745 F8180 ; infill
-G1 X140.007 Y163.208 E1.03247 F8179 ; infill
-G1 X137.083 Y163.208 E.09897 F8178 ; infill
+G1 X159.993 Y163.208 E.09897 ; infill
+G1 X144.742 Y136.792 E1.03247 ; infill
+G1 X147.621 Y136.792 E.09745 ; infill
+G1 X136.792 Y155.548 E.73309 ; infill
+G1 X136.792 Y158.664 E.10547 ; infill
+G1 X163.208 Y158.664 E.89415 ; infill
+G1 X163.208 Y155.548 E.10547 ; infill
+G1 X152.379 Y136.792 E.73309 ; infill
+G1 X155.258 Y136.792 E.09745 ; infill
+G1 X140.007 Y163.208 E1.03247 ; infill
+G1 X137.083 Y163.208 E.09897 ; infill
 G1 X136.792 Y162.704 E.0197 ; infill
-G1 X136.792 Y160.704 E.0677 F8177 ; infill
+G1 X136.792 Y160.704 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.72 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.72 Y163.208 E.0677 F8177 ; infill
-G1 X136.792 Y149.477 E.53669 F8176 ; infill
-G1 X136.792 Y152.051 E.08713 F8176 ; infill
-G1 X163.208 Y152.051 E.89415 F8176 ; infill
-G1 X163.208 Y149.477 E.08713 F8175 ; infill
-G1 X155.28 Y163.208 E.53669 F8174 ; infill
-G1 X152.357 Y163.208 E.09894 F8174 ; infill
-G1 X137.106 Y136.792 E1.03247 F8173 ; infill
+G1 X144.72 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.477 E.53669 ; infill
+G1 X136.792 Y152.051 E.08713 ; infill
+G1 X163.208 Y152.051 E.89415 ; infill
+G1 X163.208 Y149.477 E.08713 ; infill
+G1 X155.28 Y163.208 E.53669 ; infill
+G1 X152.357 Y163.208 E.09894 ; infill
+G1 X137.106 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.01063 ; infill
-G1 X136.792 Y138.823 E.06875 F8172 ; infill
-G1 X163.208 Y138.823 E.89415 F8171 ; infill
-G1 X163.208 Y136.792 E.06875 F8170 ; infill
+G1 X136.792 Y138.823 E.06875 ; infill
+G1 X163.208 Y138.823 E.89415 ; infill
+G1 X163.208 Y136.792 E.06875 ; infill
 G1 X162.894 Y136.792 E.01063 ; infill
-G1 X147.643 Y163.208 E1.03247 F8170 ; infill
-G1 X149.643 Y163.208 E.0677 F8169 ; infill
+G1 X147.643 Y163.208 E1.03247 ; infill
+G1 X149.643 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:61
 ;Z:12.3
 ;HEIGHT:0.2
@@ -7389,36 +7263,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9131 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9129 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9128 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9127 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M73 P41 R16
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9125 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9124 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9122 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9122 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9119 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9119 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9117 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9116 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9115 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9113 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9111 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9110 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7429,55 +7303,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X140.147 Y136.792 E.0677 F8148 ; infill
-G1 X136.792 Y142.604 E.22715 F8149 ; infill
-G1 X136.792 Y145.295 E.09109 F8148 ; infill
-G1 X163.208 Y145.296 E.89415 F8147 ; infill
-G1 X163.208 Y142.604 E.09112 F8147 ; infill
-G1 X159.853 Y136.792 E.22715 F8147 ; infill
-G1 X157.853 Y136.792 E.0677 F8146 ; infill
+G1 X140.147 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.604 E.22715 ; infill
+G1 X136.792 Y145.295 E.09109 ; infill
+G1 X163.208 Y145.296 E.89415 ; infill
+G1 X163.208 Y142.604 E.09112 ; infill
+G1 X159.853 Y136.792 E.22715 ; infill
+G1 X157.853 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y160.987 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.987 E.0677 F8146 ; infill
+G1 X163.208 Y162.987 E.0677 ; infill
 G1 X163.08 Y163.208 E.00864 ; infill
-G1 X159.83 Y163.208 E.11001 F8146 ; infill
-G1 X144.579 Y136.792 E1.03247 F8144 ; infill
-G1 X147.784 Y136.792 E.10849 F8143 ; infill
-G1 X136.792 Y155.831 E.74414 F8144 ; infill
-G1 X136.792 Y158.523 E.09112 F8143 ; infill
-G1 X163.208 Y158.523 E.89415 F8142 ; infill
-G1 X163.208 Y155.831 E.09112 F8142 ; infill
-G1 X152.216 Y136.792 E.74414 F8141 ; infill
-G1 X155.421 Y136.792 E.10849 F8140 ; infill
-G1 X140.17 Y163.208 E1.03247 F8138 ; infill
-G1 X136.92 Y163.208 E.11001 F8138 ; infill
+G1 X159.83 Y163.208 E.11001 ; infill
+G1 X144.579 Y136.792 E1.03247 ; infill
+G1 X147.784 Y136.792 E.10849 ; infill
+G1 X136.792 Y155.831 E.74414 ; infill
+G1 X136.792 Y158.523 E.09112 ; infill
+G1 X163.208 Y158.523 E.89415 ; infill
+G1 X163.208 Y155.831 E.09112 ; infill
+G1 X152.216 Y136.792 E.74414 ; infill
+G1 X155.421 Y136.792 E.10849 ; infill
+G1 X140.17 Y163.208 E1.03247 ; infill
+G1 X136.92 Y163.208 E.11001 ; infill
 G1 X136.792 Y162.987 E.00864 ; infill
-G1 X136.792 Y160.987 E.0677 F8137 ; infill
+G1 X136.792 Y160.987 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.557 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.557 Y163.208 E.0677 F8137 ; infill
-G1 X136.792 Y149.76 E.52563 F8138 ; infill
-G1 X136.792 Y151.909 E.07274 F8137 ; infill
-G1 X163.208 Y151.909 E.89415 F8137 ; infill
-G1 X163.208 Y149.76 E.07274 F8136 ; infill
-G1 X155.443 Y163.208 E.52563 F8135 ; infill
-G1 X152.193 Y163.208 E.11001 F8135 ; infill
-G1 X136.942 Y136.792 E1.03247 F8134 ; infill
+G1 X144.557 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.76 E.52563 ; infill
+G1 X136.792 Y151.909 E.07274 ; infill
+G1 X163.208 Y151.909 E.89415 ; infill
+G1 X163.208 Y149.76 E.07274 ; infill
+G1 X155.443 Y163.208 E.52563 ; infill
+G1 X152.193 Y163.208 E.11001 ; infill
+G1 X136.942 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.00508 ; infill
-G1 X136.792 Y138.682 E.06397 F8134 ; infill
-G1 X163.208 Y138.682 E.89415 F8132 ; infill
-G1 X163.208 Y136.792 E.06397 F8132 ; infill
+G1 X136.792 Y138.682 E.06397 ; infill
+G1 X163.208 Y138.682 E.89415 ; infill
+G1 X163.208 Y136.792 E.06397 ; infill
 G1 X163.058 Y136.792 E.00508 ; infill
-G1 X147.807 Y163.208 E1.03247 F8130 ; infill
-G1 X149.807 Y163.208 E.0677 F8129 ; infill
+G1 X147.807 Y163.208 E1.03247 ; infill
+G1 X149.807 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:62
 ;Z:12.5
 ;HEIGHT:0.2
@@ -7496,36 +7370,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9087 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9085 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9083 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9083 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9081 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9080 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9078 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9077 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-M104 S229
-G1 X164.368 Y164.368 E.87012 F9075 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9074 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9072 ; perimeter
-G1 X164.308 Y135.632 E.86831 F9070 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9069 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9068 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9067 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9065 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7536,44 +7409,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.689 Y136.792 E.0677 F8109 ; infill
-G1 X163.208 Y142.886 E.2382 F8109 ; infill
-G1 X163.208 Y145.154 E.07677 F8108 ; infill
-G1 X136.792 Y145.154 E.89415 F8108 ; infill
-G1 X136.792 Y142.886 E.07677 F8107 ; infill
-G1 X140.311 Y136.792 E.2382 F8107 ; infill
-M104 S227
-G1 X142.311 Y136.792 E.0677 F8106 ; infill
+G1 X159.689 Y136.792 E.0677 ; infill
+G1 X163.208 Y142.886 E.2382 ; infill
+G1 X163.208 Y145.154 E.07677 ; infill
+G1 X136.792 Y145.154 E.89415 ; infill
+G1 X136.792 Y142.886 E.07677 ; infill
+G1 X140.311 Y136.792 E.2382 ; infill
+G1 X142.311 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X149.97 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X147.97 Y163.208 E.0677 F8106 ; infill
-G1 X163.208 Y136.815 E1.03158 F8105 ; infill
-G1 X163.208 Y138.541 E.05842 F8105 ; infill
-G1 X136.792 Y138.54 E.89415 F8104 ; infill
-G1 X136.792 Y136.815 E.05839 F8103 ; infill
-G1 X152.03 Y163.208 E1.03158 F8102 ; infill
-G1 X155.607 Y163.208 E.12108 F8101 ; infill
-G1 X163.208 Y150.042 E.51459 F8101 ; infill
-G1 X163.208 Y151.768 E.05842 F8101 ; infill
-G1 X136.792 Y151.768 E.89415 F8099 ; infill
-G1 X136.792 Y150.043 E.05839 F8098 ; infill
+G1 X147.97 Y163.208 E.0677 ; infill
+G1 X163.208 Y136.815 E1.03158 ; infill
+G1 X163.208 Y138.541 E.05842 ; infill
+G1 X136.792 Y138.54 E.89415 ; infill
+G1 X136.792 Y136.815 E.05839 ; infill
+G1 X152.03 Y163.208 E1.03158 ; infill
+G1 X155.607 Y163.208 E.12108 ; infill
+G1 X163.208 Y150.042 E.51459 ; infill
+G1 X163.208 Y151.768 E.05842 ; infill
+G1 X136.792 Y151.768 E.89415 ; infill
+G1 X136.792 Y150.043 E.05839 ; infill
 M73 P42 R16
-G1 X144.393 Y163.208 E.51456 F8098 ; infill
-G1 X140.333 Y163.208 E.13743 F8098 ; infill
-G1 X155.584 Y136.792 E1.03247 F8097 ; infill
-G1 X152.052 Y136.792 E.11955 F8096 ; infill
-G1 X163.208 Y156.114 E.75521 F8095 ; infill
-G1 X163.208 Y158.381 E.07674 F8094 ; infill
-G1 X136.792 Y158.381 E.89415 F8094 ; infill
-G1 X136.792 Y156.114 E.07674 F8093 ; infill
-G1 X147.948 Y136.792 E.75521 F8092 ; infill
-G1 X144.416 Y136.792 E.11955 F8092 ; infill
-G1 X159.667 Y163.208 E1.03247 F8091 ; infill
-G1 X161.667 Y163.208 E.0677 F8090 ; infill
+G1 X144.393 Y163.208 E.51456 ; infill
+G1 X140.333 Y163.208 E.13743 ; infill
+G1 X155.584 Y136.792 E1.03247 ; infill
+G1 X152.052 Y136.792 E.11955 ; infill
+G1 X163.208 Y156.114 E.75521 ; infill
+G1 X163.208 Y158.381 E.07674 ; infill
+G1 X136.792 Y158.381 E.89415 ; infill
+G1 X136.792 Y156.114 E.07674 ; infill
+G1 X147.948 Y136.792 E.75521 ; infill
+G1 X144.416 Y136.792 E.11955 ; infill
+G1 X159.667 Y163.208 E1.03247 ; infill
+G1 X161.667 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:63
 ;Z:12.7
 ;HEIGHT:0.2
@@ -7592,36 +7464,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F9043 ; perimeter
-G1 X136.446 Y163.554 E.82083 F9041 ; perimeter
-G1 X136.446 Y136.446 E.82083 F9039 ; perimeter
-G1 X163.494 Y136.446 E.81901 F9038 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F9036 ; perimeter
-G1 X136.039 Y163.961 E.84548 F9035 ; perimeter
-G1 X136.039 Y136.039 E.84548 F9033 ; perimeter
-G1 X163.901 Y136.039 E.84366 F9032 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F9031 ; perimeter
-G1 X135.632 Y164.368 E.87012 F9029 ; perimeter
-G1 X135.632 Y135.632 E.87012 F9027 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
 M73 P42 R15
-G1 X164.308 Y135.632 E.86831 F9026 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F9025 ; perimeter
-G1 X135.225 Y164.775 E.89477 F9023 ; perimeter
-G1 X135.225 Y135.225 E.89477 F9021 ; perimeter
-G1 X164.715 Y135.225 E.89295 F9020 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7632,42 +7504,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.889 Y136.792 E.0677 F8068 ; infill
-G1 X163.208 Y156.396 E.76624 F8067 ; infill
-G1 X163.208 Y158.24 E.06242 F8066 ; infill
-G1 X136.792 Y158.24 E.89415 F8066 ; infill
-G1 X136.792 Y156.397 E.06238 F8066 ; infill
-G1 X148.111 Y136.792 E.76627 F8064 ; infill
-G1 X144.252 Y136.792 E.13062 F8064 ; infill
-G1 X159.503 Y163.208 E1.03247 F8063 ; infill
-G1 X155.77 Y163.208 E.12636 F8062 ; infill
-G1 X163.208 Y150.325 E.50354 F8062 ; infill
+G1 X151.889 Y136.792 E.0677 ; infill
+G1 X163.208 Y156.396 E.76624 ; infill
+G1 X163.208 Y158.24 E.06242 ; infill
+G1 X136.792 Y158.24 E.89415 ; infill
+G1 X136.792 Y156.397 E.06238 ; infill
+G1 X148.111 Y136.792 E.76627 ; infill
+G1 X144.252 Y136.792 E.13062 ; infill
+G1 X159.503 Y163.208 E1.03247 ; infill
+G1 X155.77 Y163.208 E.12636 ; infill
+G1 X163.208 Y150.325 E.50354 ; infill
 G1 X163.208 Y151.626 E.04404 ; infill
-G1 X136.792 Y151.626 E.89415 F8061 ; infill
+G1 X136.792 Y151.626 E.89415 ; infill
 G1 X136.792 Y150.325 E.04404 ; infill
-G1 X144.23 Y163.208 E.50354 F8059 ; infill
-G1 X140.497 Y163.208 E.12636 F8059 ; infill
-G1 X155.748 Y136.792 E1.03247 F8058 ; infill
-G1 X159.526 Y136.792 E.12788 F8057 ; infill
-G1 X163.208 Y143.169 E.24925 F8057 ; infill
-G1 X163.208 Y145.013 E.06242 F8056 ; infill
-G1 X136.792 Y145.013 E.89415 F8056 ; infill
-G1 X136.792 Y143.169 E.06242 F8055 ; infill
-G1 X140.474 Y136.792 E.24925 F8055 ; infill
-G1 X138.474 Y136.792 E.0677 F8054 ; infill
+G1 X144.23 Y163.208 E.50354 ; infill
+G1 X140.497 Y163.208 E.12636 ; infill
+G1 X155.748 Y136.792 E1.03247 ; infill
+G1 X159.526 Y136.792 E.12788 ; infill
+G1 X163.208 Y143.169 E.24925 ; infill
+G1 X163.208 Y145.013 E.06242 ; infill
+G1 X136.792 Y145.013 E.89415 ; infill
+G1 X136.792 Y143.169 E.06242 ; infill
+G1 X140.474 Y136.792 E.24925 ; infill
+G1 X138.474 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.133 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.133 Y163.208 E.0677 F8054 ; infill
-G1 X163.208 Y137.098 E1.02052 F8053 ; infill
+G1 X148.133 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.098 E1.02052 ; infill
 G1 X163.208 Y138.399 E.04404 ; infill
-G1 X136.792 Y138.399 E.89415 F8052 ; infill
+G1 X136.792 Y138.399 E.89415 ; infill
 G1 X136.792 Y137.098 E.04404 ; infill
-G1 X151.867 Y163.208 E1.02052 F8050 ; infill
-G1 X153.867 Y163.208 E.0677 F8049 ; infill
+G1 X151.867 Y163.208 E1.02052 ; infill
+G1 X153.867 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:64
 ;Z:12.9
 ;HEIGHT:0.2
@@ -7686,35 +7558,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8997 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8995 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8994 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8993 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8991 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8990 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8988 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8986 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8985 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8983 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8982 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8980 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8978 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8976 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8975 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8973 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7725,43 +7597,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.726 Y136.792 E.0677 F8026 ; infill
-G1 X163.208 Y156.679 E.77729 F8026 ; infill
+G1 X151.726 Y136.792 E.0677 ; infill
+G1 X163.208 Y156.679 E.77729 ; infill
 G1 X163.208 Y158.099 E.04807 ; infill
 M73 P43 R15
-G1 X136.792 Y158.099 E.89415 F8024 ; infill
+G1 X136.792 Y158.099 E.89415 ; infill
 G1 X136.792 Y156.679 E.04807 ; infill
-G1 X148.274 Y136.792 E.77729 F8023 ; infill
-G1 X144.089 Y136.792 E.14166 F8022 ; infill
-G1 X159.34 Y163.208 E1.03247 F8021 ; infill
-G1 X155.933 Y163.208 E.11532 F8021 ; infill
-G1 X163.208 Y150.608 E.49248 F8019 ; infill
+G1 X148.274 Y136.792 E.77729 ; infill
+G1 X144.089 Y136.792 E.14166 ; infill
+G1 X159.34 Y163.208 E1.03247 ; infill
+G1 X155.933 Y163.208 E.11532 ; infill
+G1 X163.208 Y150.608 E.49248 ; infill
 G1 X163.208 Y151.485 E.02969 ; infill
-G1 X136.792 Y151.485 E.89415 F8018 ; infill
+G1 X136.792 Y151.485 E.89415 ; infill
 G1 X136.792 Y150.608 E.02969 ; infill
-G1 X144.067 Y163.208 E.49248 F8018 ; infill
-G1 X140.66 Y163.208 E.11532 F8018 ; infill
-G1 X155.911 Y136.792 E1.03247 F8016 ; infill
-G1 X159.363 Y136.792 E.11685 F8015 ; infill
-G1 X163.208 Y143.452 E.26031 F8015 ; infill
+G1 X144.067 Y163.208 E.49248 ; infill
+G1 X140.66 Y163.208 E.11532 ; infill
+G1 X155.911 Y136.792 E1.03247 ; infill
+G1 X159.363 Y136.792 E.11685 ; infill
+G1 X163.208 Y143.452 E.26031 ; infill
 G1 X163.208 Y144.871 E.04803 ; infill
-G1 X136.792 Y144.871 E.89415 F8014 ; infill
+G1 X136.792 Y144.871 E.89415 ; infill
 G1 X136.792 Y143.452 E.04803 ; infill
-G1 X140.637 Y136.792 E.26031 F8013 ; infill
-G1 X138.637 Y136.792 E.0677 F8013 ; infill
+G1 X140.637 Y136.792 E.26031 ; infill
+G1 X138.637 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.297 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.297 Y163.208 E.0677 F8012 ; infill
-G1 X163.208 Y137.381 E1.00945 F8012 ; infill
+G1 X148.297 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.381 E1.00945 ; infill
 G1 X163.208 Y138.258 E.02969 ; infill
-G1 X136.792 Y138.258 E.89415 F8010 ; infill
+G1 X136.792 Y138.258 E.89415 ; infill
 G1 X136.792 Y137.381 E.02969 ; infill
-G1 X151.703 Y163.208 E1.00945 F8009 ; infill
-G1 X153.703 Y163.208 E.0677 F8008 ; infill
+G1 X151.703 Y163.208 E1.00945 ; infill
+G1 X153.703 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:65
 ;Z:13.1
 ;HEIGHT:0.2
@@ -7780,35 +7652,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8950 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8949 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8947 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8946 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8944 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8943 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8941 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8939 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8938 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8937 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8935 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8933 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8931 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8929 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8927 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8927 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7819,42 +7691,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.563 Y136.792 E.0677 F7984 ; infill
-G1 X163.208 Y156.962 E.78835 F7983 ; infill
+G1 X151.563 Y136.792 E.0677 ; infill
+G1 X163.208 Y156.962 E.78835 ; infill
 G1 X163.208 Y157.957 E.03368 ; infill
-G1 X136.792 Y157.957 E.89415 F7982 ; infill
+G1 X136.792 Y157.957 E.89415 ; infill
 G1 X136.792 Y156.962 E.03368 ; infill
-G1 X148.437 Y136.792 E.78835 F7980 ; infill
-G1 X143.926 Y136.792 E.15269 F7980 ; infill
-G1 X159.177 Y163.208 E1.03247 F7979 ; infill
-G1 X156.097 Y163.208 E.10425 F7978 ; infill
-G1 X163.208 Y150.891 E.48141 F7977 ; infill
+G1 X148.437 Y136.792 E.78835 ; infill
+G1 X143.926 Y136.792 E.15269 ; infill
+G1 X159.177 Y163.208 E1.03247 ; infill
+G1 X156.097 Y163.208 E.10425 ; infill
+G1 X163.208 Y150.891 E.48141 ; infill
 G1 X163.208 Y151.344 E.01533 ; infill
-G1 X136.792 Y151.344 E.89415 F7977 ; infill
+G1 X136.792 Y151.344 E.89415 ; infill
 G1 X136.792 Y150.891 E.01533 ; infill
-G1 X143.903 Y163.208 E.48141 F7975 ; infill
-G1 X140.823 Y163.208 E.10425 F7975 ; infill
-G1 X156.074 Y136.792 E1.03247 F7973 ; infill
-G1 X159.199 Y136.792 E.10578 F7972 ; infill
-G1 X163.208 Y143.735 E.27138 F7972 ; infill
+G1 X143.903 Y163.208 E.48141 ; infill
+G1 X140.823 Y163.208 E.10425 ; infill
+G1 X156.074 Y136.792 E1.03247 ; infill
+G1 X159.199 Y136.792 E.10578 ; infill
+G1 X163.208 Y143.735 E.27138 ; infill
 G1 X163.208 Y144.73 E.03368 ; infill
-G1 X136.792 Y144.73 E.89415 F7971 ; infill
+G1 X136.792 Y144.73 E.89415 ; infill
 G1 X136.792 Y143.735 E.03368 ; infill
-G1 X140.801 Y136.792 E.27138 F7970 ; infill
-G1 X138.801 Y136.792 E.0677 F7970 ; infill
+G1 X140.801 Y136.792 E.27138 ; infill
+G1 X138.801 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.46 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.46 Y163.208 E.0677 F7970 ; infill
-G1 X163.208 Y137.664 E.9984 F7969 ; infill
+G1 X148.46 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.664 E.9984 ; infill
 G1 X163.208 Y138.116 E.0153 ; infill
-G1 X136.792 Y138.116 E.89415 F7967 ; infill
+G1 X136.792 Y138.116 E.89415 ; infill
 G1 X136.792 Y137.664 E.0153 ; infill
-G1 X151.54 Y163.208 E.9984 F7966 ; infill
-G1 X153.54 Y163.208 E.0677 F7965 ; infill
+G1 X151.54 Y163.208 E.9984 ; infill
+G1 X153.54 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:66
 ;Z:13.3
 ;HEIGHT:0.2
@@ -7873,36 +7745,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8903 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8901 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8899 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8898 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8897 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8895 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8893 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8891 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8890 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8889 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
 M73 P44 R15
-G1 X135.632 Y135.632 E.87012 F8887 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8885 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8883 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8882 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8880 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8879 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -7913,38 +7785,38 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.399 Y136.792 E.0677 F7941 ; infill
-G1 X163.208 Y157.245 E.79942 F7940 ; infill
+G1 X151.399 Y136.792 E.0677 ; infill
+G1 X163.208 Y157.245 E.79942 ; infill
 G1 X163.208 Y157.816 E.01933 ; infill
-G1 X136.792 Y157.816 E.89415 F7939 ; infill
+G1 X136.792 Y157.816 E.89415 ; infill
 G1 X136.792 Y157.245 E.01933 ; infill
-G1 X148.601 Y136.792 E.79942 F7937 ; infill
-G1 X143.763 Y136.792 E.16376 F7937 ; infill
-G1 X159.014 Y163.208 E1.03247 F7936 ; infill
-G1 X156.26 Y163.208 E.09322 F7935 ; infill
-G1 X163.208 Y151.174 E.47035 F7934 ; infill
-G1 X136.792 Y151.174 E.89415 F7933 ; infill
-G1 X143.74 Y163.208 E.47035 F7932 ; infill
-G1 X140.986 Y163.208 E.09322 F7932 ; infill
-G1 X156.237 Y136.792 E1.03247 F7930 ; infill
-G1 X159.036 Y136.792 E.09474 F7930 ; infill
-G1 X163.208 Y144.018 E.28243 F7929 ; infill
+G1 X148.601 Y136.792 E.79942 ; infill
+G1 X143.763 Y136.792 E.16376 ; infill
+G1 X159.014 Y163.208 E1.03247 ; infill
+G1 X156.26 Y163.208 E.09322 ; infill
+G1 X163.208 Y151.174 E.47035 ; infill
+G1 X136.792 Y151.174 E.89415 ; infill
+G1 X143.74 Y163.208 E.47035 ; infill
+G1 X140.986 Y163.208 E.09322 ; infill
+G1 X156.237 Y136.792 E1.03247 ; infill
+G1 X159.036 Y136.792 E.09474 ; infill
+G1 X163.208 Y144.018 E.28243 ; infill
 G1 X163.208 Y144.588 E.01929 ; infill
-G1 X136.792 Y144.588 E.89415 F7928 ; infill
+G1 X136.792 Y144.588 E.89415 ; infill
 G1 X136.792 Y144.018 E.01929 ; infill
-G1 X140.964 Y136.792 E.28243 F7927 ; infill
-G1 X138.964 Y136.792 E.0677 F7926 ; infill
+G1 X140.964 Y136.792 E.28243 ; infill
+G1 X138.964 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.623 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.623 Y163.208 E.0677 F7926 ; infill
-G1 X163.208 Y137.947 E.98734 F7925 ; infill
-G1 X136.792 Y137.947 E.89415 F7924 ; infill
-G1 X151.377 Y163.208 E.98734 F7922 ; infill
-G1 X153.377 Y163.208 E.0677 F7921 ; infill
+G1 X148.623 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.947 E.98734 ; infill
+G1 X136.792 Y137.947 E.89415 ; infill
+G1 X151.377 Y163.208 E.98734 ; infill
+G1 X153.377 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:67
 ;Z:13.5
 ;HEIGHT:0.2
@@ -7963,35 +7835,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8854 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8852 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8850 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8849 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8848 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8846 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8845 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8842 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8841 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8840 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8838 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8836 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8834 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8833 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8831 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8829 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8002,42 +7874,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.236 Y136.792 E.0677 F7897 ; infill
-G1 X163.208 Y157.528 E.81047 F7896 ; infill
+G1 X151.236 Y136.792 E.0677 ; infill
+G1 X163.208 Y157.528 E.81047 ; infill
 G1 X163.208 Y157.674 E.00494 ; infill
-G1 X136.792 Y157.674 E.89415 F7895 ; infill
+G1 X136.792 Y157.674 E.89415 ; infill
 G1 X136.792 Y157.528 E.00494 ; infill
-G1 X148.764 Y136.792 E.81047 F7894 ; infill
-G1 X143.599 Y136.792 E.17483 F7893 ; infill
-G1 X158.85 Y163.208 E1.03247 F7892 ; infill
-G1 X156.423 Y163.208 E.08215 F7891 ; infill
-G1 X163.208 Y151.457 E.4593 F7890 ; infill
+G1 X148.764 Y136.792 E.81047 ; infill
+G1 X143.599 Y136.792 E.17483 ; infill
+G1 X158.85 Y163.208 E1.03247 ; infill
+G1 X156.423 Y163.208 E.08215 ; infill
+G1 X163.208 Y151.457 E.4593 ; infill
 G1 X163.208 Y151.061 E.0134 ; infill
-G1 X136.792 Y151.061 E.89415 F7888 ; infill
+G1 X136.792 Y151.061 E.89415 ; infill
 G1 X136.792 Y151.457 E.0134 ; infill
-G1 X143.577 Y163.208 E.4593 F7887 ; infill
-G1 X141.15 Y163.208 E.08215 F7887 ; infill
-G1 X156.401 Y136.792 E1.03247 F7886 ; infill
-G1 X158.873 Y136.792 E.08367 F7885 ; infill
-G1 X163.208 Y144.301 E.29349 F7885 ; infill
+G1 X143.577 Y163.208 E.4593 ; infill
+G1 X141.15 Y163.208 E.08215 ; infill
+G1 X156.401 Y136.792 E1.03247 ; infill
+G1 X158.873 Y136.792 E.08367 ; infill
+G1 X163.208 Y144.301 E.29349 ; infill
 G1 X163.208 Y144.447 E.00494 ; infill
-G1 X136.792 Y144.447 E.89415 F7884 ; infill
+G1 X136.792 Y144.447 E.89415 ; infill
 G1 X136.792 Y144.301 E.00494 ; infill
-G1 X141.127 Y136.792 E.29349 F7883 ; infill
-G1 X139.127 Y136.792 E.0677 F7883 ; infill
+G1 X141.127 Y136.792 E.29349 ; infill
+G1 X139.127 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.787 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.787 Y163.208 E.0677 F7883 ; infill
-G1 X163.208 Y138.229 E.9763 F7882 ; infill
+G1 X148.787 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.229 E.9763 ; infill
 G1 X163.208 Y137.833 E.0134 ; infill
-G1 X136.792 Y137.833 E.89415 F7880 ; infill
+G1 X136.792 Y137.833 E.89415 ; infill
 G1 X136.792 Y138.23 E.01344 ; infill
-G1 X151.214 Y163.208 E.97629 F7878 ; infill
-G1 X153.214 Y163.208 E.0677 F7877 ; infill
+G1 X151.214 Y163.208 E.97629 ; infill
+G1 X153.214 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:68
 ;Z:13.7
 ;HEIGHT:0.2
@@ -8056,36 +7928,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8804 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8802 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8801 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
 M73 P45 R15
-G1 X163.494 Y136.446 E.81901 F8800 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8798 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8796 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8794 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8792 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8791 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8790 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8788 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8787 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8785 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8783 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8781 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8780 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8096,42 +7968,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.073 Y136.792 E.0677 F7853 ; infill
-G1 X163.208 Y157.811 E.82153 F7852 ; infill
+G1 X151.073 Y136.792 E.0677 ; infill
+G1 X163.208 Y157.811 E.82153 ; infill
 G1 X163.208 Y157.533 E.00941 ; infill
-G1 X136.792 Y157.533 E.89415 F7850 ; infill
+G1 X136.792 Y157.533 E.89415 ; infill
 G1 X136.792 Y157.811 E.00941 ; infill
-G1 X148.927 Y136.792 E.82153 F7849 ; infill
-G1 X143.436 Y136.792 E.18586 F7848 ; infill
-G1 X158.687 Y163.208 E1.03247 F7847 ; infill
-G1 X156.587 Y163.208 E.07108 F7846 ; infill
-G1 X163.208 Y151.74 E.44823 F7846 ; infill
+G1 X148.927 Y136.792 E.82153 ; infill
+G1 X143.436 Y136.792 E.18586 ; infill
+G1 X158.687 Y163.208 E1.03247 ; infill
+G1 X156.587 Y163.208 E.07108 ; infill
+G1 X163.208 Y151.74 E.44823 ; infill
 G1 X163.208 Y150.919 E.02779 ; infill
-G1 X136.792 Y150.919 E.89415 F7844 ; infill
+G1 X136.792 Y150.919 E.89415 ; infill
 G1 X136.792 Y151.74 E.02779 ; infill
-G1 X143.413 Y163.208 E.44823 F7843 ; infill
-G1 X141.313 Y163.208 E.07108 F7842 ; infill
-G1 X156.564 Y136.792 E1.03247 F7842 ; infill
-G1 X158.709 Y136.792 E.07261 F7840 ; infill
-G1 X163.208 Y144.584 E.30456 F7840 ; infill
+G1 X143.413 Y163.208 E.44823 ; infill
+G1 X141.313 Y163.208 E.07108 ; infill
+G1 X156.564 Y136.792 E1.03247 ; infill
+G1 X158.709 Y136.792 E.07261 ; infill
+G1 X163.208 Y144.584 E.30456 ; infill
 G1 X163.208 Y144.306 E.00941 ; infill
-G1 X136.792 Y144.306 E.89415 F7839 ; infill
+G1 X136.792 Y144.306 E.89415 ; infill
 G1 X136.792 Y144.584 E.00941 ; infill
-G1 X141.291 Y136.792 E.30456 F7838 ; infill
-G1 X139.291 Y136.792 E.0677 F7838 ; infill
+G1 X141.291 Y136.792 E.30456 ; infill
+G1 X139.291 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.95 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.95 Y163.208 E.0677 F7837 ; infill
-G1 X163.208 Y138.512 E.96524 F7836 ; infill
+G1 X148.95 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.512 E.96524 ; infill
 G1 X163.208 Y137.692 E.02776 ; infill
-G1 X136.792 Y137.692 E.89415 F7834 ; infill
+G1 X136.792 Y137.692 E.89415 ; infill
 G1 X136.792 Y138.512 E.02776 ; infill
-G1 X151.05 Y163.208 E.96524 F7832 ; infill
-G1 X153.05 Y163.208 E.0677 F7831 ; infill
+G1 X151.05 Y163.208 E.96524 ; infill
+G1 X153.05 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:69
 ;Z:13.9
 ;HEIGHT:0.2
@@ -8150,36 +8022,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8753 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8751 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8750 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8748 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8747 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8745 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8743 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8741 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8740 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8738 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8737 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8734 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8733 ; perimeter
-M104 S226
-G1 X135.225 Y164.775 E.89477 F8730 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8729 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8728 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8190,30 +8061,30 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.909 Y136.792 E.0677 F7807 ; infill
-G1 X163.208 Y158.094 E.8326 F7806 ; infill
+G1 X150.909 Y136.792 E.0677 ; infill
+G1 X163.208 Y158.094 E.8326 ; infill
 G1 X163.208 Y157.392 E.02376 ; infill
-G1 X136.792 Y157.391 E.89415 F7805 ; infill
+G1 X136.792 Y157.391 E.89415 ; infill
 G1 X136.792 Y158.094 E.0238 ; infill
-G1 X149.091 Y136.792 E.8326 F7802 ; infill
-G1 X143.273 Y136.792 E.19693 F7801 ; infill
-G1 X158.524 Y163.208 E1.03247 F7801 ; infill
-G1 X156.75 Y163.208 E.06005 F7800 ; infill
-G1 X163.208 Y152.022 E.4372 F7799 ; infill
+G1 X149.091 Y136.792 E.8326 ; infill
+G1 X143.273 Y136.792 E.19693 ; infill
+G1 X158.524 Y163.208 E1.03247 ; infill
+G1 X156.75 Y163.208 E.06005 ; infill
+G1 X163.208 Y152.022 E.4372 ; infill
 G1 X163.208 Y150.778 E.04211 ; infill
-G1 X136.792 Y150.778 E.89415 F7798 ; infill
+G1 X136.792 Y150.778 E.89415 ; infill
 G1 X136.792 Y152.022 E.04211 ; infill
 M73 P45 R14
-G1 X143.25 Y163.208 E.4372 F7797 ; infill
-G1 X141.476 Y163.208 E.06005 F7796 ; infill
-G1 X156.727 Y136.792 E1.03247 F7794 ; infill
-G1 X158.546 Y136.792 E.06157 F7794 ; infill
-G1 X163.208 Y144.866 E.31558 F7793 ; infill
+G1 X143.25 Y163.208 E.4372 ; infill
+G1 X141.476 Y163.208 E.06005 ; infill
+G1 X156.727 Y136.792 E1.03247 ; infill
+G1 X158.546 Y136.792 E.06157 ; infill
+G1 X163.208 Y144.866 E.31558 ; infill
 G1 X163.208 Y144.164 E.02376 ; infill
-G1 X136.792 Y144.164 E.89415 F7793 ; infill
+G1 X136.792 Y144.164 E.89415 ; infill
 G1 X136.792 Y144.866 E.02376 ; infill
-G1 X141.454 Y136.792 E.31558 F7792 ; infill
-G1 X139.454 Y136.792 E.0677 F7791 ; infill
+G1 X141.454 Y136.792 E.31558 ; infill
+G1 X139.454 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X147.113 Y163.208 F30000 ; move to first infill point
@@ -8221,13 +8092,13 @@ M73 P46 R14
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X149.113 Y163.208 E.0677 F7791 ; infill
-G1 X163.208 Y138.795 E.95419 F7790 ; infill
+G1 X149.113 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.795 E.95419 ; infill
 G1 X163.208 Y137.551 E.04211 ; infill
-G1 X136.792 Y137.551 E.89415 F7788 ; infill
+G1 X136.792 Y137.551 E.89415 ; infill
 G1 X136.792 Y138.795 E.04211 ; infill
-G1 X150.887 Y163.208 E.95419 F7786 ; infill
-G1 X152.887 Y163.208 E.0677 F7785 ; infill
+G1 X150.887 Y163.208 E.95419 ; infill
+G1 X152.887 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:70
 ;Z:14.1
 ;HEIGHT:0.2
@@ -8246,35 +8117,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8702 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8700 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8698 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8695 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8695 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8692 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8691 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8690 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8687 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8685 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8684 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8682 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8680 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8678 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8677 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8675 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8285,13 +8156,13 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.746 Y136.792 E.0677 F7759 ; infill
-G1 X163.208 Y158.376 E.84362 F7758 ; infill
+G1 X150.746 Y136.792 E.0677 ; infill
+G1 X163.208 Y158.376 E.84362 ; infill
 G1 X163.208 Y157.25 E.03811 ; infill
-G1 X136.792 Y157.25 E.89415 F7756 ; infill
+G1 X136.792 Y157.25 E.89415 ; infill
 G1 X136.792 Y158.376 E.03811 ; infill
-G1 X149.254 Y136.792 E.84362 F7755 ; infill
-G1 X147.254 Y136.792 E.0677 F7754 ; infill
+G1 X149.254 Y136.792 E.84362 ; infill
+G1 X147.254 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X138.175 Y136.792 F30000 ; move to first infill point
@@ -8300,35 +8171,35 @@ M204 S6000 ; adjust acceleration
 G1 F8843
 G1 X136.792 Y136.792 E.04681 ; infill
 G1 X136.792 Y137.409 E.02088 ; infill
-G1 X163.208 Y137.409 E.89415 F7752 ; infill
-G1 X163.208 Y139.078 E.05649 F7752 ; infill
-G1 X149.276 Y163.208 E.94314 F7751 ; infill
-G1 X150.724 Y163.208 E.04901 F7751 ; infill
-G1 X136.792 Y139.078 E.94314 F7750 ; infill
-G1 X136.792 Y141.078 E.0677 F7749 ; infill
+G1 X163.208 Y137.409 E.89415 ; infill
+G1 X163.208 Y139.078 E.05649 ; infill
+G1 X149.276 Y163.208 E.94314 ; infill
+G1 X150.724 Y163.208 E.04901 ; infill
+G1 X136.792 Y139.078 E.94314 ; infill
+G1 X136.792 Y141.078 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y148.636 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.636 E.0677 F7748 ; infill
-G1 X163.208 Y150.636 E.89415 F7748 ; infill
-G1 X163.208 Y152.305 E.05649 F7747 ; infill
-G1 X156.913 Y163.208 E.42615 F7746 ; infill
-G1 X158.36 Y163.208 E.04898 F7746 ; infill
-G1 X143.109 Y136.792 E1.03247 F7744 ; infill
-G1 X141.617 Y136.792 E.0505 F7744 ; infill
-G1 X136.792 Y145.149 E.32664 F7743 ; infill
+G1 X136.792 Y150.636 E.0677 ; infill
+G1 X163.208 Y150.636 E.89415 ; infill
+G1 X163.208 Y152.305 E.05649 ; infill
+G1 X156.913 Y163.208 E.42615 ; infill
+G1 X158.36 Y163.208 E.04898 ; infill
+G1 X143.109 Y136.792 E1.03247 ; infill
+G1 X141.617 Y136.792 E.0505 ; infill
+G1 X136.792 Y145.149 E.32664 ; infill
 G1 X136.792 Y144.023 E.03811 ; infill
-G1 X163.208 Y144.023 E.89415 F7742 ; infill
+G1 X163.208 Y144.023 E.89415 ; infill
 G1 X163.208 Y145.149 E.03811 ; infill
-G1 X158.383 Y136.792 E.32664 F7741 ; infill
-G1 X156.891 Y136.792 E.0505 F7741 ; infill
-G1 X141.64 Y163.208 E1.03247 F7740 ; infill
-G1 X143.087 Y163.208 E.04898 F7739 ; infill
-G1 X136.792 Y152.305 E.42615 F7738 ; infill
-G1 X136.792 Y154.305 E.0677 F7737 ; infill
+G1 X158.383 Y136.792 E.32664 ; infill
+G1 X156.891 Y136.792 E.0505 ; infill
+G1 X141.64 Y163.208 E1.03247 ; infill
+G1 X143.087 Y163.208 E.04898 ; infill
+G1 X136.792 Y152.305 E.42615 ; infill
+G1 X136.792 Y154.305 E.0677 ; infill
 ;LAYER_CHANGE:71
 ;Z:14.3
 ;HEIGHT:0.2
@@ -8347,35 +8218,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8648 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8646 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8645 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8643 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8641 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8639 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8638 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8636 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8634 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8632 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8629 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8628 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8626 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8624 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8622 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8621 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8386,44 +8257,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y136.792 E.05162 F7710 ; infill
+G1 X136.792 Y136.792 E.05162 ; infill
 G1 X136.792 Y137.268 E.01611 ; infill
-G1 X163.208 Y137.268 E.89415 F7710 ; infill
-G1 X163.208 Y139.361 E.07085 F7708 ; infill
-G1 X149.44 Y163.208 E.93206 F7707 ; infill
+G1 X163.208 Y137.268 E.89415 ; infill
+G1 X163.208 Y139.361 E.07085 ; infill
+G1 X149.44 Y163.208 E.93206 ; infill
 G1 X150.56 Y163.208 E.03791 ; infill
 M73 P47 R14
-G1 X136.792 Y139.361 E.93206 F7706 ; infill
-G1 X136.792 Y141.361 E.0677 F7704 ; infill
+G1 X136.792 Y139.361 E.93206 ; infill
+G1 X136.792 Y141.361 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y148.495 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.495 E.0677 F7704 ; infill
-G1 X163.208 Y150.495 E.89415 F7703 ; infill
-G1 X163.208 Y152.588 E.07085 F7702 ; infill
-G1 X157.076 Y163.208 E.41509 F7702 ; infill
+G1 X136.792 Y150.495 E.0677 ; infill
+G1 X163.208 Y150.495 E.89415 ; infill
+G1 X163.208 Y152.588 E.07085 ; infill
+G1 X157.076 Y163.208 E.41509 ; infill
 G1 X158.197 Y163.208 E.03794 ; infill
-G1 X142.946 Y136.792 E1.03247 F7701 ; infill
+G1 X142.946 Y136.792 E1.03247 ; infill
 G1 X141.78 Y136.792 E.03947 ; infill
-G1 X136.792 Y145.432 E.33769 F7699 ; infill
-G1 X136.792 Y143.881 E.0525 F7698 ; infill
-G1 X163.208 Y143.881 E.89415 F7698 ; infill
-G1 X163.208 Y145.432 E.0525 F7697 ; infill
-G1 X158.22 Y136.792 E.33769 F7696 ; infill
+G1 X136.792 Y145.432 E.33769 ; infill
+G1 X136.792 Y143.881 E.0525 ; infill
+G1 X163.208 Y143.881 E.89415 ; infill
+G1 X163.208 Y145.432 E.0525 ; infill
+G1 X158.22 Y136.792 E.33769 ; infill
 G1 X157.054 Y136.792 E.03947 ; infill
-G1 X141.803 Y163.208 E1.03247 F7695 ; infill
+G1 X141.803 Y163.208 E1.03247 ; infill
 G1 X142.924 Y163.208 E.03794 ; infill
-G1 X136.792 Y152.588 E.41509 F7694 ; infill
-G1 X136.792 Y157.109 E.15303 F7694 ; infill
-G1 X163.208 Y157.109 E.89415 F7692 ; infill
-G1 X163.208 Y158.659 E.05247 F7690 ; infill
-G1 X150.583 Y136.792 E.85468 F7691 ; infill
+G1 X136.792 Y152.588 E.41509 ; infill
+G1 X136.792 Y157.109 E.15303 ; infill
+G1 X163.208 Y157.109 E.89415 ; infill
+G1 X163.208 Y158.659 E.05247 ; infill
+G1 X150.583 Y136.792 E.85468 ; infill
 G1 X149.417 Y136.792 E.03947 ; infill
-G1 X136.792 Y158.659 E.85468 F7689 ; infill
-G1 X136.792 Y160.659 E.0677 F7688 ; infill
+G1 X136.792 Y158.659 E.85468 ; infill
+G1 X136.792 Y160.659 E.0677 ; infill
 ;LAYER_CHANGE:72
 ;Z:14.5
 ;HEIGHT:0.2
@@ -8442,35 +8313,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8593 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8591 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8589 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8588 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8586 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8584 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8582 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8580 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8579 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8577 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8575 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8573 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8570 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8569 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8567 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8565 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8481,44 +8352,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y136.792 E.05639 F7661 ; infill
+G1 X136.792 Y136.792 E.05639 ; infill
 G1 X136.792 Y137.126 E.01131 ; infill
-G1 X163.208 Y137.126 E.89415 F7659 ; infill
-G1 X163.208 Y139.644 E.08523 F7658 ; infill
-G1 X149.603 Y163.208 E.92101 F7658 ; infill
+G1 X163.208 Y137.126 E.89415 ; infill
+G1 X163.208 Y139.644 E.08523 ; infill
+G1 X149.603 Y163.208 E.92101 ; infill
 G1 X150.397 Y163.208 E.02688 ; infill
-G1 X136.792 Y139.644 E.92101 F7656 ; infill
-G1 X136.792 Y141.644 E.0677 F7654 ; infill
+G1 X136.792 Y139.644 E.92101 ; infill
+G1 X136.792 Y141.644 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y148.354 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.354 E.0677 F7654 ; infill
-G1 X163.208 Y150.354 E.89415 F7654 ; infill
-G1 X163.208 Y152.871 E.0852 F7653 ; infill
-G1 X157.24 Y163.208 E.40402 F7653 ; infill
+G1 X136.792 Y150.354 E.0677 ; infill
+G1 X163.208 Y150.354 E.89415 ; infill
+G1 X163.208 Y152.871 E.0852 ; infill
+G1 X157.24 Y163.208 E.40402 ; infill
 G1 X158.034 Y163.208 E.02688 ; infill
-G1 X142.783 Y136.792 E1.03247 F7651 ; infill
+G1 X142.783 Y136.792 E1.03247 ; infill
 G1 X141.944 Y136.792 E.0284 ; infill
-G1 X136.792 Y145.715 E.34876 F7650 ; infill
-G1 X136.792 Y143.74 E.06685 F7648 ; infill
-G1 X163.208 Y143.74 E.89415 F7648 ; infill
-M104 S228
-G1 X163.208 Y145.715 E.06685 F7647 ; infill
-G1 X158.056 Y136.792 E.34876 F7647 ; infill
+G1 X136.792 Y145.715 E.34876 ; infill
+G1 X136.792 Y143.74 E.06685 ; infill
+G1 X163.208 Y143.74 E.89415 ; infill
+G1 X163.208 Y145.715 E.06685 ; infill
+G1 X158.056 Y136.792 E.34876 ; infill
 G1 X157.217 Y136.792 E.0284 ; infill
-G1 X141.966 Y163.208 E1.03247 F7645 ; infill
+G1 X141.966 Y163.208 E1.03247 ; infill
 G1 X142.76 Y163.208 E.02688 ; infill
-G1 X136.792 Y152.871 E.40402 F7643 ; infill
-G1 X136.792 Y156.967 E.13864 F7643 ; infill
-G1 X163.208 Y156.967 E.89415 F7641 ; infill
-G1 X163.208 Y158.942 E.06685 F7641 ; infill
-G1 X150.419 Y136.792 E.86575 F7640 ; infill
+G1 X136.792 Y152.871 E.40402 ; infill
+G1 X136.792 Y156.967 E.13864 ; infill
+G1 X163.208 Y156.967 E.89415 ; infill
+G1 X163.208 Y158.942 E.06685 ; infill
+G1 X150.419 Y136.792 E.86575 ; infill
 G1 X149.58 Y136.792 E.0284 ; infill
-G1 X136.792 Y158.942 E.86573 F7638 ; infill
-G1 X136.792 Y160.942 E.0677 F7637 ; infill
+G1 X136.792 Y158.942 E.86573 ; infill
+G1 X136.792 Y160.942 E.0677 ; infill
 ;LAYER_CHANGE:73
 ;Z:14.7
 ;HEIGHT:0.2
@@ -8537,36 +8407,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8536 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8534 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8532 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8531 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8528 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8528 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8526 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8524 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8522 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8519 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8518 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8516 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M73 P48 R14
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8514 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8512 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8509 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8508 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8577,48 +8447,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.225 E.8768 F7609 ; infill
-G1 X163.208 Y156.826 E.0812 F7609 ; infill
-G1 X136.792 Y156.826 E.89415 F7607 ; infill
-G1 X136.792 Y159.225 E.0812 F7607 ; infill
-G1 X149.744 Y136.792 E.8768 F7605 ; infill
+G1 X163.208 Y159.225 E.8768 ; infill
+G1 X163.208 Y156.826 E.0812 ; infill
+G1 X136.792 Y156.826 E.89415 ; infill
+G1 X136.792 Y159.225 E.0812 ; infill
+G1 X149.744 Y136.792 E.8768 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.619 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.87 Y163.208 E1.03247 F7603 ; infill
+G1 X157.87 Y163.208 E1.03247 ; infill
 G1 X157.403 Y163.208 E.01581 ; infill
-G1 X163.208 Y153.154 E.39297 F7602 ; infill
-G1 X163.208 Y150.212 E.09958 F7602 ; infill
-G1 X136.792 Y150.212 E.89415 F7600 ; infill
-G1 X136.792 Y153.154 E.09958 F7600 ; infill
-G1 X142.597 Y163.208 E.39297 F7599 ; infill
+G1 X163.208 Y153.154 E.39297 ; infill
+G1 X163.208 Y150.212 E.09958 ; infill
+G1 X136.792 Y150.212 E.89415 ; infill
+G1 X136.792 Y153.154 E.09958 ; infill
+G1 X142.597 Y163.208 E.39297 ; infill
 G1 X142.13 Y163.208 E.01581 ; infill
-G1 X157.381 Y136.792 E1.03247 F7597 ; infill
+G1 X157.381 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.893 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y145.998 E.35982 F7596 ; infill
-G1 X163.208 Y143.599 E.0812 F7596 ; infill
-G1 X136.792 Y143.598 E.89415 F7594 ; infill
-G1 X136.792 Y145.998 E.08124 F7593 ; infill
-G1 X142.107 Y136.792 E.35982 F7593 ; infill
+G1 X163.208 Y145.998 E.35982 ; infill
+G1 X163.208 Y143.599 E.0812 ; infill
+G1 X136.792 Y143.598 E.89415 ; infill
+G1 X136.792 Y145.998 E.08124 ; infill
+G1 X142.107 Y136.792 E.35982 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y138.985 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y136.985 E.0677 F7593 ; infill
-G1 X163.208 Y136.985 E.89415 F7591 ; infill
-G1 X163.208 Y139.926 E.09955 F7590 ; infill
-G1 X149.766 Y163.208 E.90998 F7590 ; infill
+G1 X136.792 Y136.985 E.0677 ; infill
+G1 X163.208 Y136.985 E.89415 ; infill
+G1 X163.208 Y139.926 E.09955 ; infill
+G1 X149.766 Y163.208 E.90998 ; infill
 G1 X150.234 Y163.208 E.01584 ; infill
-G1 X136.792 Y139.927 E.90996 F7587 ; infill
-G1 X136.792 Y141.927 E.0677 F7586 ; infill
+G1 X136.792 Y139.927 E.90996 ; infill
+G1 X136.792 Y141.927 E.0677 ; infill
 ;LAYER_CHANGE:74
 ;Z:14.9
 ;HEIGHT:0.2
@@ -8637,35 +8507,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8478 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8477 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8475 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8473 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8472 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8469 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8468 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8466 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8464 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8461 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8459 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8458 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8456 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8455 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8453 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8451 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8676,35 +8546,35 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.508 E.88786 F7558 ; infill
-G1 X163.208 Y156.684 E.09559 F7557 ; infill
-G1 X136.792 Y156.684 E.89415 F7555 ; infill
-G1 X136.792 Y159.508 E.09559 F7554 ; infill
-G1 X149.907 Y136.792 E.88786 F7554 ; infill
+G1 X163.208 Y159.508 E.88786 ; infill
+G1 X163.208 Y156.684 E.09559 ; infill
+G1 X136.792 Y156.684 E.89415 ; infill
+G1 X136.792 Y159.508 E.09559 ; infill
+G1 X149.907 Y136.792 E.88786 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.456 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.707 Y163.208 E1.03247 F7551 ; infill
+G1 X157.707 Y163.208 E1.03247 ; infill
 G1 X157.566 Y163.208 E.00477 ; infill
-G1 X163.208 Y153.437 E.38191 F7550 ; infill
-G1 X163.208 Y150.071 E.11394 F7549 ; infill
-G1 X136.792 Y150.071 E.89415 F7548 ; infill
-G1 X136.792 Y153.437 E.11394 F7547 ; infill
-G1 X142.434 Y163.208 E.38191 F7546 ; infill
+G1 X163.208 Y153.437 E.38191 ; infill
+G1 X163.208 Y150.071 E.11394 ; infill
+G1 X136.792 Y150.071 E.89415 ; infill
+G1 X136.792 Y153.437 E.11394 ; infill
+G1 X142.434 Y163.208 E.38191 ; infill
 G1 X142.293 Y163.208 E.00477 ; infill
-G1 X157.544 Y136.792 E1.03247 F7545 ; infill
+G1 X157.544 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.73 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y146.281 E.37087 F7544 ; infill
-G1 X163.208 Y143.457 E.09559 F7544 ; infill
-G1 X136.792 Y143.457 E.89415 F7542 ; infill
-G1 X136.792 Y146.281 E.09559 F7541 ; infill
-G1 X142.27 Y136.792 E.37087 F7541 ; infill
+G1 X163.208 Y146.281 E.37087 ; infill
+G1 X163.208 Y143.457 E.09559 ; infill
+G1 X136.792 Y143.457 E.89415 ; infill
+G1 X136.792 Y146.281 E.09559 ; infill
+G1 X142.27 Y136.792 E.37087 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y138.209 F30000 ; move to first infill point
@@ -8712,12 +8582,12 @@ G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
 G1 X136.792 Y136.843 E.04624 ; infill
-G1 X163.208 Y136.844 E.89415 F7539 ; infill
-G1 X163.208 Y140.209 E.1139 F7539 ; infill
-G1 X149.93 Y163.208 E.89891 F7537 ; infill
+G1 X163.208 Y136.844 E.89415 ; infill
+G1 X163.208 Y140.209 E.1139 ; infill
+G1 X149.93 Y163.208 E.89891 ; infill
 G1 X150.07 Y163.208 E.00474 ; infill
-G1 X136.792 Y140.209 E.89891 F7536 ; infill
-G1 X136.792 Y138.209 E.0677 F7534 ; infill
+G1 X136.792 Y140.209 E.89891 ; infill
+G1 X136.792 Y138.209 E.0677 ; infill
 ;LAYER_CHANGE:75
 ;Z:15.1
 ;HEIGHT:0.2
@@ -8736,37 +8606,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8421 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8419 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8416 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8415 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M73 P49 R14
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8413 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8411 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8410 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8407 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8406 ; perimeter
-M104 S225
-G1 X135.632 Y164.368 E.87012 F8403 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8402 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8399 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8397 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8394 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8393 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8391 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8777,48 +8646,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.791 E.0677 F7505 ; infill
-G1 X149.93 Y136.792 E.89891 F7504 ; infill
+G1 X163.208 Y159.791 E.0677 ; infill
+G1 X149.93 Y136.792 E.89891 ; infill
 G1 X150.07 Y136.792 E.00474 ; infill
-G1 X136.792 Y159.791 E.89891 F7502 ; infill
-G1 X136.792 Y163.156 E.1139 F7501 ; infill
-G1 X163.208 Y163.157 E.89415 F7500 ; infill
-G1 X163.208 Y161.157 E.0677 F7498 ; infill
+G1 X136.792 Y159.791 E.89891 ; infill
+G1 X136.792 Y163.156 E.1139 ; infill
+G1 X163.208 Y163.157 E.89415 ; infill
+G1 X163.208 Y161.157 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.73 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y153.719 E.37087 F7499 ; infill
-G1 X163.208 Y156.543 E.09559 F7498 ; infill
-G1 X136.792 Y156.543 E.89415 F7496 ; infill
-G1 X136.792 Y153.719 E.09559 F7496 ; infill
-G1 X142.27 Y163.208 E.37087 F7496 ; infill
+G1 X163.208 Y153.719 E.37087 ; infill
+G1 X163.208 Y156.543 E.09559 ; infill
+G1 X136.792 Y156.543 E.89415 ; infill
+G1 X136.792 Y153.719 E.09559 ; infill
+G1 X142.27 Y163.208 E.37087 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.456 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.707 Y136.792 E1.03247 F7495 ; infill
+G1 X157.707 Y136.792 E1.03247 ; infill
 G1 X157.566 Y136.792 E.00477 ; infill
-G1 X163.208 Y146.563 E.38191 F7493 ; infill
-G1 X163.208 Y149.929 E.11394 F7492 ; infill
-G1 X136.792 Y149.929 E.89415 F7492 ; infill
-G1 X136.792 Y146.563 E.11394 F7490 ; infill
-G1 X142.434 Y136.792 E.38191 F7490 ; infill
+G1 X163.208 Y146.563 E.38191 ; infill
+G1 X163.208 Y149.929 E.11394 ; infill
+G1 X136.792 Y149.929 E.89415 ; infill
+G1 X136.792 Y146.563 E.11394 ; infill
+G1 X142.434 Y136.792 E.38191 ; infill
 G1 X142.293 Y136.792 E.00477 ; infill
-G1 X157.544 Y163.208 E1.03247 F7488 ; infill
+G1 X157.544 Y163.208 E1.03247 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.093 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.492 E.88786 F7486 ; infill
-G1 X163.208 Y143.316 E.09559 F7485 ; infill
-G1 X136.792 Y143.316 E.89415 F7484 ; infill
-G1 X136.792 Y140.492 E.09559 F7483 ; infill
-G1 X149.907 Y163.208 E.88786 F7482 ; infill
+G1 X163.208 Y140.492 E.88786 ; infill
+G1 X163.208 Y143.316 E.09559 ; infill
+G1 X136.792 Y143.316 E.89415 ; infill
+G1 X136.792 Y140.492 E.09559 ; infill
+G1 X149.907 Y163.208 E.88786 ; infill
 ;LAYER_CHANGE:76
 ;Z:15.3
 ;HEIGHT:0.2
@@ -8838,35 +8707,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8360 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8359 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8358 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8356 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8354 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8352 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8349 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8348 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8346 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8344 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8342 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8339 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8338 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8335 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8333 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8330 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8877,37 +8746,37 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y160.073 E.0677 F7451 ; infill
-G1 X149.766 Y136.792 E.90996 F7451 ; infill
+G1 X163.208 Y160.073 E.0677 ; infill
+G1 X149.766 Y136.792 E.90996 ; infill
 G1 X150.234 Y136.792 E.01584 ; infill
-G1 X136.792 Y160.074 E.90998 F7448 ; infill
-G1 X136.792 Y163.015 E.09955 F7447 ; infill
-G1 X163.208 Y163.015 E.89415 F7447 ; infill
-G1 X163.208 Y161.015 E.0677 F7446 ; infill
+G1 X136.792 Y160.074 E.90998 ; infill
+G1 X136.792 Y163.015 E.09955 ; infill
+G1 X163.208 Y163.015 E.89415 ; infill
+G1 X163.208 Y161.015 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.893 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y154.002 E.35982 F7444 ; infill
-G1 X163.208 Y156.402 E.08124 F7444 ; infill
-G1 X136.792 Y156.401 E.89415 F7443 ; infill
-G1 X136.792 Y154.002 E.0812 F7442 ; infill
-G1 X142.107 Y163.208 E.35982 F7442 ; infill
+G1 X163.208 Y154.002 E.35982 ; infill
+G1 X163.208 Y156.402 E.08124 ; infill
+G1 X136.792 Y156.401 E.89415 ; infill
+G1 X136.792 Y154.002 E.0812 ; infill
+G1 X142.107 Y163.208 E.35982 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.619 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.87 Y136.792 E1.03247 F7440 ; infill
+G1 X157.87 Y136.792 E1.03247 ; infill
 G1 X157.403 Y136.792 E.01581 ; infill
-G1 X163.208 Y146.846 E.39297 F7439 ; infill
-G1 X163.208 Y149.788 E.09958 F7439 ; infill
-G1 X136.792 Y149.788 E.89415 F7437 ; infill
-G1 X136.792 Y146.846 E.09958 F7436 ; infill
-G1 X142.597 Y136.792 E.39297 F7436 ; infill
+G1 X163.208 Y146.846 E.39297 ; infill
+G1 X163.208 Y149.788 E.09958 ; infill
+G1 X136.792 Y149.788 E.89415 ; infill
+G1 X136.792 Y146.846 E.09958 ; infill
+G1 X142.597 Y136.792 E.39297 ; infill
 G1 X142.13 Y136.792 E.01581 ; infill
-G1 X157.381 Y163.208 E1.03247 F7434 ; infill
+G1 X157.381 Y163.208 E1.03247 ; infill
 G1 E-2 F2400 ; retract
 M73 P50 R13
 M204 S15000 ; adjust acceleration
@@ -8915,11 +8784,11 @@ G1 X150.256 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.775 E.8768 F7432 ; infill
-G1 X163.208 Y143.174 E.0812 F7431 ; infill
-G1 X136.792 Y143.174 E.89415 F7430 ; infill
-G1 X136.792 Y140.775 E.0812 F7429 ; infill
-G1 X149.744 Y163.208 E.8768 F7427 ; infill
+G1 X163.208 Y140.775 E.8768 ; infill
+G1 X163.208 Y143.174 E.0812 ; infill
+G1 X136.792 Y143.174 E.89415 ; infill
+G1 X136.792 Y140.775 E.0812 ; infill
+G1 X149.744 Y163.208 E.8768 ; infill
 ;LAYER_CHANGE:77
 ;Z:15.5
 ;HEIGHT:0.2
@@ -8938,35 +8807,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8301 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8300 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8298 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8296 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8294 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8291 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8290 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8288 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8286 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8283 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8281 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8279 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8277 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8275 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8273 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8270 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -8977,43 +8846,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y141.058 E.0677 F7397 ; infill
-G1 X150.42 Y163.208 E.86573 F7397 ; infill
+G1 X163.208 Y141.058 E.0677 ; infill
+G1 X150.42 Y163.208 E.86573 ; infill
 G1 X149.581 Y163.208 E.0284 ; infill
-G1 X136.792 Y141.058 E.86575 F7395 ; infill
-G1 X136.792 Y143.033 E.06685 F7394 ; infill
-G1 X163.208 Y143.033 E.89415 F7393 ; infill
-G1 X163.208 Y147.129 E.13864 F7392 ; infill
-G1 X157.24 Y136.792 E.40402 F7391 ; infill
+G1 X136.792 Y141.058 E.86575 ; infill
+G1 X136.792 Y143.033 E.06685 ; infill
+G1 X163.208 Y143.033 E.89415 ; infill
+G1 X163.208 Y147.129 E.13864 ; infill
+G1 X157.24 Y136.792 E.40402 ; infill
 G1 X158.034 Y136.792 E.02688 ; infill
-G1 X142.783 Y163.208 E1.03247 F7389 ; infill
+G1 X142.783 Y163.208 E1.03247 ; infill
 G1 X141.944 Y163.208 E.0284 ; infill
-G1 X136.792 Y154.285 E.34876 F7387 ; infill
-G1 X136.792 Y156.26 E.06685 F7387 ; infill
-G1 X163.208 Y156.26 E.89415 F7387 ; infill
-G1 X163.208 Y154.285 E.06685 F7385 ; infill
-G1 X158.056 Y163.208 E.34876 F7384 ; infill
+G1 X136.792 Y154.285 E.34876 ; infill
+G1 X136.792 Y156.26 E.06685 ; infill
+G1 X163.208 Y156.26 E.89415 ; infill
+G1 X163.208 Y154.285 E.06685 ; infill
+G1 X158.056 Y163.208 E.34876 ; infill
 G1 X157.217 Y163.208 E.0284 ; infill
-G1 X141.966 Y136.792 E1.03247 F7383 ; infill
+G1 X141.966 Y136.792 E1.03247 ; infill
 G1 X142.76 Y136.792 E.02688 ; infill
-G1 X136.792 Y147.129 E.40402 F7382 ; infill
-G1 X136.792 Y149.646 E.0852 F7381 ; infill
-G1 X163.208 Y149.646 E.89415 F7380 ; infill
-G1 X163.208 Y151.646 E.0677 F7379 ; infill
+G1 X136.792 Y147.129 E.40402 ; infill
+G1 X136.792 Y149.646 E.0852 ; infill
+G1 X163.208 Y149.646 E.89415 ; infill
+G1 X163.208 Y151.646 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y158.356 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y160.356 E.0677 F7379 ; infill
-G1 X149.603 Y136.792 E.92101 F7378 ; infill
+G1 X163.208 Y160.356 E.0677 ; infill
+G1 X149.603 Y136.792 E.92101 ; infill
 G1 X150.397 Y136.792 E.02688 ; infill
-G1 X136.792 Y160.356 E.92101 F7375 ; infill
-G1 X136.792 Y162.874 E.08523 F7374 ; infill
-G1 X163.208 Y162.874 E.89415 F7373 ; infill
+G1 X136.792 Y160.356 E.92101 ; infill
+G1 X136.792 Y162.874 E.08523 ; infill
+G1 X163.208 Y162.874 E.89415 ; infill
 G1 X163.208 Y163.208 E.01131 ; infill
-G1 X161.542 Y163.208 E.05639 F7373 ; infill
+G1 X161.542 Y163.208 E.05639 ; infill
 ;LAYER_CHANGE:78
 ;Z:15.7
 ;HEIGHT:0.2
@@ -9032,35 +8901,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8239 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8238 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8236 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8235 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8232 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8230 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8227 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8225 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8224 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8221 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8220 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8218 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8216 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8214 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8211 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8210 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9071,44 +8940,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y141.341 E.0677 F7343 ; infill
-G1 X150.583 Y163.208 E.85468 F7342 ; infill
+G1 X163.208 Y141.341 E.0677 ; infill
+G1 X150.583 Y163.208 E.85468 ; infill
 G1 X149.417 Y163.208 E.03947 ; infill
-G1 X136.792 Y141.341 E.85468 F7340 ; infill
-G1 X136.792 Y142.891 E.05247 F7338 ; infill
-G1 X163.208 Y142.891 E.89415 F7338 ; infill
-G1 X163.208 Y147.412 E.15303 F7337 ; infill
-G1 X157.076 Y136.792 E.41509 F7335 ; infill
+G1 X136.792 Y141.341 E.85468 ; infill
+G1 X136.792 Y142.891 E.05247 ; infill
+G1 X163.208 Y142.891 E.89415 ; infill
+G1 X163.208 Y147.412 E.15303 ; infill
+G1 X157.076 Y136.792 E.41509 ; infill
 G1 X158.197 Y136.792 E.03794 ; infill
 M73 P51 R13
-G1 X142.946 Y163.208 E1.03247 F7335 ; infill
+G1 X142.946 Y163.208 E1.03247 ; infill
 G1 X141.78 Y163.208 E.03947 ; infill
-G1 X136.792 Y154.568 E.33769 F7333 ; infill
-G1 X136.792 Y156.119 E.0525 F7333 ; infill
-G1 X163.208 Y156.119 E.89415 F7331 ; infill
-G1 X163.208 Y154.568 E.0525 F7330 ; infill
-G1 X158.22 Y163.208 E.33769 F7330 ; infill
+G1 X136.792 Y154.568 E.33769 ; infill
+G1 X136.792 Y156.119 E.0525 ; infill
+G1 X163.208 Y156.119 E.89415 ; infill
+G1 X163.208 Y154.568 E.0525 ; infill
+G1 X158.22 Y163.208 E.33769 ; infill
 G1 X157.054 Y163.208 E.03947 ; infill
-G1 X141.803 Y136.792 E1.03247 F7328 ; infill
+G1 X141.803 Y136.792 E1.03247 ; infill
 G1 X142.924 Y136.792 E.03794 ; infill
-G1 X136.792 Y147.412 E.41509 F7326 ; infill
-G1 X136.792 Y149.505 E.07085 F7325 ; infill
-G1 X163.208 Y149.505 E.89415 F7325 ; infill
-G1 X163.208 Y151.505 E.0677 F7324 ; infill
+G1 X136.792 Y147.412 E.41509 ; infill
+G1 X136.792 Y149.505 E.07085 ; infill
+G1 X163.208 Y149.505 E.89415 ; infill
+G1 X163.208 Y151.505 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y158.639 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y160.639 E.0677 F7324 ; infill
-G1 X149.44 Y136.792 E.93206 F7323 ; infill
+G1 X163.208 Y160.639 E.0677 ; infill
+G1 X149.44 Y136.792 E.93206 ; infill
 G1 X150.56 Y136.792 E.03791 ; infill
-G1 X136.792 Y160.639 E.93206 F7321 ; infill
-G1 X136.792 Y162.732 E.07085 F7319 ; infill
-G1 X163.208 Y162.732 E.89415 F7319 ; infill
+G1 X136.792 Y160.639 E.93206 ; infill
+G1 X136.792 Y162.732 E.07085 ; infill
+G1 X163.208 Y162.732 E.89415 ; infill
 G1 X163.208 Y163.208 E.01611 ; infill
-G1 X161.683 Y163.208 E.05162 F7317 ; infill
+G1 X161.683 Y163.208 E.05162 ; infill
 ;LAYER_CHANGE:79
 ;Z:15.9
 ;HEIGHT:0.2
@@ -9127,35 +8996,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8178 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8176 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8174 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8172 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8171 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8168 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8166 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8165 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8162 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8160 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8157 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8156 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8154 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8151 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8149 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8146 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9166,50 +9035,50 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y147.695 E.0677 F7286 ; infill
-G1 X156.913 Y136.792 E.42615 F7286 ; infill
-G1 X158.36 Y136.792 E.04898 F7285 ; infill
-G1 X143.109 Y163.208 E1.03247 F7284 ; infill
-G1 X141.617 Y163.208 E.0505 F7283 ; infill
-G1 X136.792 Y154.851 E.32664 F7283 ; infill
+G1 X163.208 Y147.695 E.0677 ; infill
+G1 X156.913 Y136.792 E.42615 ; infill
+G1 X158.36 Y136.792 E.04898 ; infill
+G1 X143.109 Y163.208 E1.03247 ; infill
+G1 X141.617 Y163.208 E.0505 ; infill
+G1 X136.792 Y154.851 E.32664 ; infill
 G1 X136.792 Y155.977 E.03811 ; infill
-G1 X163.208 Y155.977 E.89415 F7281 ; infill
+G1 X163.208 Y155.977 E.89415 ; infill
 G1 X163.208 Y154.851 E.03811 ; infill
-G1 X158.383 Y163.208 E.32664 F7280 ; infill
-G1 X156.891 Y163.208 E.0505 F7280 ; infill
-G1 X141.64 Y136.792 E1.03247 F7279 ; infill
-G1 X143.087 Y136.792 E.04898 F7278 ; infill
-G1 X136.792 Y147.695 E.42615 F7277 ; infill
-G1 X136.792 Y149.364 E.05649 F7277 ; infill
-G1 X163.208 Y149.364 E.89415 F7276 ; infill
-G1 X163.208 Y151.364 E.0677 F7275 ; infill
+G1 X158.383 Y163.208 E.32664 ; infill
+G1 X156.891 Y163.208 E.0505 ; infill
+G1 X141.64 Y136.792 E1.03247 ; infill
+G1 X143.087 Y136.792 E.04898 ; infill
+G1 X136.792 Y147.695 E.42615 ; infill
+G1 X136.792 Y149.364 E.05649 ; infill
+G1 X163.208 Y149.364 E.89415 ; infill
+G1 X163.208 Y151.364 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y158.922 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y160.922 E.0677 F7274 ; infill
-G1 X149.276 Y136.792 E.94314 F7273 ; infill
-G1 X150.724 Y136.792 E.04901 F7273 ; infill
-G1 X136.792 Y160.922 E.94314 F7271 ; infill
-G1 X136.792 Y162.591 E.05649 F7270 ; infill
-G1 X163.208 Y162.591 E.89415 F7269 ; infill
+G1 X163.208 Y160.922 E.0677 ; infill
+G1 X149.276 Y136.792 E.94314 ; infill
+G1 X150.724 Y136.792 E.04901 ; infill
+G1 X136.792 Y160.922 E.94314 ; infill
+G1 X136.792 Y162.591 E.05649 ; infill
+G1 X163.208 Y162.591 E.89415 ; infill
 G1 X163.208 Y163.208 E.02088 ; infill
-G1 X161.825 Y163.208 E.04681 F7269 ; infill
+G1 X161.825 Y163.208 E.04681 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X152.746 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X150.746 Y163.208 E.0677 F7268 ; infill
-G1 X163.208 Y141.624 E.84362 F7267 ; infill
+G1 X150.746 Y163.208 E.0677 ; infill
+G1 X163.208 Y141.624 E.84362 ; infill
 G1 X163.208 Y142.75 E.03811 ; infill
-G1 X136.792 Y142.75 E.89415 F7265 ; infill
+G1 X136.792 Y142.75 E.89415 ; infill
 G1 X136.792 Y141.624 E.03811 ; infill
-G1 X149.254 Y163.208 E.84362 F7262 ; infill
-G1 X147.254 Y163.208 E.0677 F7261 ; infill
+G1 X149.254 Y163.208 E.84362 ; infill
+G1 X147.254 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:80
 ;Z:16.1
 ;HEIGHT:0.2
@@ -9228,37 +9097,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8116 ; perimeter
-M104 S227
-G1 X136.446 Y163.554 E.82083 F8114 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8112 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8110 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8107 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8106 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8104 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8102 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8100 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8097 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8094 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8093 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8090 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8089 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
 M73 P52 R13
-G1 X135.225 Y135.225 E.89477 F8086 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8085 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9269,43 +9137,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.887 Y136.792 E.0677 F7230 ; infill
-G1 X136.792 Y161.205 E.95419 F7230 ; infill
+G1 X150.887 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.205 E.95419 ; infill
 G1 X136.792 Y162.449 E.04211 ; infill
-G1 X163.208 Y162.449 E.89415 F7227 ; infill
+G1 X163.208 Y162.449 E.89415 ; infill
 G1 X163.208 Y161.205 E.04211 ; infill
-G1 X149.113 Y136.792 E.95419 F7225 ; infill
-G1 X147.113 Y136.792 E.0677 F7224 ; infill
+G1 X149.113 Y136.792 E.95419 ; infill
+G1 X147.113 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X147.091 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X149.091 Y163.208 E.0677 F7224 ; infill
-M104 S224
-G1 X136.792 Y141.906 E.8326 F7222 ; infill
+G1 X149.091 Y163.208 E.0677 ; infill
+G1 X136.792 Y141.906 E.8326 ; infill
 G1 X136.792 Y142.608 E.02376 ; infill
-G1 X163.208 Y142.609 E.89415 F7220 ; infill
+G1 X163.208 Y142.609 E.89415 ; infill
 G1 X163.208 Y141.906 E.0238 ; infill
-G1 X150.909 Y163.208 E.8326 F7219 ; infill
-G1 X156.727 Y163.208 E.19693 F7217 ; infill
-G1 X141.476 Y136.792 E1.03247 F7216 ; infill
-G1 X143.25 Y136.792 E.06005 F7214 ; infill
-G1 X136.792 Y147.978 E.4372 F7215 ; infill
+G1 X150.909 Y163.208 E.8326 ; infill
+G1 X156.727 Y163.208 E.19693 ; infill
+G1 X141.476 Y136.792 E1.03247 ; infill
+G1 X143.25 Y136.792 E.06005 ; infill
+G1 X136.792 Y147.978 E.4372 ; infill
 G1 X136.792 Y149.222 E.04211 ; infill
-G1 X163.208 Y149.222 E.89415 F7213 ; infill
+G1 X163.208 Y149.222 E.89415 ; infill
 G1 X163.208 Y147.978 E.04211 ; infill
-G1 X156.75 Y136.792 E.4372 F7212 ; infill
-G1 X158.524 Y136.792 E.06005 F7211 ; infill
-G1 X143.273 Y163.208 E1.03247 F7210 ; infill
-G1 X141.454 Y163.208 E.06157 F7209 ; infill
-G1 X136.792 Y155.134 E.31558 F7208 ; infill
+G1 X156.75 Y136.792 E.4372 ; infill
+G1 X158.524 Y136.792 E.06005 ; infill
+G1 X143.273 Y163.208 E1.03247 ; infill
+G1 X141.454 Y163.208 E.06157 ; infill
+G1 X136.792 Y155.134 E.31558 ; infill
 G1 X136.792 Y155.836 E.02376 ; infill
-G1 X163.208 Y155.836 E.89415 F7206 ; infill
+G1 X163.208 Y155.836 E.89415 ; infill
 G1 X163.208 Y155.134 E.02376 ; infill
-G1 X158.546 Y163.208 E.31558 F7205 ; infill
-G1 X160.546 Y163.208 E.0677 F7205 ; infill
+G1 X158.546 Y163.208 E.31558 ; infill
+G1 X160.546 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:81
 ;Z:16.3
 ;HEIGHT:0.2
@@ -9324,35 +9191,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8053 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8051 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8049 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8046 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8045 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8043 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8041 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8039 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8037 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8034 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8032 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8030 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8028 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8026 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8023 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8021 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9363,42 +9230,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.05 Y136.792 E.0677 F7174 ; infill
-G1 X136.792 Y161.488 E.96524 F7173 ; infill
+G1 X151.05 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.488 E.96524 ; infill
 G1 X136.792 Y162.308 E.02776 ; infill
-G1 X163.208 Y162.308 E.89415 F7171 ; infill
+G1 X163.208 Y162.308 E.89415 ; infill
 G1 X163.208 Y161.488 E.02776 ; infill
-G1 X148.95 Y136.792 E.96524 F7168 ; infill
-G1 X146.95 Y136.792 E.0677 F7166 ; infill
+G1 X148.95 Y136.792 E.96524 ; infill
+G1 X146.95 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.927 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.927 Y163.208 E.0677 F7166 ; infill
-G1 X136.792 Y142.189 E.82153 F7166 ; infill
+G1 X148.927 Y163.208 E.0677 ; infill
+G1 X136.792 Y142.189 E.82153 ; infill
 G1 X136.792 Y142.467 E.00941 ; infill
-G1 X163.208 Y142.467 E.89415 F7163 ; infill
+G1 X163.208 Y142.467 E.89415 ; infill
 G1 X163.208 Y142.189 E.00941 ; infill
-G1 X151.073 Y163.208 E.82153 F7162 ; infill
-G1 X156.564 Y163.208 E.18586 F7161 ; infill
-G1 X141.313 Y136.792 E1.03247 F7159 ; infill
-G1 X143.413 Y136.792 E.07108 F7158 ; infill
-G1 X136.792 Y148.26 E.44823 F7158 ; infill
+G1 X151.073 Y163.208 E.82153 ; infill
+G1 X156.564 Y163.208 E.18586 ; infill
+G1 X141.313 Y136.792 E1.03247 ; infill
+G1 X143.413 Y136.792 E.07108 ; infill
+G1 X136.792 Y148.26 E.44823 ; infill
 G1 X136.792 Y149.081 E.02779 ; infill
-G1 X163.208 Y149.081 E.89415 F7156 ; infill
+G1 X163.208 Y149.081 E.89415 ; infill
 G1 X163.208 Y148.26 E.02779 ; infill
-G1 X156.587 Y136.792 E.44823 F7155 ; infill
-G1 X158.687 Y136.792 E.07108 F7155 ; infill
-G1 X143.436 Y163.208 E1.03247 F7153 ; infill
-G1 X141.291 Y163.208 E.07261 F7151 ; infill
-G1 X136.792 Y155.416 E.30456 F7151 ; infill
+G1 X156.587 Y136.792 E.44823 ; infill
+G1 X158.687 Y136.792 E.07108 ; infill
+G1 X143.436 Y163.208 E1.03247 ; infill
+G1 X141.291 Y163.208 E.07261 ; infill
+G1 X136.792 Y155.416 E.30456 ; infill
 G1 X136.792 Y155.694 E.00941 ; infill
-G1 X163.208 Y155.694 E.89415 F7150 ; infill
+G1 X163.208 Y155.694 E.89415 ; infill
 G1 X163.208 Y155.416 E.00941 ; infill
-G1 X158.709 Y163.208 E.30456 F7148 ; infill
-G1 X160.709 Y163.208 E.0677 F7148 ; infill
+G1 X158.709 Y163.208 E.30456 ; infill
+G1 X160.709 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:82
 ;Z:16.5
 ;HEIGHT:0.2
@@ -9417,37 +9284,37 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7989 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7986 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7985 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7983 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7980 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7979 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
 M73 P53 R13
-G1 X136.039 Y136.039 E.84548 F7977 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7974 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7973 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7971 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7969 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7967 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
 M73 P53 R12
-G1 X164.775 Y164.775 E.89477 F7963 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7962 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7960 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7958 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9458,42 +9325,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.213 Y136.792 E.0677 F7117 ; infill
-G1 X136.792 Y161.771 E.9763 F7116 ; infill
+G1 X151.213 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.771 E.9763 ; infill
 G1 X136.792 Y162.167 E.0134 ; infill
-G1 X163.208 Y162.167 E.89415 F7113 ; infill
+G1 X163.208 Y162.167 E.89415 ; infill
 G1 X163.208 Y161.77 E.01344 ; infill
-G1 X148.786 Y136.792 E.97629 F7112 ; infill
-G1 X146.786 Y136.792 E.0677 F7111 ; infill
+G1 X148.786 Y136.792 E.97629 ; infill
+G1 X146.786 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.764 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.764 Y163.208 E.0677 F7110 ; infill
-G1 X136.792 Y142.472 E.81047 F7110 ; infill
+G1 X148.764 Y163.208 E.0677 ; infill
+G1 X136.792 Y142.472 E.81047 ; infill
 G1 X136.792 Y142.326 E.00494 ; infill
-G1 X163.208 Y142.326 E.89415 F7108 ; infill
+G1 X163.208 Y142.326 E.89415 ; infill
 G1 X163.208 Y142.472 E.00494 ; infill
-G1 X151.236 Y163.208 E.81047 F7106 ; infill
-G1 X156.401 Y163.208 E.17483 F7105 ; infill
-G1 X141.15 Y136.792 E1.03247 F7103 ; infill
-G1 X143.577 Y136.792 E.08215 F7102 ; infill
-G1 X136.792 Y148.543 E.4593 F7101 ; infill
+G1 X151.236 Y163.208 E.81047 ; infill
+G1 X156.401 Y163.208 E.17483 ; infill
+G1 X141.15 Y136.792 E1.03247 ; infill
+G1 X143.577 Y136.792 E.08215 ; infill
+G1 X136.792 Y148.543 E.4593 ; infill
 G1 X136.792 Y148.939 E.0134 ; infill
-G1 X163.208 Y148.939 E.89415 F7100 ; infill
+G1 X163.208 Y148.939 E.89415 ; infill
 G1 X163.208 Y148.543 E.0134 ; infill
-G1 X156.423 Y136.792 E.4593 F7098 ; infill
-G1 X158.85 Y136.792 E.08215 F7098 ; infill
-G1 X143.599 Y163.208 E1.03247 F7096 ; infill
-G1 X141.127 Y163.208 E.08367 F7096 ; infill
-G1 X136.792 Y155.699 E.29349 F7095 ; infill
+G1 X156.423 Y136.792 E.4593 ; infill
+G1 X158.85 Y136.792 E.08215 ; infill
+G1 X143.599 Y163.208 E1.03247 ; infill
+G1 X141.127 Y163.208 E.08367 ; infill
+G1 X136.792 Y155.699 E.29349 ; infill
 G1 X136.792 Y155.553 E.00494 ; infill
-G1 X163.208 Y155.553 E.89415 F7092 ; infill
+G1 X163.208 Y155.553 E.89415 ; infill
 G1 X163.208 Y155.699 E.00494 ; infill
-G1 X158.873 Y163.208 E.29349 F7091 ; infill
-G1 X160.873 Y163.208 E.0677 F7091 ; infill
+G1 X158.873 Y163.208 E.29349 ; infill
+G1 X160.873 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:83
 ;Z:16.7
 ;HEIGHT:0.2
@@ -9512,35 +9379,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7925 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7923 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7921 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7919 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7918 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7915 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7913 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7910 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7909 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7906 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7904 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7901 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7900 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7897 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7895 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7894 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9551,39 +9418,39 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.377 Y136.792 E.0677 F7060 ; infill
-G1 X136.792 Y162.053 E.98734 F7059 ; infill
-G1 X163.208 Y162.053 E.89415 F7057 ; infill
-G1 X148.623 Y136.792 E.98734 F7055 ; infill
-G1 X146.623 Y136.792 E.0677 F7054 ; infill
+G1 X151.377 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.053 E.98734 ; infill
+G1 X163.208 Y162.053 E.89415 ; infill
+G1 X148.623 Y136.792 E.98734 ; infill
+G1 X146.623 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.601 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.601 Y163.208 E.0677 F7053 ; infill
-G1 X136.792 Y142.755 E.79942 F7053 ; infill
+G1 X148.601 Y163.208 E.0677 ; infill
+G1 X136.792 Y142.755 E.79942 ; infill
 G1 X136.792 Y142.184 E.01933 ; infill
-G1 X163.208 Y142.184 E.89415 F7050 ; infill
+G1 X163.208 Y142.184 E.89415 ; infill
 G1 X163.208 Y142.755 E.01933 ; infill
-G1 X151.399 Y163.208 E.79942 F7048 ; infill
-G1 X156.237 Y163.208 E.16376 F7048 ; infill
-G1 X140.986 Y136.792 E1.03247 F7046 ; infill
-G1 X143.74 Y136.792 E.09322 F7045 ; infill
-G1 X136.792 Y148.826 E.47035 F7044 ; infill
-G1 X163.208 Y148.826 E.89415 F7043 ; infill
-G1 X156.26 Y136.792 E.47035 F7041 ; infill
-G1 X159.014 Y136.792 E.09322 F7041 ; infill
-G1 X143.763 Y163.208 E1.03247 F7039 ; infill
-G1 X140.964 Y163.208 E.09474 F7038 ; infill
-G1 X136.792 Y155.982 E.28243 F7038 ; infill
+G1 X151.399 Y163.208 E.79942 ; infill
+G1 X156.237 Y163.208 E.16376 ; infill
+G1 X140.986 Y136.792 E1.03247 ; infill
+G1 X143.74 Y136.792 E.09322 ; infill
+G1 X136.792 Y148.826 E.47035 ; infill
+G1 X163.208 Y148.826 E.89415 ; infill
+G1 X156.26 Y136.792 E.47035 ; infill
+G1 X159.014 Y136.792 E.09322 ; infill
+G1 X143.763 Y163.208 E1.03247 ; infill
+G1 X140.964 Y163.208 E.09474 ; infill
+G1 X136.792 Y155.982 E.28243 ; infill
 G1 X136.792 Y155.412 E.01929 ; infill
-G1 X163.208 Y155.412 E.89415 F7036 ; infill
+G1 X163.208 Y155.412 E.89415 ; infill
 G1 X163.208 Y155.982 E.01929 ; infill
 M73 P54 R12
-G1 X159.036 Y163.208 E.28243 F7035 ; infill
-G1 X161.036 Y163.208 E.0677 F7034 ; infill
+G1 X159.036 Y163.208 E.28243 ; infill
+G1 X161.036 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:84
 ;Z:16.9
 ;HEIGHT:0.2
@@ -9602,35 +9469,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7862 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7860 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7858 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7856 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7854 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7852 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7850 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7846 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7845 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7842 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7840 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7837 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7836 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7833 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7831 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7830 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9641,42 +9508,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.54 Y136.792 E.0677 F7003 ; infill
-G1 X136.792 Y162.336 E.9984 F7001 ; infill
+G1 X151.54 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.336 E.9984 ; infill
 G1 X136.792 Y161.884 E.0153 ; infill
-G1 X163.208 Y161.884 E.89415 F6999 ; infill
+G1 X163.208 Y161.884 E.89415 ; infill
 G1 X163.208 Y162.336 E.0153 ; infill
-G1 X148.46 Y136.792 E.9984 F6997 ; infill
-G1 X146.46 Y136.792 E.0677 F6995 ; infill
+G1 X148.46 Y136.792 E.9984 ; infill
+G1 X146.46 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.437 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.437 Y163.208 E.0677 F6995 ; infill
-G1 X136.792 Y143.038 E.78835 F6994 ; infill
+G1 X148.437 Y163.208 E.0677 ; infill
+G1 X136.792 Y143.038 E.78835 ; infill
 G1 X136.792 Y142.043 E.03368 ; infill
-G1 X163.208 Y142.043 E.89415 F6993 ; infill
+G1 X163.208 Y142.043 E.89415 ; infill
 G1 X163.208 Y143.038 E.03368 ; infill
-G1 X151.563 Y163.208 E.78835 F6990 ; infill
-G1 X156.074 Y163.208 E.15269 F6990 ; infill
-G1 X140.823 Y136.792 E1.03247 F6988 ; infill
-G1 X143.903 Y136.792 E.10425 F6987 ; infill
-G1 X136.792 Y149.109 E.48141 F6987 ; infill
+G1 X151.563 Y163.208 E.78835 ; infill
+G1 X156.074 Y163.208 E.15269 ; infill
+G1 X140.823 Y136.792 E1.03247 ; infill
+G1 X143.903 Y136.792 E.10425 ; infill
+G1 X136.792 Y149.109 E.48141 ; infill
 G1 X136.792 Y148.656 E.01533 ; infill
-G1 X163.208 Y148.656 E.89415 F6985 ; infill
+G1 X163.208 Y148.656 E.89415 ; infill
 G1 X163.208 Y149.109 E.01533 ; infill
-G1 X156.097 Y136.792 E.48141 F6984 ; infill
-G1 X159.177 Y136.792 E.10425 F6983 ; infill
-G1 X143.926 Y163.208 E1.03247 F6982 ; infill
-G1 X140.801 Y163.208 E.10578 F6981 ; infill
-G1 X136.792 Y156.265 E.27138 F6980 ; infill
+G1 X156.097 Y136.792 E.48141 ; infill
+G1 X159.177 Y136.792 E.10425 ; infill
+G1 X143.926 Y163.208 E1.03247 ; infill
+G1 X140.801 Y163.208 E.10578 ; infill
+G1 X136.792 Y156.265 E.27138 ; infill
 G1 X136.792 Y155.27 E.03368 ; infill
-G1 X163.208 Y155.27 E.89415 F6979 ; infill
+G1 X163.208 Y155.27 E.89415 ; infill
 G1 X163.208 Y156.265 E.03368 ; infill
-G1 X159.199 Y163.208 E.27138 F6977 ; infill
-G1 X161.199 Y163.208 E.0677 F6977 ; infill
+G1 X159.199 Y163.208 E.27138 ; infill
+G1 X161.199 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:85
 ;Z:17.1
 ;HEIGHT:0.2
@@ -9695,36 +9562,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7797 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7796 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7794 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7792 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7790 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7786 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7785 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7783 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7781 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7779 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7776 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7774 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7772 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7770 ; perimeter
-M104 S229
-G1 X135.225 Y135.225 E.89477 F7768 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7766 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9735,45 +9601,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.703 Y136.792 E.0677 F6944 ; infill
-G1 X136.792 Y162.619 E1.00945 F6944 ; infill
+G1 X151.703 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.619 E1.00945 ; infill
 G1 X136.792 Y161.742 E.02969 ; infill
-G1 X163.208 Y161.742 E.89415 F6941 ; infill
+G1 X163.208 Y161.742 E.89415 ; infill
 G1 X163.208 Y162.619 E.02969 ; infill
-G1 X148.297 Y136.792 E1.00945 F6940 ; infill
-G1 X146.297 Y136.792 E.0677 F6938 ; infill
+G1 X148.297 Y136.792 E1.00945 ; infill
+G1 X146.297 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.274 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.274 Y163.208 E.0677 F6938 ; infill
-G1 X136.792 Y143.321 E.77729 F6937 ; infill
-G1 X136.792 Y141.901 E.04807 F6934 ; infill
-G1 X163.208 Y141.901 E.89415 F6935 ; infill
-G1 X163.208 Y143.321 E.04807 F6933 ; infill
+G1 X148.274 Y163.208 E.0677 ; infill
+G1 X136.792 Y143.321 E.77729 ; infill
+G1 X136.792 Y141.901 E.04807 ; infill
+G1 X163.208 Y141.901 E.89415 ; infill
+G1 X163.208 Y143.321 E.04807 ; infill
 M73 P55 R12
-G1 X151.726 Y163.208 E.77729 F6933 ; infill
-G1 X155.911 Y163.208 E.14166 F6932 ; infill
-G1 X140.66 Y136.792 E1.03247 F6931 ; infill
-G1 X144.067 Y136.792 E.11532 F6930 ; infill
-G1 X136.792 Y149.392 E.49248 F6928 ; infill
+G1 X151.726 Y163.208 E.77729 ; infill
+G1 X155.911 Y163.208 E.14166 ; infill
+G1 X140.66 Y136.792 E1.03247 ; infill
+G1 X144.067 Y136.792 E.11532 ; infill
+G1 X136.792 Y149.392 E.49248 ; infill
 G1 X136.792 Y148.515 E.02969 ; infill
-M104 S223
-G1 X163.208 Y148.515 E.89415 F6927 ; infill
+G1 X163.208 Y148.515 E.89415 ; infill
 G1 X163.208 Y149.392 E.02969 ; infill
-G1 X155.933 Y136.792 E.49248 F6925 ; infill
-G1 X159.34 Y136.792 E.11532 F6925 ; infill
-G1 X144.089 Y163.208 E1.03247 F6923 ; infill
-G1 X140.637 Y163.208 E.11685 F6922 ; infill
-M104 S226
-G1 X136.792 Y156.548 E.26031 F6922 ; infill
-G1 X136.792 Y155.129 E.04803 F6922 ; infill
-G1 X163.208 Y155.129 E.89415 F6920 ; infill
-G1 X163.208 Y156.548 E.04803 F6919 ; infill
-G1 X159.363 Y163.208 E.26031 F6919 ; infill
-G1 X161.363 Y163.208 E.0677 F6918 ; infill
+G1 X155.933 Y136.792 E.49248 ; infill
+G1 X159.34 Y136.792 E.11532 ; infill
+G1 X144.089 Y163.208 E1.03247 ; infill
+G1 X140.637 Y163.208 E.11685 ; infill
+G1 X136.792 Y156.548 E.26031 ; infill
+G1 X136.792 Y155.129 E.04803 ; infill
+G1 X163.208 Y155.129 E.89415 ; infill
+G1 X163.208 Y156.548 E.04803 ; infill
+G1 X159.363 Y163.208 E.26031 ; infill
+G1 X161.363 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:86
 ;Z:17.3
 ;HEIGHT:0.2
@@ -9792,35 +9656,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7732 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7730 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7729 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7726 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7725 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7723 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7721 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7719 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7715 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7714 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7712 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7710 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7708 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7704 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7703 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7701 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -9831,42 +9695,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.867 Y136.792 E.0677 F6888 ; infill
-G1 X136.792 Y162.902 E1.02052 F6887 ; infill
-G1 X136.792 Y161.601 E.04404 F6885 ; infill
-G1 X163.208 Y161.601 E.89415 F6884 ; infill
-G1 X163.208 Y162.902 E.04404 F6883 ; infill
-G1 X148.133 Y136.792 E1.02052 F6882 ; infill
-G1 X146.133 Y136.792 E.0677 F6880 ; infill
+G1 X151.867 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.902 E1.02052 ; infill
+G1 X136.792 Y161.601 E.04404 ; infill
+G1 X163.208 Y161.601 E.89415 ; infill
+G1 X163.208 Y162.902 E.04404 ; infill
+G1 X148.133 Y136.792 E1.02052 ; infill
+G1 X146.133 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.111 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.111 Y163.208 E.0677 F6880 ; infill
-G1 X136.792 Y143.604 E.76624 F6880 ; infill
-G1 X136.792 Y141.76 E.06242 F6878 ; infill
-G1 X163.208 Y141.76 E.89415 F6878 ; infill
-G1 X163.208 Y143.603 E.06238 F6877 ; infill
-G1 X151.889 Y163.208 E.76627 F6876 ; infill
-G1 X155.748 Y163.208 E.13062 F6875 ; infill
-G1 X140.497 Y136.792 E1.03247 F6872 ; infill
-G1 X144.23 Y136.792 E.12636 F6871 ; infill
-G1 X136.792 Y149.675 E.50354 F6870 ; infill
-G1 X136.792 Y148.374 E.04404 F6869 ; infill
-G1 X163.208 Y148.374 E.89415 F6870 ; infill
-G1 X163.208 Y149.675 E.04404 F6867 ; infill
-G1 X155.77 Y136.792 E.50354 F6867 ; infill
-G1 X159.503 Y136.792 E.12636 F6866 ; infill
-G1 X144.252 Y163.208 E1.03247 F6866 ; infill
-G1 X140.474 Y163.208 E.12788 F6865 ; infill
-G1 X136.792 Y156.831 E.24925 F6863 ; infill
-G1 X136.792 Y154.987 E.06242 F6862 ; infill
-G1 X163.208 Y154.987 E.89415 F6862 ; infill
-G1 X163.208 Y156.831 E.06242 F6861 ; infill
-G1 X159.526 Y163.208 E.24925 F6861 ; infill
-G1 X161.526 Y163.208 E.0677 F6860 ; infill
+G1 X148.111 Y163.208 E.0677 ; infill
+G1 X136.792 Y143.604 E.76624 ; infill
+G1 X136.792 Y141.76 E.06242 ; infill
+G1 X163.208 Y141.76 E.89415 ; infill
+G1 X163.208 Y143.603 E.06238 ; infill
+G1 X151.889 Y163.208 E.76627 ; infill
+G1 X155.748 Y163.208 E.13062 ; infill
+G1 X140.497 Y136.792 E1.03247 ; infill
+G1 X144.23 Y136.792 E.12636 ; infill
+G1 X136.792 Y149.675 E.50354 ; infill
+G1 X136.792 Y148.374 E.04404 ; infill
+G1 X163.208 Y148.374 E.89415 ; infill
+G1 X163.208 Y149.675 E.04404 ; infill
+G1 X155.77 Y136.792 E.50354 ; infill
+G1 X159.503 Y136.792 E.12636 ; infill
+G1 X144.252 Y163.208 E1.03247 ; infill
+G1 X140.474 Y163.208 E.12788 ; infill
+G1 X136.792 Y156.831 E.24925 ; infill
+G1 X136.792 Y154.987 E.06242 ; infill
+G1 X163.208 Y154.987 E.89415 ; infill
+G1 X163.208 Y156.831 E.06242 ; infill
+G1 X159.526 Y163.208 E.24925 ; infill
+G1 X161.526 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:87
 ;Z:17.5
 ;HEIGHT:0.2
@@ -9885,35 +9749,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7667 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7666 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7663 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7662 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7659 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7657 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7654 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7653 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7652 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7649 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7647 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7644 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7643 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7641 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7638 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7636 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 M73 P56 R12
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -9925,42 +9789,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.03 Y136.792 E.0677 F6830 ; infill
-G1 X136.792 Y163.185 E1.03158 F6828 ; infill
-G1 X136.792 Y161.459 E.05842 F6827 ; infill
-G1 X163.208 Y161.46 E.89415 F6826 ; infill
-G1 X163.208 Y163.185 E.05839 F6825 ; infill
-G1 X147.97 Y136.792 E1.03158 F6824 ; infill
-G1 X144.393 Y136.792 E.12108 F6823 ; infill
-G1 X136.792 Y149.958 E.51459 F6822 ; infill
-G1 X136.792 Y148.232 E.05842 F6822 ; infill
-G1 X163.208 Y148.232 E.89415 F6820 ; infill
-G1 X163.208 Y149.958 E.05842 F6818 ; infill
-G1 X155.607 Y136.792 E.51459 F6818 ; infill
-G1 X159.667 Y136.792 E.13743 F6817 ; infill
-G1 X144.416 Y163.208 E1.03247 F6817 ; infill
-G1 X147.948 Y163.208 E.11955 F6815 ; infill
-G1 X136.792 Y143.886 E.75521 F6814 ; infill
-G1 X136.792 Y141.619 E.07674 F6813 ; infill
-G1 X163.208 Y141.619 E.89415 F6812 ; infill
-G1 X163.208 Y143.886 E.07674 F6811 ; infill
-G1 X152.052 Y163.208 E.75521 F6810 ; infill
-G1 X155.584 Y163.208 E.11955 F6808 ; infill
-G1 X140.333 Y136.792 E1.03247 F6808 ; infill
-G1 X138.333 Y136.792 E.0677 F6806 ; infill
+G1 X152.03 Y136.792 E.0677 ; infill
+G1 X136.792 Y163.185 E1.03158 ; infill
+G1 X136.792 Y161.459 E.05842 ; infill
+G1 X163.208 Y161.46 E.89415 ; infill
+G1 X163.208 Y163.185 E.05839 ; infill
+G1 X147.97 Y136.792 E1.03158 ; infill
+G1 X144.393 Y136.792 E.12108 ; infill
+G1 X136.792 Y149.958 E.51459 ; infill
+G1 X136.792 Y148.232 E.05842 ; infill
+G1 X163.208 Y148.232 E.89415 ; infill
+G1 X163.208 Y149.958 E.05842 ; infill
+G1 X155.607 Y136.792 E.51459 ; infill
+G1 X159.667 Y136.792 E.13743 ; infill
+G1 X144.416 Y163.208 E1.03247 ; infill
+G1 X147.948 Y163.208 E.11955 ; infill
+G1 X136.792 Y143.886 E.75521 ; infill
+G1 X136.792 Y141.619 E.07674 ; infill
+G1 X163.208 Y141.619 E.89415 ; infill
+G1 X163.208 Y143.886 E.07674 ; infill
+G1 X152.052 Y163.208 E.75521 ; infill
+G1 X155.584 Y163.208 E.11955 ; infill
+G1 X140.333 Y136.792 E1.03247 ; infill
+G1 X138.333 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.311 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.311 Y163.208 E.0677 F6806 ; infill
-G1 X136.792 Y157.114 E.2382 F6806 ; infill
-G1 X136.792 Y154.846 E.07677 F6806 ; infill
-G1 X163.208 Y154.846 E.89415 F6805 ; infill
-G1 X163.208 Y157.114 E.07677 F6803 ; infill
-G1 X159.689 Y163.208 E.2382 F6803 ; infill
-G1 X157.689 Y163.208 E.0677 F6802 ; infill
+G1 X140.311 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.114 E.2382 ; infill
+G1 X136.792 Y154.846 E.07677 ; infill
+G1 X163.208 Y154.846 E.89415 ; infill
+G1 X163.208 Y157.114 E.07677 ; infill
+G1 X159.689 Y163.208 E.2382 ; infill
+G1 X157.689 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:88
 ;Z:17.7
 ;HEIGHT:0.2
@@ -9979,35 +9843,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7603 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7600 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7598 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7597 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7594 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7591 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7590 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7587 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7585 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7584 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7581 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7580 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7578 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7575 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7572 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7571 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10018,21 +9882,21 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.193 Y136.792 E.0677 F6770 ; infill
-G1 X136.942 Y163.208 E1.03247 F6770 ; infill
+G1 X152.193 Y136.792 E.0677 ; infill
+G1 X136.942 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.00508 ; infill
-G1 X136.792 Y161.318 E.06397 F6768 ; infill
-G1 X163.208 Y161.318 E.89415 F6768 ; infill
-G1 X163.208 Y163.208 E.06397 F6767 ; infill
+G1 X136.792 Y161.318 E.06397 ; infill
+G1 X163.208 Y161.318 E.89415 ; infill
+G1 X163.208 Y163.208 E.06397 ; infill
 G1 X163.058 Y163.208 E.00508 ; infill
-G1 X147.807 Y136.792 E1.03247 F6765 ; infill
-G1 X144.557 Y136.792 E.11001 F6764 ; infill
-G1 X136.792 Y150.24 E.52563 F6764 ; infill
-G1 X136.792 Y148.091 E.07274 F6763 ; infill
-G1 X163.208 Y148.091 E.89415 F6762 ; infill
-G1 X163.208 Y150.24 E.07274 F6761 ; infill
-G1 X155.443 Y136.792 E.52563 F6760 ; infill
-G1 X157.443 Y136.792 E.0677 F6759 ; infill
+G1 X147.807 Y136.792 E1.03247 ; infill
+G1 X144.557 Y136.792 E.11001 ; infill
+G1 X136.792 Y150.24 E.52563 ; infill
+G1 X136.792 Y148.091 E.07274 ; infill
+G1 X163.208 Y148.091 E.89415 ; infill
+G1 X163.208 Y150.24 E.07274 ; infill
+G1 X155.443 Y136.792 E.52563 ; infill
+G1 X157.443 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M73 P56 R11
 M204 S15000 ; adjust acceleration
@@ -10040,34 +9904,34 @@ G1 X163.208 Y139.013 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.013 E.0677 F6759 ; infill
+G1 X163.208 Y137.013 E.0677 ; infill
 G1 X163.08 Y136.792 E.00864 ; infill
-G1 X159.83 Y136.792 E.11001 F6759 ; infill
-G1 X144.579 Y163.208 E1.03247 F6758 ; infill
-G1 X147.784 Y163.208 E.10849 F6756 ; infill
-G1 X136.792 Y144.169 E.74414 F6755 ; infill
-G1 X136.792 Y141.477 E.09112 F6754 ; infill
-G1 X163.208 Y141.477 E.89415 F6754 ; infill
-G1 X163.208 Y144.169 E.09112 F6753 ; infill
-G1 X152.216 Y163.208 E.74414 F6752 ; infill
-G1 X155.421 Y163.208 E.10849 F6750 ; infill
-G1 X140.17 Y136.792 E1.03247 F6750 ; infill
-G1 X136.92 Y136.792 E.11001 F6748 ; infill
+G1 X159.83 Y136.792 E.11001 ; infill
+G1 X144.579 Y163.208 E1.03247 ; infill
+G1 X147.784 Y163.208 E.10849 ; infill
+G1 X136.792 Y144.169 E.74414 ; infill
+G1 X136.792 Y141.477 E.09112 ; infill
+G1 X163.208 Y141.477 E.89415 ; infill
+G1 X163.208 Y144.169 E.09112 ; infill
+G1 X152.216 Y163.208 E.74414 ; infill
+G1 X155.421 Y163.208 E.10849 ; infill
+G1 X140.17 Y136.792 E1.03247 ; infill
+G1 X136.92 Y136.792 E.11001 ; infill
 G1 X136.792 Y137.013 E.00864 ; infill
-G1 X136.792 Y139.013 E.0677 F6748 ; infill
+G1 X136.792 Y139.013 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.147 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.147 Y163.208 E.0677 F6747 ; infill
-G1 X136.792 Y157.396 E.22715 F6747 ; infill
-G1 X136.792 Y154.704 E.09112 F6747 ; infill
-G1 X163.208 Y154.705 E.89415 F6746 ; infill
-G1 X163.208 Y157.396 E.09109 F6744 ; infill
-G1 X159.853 Y163.208 E.22715 F6745 ; infill
-G1 X157.853 Y163.208 E.0677 F6744 ; infill
+G1 X140.147 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.396 E.22715 ; infill
+G1 X136.792 Y154.704 E.09112 ; infill
+G1 X163.208 Y154.705 E.89415 ; infill
+G1 X163.208 Y157.396 E.09109 ; infill
+G1 X159.853 Y163.208 E.22715 ; infill
+G1 X157.853 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:89
 ;Z:17.9
 ;HEIGHT:0.2
@@ -10086,36 +9950,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7538 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7535 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7533 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7530 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M73 P57 R11
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7529 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7527 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7525 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7523 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7521 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7518 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7515 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7513 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7512 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7509 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7508 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7504 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10126,55 +9990,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.357 Y136.792 E.0677 F6712 ; infill
-G1 X137.106 Y163.208 E1.03247 F6712 ; infill
+G1 X152.357 Y136.792 E.0677 ; infill
+G1 X137.106 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.01063 ; infill
-G1 X136.792 Y161.177 E.06875 F6710 ; infill
-G1 X163.208 Y161.177 E.89415 F6709 ; infill
-G1 X163.208 Y163.208 E.06875 F6708 ; infill
+G1 X136.792 Y161.177 E.06875 ; infill
+G1 X163.208 Y161.177 E.89415 ; infill
+G1 X163.208 Y163.208 E.06875 ; infill
 G1 X162.894 Y163.208 E.01063 ; infill
-G1 X147.643 Y136.792 E1.03247 F6707 ; infill
-G1 X144.72 Y136.792 E.09894 F6705 ; infill
-G1 X136.792 Y150.523 E.53669 F6704 ; infill
-G1 X136.792 Y147.949 E.08713 F6703 ; infill
-G1 X163.208 Y147.949 E.89415 F6702 ; infill
-G1 X163.208 Y150.523 E.08713 F6701 ; infill
-G1 X155.28 Y136.792 E.53669 F6701 ; infill
-G1 X157.28 Y136.792 E.0677 F6700 ; infill
+G1 X147.643 Y136.792 E1.03247 ; infill
+G1 X144.72 Y136.792 E.09894 ; infill
+G1 X136.792 Y150.523 E.53669 ; infill
+G1 X136.792 Y147.949 E.08713 ; infill
+G1 X163.208 Y147.949 E.89415 ; infill
+G1 X163.208 Y150.523 E.08713 ; infill
+G1 X155.28 Y136.792 E.53669 ; infill
+G1 X157.28 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y139.296 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.296 E.0677 F6700 ; infill
+G1 X163.208 Y137.296 E.0677 ; infill
 G1 X162.917 Y136.792 E.0197 ; infill
-G1 X159.993 Y136.792 E.09897 F6700 ; infill
-G1 X144.742 Y163.208 E1.03247 F6699 ; infill
-G1 X147.621 Y163.208 E.09745 F6697 ; infill
-G1 X136.792 Y144.452 E.73309 F6696 ; infill
-G1 X136.792 Y141.336 E.10547 F6695 ; infill
-G1 X163.208 Y141.336 E.89415 F6695 ; infill
-G1 X163.208 Y144.452 E.10547 F6694 ; infill
-G1 X152.379 Y163.208 E.73309 F6692 ; infill
-G1 X155.258 Y163.208 E.09745 F6692 ; infill
-G1 X140.007 Y136.792 E1.03247 F6691 ; infill
-G1 X137.083 Y136.792 E.09897 F6690 ; infill
+G1 X159.993 Y136.792 E.09897 ; infill
+G1 X144.742 Y163.208 E1.03247 ; infill
+G1 X147.621 Y163.208 E.09745 ; infill
+G1 X136.792 Y144.452 E.73309 ; infill
+G1 X136.792 Y141.336 E.10547 ; infill
+G1 X163.208 Y141.336 E.89415 ; infill
+G1 X163.208 Y144.452 E.10547 ; infill
+G1 X152.379 Y163.208 E.73309 ; infill
+G1 X155.258 Y163.208 E.09745 ; infill
+G1 X140.007 Y136.792 E1.03247 ; infill
+G1 X137.083 Y136.792 E.09897 ; infill
 G1 X136.792 Y137.296 E.0197 ; infill
-G1 X136.792 Y139.296 E.0677 F6689 ; infill
+G1 X136.792 Y139.296 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X141.984 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X139.984 Y163.208 E.0677 F6689 ; infill
-G1 X136.792 Y157.679 E.2161 F6689 ; infill
-G1 X136.792 Y154.563 E.10547 F6689 ; infill
-G1 X163.208 Y154.563 E.89415 F6687 ; infill
-G1 X163.208 Y157.679 E.10547 F6686 ; infill
-G1 X160.016 Y163.208 E.2161 F6686 ; infill
-G1 X158.016 Y163.208 E.0677 F6685 ; infill
+G1 X139.984 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.679 E.2161 ; infill
+G1 X136.792 Y154.563 E.10547 ; infill
+G1 X163.208 Y154.563 E.89415 ; infill
+G1 X163.208 Y157.679 E.10547 ; infill
+G1 X160.016 Y163.208 E.2161 ; infill
+G1 X158.016 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:90
 ;Z:18.1
 ;HEIGHT:0.2
@@ -10193,35 +10057,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7471 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7470 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7468 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7466 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7464 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7461 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7460 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7458 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7456 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7453 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7450 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7449 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7447 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7445 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7442 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7440 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10232,48 +10096,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y137.579 E.0677 F6654 ; infill
+G1 X163.208 Y137.579 E.0677 ; infill
 G1 X162.754 Y136.792 E.03075 ; infill
-G1 X160.157 Y136.792 E.08791 F6653 ; infill
-G1 X144.906 Y163.208 E1.03247 F6653 ; infill
-G1 X147.458 Y163.208 E.08638 F6651 ; infill
-G1 X136.792 Y144.735 E.72203 F6650 ; infill
-G1 X136.792 Y141.194 E.11986 F6649 ; infill
-G1 X163.208 Y141.194 E.89415 F6648 ; infill
-G1 X163.208 Y144.735 E.11986 F6647 ; infill
-G1 X152.542 Y163.208 E.72203 F6646 ; infill
-G1 X155.094 Y163.208 E.08638 F6645 ; infill
-G1 X139.843 Y136.792 E1.03247 F6644 ; infill
-G1 X137.246 Y136.792 E.08791 F6643 ; infill
+G1 X160.157 Y136.792 E.08791 ; infill
+G1 X144.906 Y163.208 E1.03247 ; infill
+G1 X147.458 Y163.208 E.08638 ; infill
+G1 X136.792 Y144.735 E.72203 ; infill
+G1 X136.792 Y141.194 E.11986 ; infill
+G1 X163.208 Y141.194 E.89415 ; infill
+G1 X163.208 Y144.735 E.11986 ; infill
+G1 X152.542 Y163.208 E.72203 ; infill
+G1 X155.094 Y163.208 E.08638 ; infill
+G1 X139.843 Y136.792 E1.03247 ; infill
+G1 X137.246 Y136.792 E.08791 ; infill
 G1 X136.792 Y137.579 E.03075 ; infill
-G1 X136.792 Y139.579 E.0677 F6643 ; infill
+G1 X136.792 Y139.579 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y152.422 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y154.422 E.0677 F6643 ; infill
-G1 X163.208 Y154.422 E.89415 F6641 ; infill
-G1 X163.208 Y157.962 E.11982 F6640 ; infill
-G1 X160.179 Y163.208 E.20504 F6640 ; infill
-G1 X162.731 Y163.208 E.08638 F6639 ; infill
+G1 X136.792 Y154.422 E.0677 ; infill
+G1 X163.208 Y154.422 E.89415 ; infill
+G1 X163.208 Y157.962 E.11982 ; infill
+G1 X160.179 Y163.208 E.20504 ; infill
+G1 X162.731 Y163.208 E.08638 ; infill
 M73 P58 R11
-G1 X147.48 Y136.792 E1.03247 F6639 ; infill
-G1 X144.883 Y136.792 E.08791 F6636 ; infill
-G1 X136.792 Y150.806 E.54774 F6636 ; infill
-G1 X136.792 Y147.808 E.10148 F6636 ; infill
-G1 X163.208 Y147.808 E.89415 F6634 ; infill
-G1 X163.208 Y150.806 E.10148 F6633 ; infill
-G1 X155.117 Y136.792 E.54774 F6633 ; infill
-M104 S222
-G1 X152.52 Y136.792 E.08791 F6631 ; infill
-G1 X137.269 Y163.208 E1.03247 F6631 ; infill
-G1 X139.821 Y163.208 E.08638 F6630 ; infill
-G1 X136.792 Y157.962 E.20504 F6629 ; infill
-G1 X136.792 Y161.035 E.10402 F6628 ; infill
-G1 X163.208 Y161.035 E.89415 F6628 ; infill
-G1 X163.208 Y159.035 E.0677 F6627 ; infill
+G1 X147.48 Y136.792 E1.03247 ; infill
+G1 X144.883 Y136.792 E.08791 ; infill
+G1 X136.792 Y150.806 E.54774 ; infill
+G1 X136.792 Y147.808 E.10148 ; infill
+G1 X163.208 Y147.808 E.89415 ; infill
+G1 X163.208 Y150.806 E.10148 ; infill
+G1 X155.117 Y136.792 E.54774 ; infill
+G1 X152.52 Y136.792 E.08791 ; infill
+G1 X137.269 Y163.208 E1.03247 ; infill
+G1 X139.821 Y163.208 E.08638 ; infill
+G1 X136.792 Y157.962 E.20504 ; infill
+G1 X136.792 Y161.035 E.10402 ; infill
+G1 X163.208 Y161.035 E.89415 ; infill
+G1 X163.208 Y159.035 E.0677 ; infill
 ;LAYER_CHANGE:91
 ;Z:18.3
 ;HEIGHT:0.2
@@ -10292,37 +10155,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7407 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7404 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7403 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7400 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7399 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7397 ; perimeter
-M104 S228
-G1 X136.039 Y136.039 E.84548 F7395 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7393 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7390 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7389 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7386 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7384 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-M104 S225
-G1 X164.775 Y164.775 E.89477 F7382 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7379 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7378 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7376 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10333,46 +10194,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y137.862 E.0677 F6596 ; infill
+G1 X163.208 Y137.862 E.0677 ; infill
 G1 X162.59 Y136.792 E.04183 ; infill
-G1 X160.32 Y136.792 E.07684 F6596 ; infill
-G1 X145.069 Y163.208 E1.03247 F6595 ; infill
-G1 X147.294 Y163.208 E.07531 F6594 ; infill
-G1 X136.792 Y145.018 E.71096 F6593 ; infill
-G1 X136.792 Y147.667 E.08967 F6592 ; infill
-G1 X163.208 Y147.667 E.89415 F6591 ; infill
-G1 X163.208 Y145.018 E.08967 F6589 ; infill
-G1 X152.706 Y163.208 E.71096 F6589 ; infill
-G1 X154.931 Y163.208 E.07531 F6589 ; infill
-G1 X139.68 Y136.792 E1.03247 F6587 ; infill
-G1 X137.41 Y136.792 E.07684 F6586 ; infill
+G1 X160.32 Y136.792 E.07684 ; infill
+G1 X145.069 Y163.208 E1.03247 ; infill
+G1 X147.294 Y163.208 E.07531 ; infill
+G1 X136.792 Y145.018 E.71096 ; infill
+G1 X136.792 Y147.667 E.08967 ; infill
+G1 X163.208 Y147.667 E.89415 ; infill
+G1 X163.208 Y145.018 E.08967 ; infill
+G1 X152.706 Y163.208 E.71096 ; infill
+G1 X154.931 Y163.208 E.07531 ; infill
+G1 X139.68 Y136.792 E1.03247 ; infill
+G1 X137.41 Y136.792 E.07684 ; infill
 G1 X136.792 Y137.862 E.04183 ; infill
-G1 X136.792 Y141.053 E.10801 F6586 ; infill
-G1 X163.208 Y141.053 E.89415 F6585 ; infill
-G1 X163.208 Y143.053 E.0677 F6583 ; infill
+G1 X136.792 Y141.053 E.10801 ; infill
+G1 X163.208 Y141.053 E.89415 ; infill
+G1 X163.208 Y143.053 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.089 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.089 E.0677 F6583 ; infill
-G1 X154.954 Y136.792 E.5588 F6581 ; infill
-G1 X152.683 Y136.792 E.07687 F6581 ; infill
-G1 X137.432 Y163.208 E1.03247 F6581 ; infill
-G1 X139.658 Y163.208 E.07535 F6579 ; infill
-G1 X136.792 Y158.245 E.19399 F6578 ; infill
-G1 X136.792 Y160.894 E.08967 F6577 ; infill
-G1 X163.208 Y160.894 E.89415 F6578 ; infill
-G1 X163.208 Y158.245 E.08967 F6576 ; infill
-G1 X160.342 Y163.208 E.19399 F6575 ; infill
-G1 X162.568 Y163.208 E.07535 F6575 ; infill
-G1 X147.317 Y136.792 E1.03247 F6574 ; infill
-G1 X145.046 Y136.792 E.07687 F6573 ; infill
-G1 X136.792 Y151.089 E.5588 F6573 ; infill
-G1 X136.792 Y154.28 E.10801 F6572 ; infill
-G1 X163.208 Y154.28 E.89415 F6571 ; infill
-G1 X163.208 Y156.28 E.0677 F6569 ; infill
+G1 X163.208 Y151.089 E.0677 ; infill
+G1 X154.954 Y136.792 E.5588 ; infill
+G1 X152.683 Y136.792 E.07687 ; infill
+G1 X137.432 Y163.208 E1.03247 ; infill
+G1 X139.658 Y163.208 E.07535 ; infill
+G1 X136.792 Y158.245 E.19399 ; infill
+G1 X136.792 Y160.894 E.08967 ; infill
+G1 X163.208 Y160.894 E.89415 ; infill
+G1 X163.208 Y158.245 E.08967 ; infill
+G1 X160.342 Y163.208 E.19399 ; infill
+G1 X162.568 Y163.208 E.07535 ; infill
+G1 X147.317 Y136.792 E1.03247 ; infill
+G1 X145.046 Y136.792 E.07687 ; infill
+G1 X136.792 Y151.089 E.5588 ; infill
+G1 X136.792 Y154.28 E.10801 ; infill
+G1 X163.208 Y154.28 E.89415 ; infill
+G1 X163.208 Y156.28 E.0677 ; infill
 ;LAYER_CHANGE:92
 ;Z:18.5
 ;HEIGHT:0.2
@@ -10391,35 +10252,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7342 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7341 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7339 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7337 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7334 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7333 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7330 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7329 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7326 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7325 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7322 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7320 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7319 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7316 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7314 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7312 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10431,46 +10292,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y138.144 E.0677 F6540 ; infill
-G1 X162.427 Y136.792 E.05285 F6540 ; infill
-G1 X160.483 Y136.792 E.0658 F6540 ; infill
-G1 X145.232 Y163.208 E1.03247 F6538 ; infill
-G1 X147.131 Y163.208 E.06428 F6537 ; infill
-G1 X136.792 Y145.301 E.69991 F6536 ; infill
-G1 X136.792 Y147.525 E.07528 F6535 ; infill
-G1 X163.208 Y147.525 E.89415 F6534 ; infill
-G1 X163.208 Y145.3 E.07531 F6534 ; infill
-G1 X152.869 Y163.208 E.69994 F6532 ; infill
-G1 X154.768 Y163.208 E.06428 F6531 ; infill
-G1 X139.517 Y136.792 E1.03247 F6530 ; infill
-G1 X137.573 Y136.792 E.0658 F6529 ; infill
-G1 X136.792 Y138.145 E.05288 F6528 ; infill
-G1 X136.792 Y140.911 E.09363 F6528 ; infill
-G1 X163.208 Y140.912 E.89415 F6528 ; infill
-G1 X163.208 Y142.912 E.0677 F6527 ; infill
+G1 X163.208 Y138.144 E.0677 ; infill
+G1 X162.427 Y136.792 E.05285 ; infill
+G1 X160.483 Y136.792 E.0658 ; infill
+G1 X145.232 Y163.208 E1.03247 ; infill
+G1 X147.131 Y163.208 E.06428 ; infill
+G1 X136.792 Y145.301 E.69991 ; infill
+G1 X136.792 Y147.525 E.07528 ; infill
+G1 X163.208 Y147.525 E.89415 ; infill
+G1 X163.208 Y145.3 E.07531 ; infill
+G1 X152.869 Y163.208 E.69994 ; infill
+G1 X154.768 Y163.208 E.06428 ; infill
+G1 X139.517 Y136.792 E1.03247 ; infill
+G1 X137.573 Y136.792 E.0658 ; infill
+G1 X136.792 Y138.145 E.05288 ; infill
+G1 X136.792 Y140.911 E.09363 ; infill
+G1 X163.208 Y140.912 E.89415 ; infill
+G1 X163.208 Y142.912 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.372 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.372 E.0677 F6526 ; infill
-G1 X154.79 Y136.792 E.56987 F6526 ; infill
-G1 X152.846 Y136.792 E.0658 F6525 ; infill
-G1 X137.595 Y163.208 E1.03247 F6524 ; infill
-G1 X139.494 Y163.208 E.06428 F6523 ; infill
-G1 X136.792 Y158.528 E.18292 F6522 ; infill
-G1 X136.792 Y160.752 E.07528 F6522 ; infill
-G1 X163.208 Y160.752 E.89415 F6521 ; infill
-G1 X163.208 Y158.528 E.07528 F6519 ; infill
-G1 X160.506 Y163.208 E.18292 F6519 ; infill
-G1 X162.405 Y163.208 E.06428 F6519 ; infill
-G1 X147.153 Y136.792 E1.03249 F6518 ; infill
-G1 X145.21 Y136.792 E.06577 F6517 ; infill
-G1 X136.792 Y151.372 E.56987 F6516 ; infill
-G1 X136.792 Y154.139 E.09366 F6516 ; infill
-G1 X163.208 Y154.139 E.89415 F6515 ; infill
-G1 X163.208 Y156.139 E.0677 F6513 ; infill
+G1 X163.208 Y151.372 E.0677 ; infill
+G1 X154.79 Y136.792 E.56987 ; infill
+G1 X152.846 Y136.792 E.0658 ; infill
+G1 X137.595 Y163.208 E1.03247 ; infill
+G1 X139.494 Y163.208 E.06428 ; infill
+G1 X136.792 Y158.528 E.18292 ; infill
+G1 X136.792 Y160.752 E.07528 ; infill
+G1 X163.208 Y160.752 E.89415 ; infill
+G1 X163.208 Y158.528 E.07528 ; infill
+G1 X160.506 Y163.208 E.18292 ; infill
+G1 X162.405 Y163.208 E.06428 ; infill
+G1 X147.153 Y136.792 E1.03249 ; infill
+G1 X145.21 Y136.792 E.06577 ; infill
+G1 X136.792 Y151.372 E.56987 ; infill
+G1 X136.792 Y154.139 E.09366 ; infill
+G1 X163.208 Y154.139 E.89415 ; infill
+G1 X163.208 Y156.139 E.0677 ; infill
 ;LAYER_CHANGE:93
 ;Z:18.7
 ;HEIGHT:0.2
@@ -10489,35 +10350,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7280 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7277 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7276 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7273 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7271 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7270 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7267 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7266 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7263 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7262 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7259 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7257 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7254 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7253 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7250 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7248 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10529,46 +10390,46 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 G1 F8843
 G1 X163.208 Y136.792 E.01235 ; infill
-G1 X163.208 Y138.427 E.05534 F6483 ; infill
-G1 X162.264 Y136.792 E.0639 F6483 ; infill
-G1 X160.647 Y136.792 E.05473 F6483 ; infill
-G1 X145.396 Y163.208 E1.03247 F6482 ; infill
-G1 X146.968 Y163.208 E.05321 F6480 ; infill
-G1 X136.792 Y145.583 E.68888 F6479 ; infill
-G1 X136.792 Y147.384 E.06096 F6479 ; infill
-G1 X163.208 Y147.384 E.89415 F6477 ; infill
-G1 X163.208 Y145.583 E.06096 F6476 ; infill
-G1 X153.032 Y163.208 E.68888 F6476 ; infill
-G1 X154.604 Y163.208 E.05321 F6475 ; infill
-G1 X139.353 Y136.792 E1.03247 F6475 ; infill
-G1 X137.736 Y136.792 E.05473 F6474 ; infill
-G1 X136.792 Y138.427 E.0639 F6474 ; infill
-G1 X136.792 Y140.77 E.07931 F6473 ; infill
-G1 X163.208 Y140.77 E.89415 F6472 ; infill
-G1 X163.208 Y142.77 E.0677 F6471 ; infill
+G1 X163.208 Y138.427 E.05534 ; infill
+G1 X162.264 Y136.792 E.0639 ; infill
+G1 X160.647 Y136.792 E.05473 ; infill
+G1 X145.396 Y163.208 E1.03247 ; infill
+G1 X146.968 Y163.208 E.05321 ; infill
+G1 X136.792 Y145.583 E.68888 ; infill
+G1 X136.792 Y147.384 E.06096 ; infill
+G1 X163.208 Y147.384 E.89415 ; infill
+G1 X163.208 Y145.583 E.06096 ; infill
+G1 X153.032 Y163.208 E.68888 ; infill
+G1 X154.604 Y163.208 E.05321 ; infill
+G1 X139.353 Y136.792 E1.03247 ; infill
+G1 X137.736 Y136.792 E.05473 ; infill
+G1 X136.792 Y138.427 E.0639 ; infill
+G1 X136.792 Y140.77 E.07931 ; infill
+G1 X163.208 Y140.77 E.89415 ; infill
+G1 X163.208 Y142.77 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.655 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.655 E.0677 F6470 ; infill
-G1 X154.627 Y136.792 E.58092 F6470 ; infill
-G1 X153.01 Y136.792 E.05473 F6470 ; infill
-G1 X137.759 Y163.208 E1.03247 F6468 ; infill
-G1 X139.331 Y163.208 E.05321 F6466 ; infill
-G1 X136.792 Y158.811 E.17186 F6466 ; infill
-G1 X136.792 Y160.611 E.06093 F6466 ; infill
-G1 X163.208 Y160.611 E.89415 F6465 ; infill
-G1 X163.208 Y158.811 E.06093 F6464 ; infill
-G1 X160.669 Y163.208 E.17186 F6464 ; infill
-G1 X162.241 Y163.208 E.05321 F6464 ; infill
-G1 X146.99 Y136.792 E1.03247 F6463 ; infill
-G1 X145.373 Y136.792 E.05473 F6462 ; infill
-G1 X136.792 Y151.655 E.58092 F6461 ; infill
-G1 X136.792 Y153.997 E.07927 F6460 ; infill
-G1 X163.208 Y153.997 E.89415 F6458 ; infill
-G1 X163.208 Y155.997 E.0677 F6457 ; infill
+G1 X163.208 Y151.655 E.0677 ; infill
+G1 X154.627 Y136.792 E.58092 ; infill
+G1 X153.01 Y136.792 E.05473 ; infill
+G1 X137.759 Y163.208 E1.03247 ; infill
+G1 X139.331 Y163.208 E.05321 ; infill
+G1 X136.792 Y158.811 E.17186 ; infill
+G1 X136.792 Y160.611 E.06093 ; infill
+G1 X163.208 Y160.611 E.89415 ; infill
+G1 X163.208 Y158.811 E.06093 ; infill
+G1 X160.669 Y163.208 E.17186 ; infill
+G1 X162.241 Y163.208 E.05321 ; infill
+G1 X146.99 Y136.792 E1.03247 ; infill
+G1 X145.373 Y136.792 E.05473 ; infill
+G1 X136.792 Y151.655 E.58092 ; infill
+G1 X136.792 Y153.997 E.07927 ; infill
+G1 X163.208 Y153.997 E.89415 ; infill
+G1 X163.208 Y155.997 E.0677 ; infill
 ;LAYER_CHANGE:94
 ;Z:18.9
 ;HEIGHT:0.2
@@ -10587,36 +10448,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7218 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7216 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7214 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7212 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7209 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7208 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7206 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7204 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M73 P60 R11
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7202 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7200 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7197 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7194 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7193 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7191 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7188 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7186 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10628,47 +10489,47 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 G1 F8843
 G1 X163.208 Y136.792 E.00278 ; infill
-G1 X163.208 Y138.71 E.06492 F6427 ; infill
-G1 X162.1 Y136.792 E.07498 F6427 ; infill
-G1 X160.81 Y136.792 E.04366 F6428 ; infill
-G1 X145.559 Y163.208 E1.03247 F6426 ; infill
-G1 X146.804 Y163.208 E.04214 F6425 ; infill
-G1 X136.792 Y145.866 E.67781 F6424 ; infill
-G1 X136.792 Y147.242 E.04658 F6422 ; infill
-G1 X163.208 Y147.242 E.89415 F6422 ; infill
-G1 X163.208 Y145.866 E.04658 F6421 ; infill
-G1 X153.196 Y163.208 E.67781 F6420 ; infill
-G1 X154.441 Y163.208 E.04214 F6419 ; infill
-G1 X139.19 Y136.792 E1.03247 F6419 ; infill
-G1 X137.9 Y136.792 E.04366 F6418 ; infill
-G1 X136.792 Y138.71 E.07498 F6417 ; infill
-G1 X136.792 Y140.629 E.06496 F6417 ; infill
-G1 X163.208 Y140.629 E.89415 F6416 ; infill
-G1 X163.208 Y142.629 E.0677 F6414 ; infill
+G1 X163.208 Y138.71 E.06492 ; infill
+G1 X162.1 Y136.792 E.07498 ; infill
+G1 X160.81 Y136.792 E.04366 ; infill
+G1 X145.559 Y163.208 E1.03247 ; infill
+G1 X146.804 Y163.208 E.04214 ; infill
+G1 X136.792 Y145.866 E.67781 ; infill
+G1 X136.792 Y147.242 E.04658 ; infill
+G1 X163.208 Y147.242 E.89415 ; infill
+G1 X163.208 Y145.866 E.04658 ; infill
+G1 X153.196 Y163.208 E.67781 ; infill
+G1 X154.441 Y163.208 E.04214 ; infill
+G1 X139.19 Y136.792 E1.03247 ; infill
+G1 X137.9 Y136.792 E.04366 ; infill
+G1 X136.792 Y138.71 E.07498 ; infill
+G1 X136.792 Y140.629 E.06496 ; infill
+G1 X163.208 Y140.629 E.89415 ; infill
+G1 X163.208 Y142.629 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y149.937 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y151.937 E.0677 F6414 ; infill
-G1 X154.464 Y136.792 E.59195 F6414 ; infill
-G1 X153.173 Y136.792 E.0437 F6413 ; infill
-G1 X137.922 Y163.208 E1.03247 F6412 ; infill
-G1 X139.168 Y163.208 E.04218 F6410 ; infill
-G1 X136.792 Y159.093 E.16084 F6411 ; infill
-G1 X136.792 Y160.469 E.04658 F6410 ; infill
-G1 X163.208 Y160.47 E.89415 F6409 ; infill
+G1 X163.208 Y151.937 E.0677 ; infill
+G1 X154.464 Y136.792 E.59195 ; infill
+G1 X153.173 Y136.792 E.0437 ; infill
+G1 X137.922 Y163.208 E1.03247 ; infill
+G1 X139.168 Y163.208 E.04218 ; infill
+G1 X136.792 Y159.093 E.16084 ; infill
+G1 X136.792 Y160.469 E.04658 ; infill
+G1 X163.208 Y160.47 E.89415 ; infill
 M73 P60 R10
-G1 X163.208 Y159.093 E.04661 F6408 ; infill
-G1 X160.832 Y163.208 E.16084 F6408 ; infill
-G1 X162.078 Y163.208 E.04218 F6407 ; infill
-G1 X146.827 Y136.792 E1.03247 F6407 ; infill
-G1 X145.536 Y136.792 E.0437 F6405 ; infill
-G1 X136.792 Y151.937 E.59195 F6406 ; infill
-G1 X136.792 Y153.856 E.06496 F6404 ; infill
-G1 X163.208 Y153.856 E.89415 F6404 ; infill
-G1 X163.208 Y155.856 E.0677 F6403 ; infill
+G1 X163.208 Y159.093 E.04661 ; infill
+G1 X160.832 Y163.208 E.16084 ; infill
+G1 X162.078 Y163.208 E.04218 ; infill
+G1 X146.827 Y136.792 E1.03247 ; infill
+G1 X145.536 Y136.792 E.0437 ; infill
+G1 X136.792 Y151.937 E.59195 ; infill
+G1 X136.792 Y153.856 E.06496 ; infill
+G1 X163.208 Y153.856 E.89415 ; infill
+G1 X163.208 Y155.856 E.0677 ; infill
 ;LAYER_CHANGE:95
 ;Z:19.1
 ;HEIGHT:0.2
@@ -10687,35 +10548,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7156 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7154 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7152 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7151 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7149 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7147 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7144 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7142 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7140 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7138 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7136 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7134 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7131 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7130 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7128 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7126 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10726,46 +10587,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y138.993 E.0677 F6373 ; infill
-G1 X161.937 Y136.792 E.08603 F6373 ; infill
+G1 X163.208 Y138.993 E.0677 ; infill
+G1 X161.937 Y136.792 E.08603 ; infill
 G1 X160.973 Y136.792 E.03263 ; infill
-G1 X145.722 Y163.208 E1.03247 F6372 ; infill
+G1 X145.722 Y163.208 E1.03247 ; infill
 G1 X146.641 Y163.208 E.03111 ; infill
-G1 X136.792 Y146.149 E.66675 F6369 ; infill
+G1 X136.792 Y146.149 E.66675 ; infill
 G1 X136.792 Y147.101 E.03222 ; infill
-G1 X163.208 Y147.101 E.89415 F6368 ; infill
+G1 X163.208 Y147.101 E.89415 ; infill
 G1 X163.208 Y146.149 E.03222 ; infill
-G1 X153.359 Y163.208 E.66675 F6366 ; infill
+G1 X153.359 Y163.208 E.66675 ; infill
 G1 X154.278 Y163.208 E.03111 ; infill
-G1 X139.027 Y136.792 E1.03247 F6364 ; infill
+G1 X139.027 Y136.792 E1.03247 ; infill
 G1 X138.063 Y136.792 E.03263 ; infill
-G1 X136.792 Y138.993 E.08603 F6363 ; infill
-G1 X136.792 Y140.487 E.05057 F6363 ; infill
-G1 X163.208 Y140.487 E.89415 F6362 ; infill
-G1 X163.208 Y142.487 E.0677 F6360 ; infill
+G1 X136.792 Y138.993 E.08603 ; infill
+G1 X136.792 Y140.487 E.05057 ; infill
+G1 X163.208 Y140.487 E.89415 ; infill
+G1 X163.208 Y142.487 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.22 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.22 E.0677 F6360 ; infill
-G1 X154.3 Y136.792 E.60302 F6360 ; infill
+G1 X163.208 Y152.22 E.0677 ; infill
+G1 X154.3 Y136.792 E.60302 ; infill
 G1 X153.336 Y136.792 E.03263 ; infill
-G1 X138.085 Y163.208 E1.03247 F6358 ; infill
+G1 X138.085 Y163.208 E1.03247 ; infill
 G1 X139.004 Y163.208 E.03111 ; infill
-G1 X136.792 Y159.376 E.14977 F6356 ; infill
+G1 X136.792 Y159.376 E.14977 ; infill
 G1 X136.792 Y160.328 E.03222 ; infill
-G1 X163.208 Y160.328 E.89415 F6356 ; infill
+G1 X163.208 Y160.328 E.89415 ; infill
 G1 X163.208 Y159.376 E.03222 ; infill
-G1 X160.996 Y163.208 E.14977 F6354 ; infill
+G1 X160.996 Y163.208 E.14977 ; infill
 G1 X161.915 Y163.208 E.03111 ; infill
-G1 X146.664 Y136.792 E1.03247 F6353 ; infill
+G1 X146.664 Y136.792 E1.03247 ; infill
 G1 X145.7 Y136.792 E.03263 ; infill
-G1 X136.792 Y152.22 E.60302 F6352 ; infill
-G1 X136.792 Y153.714 E.05057 F6350 ; infill
-G1 X163.208 Y153.715 E.89415 F6349 ; infill
-G1 X163.208 Y155.715 E.0677 F6348 ; infill
+G1 X136.792 Y152.22 E.60302 ; infill
+G1 X136.792 Y153.714 E.05057 ; infill
+G1 X163.208 Y153.715 E.89415 ; infill
+G1 X163.208 Y155.715 E.0677 ; infill
 ;LAYER_CHANGE:96
 ;Z:19.3
 ;HEIGHT:0.2
@@ -10785,37 +10646,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7095 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7093 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7091 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7090 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7088 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7085 ; perimeter
-M104 S221
-G1 X136.039 Y136.039 E.84548 F7084 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7082 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7080 ; perimeter
-M104 S224
-G1 X135.632 Y164.368 E.87012 F7078 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7076 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7074 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7072 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7070 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7068 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7065 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10826,47 +10685,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y139.276 E.0677 F6319 ; infill
-G1 X161.774 Y136.792 E.09709 F6319 ; infill
+G1 X163.208 Y139.276 E.0677 ; infill
+G1 X161.774 Y136.792 E.09709 ; infill
 G1 X161.136 Y136.792 E.0216 ; infill
-G1 X145.885 Y163.208 E1.03247 F6318 ; infill
+G1 X145.885 Y163.208 E1.03247 ; infill
 G1 X146.478 Y163.208 E.02007 ; infill
-G1 X136.792 Y146.432 E.6557 F6317 ; infill
+G1 X136.792 Y146.432 E.6557 ; infill
 G1 X136.792 Y146.959 E.01784 ; infill
-G1 X163.208 Y146.959 E.89415 F6315 ; infill
+G1 X163.208 Y146.959 E.89415 ; infill
 G1 X163.208 Y146.432 E.01784 ; infill
-G1 X153.522 Y163.208 E.6557 F6313 ; infill
+G1 X153.522 Y163.208 E.6557 ; infill
 G1 X154.115 Y163.208 E.02007 ; infill
-G1 X138.864 Y136.792 E1.03247 F6311 ; infill
-M104 S227
+G1 X138.864 Y136.792 E1.03247 ; infill
 G1 X138.226 Y136.792 E.0216 ; infill
-G1 X136.792 Y139.276 E.09709 F6309 ; infill
+G1 X136.792 Y139.276 E.09709 ; infill
 G1 X136.792 Y140.346 E.03622 ; infill
-G1 X163.208 Y140.346 E.89415 F6309 ; infill
-G1 X163.208 Y142.346 E.0677 F6308 ; infill
+G1 X163.208 Y140.346 E.89415 ; infill
+G1 X163.208 Y142.346 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.503 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.503 E.0677 F6307 ; infill
-G1 X154.137 Y136.792 E.61407 F6307 ; infill
+G1 X163.208 Y152.503 E.0677 ; infill
+G1 X154.137 Y136.792 E.61407 ; infill
 G1 X153.5 Y136.792 E.02156 ; infill
-G1 X138.249 Y163.208 E1.03247 F6305 ; infill
+G1 X138.249 Y163.208 E1.03247 ; infill
 G1 X138.841 Y163.208 E.02004 ; infill
-G1 X136.792 Y159.659 E.13871 F6304 ; infill
+G1 X136.792 Y159.659 E.13871 ; infill
 G1 X136.792 Y160.187 E.01787 ; infill
-G1 X163.208 Y160.187 E.89415 F6303 ; infill
+G1 X163.208 Y160.187 E.89415 ; infill
 G1 X163.208 Y159.659 E.01787 ; infill
-G1 X161.159 Y163.208 E.13871 F6302 ; infill
+G1 X161.159 Y163.208 E.13871 ; infill
 G1 X161.751 Y163.208 E.02004 ; infill
-G1 X146.5 Y136.792 E1.03247 F6300 ; infill
+G1 X146.5 Y136.792 E1.03247 ; infill
 G1 X145.863 Y136.792 E.02156 ; infill
-G1 X136.792 Y152.503 E.61407 F6298 ; infill
+G1 X136.792 Y152.503 E.61407 ; infill
 G1 X136.792 Y153.573 E.03622 ; infill
-G1 X163.208 Y153.573 E.89415 F6297 ; infill
-G1 X163.208 Y155.573 E.0677 F6296 ; infill
+G1 X163.208 Y153.573 E.89415 ; infill
+G1 X163.208 Y155.573 E.0677 ; infill
 ;LAYER_CHANGE:97
 ;Z:19.5
 ;HEIGHT:0.2
@@ -10885,35 +10743,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F7037 ; perimeter
-G1 X136.446 Y163.554 E.82083 F7035 ; perimeter
-G1 X136.446 Y136.446 E.82083 F7032 ; perimeter
-G1 X163.494 Y136.446 E.81901 F7031 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F7029 ; perimeter
-G1 X136.039 Y163.961 E.84548 F7027 ; perimeter
-G1 X136.039 Y136.039 E.84548 F7025 ; perimeter
-G1 X163.901 Y136.039 E.84366 F7022 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F7021 ; perimeter
-G1 X135.632 Y164.368 E.87012 F7019 ; perimeter
-G1 X135.632 Y135.632 E.87012 F7017 ; perimeter
-G1 X164.308 Y135.632 E.86831 F7015 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F7013 ; perimeter
-G1 X135.225 Y164.775 E.89477 F7011 ; perimeter
-G1 X135.225 Y135.225 E.89477 F7009 ; perimeter
-G1 X164.715 Y135.225 E.89295 F7008 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -10924,47 +10782,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y139.559 E.0677 F6267 ; infill
-G1 X161.611 Y136.792 E.10814 F6267 ; infill
+G1 X163.208 Y139.559 E.0677 ; infill
+G1 X161.611 Y136.792 E.10814 ; infill
 G1 X161.3 Y136.792 E.01053 ; infill
-G1 X146.049 Y163.208 E1.03247 F6266 ; infill
+G1 X146.049 Y163.208 E1.03247 ; infill
 G1 X146.315 Y163.208 E.009 ; infill
-G1 X136.792 Y146.715 E.64465 F6264 ; infill
+G1 X136.792 Y146.715 E.64465 ; infill
 G1 X136.792 Y146.818 E.00349 ; infill
-G1 X163.208 Y146.818 E.89415 F6262 ; infill
+G1 X163.208 Y146.818 E.89415 ; infill
 G1 X163.208 Y146.715 E.00349 ; infill
-G1 X153.685 Y163.208 E.64465 F6261 ; infill
+G1 X153.685 Y163.208 E.64465 ; infill
 G1 X153.951 Y163.208 E.009 ; infill
-G1 X138.7 Y136.792 E1.03247 F6260 ; infill
+G1 X138.7 Y136.792 E1.03247 ; infill
 G1 X138.39 Y136.792 E.01049 ; infill
-G1 X136.792 Y139.559 E.10816 F6258 ; infill
+G1 X136.792 Y139.559 E.10816 ; infill
 G1 X136.792 Y140.204 E.02183 ; infill
-G1 X163.208 Y140.204 E.89415 F6257 ; infill
-G1 X163.208 Y142.204 E.0677 F6256 ; infill
+G1 X163.208 Y140.204 E.89415 ; infill
+G1 X163.208 Y142.204 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y150.786 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y152.786 E.0677 F6256 ; infill
-G1 X153.974 Y136.792 E.62513 F6255 ; infill
+G1 X163.208 Y152.786 E.0677 ; infill
+G1 X153.974 Y136.792 E.62513 ; infill
 G1 X153.663 Y136.792 E.01053 ; infill
-G1 X138.412 Y163.208 E1.03247 F6253 ; infill
+G1 X138.412 Y163.208 E1.03247 ; infill
 G1 X138.678 Y163.208 E.009 ; infill
-G1 X136.792 Y159.942 E.12766 F6252 ; infill
+G1 X136.792 Y159.942 E.12766 ; infill
 G1 X136.792 Y160.045 E.00349 ; infill
-G1 X163.208 Y160.045 E.89415 F6251 ; infill
+G1 X163.208 Y160.045 E.89415 ; infill
 G1 X163.208 Y159.942 E.00349 ; infill
 M73 P62 R10
-G1 X161.322 Y163.208 E.12766 F6250 ; infill
+G1 X161.322 Y163.208 E.12766 ; infill
 G1 X161.588 Y163.208 E.009 ; infill
-G1 X146.337 Y136.792 E1.03247 F6249 ; infill
+G1 X146.337 Y136.792 E1.03247 ; infill
 G1 X146.026 Y136.792 E.01053 ; infill
-G1 X136.792 Y152.786 E.62513 F6247 ; infill
+G1 X136.792 Y152.786 E.62513 ; infill
 G1 X136.792 Y153.432 E.02187 ; infill
-G1 X163.208 Y153.432 E.89415 F6246 ; infill
-G1 X163.208 Y155.432 E.0677 F6244 ; infill
+G1 X163.208 Y153.432 E.89415 ; infill
+G1 X163.208 Y155.432 E.0677 ; infill
 ;LAYER_CHANGE:98
 ;Z:19.7
 ;HEIGHT:0.2
@@ -10983,35 +10841,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6979 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6978 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6976 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6974 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6972 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6969 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6967 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6966 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6964 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6962 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6960 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6958 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6956 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6953 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6952 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6950 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11022,42 +10880,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.677 E.0677 F6215 ; infill
-G1 X163.208 Y146.677 E.89415 F6215 ; infill
+G1 X136.792 Y146.677 E.0677 ; infill
+G1 X163.208 Y146.677 E.89415 ; infill
 G1 X163.208 Y146.997 E.01083 ; infill
-G1 X153.849 Y163.208 E.6336 F6214 ; infill
+G1 X153.849 Y163.208 E.6336 ; infill
 G1 X153.788 Y163.208 E.00206 ; infill
-G1 X138.553 Y136.792 E1.0322 F6212 ; infill
-G1 X136.792 Y139.842 E.11921 F6211 ; infill
+G1 X138.553 Y136.792 E1.0322 ; infill
+G1 X136.792 Y139.842 E.11921 ; infill
 G1 X136.792 Y140.063 E.00748 ; infill
-G1 X163.208 Y140.063 E.89415 F6210 ; infill
+G1 X163.208 Y140.063 E.89415 ; infill
 G1 X163.208 Y139.842 E.00748 ; infill
-G1 X161.447 Y136.792 E.11921 F6209 ; infill
-G1 X146.212 Y163.208 E1.0322 F6207 ; infill
+G1 X161.447 Y136.792 E.11921 ; infill
+G1 X146.212 Y163.208 E1.0322 ; infill
 G1 X146.151 Y163.208 E.00206 ; infill
-G1 X136.792 Y146.998 E.63357 F6205 ; infill
-G1 X136.792 Y148.998 E.0677 F6204 ; infill
+G1 X136.792 Y146.998 E.63357 ; infill
+G1 X136.792 Y148.998 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.904 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.904 E.0677 F6204 ; infill
-G1 X163.208 Y159.904 E.89415 F6204 ; infill
+G1 X136.792 Y159.904 E.0677 ; infill
+G1 X163.208 Y159.904 E.89415 ; infill
 G1 X163.208 Y160.225 E.01087 ; infill
-G1 X161.486 Y163.208 E.11659 F6203 ; infill
+G1 X161.486 Y163.208 E.11659 ; infill
 G1 X161.425 Y163.208 E.00206 ; infill
-G1 X146.19 Y136.792 E1.0322 F6202 ; infill
-G1 X136.792 Y153.069 E.6362 F6200 ; infill
+G1 X146.19 Y136.792 E1.0322 ; infill
+G1 X136.792 Y153.069 E.6362 ; infill
 G1 X136.792 Y153.29 E.00748 ; infill
-G1 X163.208 Y153.29 E.89415 F6199 ; infill
+G1 X163.208 Y153.29 E.89415 ; infill
 G1 X163.208 Y153.069 E.00748 ; infill
-G1 X153.826 Y136.792 E.63593 F6197 ; infill
-G1 X138.575 Y163.208 E1.03247 F6196 ; infill
+G1 X153.826 Y136.792 E.63593 ; infill
+G1 X138.575 Y163.208 E1.03247 ; infill
 G1 X138.514 Y163.208 E.00206 ; infill
-G1 X136.792 Y160.225 E.11659 F6194 ; infill
-G1 X136.792 Y162.225 E.0677 F6194 ; infill
+G1 X136.792 Y160.225 E.11659 ; infill
+G1 X136.792 Y162.225 E.0677 ; infill
 ;LAYER_CHANGE:99
 ;Z:19.9
 ;HEIGHT:0.2
@@ -11076,35 +10934,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6923 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6921 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6919 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6917 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6916 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6914 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6912 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6910 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6908 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6906 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6904 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6902 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6900 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6898 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6896 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6895 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11115,47 +10973,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.535 E.0677 F6165 ; infill
-G1 X163.208 Y146.535 E.89415 F6166 ; infill
+G1 X136.792 Y146.535 E.0677 ; infill
+G1 X163.208 Y146.535 E.89415 ; infill
 G1 X163.208 Y147.28 E.02522 ; infill
-G1 X154.012 Y163.208 E.62255 F6164 ; infill
+G1 X154.012 Y163.208 E.62255 ; infill
 G1 X153.625 Y163.208 E.0131 ; infill
-G1 X138.374 Y136.792 E1.03247 F6162 ; infill
+G1 X138.374 Y136.792 E1.03247 ; infill
 G1 X138.716 Y136.792 E.01158 ; infill
-G1 X136.792 Y140.124 E.13024 F6161 ; infill
+G1 X136.792 Y140.124 E.13024 ; infill
 G1 X136.792 Y139.921 E.00687 ; infill
-G1 X163.208 Y139.922 E.89415 F6160 ; infill
+G1 X163.208 Y139.922 E.89415 ; infill
 G1 X163.208 Y140.124 E.00684 ; infill
-G1 X161.284 Y136.792 E.13024 F6158 ; infill
+G1 X161.284 Y136.792 E.13024 ; infill
 G1 X161.626 Y136.792 E.01158 ; infill
 M73 P63 R10
-G1 X146.375 Y163.208 E1.03247 F6157 ; infill
+G1 X146.375 Y163.208 E1.03247 ; infill
 G1 X145.988 Y163.208 E.0131 ; infill
-G1 X136.792 Y147.281 E.62252 F6156 ; infill
-G1 X136.792 Y149.281 E.0677 F6155 ; infill
+G1 X136.792 Y147.281 E.62252 ; infill
+G1 X136.792 Y149.281 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.762 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.762 E.0677 F6155 ; infill
-G1 X163.208 Y159.762 E.89415 F6154 ; infill
+G1 X136.792 Y159.762 E.0677 ; infill
+G1 X163.208 Y159.762 E.89415 ; infill
 G1 X163.208 Y160.508 E.02525 ; infill
-G1 X161.649 Y163.208 E.10553 F6153 ; infill
+G1 X161.649 Y163.208 E.10553 ; infill
 G1 X161.261 Y163.208 E.01313 ; infill
-G1 X146.01 Y136.792 E1.03247 F6152 ; infill
+G1 X146.01 Y136.792 E1.03247 ; infill
 G1 X146.353 Y136.792 E.01161 ; infill
-G1 X136.792 Y153.352 E.64725 F6150 ; infill
+G1 X136.792 Y153.352 E.64725 ; infill
 G1 X136.792 Y153.149 E.00687 ; infill
-G1 X163.208 Y153.149 E.89415 F6149 ; infill
+G1 X163.208 Y153.149 E.89415 ; infill
 G1 X163.208 Y153.352 E.00687 ; infill
-G1 X153.647 Y136.792 E.64725 F6147 ; infill
+G1 X153.647 Y136.792 E.64725 ; infill
 G1 X153.99 Y136.792 E.01161 ; infill
-G1 X138.739 Y163.208 E1.03247 F6146 ; infill
+G1 X138.739 Y163.208 E1.03247 ; infill
 G1 X138.351 Y163.208 E.01313 ; infill
-G1 X136.792 Y160.508 E.10553 F6144 ; infill
-G1 X136.792 Y162.508 E.0677 F6144 ; infill
+G1 X136.792 Y160.508 E.10553 ; infill
+G1 X136.792 Y162.508 E.0677 ; infill
 ;LAYER_CHANGE:100
 ;Z:20.1
 ;HEIGHT:0.2
@@ -11174,36 +11032,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6867 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6866 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6864 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6863 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6861 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6858 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6857 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6855 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6854 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6852 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6849 ; perimeter
-M104 S223
-G1 X164.308 Y135.632 E.86831 F6848 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6846 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6844 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6842 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6840 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11214,46 +11071,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.394 E.0677 F6117 ; infill
-G1 X163.208 Y146.394 E.89415 F6117 ; infill
-G1 X163.208 Y147.563 E.03957 F6116 ; infill
-G1 X154.175 Y163.208 E.61149 F6116 ; infill
+G1 X136.792 Y146.394 E.0677 ; infill
+G1 X163.208 Y146.394 E.89415 ; infill
+G1 X163.208 Y147.563 E.03957 ; infill
+G1 X154.175 Y163.208 E.61149 ; infill
 G1 X153.461 Y163.208 E.02417 ; infill
-G1 X138.21 Y136.792 E1.03247 F6114 ; infill
+G1 X138.21 Y136.792 E1.03247 ; infill
 G1 X138.879 Y136.792 E.02264 ; infill
-G1 X136.792 Y140.407 E.14129 F6113 ; infill
+G1 X136.792 Y140.407 E.14129 ; infill
 G1 X136.792 Y139.78 E.02122 ; infill
-G1 X163.208 Y139.78 E.89415 F6111 ; infill
+G1 X163.208 Y139.78 E.89415 ; infill
 G1 X163.208 Y140.407 E.02122 ; infill
-G1 X161.121 Y136.792 E.14129 F6110 ; infill
+G1 X161.121 Y136.792 E.14129 ; infill
 G1 X161.79 Y136.792 E.02264 ; infill
-G1 X146.539 Y163.208 E1.03247 F6110 ; infill
+G1 X146.539 Y163.208 E1.03247 ; infill
 G1 X145.825 Y163.208 E.02417 ; infill
-G1 X136.792 Y147.563 E.61149 F6108 ; infill
-G1 X136.792 Y149.563 E.0677 F6107 ; infill
+G1 X136.792 Y147.563 E.61149 ; infill
+G1 X136.792 Y149.563 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.621 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.621 E.0677 F6107 ; infill
-G1 X163.208 Y159.621 E.89415 F6106 ; infill
-G1 X163.208 Y160.79 E.03957 F6105 ; infill
-G1 X161.812 Y163.208 E.09451 F6105 ; infill
+G1 X136.792 Y159.621 E.0677 ; infill
+G1 X163.208 Y159.621 E.89415 ; infill
+G1 X163.208 Y160.79 E.03957 ; infill
+G1 X161.812 Y163.208 E.09451 ; infill
 G1 X161.098 Y163.208 E.02417 ; infill
-G1 X145.847 Y136.792 E1.03247 F6104 ; infill
+G1 X145.847 Y136.792 E1.03247 ; infill
 G1 X146.516 Y136.792 E.02264 ; infill
-G1 X136.792 Y153.634 E.65828 F6103 ; infill
+G1 X136.792 Y153.634 E.65828 ; infill
 G1 X136.792 Y153.007 E.02122 ; infill
-G1 X163.208 Y153.007 E.89415 F6101 ; infill
+G1 X163.208 Y153.007 E.89415 ; infill
 G1 X163.208 Y153.634 E.02122 ; infill
-G1 X153.484 Y136.792 E.65828 F6099 ; infill
+G1 X153.484 Y136.792 E.65828 ; infill
 G1 X154.153 Y136.792 E.02264 ; infill
-G1 X138.902 Y163.208 E1.03247 F6097 ; infill
+G1 X138.902 Y163.208 E1.03247 ; infill
 G1 X138.188 Y163.208 E.02417 ; infill
-G1 X136.792 Y160.79 E.09451 F6096 ; infill
-G1 X136.792 Y162.79 E.0677 F6096 ; infill
+G1 X136.792 Y160.79 E.09451 ; infill
+G1 X136.792 Y162.79 E.0677 ; infill
 ;LAYER_CHANGE:101
 ;Z:20.3
 ;HEIGHT:0.2
@@ -11272,36 +11129,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6814 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6812 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6810 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6808 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6807 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6805 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6803 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6802 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6800 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6799 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6797 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6795 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M73 P63 R9
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6793 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6791 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6789 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6787 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 M73 P64 R9
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -11313,46 +11170,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.252 E.0677 F6070 ; infill
-G1 X163.208 Y146.252 E.89415 F6070 ; infill
-G1 X163.208 Y147.846 E.05396 F6068 ; infill
-G1 X154.339 Y163.208 E.60042 F6068 ; infill
+G1 X136.792 Y146.252 E.0677 ; infill
+G1 X163.208 Y146.252 E.89415 ; infill
+G1 X163.208 Y147.846 E.05396 ; infill
+G1 X154.339 Y163.208 E.60042 ; infill
 G1 X153.298 Y163.208 E.03524 ; infill
-G1 X138.047 Y136.792 E1.03247 F6067 ; infill
+G1 X138.047 Y136.792 E1.03247 ; infill
 G1 X139.043 Y136.792 E.03371 ; infill
-G1 X136.792 Y140.69 E.15236 F6065 ; infill
+G1 X136.792 Y140.69 E.15236 ; infill
 G1 X136.792 Y139.639 E.03558 ; infill
-G1 X163.208 Y139.639 E.89415 F6064 ; infill
+G1 X163.208 Y139.639 E.89415 ; infill
 G1 X163.208 Y140.69 E.03558 ; infill
-G1 X160.957 Y136.792 E.15236 F6063 ; infill
+G1 X160.957 Y136.792 E.15236 ; infill
 G1 X161.953 Y136.792 E.03371 ; infill
-G1 X146.702 Y163.208 E1.03247 F6062 ; infill
+G1 X146.702 Y163.208 E1.03247 ; infill
 G1 X145.661 Y163.208 E.03524 ; infill
-G1 X136.792 Y147.846 E.60042 F6059 ; infill
-G1 X136.792 Y149.846 E.0677 F6058 ; infill
+G1 X136.792 Y147.846 E.60042 ; infill
+G1 X136.792 Y149.846 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.48 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.48 E.0677 F6058 ; infill
-G1 X163.208 Y159.48 E.89415 F6058 ; infill
-G1 X163.208 Y161.073 E.05392 F6058 ; infill
-G1 X161.975 Y163.208 E.08345 F6058 ; infill
+G1 X136.792 Y159.48 E.0677 ; infill
+G1 X163.208 Y159.48 E.89415 ; infill
+G1 X163.208 Y161.073 E.05392 ; infill
+G1 X161.975 Y163.208 E.08345 ; infill
 G1 X160.935 Y163.208 E.0352 ; infill
-G1 X145.684 Y136.792 E1.03247 F6056 ; infill
+G1 X145.684 Y136.792 E1.03247 ; infill
 G1 X146.679 Y136.792 E.03368 ; infill
-G1 X136.792 Y153.917 E.66933 F6055 ; infill
+G1 X136.792 Y153.917 E.66933 ; infill
 G1 X136.792 Y152.866 E.03558 ; infill
-G1 X163.208 Y152.866 E.89415 F6053 ; infill
+G1 X163.208 Y152.866 E.89415 ; infill
 G1 X163.208 Y153.917 E.03558 ; infill
-G1 X153.321 Y136.792 E.66933 F6051 ; infill
+G1 X153.321 Y136.792 E.66933 ; infill
 G1 X154.316 Y136.792 E.03368 ; infill
-G1 X139.065 Y163.208 E1.03247 F6050 ; infill
+G1 X139.065 Y163.208 E1.03247 ; infill
 G1 X138.025 Y163.208 E.0352 ; infill
-G1 X136.792 Y161.073 E.08345 F6049 ; infill
-G1 X136.792 Y163.073 E.0677 F6047 ; infill
+G1 X136.792 Y161.073 E.08345 ; infill
+G1 X136.792 Y163.073 E.0677 ; infill
 ;LAYER_CHANGE:102
 ;Z:20.5
 ;HEIGHT:0.2
@@ -11371,37 +11228,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6759 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6758 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6756 ; perimeter
-M104 S220
-G1 X163.494 Y136.446 E.81901 F6755 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6752 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6750 ; perimeter
-M104 S226
-G1 X136.039 Y136.039 E.84548 F6748 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6746 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6745 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6743 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6741 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6739 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6738 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6735 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6733 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6731 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11412,46 +11267,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y146.111 E.0677 F6020 ; infill
-G1 X163.208 Y146.111 E.89415 F6020 ; infill
-G1 X163.208 Y148.129 E.06831 F6019 ; infill
-G1 X154.502 Y163.208 E.58937 F6018 ; infill
-G1 X153.135 Y163.208 E.04627 F6018 ; infill
-G1 X137.884 Y136.792 E1.03247 F6017 ; infill
-G1 X139.206 Y136.792 E.04475 F6015 ; infill
-G1 X136.792 Y140.973 E.16342 F6015 ; infill
-G1 X136.792 Y139.497 E.04996 F6015 ; infill
-G1 X163.208 Y139.497 E.89415 F6013 ; infill
-G1 X163.208 Y140.973 E.04996 F6012 ; infill
-G1 X160.794 Y136.792 E.16342 F6012 ; infill
-G1 X162.116 Y136.792 E.04475 F6012 ; infill
-G1 X146.865 Y163.208 E1.03247 F6012 ; infill
-G1 X145.498 Y163.208 E.04627 F6011 ; infill
-G1 X136.792 Y148.129 E.58937 F6010 ; infill
-G1 X136.792 Y150.129 E.0677 F6009 ; infill
+G1 X136.792 Y146.111 E.0677 ; infill
+G1 X163.208 Y146.111 E.89415 ; infill
+G1 X163.208 Y148.129 E.06831 ; infill
+G1 X154.502 Y163.208 E.58937 ; infill
+G1 X153.135 Y163.208 E.04627 ; infill
+G1 X137.884 Y136.792 E1.03247 ; infill
+G1 X139.206 Y136.792 E.04475 ; infill
+G1 X136.792 Y140.973 E.16342 ; infill
+G1 X136.792 Y139.497 E.04996 ; infill
+G1 X163.208 Y139.497 E.89415 ; infill
+G1 X163.208 Y140.973 E.04996 ; infill
+G1 X160.794 Y136.792 E.16342 ; infill
+G1 X162.116 Y136.792 E.04475 ; infill
+G1 X146.865 Y163.208 E1.03247 ; infill
+G1 X145.498 Y163.208 E.04627 ; infill
+G1 X136.792 Y148.129 E.58937 ; infill
+G1 X136.792 Y150.129 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.338 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.338 E.0677 F6009 ; infill
-G1 X163.208 Y159.338 E.89415 F6008 ; infill
-G1 X163.208 Y161.356 E.06831 F6007 ; infill
-G1 X162.139 Y163.208 E.07238 F6007 ; infill
-G1 X160.772 Y163.208 E.04627 F6007 ; infill
-G1 X145.52 Y136.792 E1.03249 F6005 ; infill
-G1 X146.843 Y136.792 E.04478 F6004 ; infill
-G1 X136.792 Y154.2 E.6804 F6004 ; infill
-G1 X136.792 Y152.724 E.04996 F6003 ; infill
-G1 X163.208 Y152.725 E.89415 F6002 ; infill
-G1 X163.208 Y154.2 E.04993 F6001 ; infill
-G1 X153.157 Y136.792 E.6804 F6000 ; infill
-G1 X154.479 Y136.792 E.04475 F5999 ; infill
-G1 X139.228 Y163.208 E1.03247 F5999 ; infill
-G1 X137.861 Y163.208 E.04627 F5998 ; infill
-G1 X136.792 Y161.356 E.07238 F5997 ; infill
-G1 X136.792 Y163.208 E.06269 F5997 ; infill
+G1 X136.792 Y159.338 E.0677 ; infill
+G1 X163.208 Y159.338 E.89415 ; infill
+G1 X163.208 Y161.356 E.06831 ; infill
+G1 X162.139 Y163.208 E.07238 ; infill
+G1 X160.772 Y163.208 E.04627 ; infill
+G1 X145.52 Y136.792 E1.03249 ; infill
+G1 X146.843 Y136.792 E.04478 ; infill
+G1 X136.792 Y154.2 E.6804 ; infill
+G1 X136.792 Y152.724 E.04996 ; infill
+G1 X163.208 Y152.725 E.89415 ; infill
+G1 X163.208 Y154.2 E.04993 ; infill
+G1 X153.157 Y136.792 E.6804 ; infill
+G1 X154.479 Y136.792 E.04475 ; infill
+G1 X139.228 Y163.208 E1.03247 ; infill
+G1 X137.861 Y163.208 E.04627 ; infill
+G1 X136.792 Y161.356 E.07238 ; infill
+G1 X136.792 Y163.208 E.06269 ; infill
 G1 X136.941 Y163.208 E.00504 ; infill
 ;LAYER_CHANGE:103
 ;Z:20.7
@@ -11471,36 +11326,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6702 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6701 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6699 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6697 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6695 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6692 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6691 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
 M73 P65 R9
-G1 X163.901 Y136.039 E.84366 F6688 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6686 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6685 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6682 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6680 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6679 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6677 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6674 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6672 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11511,46 +11366,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y145.969 E.0677 F5967 ; infill
-G1 X163.208 Y145.969 E.89415 F5967 ; infill
-G1 X163.208 Y148.412 E.08269 F5966 ; infill
-G1 X154.665 Y163.208 E.57831 F5966 ; infill
-G1 X152.971 Y163.208 E.05734 F5965 ; infill
-G1 X137.72 Y136.792 E1.03247 F5963 ; infill
-G1 X139.369 Y136.792 E.05582 F5961 ; infill
-G1 X136.792 Y141.256 E.17447 F5962 ; infill
-G1 X136.792 Y139.356 E.06431 F5962 ; infill
-G1 X163.208 Y139.356 E.89415 F5960 ; infill
-G1 X163.208 Y141.256 E.06431 F5959 ; infill
-G1 X160.631 Y136.792 E.17447 F5959 ; infill
-G1 X162.28 Y136.792 E.05582 F5958 ; infill
-G1 X147.029 Y163.208 E1.03247 F5957 ; infill
-G1 X145.335 Y163.208 E.05734 F5956 ; infill
-G1 X136.792 Y148.412 E.57831 F5955 ; infill
-G1 X136.792 Y150.412 E.0677 F5954 ; infill
+G1 X136.792 Y145.969 E.0677 ; infill
+G1 X163.208 Y145.969 E.89415 ; infill
+G1 X163.208 Y148.412 E.08269 ; infill
+G1 X154.665 Y163.208 E.57831 ; infill
+G1 X152.971 Y163.208 E.05734 ; infill
+G1 X137.72 Y136.792 E1.03247 ; infill
+G1 X139.369 Y136.792 E.05582 ; infill
+G1 X136.792 Y141.256 E.17447 ; infill
+G1 X136.792 Y139.356 E.06431 ; infill
+G1 X163.208 Y139.356 E.89415 ; infill
+G1 X163.208 Y141.256 E.06431 ; infill
+G1 X160.631 Y136.792 E.17447 ; infill
+G1 X162.28 Y136.792 E.05582 ; infill
+G1 X147.029 Y163.208 E1.03247 ; infill
+G1 X145.335 Y163.208 E.05734 ; infill
+G1 X136.792 Y148.412 E.57831 ; infill
+G1 X136.792 Y150.412 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.197 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.197 E.0677 F5954 ; infill
-G1 X163.208 Y159.197 E.89415 F5954 ; infill
-G1 X163.208 Y161.639 E.08266 F5953 ; infill
-G1 X162.302 Y163.208 E.06133 F5953 ; infill
-G1 X160.608 Y163.208 E.05734 F5953 ; infill
-G1 X145.357 Y136.792 E1.03247 F5952 ; infill
-G1 X147.006 Y136.792 E.05582 F5951 ; infill
-G1 X136.792 Y154.483 E.69146 F5950 ; infill
-G1 X136.792 Y152.583 E.06431 F5950 ; infill
-G1 X163.208 Y152.583 E.89415 F5948 ; infill
-G1 X163.208 Y154.483 E.06431 F5947 ; infill
-G1 X152.994 Y136.792 E.69146 F5946 ; infill
-G1 X154.643 Y136.792 E.05582 F5945 ; infill
-G1 X139.392 Y163.208 E1.03247 F5944 ; infill
-G1 X137.698 Y163.208 E.05734 F5943 ; infill
-G1 X136.792 Y161.639 E.06133 F5943 ; infill
-G1 X136.792 Y163.208 E.05311 F5943 ; infill
+G1 X136.792 Y159.197 E.0677 ; infill
+G1 X163.208 Y159.197 E.89415 ; infill
+G1 X163.208 Y161.639 E.08266 ; infill
+G1 X162.302 Y163.208 E.06133 ; infill
+G1 X160.608 Y163.208 E.05734 ; infill
+G1 X145.357 Y136.792 E1.03247 ; infill
+G1 X147.006 Y136.792 E.05582 ; infill
+G1 X136.792 Y154.483 E.69146 ; infill
+G1 X136.792 Y152.583 E.06431 ; infill
+G1 X163.208 Y152.583 E.89415 ; infill
+G1 X163.208 Y154.483 E.06431 ; infill
+G1 X152.994 Y136.792 E.69146 ; infill
+G1 X154.643 Y136.792 E.05582 ; infill
+G1 X139.392 Y163.208 E1.03247 ; infill
+G1 X137.698 Y163.208 E.05734 ; infill
+G1 X136.792 Y161.639 E.06133 ; infill
+G1 X136.792 Y163.208 E.05311 ; infill
 G1 X137.223 Y163.208 E.01459 ; infill
 ;LAYER_CHANGE:104
 ;Z:20.9
@@ -11570,36 +11425,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-M104 S222
-G1 X163.554 Y163.554 E.82083 F6642 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6640 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6637 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6636 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6634 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6632 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6630 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6628 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6625 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6624 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6621 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6619 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6617 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6614 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6613 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6610 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11610,47 +11464,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y145.828 E.0677 F5912 ; infill
-G1 X163.208 Y145.828 E.89415 F5911 ; infill
-G1 X163.208 Y148.694 E.09701 F5910 ; infill
-G1 X154.829 Y163.208 E.56727 F5908 ; infill
-G1 X152.808 Y163.208 E.06841 F5907 ; infill
-G1 X137.557 Y136.792 E1.03247 F5907 ; infill
-G1 X139.533 Y136.792 E.06689 F5906 ; infill
-G1 X136.792 Y141.539 E.18554 F5905 ; infill
-G1 X136.792 Y139.214 E.0787 F5905 ; infill
-G1 X163.208 Y139.214 E.89415 F5905 ; infill
-G1 X163.208 Y141.539 E.0787 F5902 ; infill
-G1 X160.467 Y136.792 E.18554 F5902 ; infill
-G1 X162.443 Y136.792 E.06689 F5902 ; infill
-G1 X147.192 Y163.208 E1.03247 F5901 ; infill
-G1 X145.171 Y163.208 E.06841 F5899 ; infill
-G1 X136.792 Y148.695 E.56724 F5899 ; infill
-G1 X136.792 Y150.695 E.0677 F5898 ; infill
+G1 X136.792 Y145.828 E.0677 ; infill
+G1 X163.208 Y145.828 E.89415 ; infill
+G1 X163.208 Y148.694 E.09701 ; infill
+G1 X154.829 Y163.208 E.56727 ; infill
+G1 X152.808 Y163.208 E.06841 ; infill
+G1 X137.557 Y136.792 E1.03247 ; infill
+G1 X139.533 Y136.792 E.06689 ; infill
+G1 X136.792 Y141.539 E.18554 ; infill
+G1 X136.792 Y139.214 E.0787 ; infill
+G1 X163.208 Y139.214 E.89415 ; infill
+G1 X163.208 Y141.539 E.0787 ; infill
+G1 X160.467 Y136.792 E.18554 ; infill
+G1 X162.443 Y136.792 E.06689 ; infill
+G1 X147.192 Y163.208 E1.03247 ; infill
+G1 X145.171 Y163.208 E.06841 ; infill
+G1 X136.792 Y148.695 E.56724 ; infill
+G1 X136.792 Y150.695 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y157.055 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y159.055 E.0677 F5898 ; infill
-G1 X163.208 Y159.055 E.89415 F5897 ; infill
-G1 X163.208 Y161.922 E.09704 F5896 ; infill
-G1 X162.465 Y163.208 E.05027 F5896 ; infill
-G1 X160.445 Y163.208 E.06837 F5896 ; infill
-G1 X145.194 Y136.792 E1.03247 F5895 ; infill
-G1 X147.169 Y136.792 E.06685 F5894 ; infill
-G1 X136.792 Y154.766 E.70251 F5892 ; infill
-G1 X136.792 Y152.442 E.07866 F5892 ; infill
-G1 X163.208 Y152.442 E.89415 F5891 ; infill
-G1 X163.208 Y154.766 E.07866 F5890 ; infill
+G1 X136.792 Y159.055 E.0677 ; infill
+G1 X163.208 Y159.055 E.89415 ; infill
+G1 X163.208 Y161.922 E.09704 ; infill
+G1 X162.465 Y163.208 E.05027 ; infill
+G1 X160.445 Y163.208 E.06837 ; infill
+G1 X145.194 Y136.792 E1.03247 ; infill
+G1 X147.169 Y136.792 E.06685 ; infill
+G1 X136.792 Y154.766 E.70251 ; infill
+G1 X136.792 Y152.442 E.07866 ; infill
+G1 X163.208 Y152.442 E.89415 ; infill
+G1 X163.208 Y154.766 E.07866 ; infill
 M73 P66 R9
-G1 X152.831 Y136.792 E.70251 F5888 ; infill
-G1 X154.806 Y136.792 E.06685 F5887 ; infill
-G1 X139.555 Y163.208 E1.03247 F5887 ; infill
-G1 X137.535 Y163.208 E.06837 F5886 ; infill
-G1 X136.792 Y161.922 E.05027 F5886 ; infill
-G1 X136.792 Y159.922 E.0677 F5885 ; infill
+G1 X152.831 Y136.792 E.70251 ; infill
+G1 X154.806 Y136.792 E.06685 ; infill
+G1 X139.555 Y163.208 E1.03247 ; infill
+G1 X137.535 Y163.208 E.06837 ; infill
+G1 X136.792 Y161.922 E.05027 ; infill
+G1 X136.792 Y159.922 E.0677 ; infill
 ;LAYER_CHANGE:105
 ;Z:21.1
 ;HEIGHT:0.2
@@ -11669,35 +11523,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6577 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6576 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6574 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6572 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6569 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6566 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6565 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6563 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6561 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6559 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6555 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6554 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6552 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6549 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6547 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6545 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11708,46 +11562,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y145.687 E.0677 F5852 ; infill
-G1 X163.208 Y145.687 E.89415 F5852 ; infill
-G1 X163.208 Y148.977 E.11136 F5851 ; infill
-G1 X154.992 Y163.208 E.55622 F5850 ; infill
-G1 X152.645 Y163.208 E.07944 F5850 ; infill
-G1 X137.394 Y136.792 E1.03247 F5848 ; infill
-G1 X139.696 Y136.792 E.07792 F5847 ; infill
-G1 X136.792 Y141.822 E.1966 F5847 ; infill
-G1 X136.792 Y139.073 E.09305 F5846 ; infill
-G1 X163.208 Y139.073 E.89415 F5845 ; infill
-G1 X163.208 Y141.821 E.09302 F5844 ; infill
-G1 X160.304 Y136.792 E.19657 F5844 ; infill
-G1 X162.606 Y136.792 E.07792 F5843 ; infill
-G1 X147.355 Y163.208 E1.03247 F5842 ; infill
-G1 X145.008 Y163.208 E.07944 F5841 ; infill
-G1 X136.792 Y148.978 E.55619 F5839 ; infill
-G1 X136.792 Y150.978 E.0677 F5838 ; infill
+G1 X136.792 Y145.687 E.0677 ; infill
+G1 X163.208 Y145.687 E.89415 ; infill
+G1 X163.208 Y148.977 E.11136 ; infill
+G1 X154.992 Y163.208 E.55622 ; infill
+G1 X152.645 Y163.208 E.07944 ; infill
+G1 X137.394 Y136.792 E1.03247 ; infill
+G1 X139.696 Y136.792 E.07792 ; infill
+G1 X136.792 Y141.822 E.1966 ; infill
+G1 X136.792 Y139.073 E.09305 ; infill
+G1 X163.208 Y139.073 E.89415 ; infill
+G1 X163.208 Y141.821 E.09302 ; infill
+G1 X160.304 Y136.792 E.19657 ; infill
+G1 X162.606 Y136.792 E.07792 ; infill
+G1 X147.355 Y163.208 E1.03247 ; infill
+G1 X145.008 Y163.208 E.07944 ; infill
+G1 X136.792 Y148.978 E.55619 ; infill
+G1 X136.792 Y150.978 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y156.914 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y158.914 E.0677 F5838 ; infill
-G1 X163.208 Y158.914 E.89415 F5838 ; infill
-G1 X163.208 Y162.205 E.1114 F5835 ; infill
-G1 X162.629 Y163.208 E.0392 F5835 ; infill
-G1 X160.282 Y163.208 E.07944 F5836 ; infill
-G1 X145.031 Y136.792 E1.03247 F5835 ; infill
-G1 X147.333 Y136.792 E.07792 F5834 ; infill
-G1 X136.792 Y155.049 E.71358 F5832 ; infill
-G1 X136.792 Y152.3 E.09305 F5831 ; infill
-G1 X163.208 Y152.3 E.89415 F5830 ; infill
-G1 X163.208 Y155.049 E.09305 F5829 ; infill
-G1 X152.667 Y136.792 E.71358 F5829 ; infill
-G1 X154.969 Y136.792 E.07792 F5828 ; infill
-G1 X139.718 Y163.208 E1.03247 F5826 ; infill
-G1 X137.371 Y163.208 E.07944 F5826 ; infill
-G1 X136.792 Y162.205 E.0392 F5825 ; infill
-G1 X136.792 Y160.205 E.0677 F5825 ; infill
+G1 X136.792 Y158.914 E.0677 ; infill
+G1 X163.208 Y158.914 E.89415 ; infill
+G1 X163.208 Y162.205 E.1114 ; infill
+G1 X162.629 Y163.208 E.0392 ; infill
+G1 X160.282 Y163.208 E.07944 ; infill
+G1 X145.031 Y136.792 E1.03247 ; infill
+G1 X147.333 Y136.792 E.07792 ; infill
+G1 X136.792 Y155.049 E.71358 ; infill
+G1 X136.792 Y152.3 E.09305 ; infill
+G1 X163.208 Y152.3 E.89415 ; infill
+G1 X163.208 Y155.049 E.09305 ; infill
+G1 X152.667 Y136.792 E.71358 ; infill
+G1 X154.969 Y136.792 E.07792 ; infill
+G1 X139.718 Y163.208 E1.03247 ; infill
+G1 X137.371 Y163.208 E.07944 ; infill
+G1 X136.792 Y162.205 E.0392 ; infill
+G1 X136.792 Y160.205 E.0677 ; infill
 ;LAYER_CHANGE:106
 ;Z:21.3
 ;HEIGHT:0.2
@@ -11766,35 +11620,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6510 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6507 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6505 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6502 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6500 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6499 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6495 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6494 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6491 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6490 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6488 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6485 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6483 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6481 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6478 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6476 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11805,13 +11659,13 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X139.859 Y136.792 E.0677 F5792 ; infill
-G1 X136.792 Y142.104 E.20762 F5791 ; infill
-G1 X136.792 Y145.545 E.11647 F5791 ; infill
-G1 X163.208 Y145.545 E.89415 F5790 ; infill
-G1 X163.208 Y142.104 E.11647 F5789 ; infill
-G1 X160.141 Y136.792 E.20762 F5788 ; infill
-G1 X158.141 Y136.792 E.0677 F5788 ; infill
+G1 X139.859 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.104 E.20762 ; infill
+G1 X136.792 Y145.545 E.11647 ; infill
+G1 X163.208 Y145.545 E.89415 ; infill
+G1 X163.208 Y142.104 E.11647 ; infill
+G1 X160.141 Y136.792 E.20762 ; infill
+G1 X158.141 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M73 P67 R9
 M204 S15000 ; adjust acceleration
@@ -11819,42 +11673,42 @@ G1 X163.208 Y160.487 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.487 E.0677 F5787 ; infill
+G1 X163.208 Y162.487 E.0677 ; infill
 G1 X162.792 Y163.208 E.02818 ; infill
-G1 X160.118 Y163.208 E.09051 F5787 ; infill
-G1 X144.867 Y136.792 E1.03247 F5785 ; infill
-G1 X147.496 Y136.792 E.08899 F5784 ; infill
-G1 X136.792 Y155.331 E.72461 F5783 ; infill
-G1 X136.792 Y158.772 E.11647 F5783 ; infill
-G1 X163.208 Y158.772 E.89415 F5781 ; infill
-G1 X163.208 Y156.772 E.0677 F5780 ; infill
+G1 X160.118 Y163.208 E.09051 ; infill
+G1 X144.867 Y136.792 E1.03247 ; infill
+G1 X147.496 Y136.792 E.08899 ; infill
+G1 X136.792 Y155.331 E.72461 ; infill
+G1 X136.792 Y158.772 E.11647 ; infill
+G1 X163.208 Y158.772 E.89415 ; infill
+G1 X163.208 Y156.772 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y147.26 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y149.26 E.0677 F5779 ; infill
-G1 X155.155 Y163.208 E.54516 F5779 ; infill
-G1 X152.482 Y163.208 E.09048 F5778 ; infill
-G1 X137.231 Y136.792 E1.03247 F5777 ; infill
+G1 X163.208 Y149.26 E.0677 ; infill
+G1 X155.155 Y163.208 E.54516 ; infill
+G1 X152.482 Y163.208 E.09048 ; infill
+G1 X137.231 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.01486 ; infill
-G1 X136.792 Y138.932 E.07244 F5775 ; infill
-G1 X163.208 Y138.932 E.89415 F5773 ; infill
-G1 X163.208 Y136.792 E.07244 F5772 ; infill
+G1 X136.792 Y138.932 E.07244 ; infill
+G1 X163.208 Y138.932 E.89415 ; infill
+G1 X163.208 Y136.792 E.07244 ; infill
 G1 X162.769 Y136.792 E.01486 ; infill
-G1 X147.518 Y163.208 E1.03247 F5771 ; infill
-G1 X144.845 Y163.208 E.09048 F5770 ; infill
-G1 X136.792 Y149.26 E.54516 F5769 ; infill
-G1 X136.792 Y152.159 E.09813 F5768 ; infill
-G1 X163.208 Y152.159 E.89415 F5767 ; infill
-G1 X163.208 Y155.332 E.1074 F5766 ; infill
-G1 X152.504 Y136.792 E.72464 F5765 ; infill
-G1 X155.133 Y136.792 E.08899 F5764 ; infill
-G1 X139.882 Y163.208 E1.03247 F5761 ; infill
-G1 X137.208 Y163.208 E.09051 F5760 ; infill
+G1 X147.518 Y163.208 E1.03247 ; infill
+G1 X144.845 Y163.208 E.09048 ; infill
+G1 X136.792 Y149.26 E.54516 ; infill
+G1 X136.792 Y152.159 E.09813 ; infill
+G1 X163.208 Y152.159 E.89415 ; infill
+G1 X163.208 Y155.332 E.1074 ; infill
+G1 X152.504 Y136.792 E.72464 ; infill
+G1 X155.133 Y136.792 E.08899 ; infill
+G1 X139.882 Y163.208 E1.03247 ; infill
+G1 X137.208 Y163.208 E.09051 ; infill
 G1 X136.792 Y162.488 E.02815 ; infill
-G1 X136.792 Y160.488 E.0677 F5760 ; infill
+G1 X136.792 Y160.488 E.0677 ; infill
 ;LAYER_CHANGE:107
 ;Z:21.5
 ;HEIGHT:0.2
@@ -11873,37 +11727,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6437 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6436 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6433 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6430 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6429 ; perimeter
-M104 S225
-G1 X136.039 Y163.961 E.84548 F6426 ; perimeter
-M104 S219
-G1 X136.039 Y136.039 E.84548 F6423 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6422 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6419 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6418 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6413 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6412 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6408 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6407 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6403 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6402 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -11915,55 +11767,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X140.023 Y136.792 E.0677 F5725 ; infill
-G1 X136.792 Y142.387 E.21869 F5724 ; infill
-G1 X136.792 Y145.404 E.10212 F5724 ; infill
-G1 X163.208 Y145.404 E.89415 F5723 ; infill
-G1 X163.208 Y142.387 E.10212 F5722 ; infill
-G1 X159.978 Y136.792 E.21868 F5722 ; infill
-G1 X157.978 Y136.792 E.0677 F5721 ; infill
+G1 X140.023 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.387 E.21869 ; infill
+G1 X136.792 Y145.404 E.10212 ; infill
+G1 X163.208 Y145.404 E.89415 ; infill
+G1 X163.208 Y142.387 E.10212 ; infill
+G1 X159.978 Y136.792 E.21868 ; infill
+G1 X157.978 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y160.77 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y162.77 E.0677 F5721 ; infill
+G1 X163.208 Y162.77 E.0677 ; infill
 G1 X162.955 Y163.208 E.01712 ; infill
-G1 X159.955 Y163.208 E.10155 F5721 ; infill
-G1 X144.704 Y136.792 E1.03247 F5720 ; infill
-G1 X147.659 Y136.792 E.10002 F5719 ; infill
-G1 X136.792 Y155.614 E.73566 F5717 ; infill
-G1 X136.792 Y158.631 E.10212 F5716 ; infill
-G1 X163.208 Y158.631 E.89415 F5715 ; infill
-G1 X163.208 Y155.614 E.10212 F5714 ; infill
-G1 X152.341 Y136.792 E.73566 F5711 ; infill
-G1 X155.296 Y136.792 E.10002 F5711 ; infill
-G1 X140.045 Y163.208 E1.03247 F5710 ; infill
-G1 X137.045 Y163.208 E.10155 F5709 ; infill
+G1 X159.955 Y163.208 E.10155 ; infill
+G1 X144.704 Y136.792 E1.03247 ; infill
+G1 X147.659 Y136.792 E.10002 ; infill
+G1 X136.792 Y155.614 E.73566 ; infill
+G1 X136.792 Y158.631 E.10212 ; infill
+G1 X163.208 Y158.631 E.89415 ; infill
+G1 X163.208 Y155.614 E.10212 ; infill
+G1 X152.341 Y136.792 E.73566 ; infill
+G1 X155.296 Y136.792 E.10002 ; infill
+G1 X140.045 Y163.208 E1.03247 ; infill
+G1 X137.045 Y163.208 E.10155 ; infill
 G1 X136.792 Y162.771 E.01709 ; infill
-G1 X136.792 Y160.771 E.0677 F5708 ; infill
+G1 X136.792 Y160.771 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.682 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.682 Y163.208 E.0677 F5708 ; infill
-G1 X136.792 Y149.543 E.53411 F5707 ; infill
-G1 X136.792 Y152.017 E.08374 F5707 ; infill
-G1 X163.208 Y152.017 E.89415 F5705 ; infill
-G1 X163.208 Y149.543 E.08374 F5704 ; infill
-G1 X155.318 Y163.208 E.53411 F5703 ; infill
-G1 X152.318 Y163.208 E.10155 F5702 ; infill
-G1 X137.067 Y136.792 E1.03247 F5700 ; infill
+G1 X144.682 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.543 E.53411 ; infill
+G1 X136.792 Y152.017 E.08374 ; infill
+G1 X163.208 Y152.017 E.89415 ; infill
+G1 X163.208 Y149.543 E.08374 ; infill
+G1 X155.318 Y163.208 E.53411 ; infill
+G1 X152.318 Y163.208 E.10155 ; infill
+G1 X137.067 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.00931 ; infill
-G1 X136.792 Y138.79 E.06763 F5699 ; infill
-G1 X163.208 Y138.79 E.89415 F5698 ; infill
-G1 X163.208 Y136.792 E.06763 F5697 ; infill
+G1 X136.792 Y138.79 E.06763 ; infill
+G1 X163.208 Y138.79 E.89415 ; infill
+G1 X163.208 Y136.792 E.06763 ; infill
 G1 X162.933 Y136.792 E.00931 ; infill
-G1 X147.682 Y163.208 E1.03247 F5695 ; infill
-G1 X149.682 Y163.208 E.0677 F5694 ; infill
+G1 X147.682 Y163.208 E1.03247 ; infill
+G1 X149.682 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:108
 ;Z:21.7
 ;HEIGHT:0.2
@@ -11982,37 +11834,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6363 ; perimeter
-M104 S221
-G1 X136.446 Y163.554 E.82083 F6361 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6358 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6356 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6354 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6351 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6349 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
 M73 P68 R8
-G1 X163.901 Y136.039 E.84366 F6346 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6343 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6339 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6338 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6335 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6332 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6330 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6327 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6324 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12023,55 +11874,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X140.186 Y136.792 E.0677 F5656 ; infill
-G1 X136.792 Y142.67 E.22975 F5656 ; infill
-G1 X136.792 Y145.262 E.08774 F5656 ; infill
-G1 X163.208 Y145.262 E.89415 F5654 ; infill
-G1 X163.208 Y142.67 E.08774 F5653 ; infill
-G1 X159.814 Y136.792 E.22975 F5653 ; infill
-G1 X157.814 Y136.792 E.0677 F5653 ; infill
+G1 X140.186 Y136.792 E.0677 ; infill
+G1 X136.792 Y142.67 E.22975 ; infill
+G1 X136.792 Y145.262 E.08774 ; infill
+G1 X163.208 Y145.262 E.89415 ; infill
+G1 X163.208 Y142.67 E.08774 ; infill
+G1 X159.814 Y136.792 E.22975 ; infill
+G1 X157.814 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y161.053 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y163.053 E.0677 F5653 ; infill
+G1 X163.208 Y163.053 E.0677 ; infill
 G1 X163.118 Y163.208 E.00607 ; infill
-G1 X159.792 Y163.208 E.11258 F5653 ; infill
-G1 X144.541 Y136.792 E1.03247 F5650 ; infill
-G1 X147.822 Y136.792 E.11106 F5648 ; infill
-G1 X136.792 Y155.897 E.74672 F5648 ; infill
-G1 X136.792 Y158.49 E.08777 F5647 ; infill
-G1 X163.208 Y158.49 E.89415 F5645 ; infill
-G1 X163.208 Y155.897 E.08777 F5644 ; infill
-G1 X152.177 Y136.792 E.74674 F5643 ; infill
-G1 X155.459 Y136.792 E.11109 F5642 ; infill
-G1 X140.208 Y163.208 E1.03247 F5640 ; infill
-G1 X136.881 Y163.208 E.11261 F5639 ; infill
+G1 X159.792 Y163.208 E.11258 ; infill
+G1 X144.541 Y136.792 E1.03247 ; infill
+G1 X147.822 Y136.792 E.11106 ; infill
+G1 X136.792 Y155.897 E.74672 ; infill
+G1 X136.792 Y158.49 E.08777 ; infill
+G1 X163.208 Y158.49 E.89415 ; infill
+G1 X163.208 Y155.897 E.08777 ; infill
+G1 X152.177 Y136.792 E.74674 ; infill
+G1 X155.459 Y136.792 E.11109 ; infill
+G1 X140.208 Y163.208 E1.03247 ; infill
+G1 X136.881 Y163.208 E.11261 ; infill
 G1 X136.792 Y163.053 E.00605 ; infill
-G1 X136.792 Y161.053 E.0677 F5638 ; infill
+G1 X136.792 Y161.053 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.518 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X144.518 Y163.208 E.0677 F5638 ; infill
-G1 X136.792 Y149.826 E.52304 F5638 ; infill
-G1 X136.792 Y151.876 E.06939 F5637 ; infill
-G1 X163.208 Y151.876 E.89415 F5635 ; infill
-G1 X163.208 Y149.826 E.06939 F5634 ; infill
-G1 X155.482 Y163.208 E.52304 F5634 ; infill
-G1 X152.155 Y163.208 E.11261 F5634 ; infill
-G1 X136.904 Y136.792 E1.03247 F5633 ; infill
+G1 X144.518 Y163.208 E.0677 ; infill
+G1 X136.792 Y149.826 E.52304 ; infill
+G1 X136.792 Y151.876 E.06939 ; infill
+G1 X163.208 Y151.876 E.89415 ; infill
+G1 X163.208 Y149.826 E.06939 ; infill
+G1 X155.482 Y163.208 E.52304 ; infill
+G1 X152.155 Y163.208 E.11261 ; infill
+G1 X136.904 Y136.792 E1.03247 ; infill
 G1 X136.792 Y136.792 E.00379 ; infill
-G1 X136.792 Y138.649 E.06286 F5631 ; infill
-G1 X163.208 Y138.649 E.89415 F5630 ; infill
-G1 X163.208 Y136.792 E.06286 F5629 ; infill
+G1 X136.792 Y138.649 E.06286 ; infill
+G1 X163.208 Y138.649 E.89415 ; infill
+G1 X163.208 Y136.792 E.06286 ; infill
 G1 X163.096 Y136.792 E.00379 ; infill
-G1 X147.845 Y163.208 E1.03247 F5628 ; infill
-G1 X149.845 Y163.208 E.0677 F5626 ; infill
+G1 X147.845 Y163.208 E1.03247 ; infill
+G1 X149.845 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:109
 ;Z:21.9
 ;HEIGHT:0.2
@@ -12090,35 +11941,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6286 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6285 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6283 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6281 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6279 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6276 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6273 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6272 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6269 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6267 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6265 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6261 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6260 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6257 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6255 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6253 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12129,43 +11980,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.651 Y136.792 E.0677 F5592 ; infill
-G1 X163.208 Y142.953 E.2408 F5592 ; infill
-G1 X163.208 Y145.121 E.07338 F5592 ; infill
-G1 X136.792 Y145.121 E.89415 F5590 ; infill
-G1 X136.792 Y142.953 E.07338 F5589 ; infill
-G1 X140.349 Y136.792 E.2408 F5589 ; infill
-G1 X142.349 Y136.792 E.0677 F5588 ; infill
+G1 X159.651 Y136.792 E.0677 ; infill
+G1 X163.208 Y142.953 E.2408 ; infill
+G1 X163.208 Y145.121 E.07338 ; infill
+G1 X136.792 Y145.121 E.89415 ; infill
+G1 X136.792 Y142.953 E.07338 ; infill
+G1 X140.349 Y136.792 E.2408 ; infill
+G1 X142.349 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.008 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.008 Y163.208 E.0677 F5588 ; infill
-G1 X163.208 Y136.882 E1.02897 F5586 ; infill
-G1 X163.208 Y138.507 E.055 F5586 ; infill
-G1 X136.792 Y138.507 E.89415 F5584 ; infill
-G1 X136.792 Y136.882 E.055 F5583 ; infill
-G1 X151.992 Y163.208 E1.02897 F5581 ; infill
-G1 X155.645 Y163.208 E.12365 F5580 ; infill
-G1 X163.208 Y150.109 E.51198 F5580 ; infill
-G1 X163.208 Y151.735 E.05504 F5579 ; infill
-G1 X136.792 Y151.735 E.89415 F5578 ; infill
-G1 X136.792 Y150.109 E.05504 F5576 ; infill
-G1 X144.355 Y163.208 E.51198 F5577 ; infill
-G1 X140.372 Y163.208 E.13482 F5575 ; infill
-G1 X155.623 Y136.792 E1.03247 F5574 ; infill
-G1 X152.014 Y136.792 E.12216 F5573 ; infill
-G1 X163.208 Y156.18 E.75779 F5572 ; infill
+G1 X148.008 Y163.208 E.0677 ; infill
+G1 X163.208 Y136.882 E1.02897 ; infill
+G1 X163.208 Y138.507 E.055 ; infill
+G1 X136.792 Y138.507 E.89415 ; infill
+G1 X136.792 Y136.882 E.055 ; infill
+G1 X151.992 Y163.208 E1.02897 ; infill
+G1 X155.645 Y163.208 E.12365 ; infill
+G1 X163.208 Y150.109 E.51198 ; infill
+G1 X163.208 Y151.735 E.05504 ; infill
+G1 X136.792 Y151.735 E.89415 ; infill
+G1 X136.792 Y150.109 E.05504 ; infill
+G1 X144.355 Y163.208 E.51198 ; infill
+G1 X140.372 Y163.208 E.13482 ; infill
+G1 X155.623 Y136.792 E1.03247 ; infill
+G1 X152.014 Y136.792 E.12216 ; infill
+G1 X163.208 Y156.18 E.75779 ; infill
 M73 P69 R8
-G1 X163.208 Y158.348 E.07338 F5571 ; infill
-G1 X136.792 Y158.348 E.89415 F5569 ; infill
-G1 X136.792 Y156.18 E.07338 F5568 ; infill
-G1 X147.986 Y136.792 E.75779 F5567 ; infill
-G1 X144.377 Y136.792 E.12216 F5566 ; infill
-G1 X159.628 Y163.208 E1.03247 F5565 ; infill
-G1 X161.628 Y163.208 E.0677 F5563 ; infill
+G1 X163.208 Y158.348 E.07338 ; infill
+G1 X136.792 Y158.348 E.89415 ; infill
+G1 X136.792 Y156.18 E.07338 ; infill
+G1 X147.986 Y136.792 E.75779 ; infill
+G1 X144.377 Y136.792 E.12216 ; infill
+G1 X159.628 Y163.208 E1.03247 ; infill
+G1 X161.628 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:110
 ;Z:22.1
 ;HEIGHT:0.2
@@ -12184,35 +12035,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6218 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6215 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6214 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6211 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6210 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6209 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6206 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6204 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6202 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6199 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6198 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6196 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6194 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6192 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6189 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6187 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12223,42 +12074,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.488 Y136.792 E.0677 F5534 ; infill
-G1 X163.208 Y143.236 E.25186 F5533 ; infill
-G1 X163.208 Y144.98 E.05903 F5533 ; infill
-G1 X136.792 Y144.98 E.89415 F5532 ; infill
-G1 X136.792 Y143.236 E.05903 F5531 ; infill
-G1 X140.512 Y136.792 E.25186 F5531 ; infill
-G1 X144.214 Y136.792 E.12531 F5530 ; infill
-G1 X159.465 Y163.208 E1.03247 F5529 ; infill
-G1 X155.808 Y163.208 E.12379 F5528 ; infill
-G1 X163.208 Y150.392 E.50093 F5526 ; infill
-G1 X163.208 Y151.593 E.04065 F5526 ; infill
-G1 X136.792 Y151.593 E.89415 F5526 ; infill
-G1 X136.792 Y150.392 E.04065 F5525 ; infill
-G1 X144.192 Y163.208 E.50093 F5524 ; infill
-G1 X140.535 Y163.208 E.12379 F5523 ; infill
-G1 X155.786 Y136.792 E1.03247 F5522 ; infill
-G1 X151.851 Y136.792 E.1332 F5521 ; infill
-G1 X163.208 Y156.463 E.76884 F5520 ; infill
-G1 X163.208 Y158.207 E.05903 F5519 ; infill
-G1 X136.792 Y158.207 E.89415 F5517 ; infill
-G1 X136.792 Y156.463 E.05903 F5516 ; infill
-G1 X148.149 Y136.792 E.76884 F5516 ; infill
-G1 X146.149 Y136.792 E.0677 F5515 ; infill
+G1 X159.488 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.236 E.25186 ; infill
+G1 X163.208 Y144.98 E.05903 ; infill
+G1 X136.792 Y144.98 E.89415 ; infill
+G1 X136.792 Y143.236 E.05903 ; infill
+G1 X140.512 Y136.792 E.25186 ; infill
+G1 X144.214 Y136.792 E.12531 ; infill
+G1 X159.465 Y163.208 E1.03247 ; infill
+G1 X155.808 Y163.208 E.12379 ; infill
+G1 X163.208 Y150.392 E.50093 ; infill
+G1 X163.208 Y151.593 E.04065 ; infill
+G1 X136.792 Y151.593 E.89415 ; infill
+G1 X136.792 Y150.392 E.04065 ; infill
+G1 X144.192 Y163.208 E.50093 ; infill
+G1 X140.535 Y163.208 E.12379 ; infill
+G1 X155.786 Y136.792 E1.03247 ; infill
+G1 X151.851 Y136.792 E.1332 ; infill
+G1 X163.208 Y156.463 E.76884 ; infill
+G1 X163.208 Y158.207 E.05903 ; infill
+G1 X136.792 Y158.207 E.89415 ; infill
+G1 X136.792 Y156.463 E.05903 ; infill
+G1 X148.149 Y136.792 E.76884 ; infill
+G1 X146.149 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.172 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.172 Y163.208 E.0677 F5515 ; infill
-G1 X163.208 Y137.164 E1.01793 F5514 ; infill
-G1 X163.208 Y138.366 E.04069 F5512 ; infill
-G1 X136.792 Y138.366 E.89415 F5512 ; infill
-G1 X136.792 Y137.164 E.04069 F5510 ; infill
-G1 X151.828 Y163.208 E1.01793 F5509 ; infill
-G1 X153.828 Y163.208 E.0677 F5508 ; infill
+G1 X148.172 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.164 E1.01793 ; infill
+G1 X163.208 Y138.366 E.04069 ; infill
+G1 X136.792 Y138.366 E.89415 ; infill
+G1 X136.792 Y137.164 E.04069 ; infill
+G1 X151.828 Y163.208 E1.01793 ; infill
+G1 X153.828 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:111
 ;Z:22.3
 ;HEIGHT:0.2
@@ -12277,35 +12128,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6156 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6155 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6153 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6151 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6150 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6147 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6145 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6143 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6141 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6139 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6138 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6135 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6134 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6133 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6131 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6129 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12316,44 +12167,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.324 Y136.792 E.0677 F5481 ; infill
-G1 X163.208 Y143.519 E.26293 F5481 ; infill
-G1 X163.208 Y144.838 E.04465 F5480 ; infill
-G1 X136.792 Y144.838 E.89415 F5479 ; infill
-G1 X136.792 Y143.519 E.04465 F5478 ; infill
-G1 X140.676 Y136.792 E.26293 F5478 ; infill
-G1 X144.051 Y136.792 E.11424 F5478 ; infill
-M104 S224
-G1 X159.302 Y163.208 E1.03247 F5477 ; infill
-G1 X155.972 Y163.208 E.11272 F5476 ; infill
+G1 X159.324 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.519 E.26293 ; infill
+G1 X163.208 Y144.838 E.04465 ; infill
+G1 X136.792 Y144.838 E.89415 ; infill
+G1 X136.792 Y143.519 E.04465 ; infill
+G1 X140.676 Y136.792 E.26293 ; infill
+G1 X144.051 Y136.792 E.11424 ; infill
+G1 X159.302 Y163.208 E1.03247 ; infill
+G1 X155.972 Y163.208 E.11272 ; infill
 M73 P70 R8
-G1 X163.208 Y150.674 E.48989 F5476 ; infill
+G1 X163.208 Y150.674 E.48989 ; infill
 G1 X163.208 Y151.452 E.02633 ; infill
-G1 X136.792 Y151.452 E.89415 F5474 ; infill
+G1 X136.792 Y151.452 E.89415 ; infill
 G1 X136.792 Y150.675 E.0263 ; infill
-G1 X144.028 Y163.208 E.48986 F5473 ; infill
-G1 X140.698 Y163.208 E.11272 F5472 ; infill
-G1 X155.949 Y136.792 E1.03247 F5471 ; infill
-G1 X151.687 Y136.792 E.14426 F5470 ; infill
-G1 X163.208 Y156.746 E.77992 F5469 ; infill
-G1 X163.208 Y158.065 E.04465 F5468 ; infill
-G1 X136.792 Y158.065 E.89415 F5468 ; infill
-G1 X136.792 Y156.746 E.04465 F5466 ; infill
-G1 X148.312 Y136.792 E.7799 F5466 ; infill
-G1 X146.312 Y136.792 E.0677 F5465 ; infill
+G1 X144.028 Y163.208 E.48986 ; infill
+G1 X140.698 Y163.208 E.11272 ; infill
+G1 X155.949 Y136.792 E1.03247 ; infill
+G1 X151.687 Y136.792 E.14426 ; infill
+G1 X163.208 Y156.746 E.77992 ; infill
+G1 X163.208 Y158.065 E.04465 ; infill
+G1 X136.792 Y158.065 E.89415 ; infill
+G1 X136.792 Y156.746 E.04465 ; infill
+G1 X148.312 Y136.792 E.7799 ; infill
+G1 X146.312 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.335 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.335 Y163.208 E.0677 F5465 ; infill
-G1 X163.208 Y137.447 E1.00687 F5464 ; infill
+G1 X148.335 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.447 E1.00687 ; infill
 G1 X163.208 Y138.225 E.02633 ; infill
-G1 X136.792 Y138.224 E.89415 F5462 ; infill
+G1 X136.792 Y138.224 E.89415 ; infill
 G1 X136.792 Y137.447 E.0263 ; infill
-G1 X151.665 Y163.208 E1.00687 F5461 ; infill
-G1 X153.665 Y163.208 E.0677 F5459 ; infill
+G1 X151.665 Y163.208 E1.00687 ; infill
+G1 X153.665 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:112
 ;Z:22.5
 ;HEIGHT:0.2
@@ -12372,36 +12222,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6102 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6099 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6098 ; perimeter
-M104 S218
-G1 X163.494 Y136.446 E.81901 F6096 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6095 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6093 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6091 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6090 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6088 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6086 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6085 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6083 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6081 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6079 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6078 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6076 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12412,42 +12261,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X159.161 Y136.792 E.0677 F5435 ; infill
-G1 X163.208 Y143.801 E.27395 F5435 ; infill
+G1 X159.161 Y136.792 E.0677 ; infill
+G1 X163.208 Y143.801 E.27395 ; infill
 G1 X163.208 Y144.697 E.03033 ; infill
-G1 X136.792 Y144.697 E.89415 F5433 ; infill
+G1 X136.792 Y144.697 E.89415 ; infill
 G1 X136.792 Y143.801 E.03033 ; infill
-G1 X140.839 Y136.792 E.27395 F5432 ; infill
-G1 X143.887 Y136.792 E.10317 F5432 ; infill
-G1 X159.139 Y163.208 E1.03249 F5431 ; infill
-G1 X156.135 Y163.208 E.10168 F5430 ; infill
-G1 X163.208 Y150.957 E.47883 F5430 ; infill
+G1 X140.839 Y136.792 E.27395 ; infill
+G1 X143.887 Y136.792 E.10317 ; infill
+G1 X159.139 Y163.208 E1.03249 ; infill
+G1 X156.135 Y163.208 E.10168 ; infill
+G1 X163.208 Y150.957 E.47883 ; infill
 G1 X163.208 Y151.31 E.01195 ; infill
-G1 X136.792 Y151.31 E.89415 F5429 ; infill
+G1 X136.792 Y151.31 E.89415 ; infill
 G1 X136.792 Y150.957 E.01195 ; infill
-G1 X143.865 Y163.208 E.47883 F5428 ; infill
-G1 X140.861 Y163.208 E.10168 F5427 ; infill
-G1 X156.112 Y136.792 E1.03247 F5426 ; infill
-G1 X151.524 Y136.792 E.1553 F5425 ; infill
-G1 X163.208 Y157.029 E.79097 F5424 ; infill
+G1 X143.865 Y163.208 E.47883 ; infill
+G1 X140.861 Y163.208 E.10168 ; infill
+G1 X156.112 Y136.792 E1.03247 ; infill
+G1 X151.524 Y136.792 E.1553 ; infill
+G1 X163.208 Y157.029 E.79097 ; infill
 G1 X163.208 Y157.924 E.03029 ; infill
-G1 X136.792 Y157.924 E.89415 F5423 ; infill
+G1 X136.792 Y157.924 E.89415 ; infill
 G1 X136.792 Y157.029 E.03029 ; infill
-G1 X148.476 Y136.792 E.79097 F5422 ; infill
-G1 X146.476 Y136.792 E.0677 F5421 ; infill
+G1 X148.476 Y136.792 E.79097 ; infill
+G1 X146.476 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.498 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.498 Y163.208 E.0677 F5420 ; infill
-G1 X163.208 Y137.73 E.99582 F5420 ; infill
+G1 X148.498 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.73 E.99582 ; infill
 G1 X163.208 Y138.083 E.01195 ; infill
-G1 X136.792 Y138.083 E.89415 F5418 ; infill
+G1 X136.792 Y138.083 E.89415 ; infill
 G1 X136.792 Y137.73 E.01195 ; infill
-G1 X151.502 Y163.208 E.99582 F5417 ; infill
-G1 X153.502 Y163.208 E.0677 F5416 ; infill
+G1 X151.502 Y163.208 E.99582 ; infill
+G1 X153.502 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:113
 ;Z:22.7
 ;HEIGHT:0.2
@@ -12466,38 +12315,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6053 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6052 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6050 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6049 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-M104 S229
-M104 S220
-G1 X163.961 Y163.961 E.84548 F6048 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6046 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6045 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6043 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6041 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6040 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6039 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6037 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6035 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6034 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
 M73 P71 R8
-G1 X135.225 Y135.225 E.89477 F6033 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6031 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12508,39 +12355,39 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.998 Y136.792 E.0677 F5394 ; infill
-G1 X163.208 Y144.084 E.28501 F5394 ; infill
+G1 X158.998 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.084 E.28501 ; infill
 G1 X163.208 Y144.555 E.01594 ; infill
-G1 X136.792 Y144.555 E.89415 F5394 ; infill
+G1 X136.792 Y144.555 E.89415 ; infill
 G1 X136.792 Y144.084 E.01594 ; infill
-G1 X141.002 Y136.792 E.28501 F5392 ; infill
-G1 X143.724 Y136.792 E.09214 F5392 ; infill
-G1 X158.975 Y163.208 E1.03247 F5391 ; infill
-G1 X156.298 Y163.208 E.09061 F5390 ; infill
-G1 X163.208 Y151.169 E.46986 F5390 ; infill
-G1 X136.792 Y151.169 E.89415 F5389 ; infill
-G1 X143.702 Y163.208 E.46986 F5388 ; infill
-G1 X141.025 Y163.208 E.09061 F5387 ; infill
+G1 X141.002 Y136.792 E.28501 ; infill
+G1 X143.724 Y136.792 E.09214 ; infill
+G1 X158.975 Y163.208 E1.03247 ; infill
+G1 X156.298 Y163.208 E.09061 ; infill
+G1 X163.208 Y151.169 E.46986 ; infill
+G1 X136.792 Y151.169 E.89415 ; infill
+G1 X143.702 Y163.208 E.46986 ; infill
+G1 X141.025 Y163.208 E.09061 ; infill
 M73 P71 R7
-G1 X156.276 Y136.792 E1.03247 F5387 ; infill
-G1 X151.361 Y136.792 E.16637 F5386 ; infill
-G1 X163.208 Y157.311 E.802 F5385 ; infill
+G1 X156.276 Y136.792 E1.03247 ; infill
+G1 X151.361 Y136.792 E.16637 ; infill
+G1 X163.208 Y157.311 E.802 ; infill
 G1 X163.208 Y157.783 E.01598 ; infill
-G1 X136.792 Y157.782 E.89415 F5384 ; infill
+G1 X136.792 Y157.782 E.89415 ; infill
 G1 X136.792 Y157.311 E.01594 ; infill
-G1 X148.639 Y136.792 E.802 F5383 ; infill
-G1 X146.639 Y136.792 E.0677 F5382 ; infill
+G1 X148.639 Y136.792 E.802 ; infill
+G1 X146.639 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.662 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.662 Y163.208 E.0677 F5382 ; infill
-G1 X163.208 Y137.942 E.98683 F5382 ; infill
-G1 X136.792 Y137.942 E.89415 F5380 ; infill
-G1 X151.338 Y163.208 E.98683 F5379 ; infill
-G1 X153.338 Y163.208 E.0677 F5378 ; infill
+G1 X148.662 Y163.208 E.0677 ; infill
+G1 X163.208 Y137.942 E.98683 ; infill
+G1 X136.792 Y137.942 E.89415 ; infill
+G1 X151.338 Y163.208 E.98683 ; infill
+G1 X153.338 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:114
 ;Z:22.9
 ;HEIGHT:0.2
@@ -12559,35 +12406,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6011 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6010 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6009 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6008 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6006 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6005 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6004 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6003 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6001 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6000 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5999 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5997 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5996 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5995 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5993 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5992 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12598,39 +12445,38 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.834 Y136.792 E.0677 F5359 ; infill
-G1 X163.208 Y144.414 E.29746 F5359 ; infill
-G1 X136.792 Y144.414 E.89415 F5359 ; infill
-G1 X141.166 Y136.792 E.29746 F5358 ; infill
-G1 X143.561 Y136.792 E.08107 F5357 ; infill
-G1 X158.812 Y163.208 E1.03247 F5357 ; infill
-G1 X156.462 Y163.208 E.07954 F5356 ; infill
-G1 X163.208 Y151.523 E.45671 F5356 ; infill
+G1 X158.834 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.414 E.29746 ; infill
+G1 X136.792 Y144.414 E.89415 ; infill
+G1 X141.166 Y136.792 E.29746 ; infill
+G1 X143.561 Y136.792 E.08107 ; infill
+G1 X158.812 Y163.208 E1.03247 ; infill
+G1 X156.462 Y163.208 E.07954 ; infill
+G1 X163.208 Y151.523 E.45671 ; infill
 G1 X163.208 Y151.027 E.01679 ; infill
-G1 X136.792 Y151.027 E.89415 F5355 ; infill
+G1 X136.792 Y151.027 E.89415 ; infill
 G1 X136.792 Y151.523 E.01679 ; infill
-M104 S228
-G1 X143.538 Y163.208 E.45671 F5354 ; infill
-G1 X141.188 Y163.208 E.07954 F5354 ; infill
-G1 X156.439 Y136.792 E1.03247 F5353 ; infill
-G1 X151.198 Y136.792 E.1774 F5352 ; infill
-G1 X163.208 Y157.641 E.81443 F5352 ; infill
-G1 X136.792 Y157.641 E.89415 F5351 ; infill
-G1 X148.802 Y136.792 E.81443 F5350 ; infill
-G1 X146.802 Y136.792 E.0677 F5349 ; infill
+G1 X143.538 Y163.208 E.45671 ; infill
+G1 X141.188 Y163.208 E.07954 ; infill
+G1 X156.439 Y136.792 E1.03247 ; infill
+G1 X151.198 Y136.792 E.1774 ; infill
+G1 X163.208 Y157.641 E.81443 ; infill
+G1 X136.792 Y157.641 E.89415 ; infill
+G1 X148.802 Y136.792 E.81443 ; infill
+G1 X146.802 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.825 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.825 Y163.208 E.0677 F5349 ; infill
-G1 X163.208 Y138.296 E.97369 F5349 ; infill
+G1 X148.825 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.296 E.97369 ; infill
 G1 X163.208 Y137.8 E.01679 ; infill
-G1 X136.792 Y137.8 E.89415 F5348 ; infill
+G1 X136.792 Y137.8 E.89415 ; infill
 G1 X136.792 Y138.296 E.01679 ; infill
-G1 X151.175 Y163.208 E.97369 F5346 ; infill
-G1 X153.175 Y163.208 E.0677 F5345 ; infill
+G1 X151.175 Y163.208 E.97369 ; infill
+G1 X153.175 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:115
 ;Z:23.1
 ;HEIGHT:0.2
@@ -12649,36 +12495,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5975 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5974 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5973 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5972 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5971 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5970 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5969 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5968 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M73 P72 R7
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5967 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5966 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5965 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5964 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5963 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5961 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5960 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5959 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12689,42 +12535,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.671 Y136.792 E.0677 F5330 ; infill
-G1 X163.208 Y144.65 E.30713 F5330 ; infill
+G1 X158.671 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.65 E.30713 ; infill
 G1 X163.208 Y144.272 E.01279 ; infill
-G1 X136.792 Y144.272 E.89415 F5330 ; infill
+G1 X136.792 Y144.272 E.89415 ; infill
 G1 X136.792 Y144.65 E.01279 ; infill
-G1 X141.329 Y136.792 E.30713 F5329 ; infill
-G1 X143.398 Y136.792 E.07003 F5329 ; infill
-G1 X158.649 Y163.208 E1.03247 F5328 ; infill
-G1 X156.625 Y163.208 E.06851 F5327 ; infill
-G1 X163.208 Y151.806 E.44565 F5327 ; infill
+G1 X141.329 Y136.792 E.30713 ; infill
+G1 X143.398 Y136.792 E.07003 ; infill
+G1 X158.649 Y163.208 E1.03247 ; infill
+G1 X156.625 Y163.208 E.06851 ; infill
+G1 X163.208 Y151.806 E.44565 ; infill
 G1 X163.208 Y150.886 E.03114 ; infill
-G1 X136.792 Y150.886 E.89415 F5327 ; infill
+G1 X136.792 Y150.886 E.89415 ; infill
 G1 X136.792 Y151.806 E.03114 ; infill
-G1 X143.375 Y163.208 E.44565 F5326 ; infill
-G1 X141.351 Y163.208 E.06851 F5325 ; infill
-G1 X156.602 Y136.792 E1.03247 F5325 ; infill
-G1 X151.034 Y136.792 E.18847 F5324 ; infill
-G1 X163.208 Y157.877 E.82412 F5324 ; infill
+G1 X143.375 Y163.208 E.44565 ; infill
+G1 X141.351 Y163.208 E.06851 ; infill
+G1 X156.602 Y136.792 E1.03247 ; infill
+G1 X151.034 Y136.792 E.18847 ; infill
+G1 X163.208 Y157.877 E.82412 ; infill
 G1 X163.208 Y157.5 E.01276 ; infill
-G1 X136.792 Y157.5 E.89415 F5323 ; infill
+G1 X136.792 Y157.5 E.89415 ; infill
 G1 X136.792 Y157.877 E.01276 ; infill
-G1 X148.966 Y136.792 E.82412 F5322 ; infill
-G1 X146.966 Y136.792 E.0677 F5321 ; infill
+G1 X148.966 Y136.792 E.82412 ; infill
+G1 X146.966 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X146.988 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X148.988 Y163.208 E.0677 F5321 ; infill
-G1 X163.208 Y138.579 E.96264 F5321 ; infill
+G1 X148.988 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.579 E.96264 ; infill
 G1 X163.208 Y137.659 E.03114 ; infill
-G1 X136.792 Y137.659 E.89415 F5320 ; infill
+G1 X136.792 Y137.659 E.89415 ; infill
 G1 X136.792 Y138.579 E.03114 ; infill
-G1 X151.012 Y163.208 E.96264 F5319 ; infill
-G1 X153.012 Y163.208 E.0677 F5318 ; infill
+G1 X151.012 Y163.208 E.96264 ; infill
+G1 X153.012 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:116
 ;Z:23.3
 ;HEIGHT:0.2
@@ -12743,37 +12589,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5945 ; perimeter
-M104 S223
-G1 X136.446 Y163.554 E.82083 F5944 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5943 ; perimeter
-M104 S227
-G1 X163.494 Y136.446 E.81901 F5943 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5942 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5941 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5940 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5939 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5938 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5937 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5936 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5936 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5935 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5934 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5933 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5932 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12784,42 +12628,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X158.508 Y136.792 E.0677 F5306 ; infill
-G1 X163.208 Y144.933 E.31819 F5306 ; infill
+G1 X158.508 Y136.792 E.0677 ; infill
+G1 X163.208 Y144.933 E.31819 ; infill
 G1 X163.208 Y144.131 E.02715 ; infill
-G1 X136.792 Y144.131 E.89415 F5305 ; infill
+G1 X136.792 Y144.131 E.89415 ; infill
 G1 X136.792 Y144.933 E.02715 ; infill
-G1 X141.492 Y136.792 E.31819 F5305 ; infill
-G1 X143.234 Y136.792 E.05896 F5305 ; infill
-G1 X158.485 Y163.208 E1.03247 F5305 ; infill
-G1 X156.788 Y163.208 E.05744 F5304 ; infill
-G1 X163.208 Y152.089 E.4346 F5303 ; infill
-G1 X163.208 Y150.745 E.04549 F5303 ; infill
-G1 X136.792 Y150.745 E.89415 F5303 ; infill
-G1 X136.792 Y152.089 E.04549 F5303 ; infill
-G1 X143.212 Y163.208 E.4346 F5302 ; infill
-G1 X141.515 Y163.208 E.05744 F5302 ; infill
-G1 X156.766 Y136.792 E1.03247 F5302 ; infill
-G1 X150.871 Y136.792 E.19954 F5301 ; infill
-G1 X163.208 Y158.16 E.83518 F5301 ; infill
+G1 X141.492 Y136.792 E.31819 ; infill
+G1 X143.234 Y136.792 E.05896 ; infill
+G1 X158.485 Y163.208 E1.03247 ; infill
+G1 X156.788 Y163.208 E.05744 ; infill
+G1 X163.208 Y152.089 E.4346 ; infill
+G1 X163.208 Y150.745 E.04549 ; infill
+G1 X136.792 Y150.745 E.89415 ; infill
+G1 X136.792 Y152.089 E.04549 ; infill
+G1 X143.212 Y163.208 E.4346 ; infill
+G1 X141.515 Y163.208 E.05744 ; infill
+G1 X156.766 Y136.792 E1.03247 ; infill
+G1 X150.871 Y136.792 E.19954 ; infill
+G1 X163.208 Y158.16 E.83518 ; infill
 G1 X163.208 Y157.358 E.02715 ; infill
-G1 X136.792 Y157.358 E.89415 F5300 ; infill
+G1 X136.792 Y157.358 E.89415 ; infill
 G1 X136.792 Y158.16 E.02715 ; infill
-G1 X149.129 Y136.792 E.83518 F5299 ; infill
-G1 X147.129 Y136.792 E.0677 F5298 ; infill
+G1 X149.129 Y136.792 E.83518 ; infill
+G1 X147.129 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X147.151 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X149.151 Y163.208 E.0677 F5299 ; infill
-G1 X163.208 Y138.861 E.95161 F5299 ; infill
-G1 X163.208 Y137.517 E.04549 F5298 ; infill
-G1 X136.792 Y137.517 E.89415 F5298 ; infill
-G1 X136.792 Y138.861 E.04549 F5298 ; infill
-G1 X150.849 Y163.208 E.95161 F5297 ; infill
-G1 X152.849 Y163.208 E.0677 F5296 ; infill
+G1 X149.151 Y163.208 E.0677 ; infill
+G1 X163.208 Y138.861 E.95161 ; infill
+G1 X163.208 Y137.517 E.04549 ; infill
+G1 X136.792 Y137.517 E.89415 ; infill
+G1 X136.792 Y138.861 E.04549 ; infill
+G1 X150.849 Y163.208 E.95161 ; infill
+G1 X152.849 Y163.208 E.0677 ; infill
 M73 P73 R7
 ;LAYER_CHANGE:117
 ;Z:23.5
@@ -12839,35 +12683,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5921 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5920 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5919 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5919 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5918 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5918 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5917 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5916 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5915 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5915 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5914 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5913 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5913 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5912 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5911 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5911 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12878,14 +12722,13 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.708 Y136.792 E.0677 F5286 ; infill
-M104 S226
-G1 X163.208 Y158.443 E.84623 F5287 ; infill
-G1 X163.208 Y157.217 E.0415 F5286 ; infill
-G1 X136.792 Y157.217 E.89415 F5286 ; infill
-G1 X136.792 Y158.443 E.0415 F5285 ; infill
-G1 X149.292 Y136.792 E.84623 F5286 ; infill
-G1 X147.292 Y136.792 E.0677 F5285 ; infill
+G1 X150.708 Y136.792 E.0677 ; infill
+G1 X163.208 Y158.443 E.84623 ; infill
+G1 X163.208 Y157.217 E.0415 ; infill
+G1 X136.792 Y157.217 E.89415 ; infill
+G1 X136.792 Y158.443 E.0415 ; infill
+G1 X149.292 Y136.792 E.84623 ; infill
+G1 X147.292 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X138.209 Y136.792 F30000 ; move to first infill point
@@ -12894,35 +12737,35 @@ M204 S6000 ; adjust acceleration
 G1 F8843
 G1 X136.792 Y136.792 E.04796 ; infill
 G1 X136.792 Y137.376 E.01977 ; infill
-G1 X163.208 Y137.376 E.89415 F5285 ; infill
-G1 X163.208 Y139.144 E.05984 F5284 ; infill
-G1 X149.315 Y163.208 E.94054 F5284 ; infill
-G1 X150.685 Y163.208 E.04637 F5284 ; infill
-G1 X136.792 Y139.144 E.94054 F5284 ; infill
-G1 X136.792 Y141.144 E.0677 F5283 ; infill
+G1 X163.208 Y137.376 E.89415 ; infill
+G1 X163.208 Y139.144 E.05984 ; infill
+G1 X149.315 Y163.208 E.94054 ; infill
+G1 X150.685 Y163.208 E.04637 ; infill
+G1 X136.792 Y139.144 E.94054 ; infill
+G1 X136.792 Y141.144 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y148.603 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.603 E.0677 F5283 ; infill
-G1 X163.208 Y150.603 E.89415 F5283 ; infill
-G1 X163.208 Y152.371 E.05984 F5283 ; infill
-G1 X156.951 Y163.208 E.42357 F5282 ; infill
-G1 X158.322 Y163.208 E.04641 F5282 ; infill
-G1 X143.071 Y136.792 E1.03247 F5282 ; infill
-G1 X141.656 Y136.792 E.0479 F5281 ; infill
-G1 X136.792 Y145.216 E.32926 F5281 ; infill
-G1 X136.792 Y143.99 E.0415 F5281 ; infill
-G1 X163.208 Y143.99 E.89415 F5282 ; infill
-G1 X163.208 Y145.216 E.0415 F5280 ; infill
-G1 X158.345 Y136.792 E.32924 F5281 ; infill
-G1 X156.929 Y136.792 E.04793 F5280 ; infill
-G1 X141.678 Y163.208 E1.03247 F5281 ; infill
-G1 X143.049 Y163.208 E.04641 F5279 ; infill
-G1 X136.792 Y152.372 E.42354 F5280 ; infill
-G1 X136.792 Y154.372 E.0677 F5279 ; infill
+G1 X136.792 Y150.603 E.0677 ; infill
+G1 X163.208 Y150.603 E.89415 ; infill
+G1 X163.208 Y152.371 E.05984 ; infill
+G1 X156.951 Y163.208 E.42357 ; infill
+G1 X158.322 Y163.208 E.04641 ; infill
+G1 X143.071 Y136.792 E1.03247 ; infill
+G1 X141.656 Y136.792 E.0479 ; infill
+G1 X136.792 Y145.216 E.32926 ; infill
+G1 X136.792 Y143.99 E.0415 ; infill
+G1 X163.208 Y143.99 E.89415 ; infill
+G1 X163.208 Y145.216 E.0415 ; infill
+G1 X158.345 Y136.792 E.32924 ; infill
+G1 X156.929 Y136.792 E.04793 ; infill
+G1 X141.678 Y163.208 E1.03247 ; infill
+G1 X143.049 Y163.208 E.04641 ; infill
+G1 X136.792 Y152.372 E.42354 ; infill
+G1 X136.792 Y154.372 E.0677 ; infill
 ;LAYER_CHANGE:118
 ;Z:23.7
 ;HEIGHT:0.2
@@ -12941,35 +12784,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5902 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5902 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5901 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5901 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5900 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5900 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5899 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5899 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5898 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5898 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5897 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5897 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5896 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5895 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5895 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5895 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -12980,44 +12823,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y136.792 E.05274 F5272 ; infill
+G1 X136.792 Y136.792 E.05274 ; infill
 G1 X136.792 Y137.234 E.01496 ; infill
-G1 X163.208 Y137.235 E.89415 F5272 ; infill
-G1 X163.208 Y139.427 E.0742 F5271 ; infill
-G1 X149.478 Y163.208 E.92949 F5272 ; infill
-G1 X150.522 Y163.208 E.03534 F5271 ; infill
-G1 X136.792 Y139.427 E.92949 F5271 ; infill
-G1 X136.792 Y141.427 E.0677 F5270 ; infill
+G1 X163.208 Y137.235 E.89415 ; infill
+G1 X163.208 Y139.427 E.0742 ; infill
+G1 X149.478 Y163.208 E.92949 ; infill
+G1 X150.522 Y163.208 E.03534 ; infill
+G1 X136.792 Y139.427 E.92949 ; infill
+G1 X136.792 Y141.427 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y148.462 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.462 E.0677 F5270 ; infill
-G1 X163.208 Y150.462 E.89415 F5271 ; infill
-G1 X163.208 Y152.654 E.0742 F5270 ; infill
-G1 X157.115 Y163.208 E.4125 F5270 ; infill
-G1 X158.159 Y163.208 E.03534 F5270 ; infill
+G1 X136.792 Y150.462 E.0677 ; infill
+G1 X163.208 Y150.462 E.89415 ; infill
+G1 X163.208 Y152.654 E.0742 ; infill
+G1 X157.115 Y163.208 E.4125 ; infill
+G1 X158.159 Y163.208 E.03534 ; infill
 M73 P74 R7
-G1 X142.908 Y136.792 E1.03247 F5270 ; infill
-G1 X141.819 Y136.792 E.03686 F5269 ; infill
-G1 X136.792 Y145.498 E.34029 F5269 ; infill
-G1 X136.792 Y143.848 E.05585 F5269 ; infill
-G1 X163.208 Y143.848 E.89415 F5269 ; infill
-G1 X163.208 Y145.498 E.05585 F5269 ; infill
-G1 X158.181 Y136.792 E.34029 F5269 ; infill
-G1 X157.092 Y136.792 E.03686 F5269 ; infill
-G1 X141.841 Y163.208 E1.03247 F5269 ; infill
-G1 X142.885 Y163.208 E.03534 F5268 ; infill
-G1 X136.792 Y152.655 E.41247 F5268 ; infill
-G1 X136.792 Y157.075 E.14961 F5268 ; infill
-G1 X163.208 Y157.075 E.89415 F5268 ; infill
-G1 X163.208 Y158.726 E.05588 F5267 ; infill
-G1 X150.544 Y136.792 E.8573 F5267 ; infill
-G1 X149.455 Y136.792 E.03686 F5267 ; infill
-G1 X136.792 Y158.726 E.85729 F5267 ; infill
-G1 X136.792 Y160.726 E.0677 F5266 ; infill
+G1 X142.908 Y136.792 E1.03247 ; infill
+G1 X141.819 Y136.792 E.03686 ; infill
+G1 X136.792 Y145.498 E.34029 ; infill
+G1 X136.792 Y143.848 E.05585 ; infill
+G1 X163.208 Y143.848 E.89415 ; infill
+G1 X163.208 Y145.498 E.05585 ; infill
+G1 X158.181 Y136.792 E.34029 ; infill
+G1 X157.092 Y136.792 E.03686 ; infill
+G1 X141.841 Y163.208 E1.03247 ; infill
+G1 X142.885 Y163.208 E.03534 ; infill
+G1 X136.792 Y152.655 E.41247 ; infill
+G1 X136.792 Y157.075 E.14961 ; infill
+G1 X163.208 Y157.075 E.89415 ; infill
+G1 X163.208 Y158.726 E.05588 ; infill
+G1 X150.544 Y136.792 E.8573 ; infill
+G1 X149.455 Y136.792 E.03686 ; infill
+G1 X136.792 Y158.726 E.85729 ; infill
+G1 X136.792 Y160.726 E.0677 ; infill
 ;LAYER_CHANGE:119
 ;Z:23.9
 ;HEIGHT:0.2
@@ -13036,36 +12879,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5887 ; perimeter
-M104 S225
-G1 X136.446 Y163.554 E.82083 F5887 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5887 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5886 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5886 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5885 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5885 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5884 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5884 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5883 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5883 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5882 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5882 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5881 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5881 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5880 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13076,49 +12918,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.008 E.86833 F5260 ; infill
-G1 X163.208 Y156.934 E.0702 F5259 ; infill
-G1 X136.792 Y156.934 E.89415 F5260 ; infill
-G1 X136.792 Y159.008 E.0702 F5259 ; infill
-G1 X149.619 Y136.792 E.86833 F5259 ; infill
+G1 X163.208 Y159.008 E.86833 ; infill
+G1 X163.208 Y156.934 E.0702 ; infill
+G1 X136.792 Y156.934 E.89415 ; infill
+G1 X136.792 Y159.008 E.0702 ; infill
+G1 X149.619 Y136.792 E.86833 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.744 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.996 Y163.208 E1.03249 F5259 ; infill
+G1 X157.996 Y163.208 E1.03249 ; infill
 G1 X157.278 Y163.208 E.0243 ; infill
-G1 X163.208 Y152.937 E.40145 F5258 ; infill
-G1 X163.208 Y150.32 E.08858 F5258 ; infill
-G1 X136.792 Y150.32 E.89415 F5258 ; infill
-G1 X136.792 Y152.937 E.08858 F5257 ; infill
-G1 X142.722 Y163.208 E.40145 F5257 ; infill
+G1 X163.208 Y152.937 E.40145 ; infill
+G1 X163.208 Y150.32 E.08858 ; infill
+G1 X136.792 Y150.32 E.89415 ; infill
+G1 X136.792 Y152.937 E.08858 ; infill
+G1 X142.722 Y163.208 E.40145 ; infill
 G1 X142.005 Y163.208 E.02427 ; infill
-G1 X157.256 Y136.792 E1.03247 F5257 ; infill
+G1 X157.256 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X158.018 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y145.781 E.35134 F5256 ; infill
-M104 S219
-G1 X163.208 Y143.707 E.0702 F5256 ; infill
-G1 X136.792 Y143.707 E.89415 F5257 ; infill
-G1 X136.792 Y145.781 E.0702 F5256 ; infill
-G1 X141.982 Y136.792 E.35134 F5256 ; infill
+G1 X163.208 Y145.781 E.35134 ; infill
+G1 X163.208 Y143.707 E.0702 ; infill
+G1 X136.792 Y143.707 E.89415 ; infill
+G1 X136.792 Y145.781 E.0702 ; infill
+G1 X141.982 Y136.792 E.35134 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y139.093 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y137.093 E.0677 F5255 ; infill
-G1 X163.208 Y137.093 E.89415 F5256 ; infill
-G1 X163.208 Y139.71 E.08858 F5255 ; infill
-G1 X149.641 Y163.208 E.91843 F5255 ; infill
+G1 X136.792 Y137.093 E.0677 ; infill
+G1 X163.208 Y137.093 E.89415 ; infill
+G1 X163.208 Y139.71 E.08858 ; infill
+G1 X149.641 Y163.208 E.91843 ; infill
 G1 X150.359 Y163.208 E.0243 ; infill
-G1 X136.792 Y139.71 E.91843 F5255 ; infill
-G1 X136.792 Y141.71 E.0677 F5254 ; infill
+G1 X136.792 Y139.71 E.91843 ; infill
+G1 X136.792 Y141.71 E.0677 ; infill
 ;LAYER_CHANGE:120
 ;Z:24.1
 ;HEIGHT:0.2
@@ -13137,37 +12978,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5874 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5874 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5873 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
 M73 P74 R6
-G1 X163.494 Y136.446 E.81901 F5873 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5873 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5872 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5872 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5871 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5871 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5870 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5870 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5870 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5869 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5869 ; perimeter
-M104 S224
-G1 X135.225 Y135.225 E.89477 F5868 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5868 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 M73 P75 R6
 G1 E-2 F2400 ; retract
@@ -13179,49 +13019,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.291 E.87938 F5249 ; infill
-G1 X163.208 Y156.793 E.08455 F5248 ; infill
-G1 X136.792 Y156.793 E.89415 F5248 ; infill
-G1 X136.792 Y159.291 E.08455 F5248 ; infill
-G1 X149.782 Y136.792 E.87938 F5248 ; infill
+G1 X163.208 Y159.291 E.87938 ; infill
+G1 X163.208 Y156.793 E.08455 ; infill
+G1 X136.792 Y156.793 E.89415 ; infill
+G1 X136.792 Y159.291 E.08455 ; infill
+G1 X149.782 Y136.792 E.87938 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.581 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.832 Y163.208 E1.03247 F5248 ; infill
+G1 X157.832 Y163.208 E1.03247 ; infill
 G1 X157.441 Y163.208 E.01323 ; infill
-G1 X163.208 Y153.22 E.39039 F5247 ; infill
-G1 X163.208 Y150.179 E.10293 F5247 ; infill
-G1 X136.792 Y150.179 E.89415 F5247 ; infill
-G1 X136.792 Y153.22 E.10293 F5246 ; infill
-G1 X142.559 Y163.208 E.39039 F5246 ; infill
+G1 X163.208 Y153.22 E.39039 ; infill
+G1 X163.208 Y150.179 E.10293 ; infill
+G1 X136.792 Y150.179 E.89415 ; infill
+G1 X136.792 Y153.22 E.10293 ; infill
+G1 X142.559 Y163.208 E.39039 ; infill
 G1 X142.168 Y163.208 E.01323 ; infill
-G1 X157.419 Y136.792 E1.03247 F5247 ; infill
+G1 X157.419 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.855 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y146.064 E.3624 F5246 ; infill
-G1 X163.208 Y143.565 E.08459 F5245 ; infill
-M104 S222
-G1 X136.792 Y143.565 E.89415 F5246 ; infill
-G1 X136.792 Y146.064 E.08459 F5245 ; infill
-G1 X142.145 Y136.792 E.3624 F5245 ; infill
+G1 X163.208 Y146.064 E.3624 ; infill
+G1 X163.208 Y143.565 E.08459 ; infill
+G1 X136.792 Y143.565 E.89415 ; infill
+G1 X136.792 Y146.064 E.08459 ; infill
+G1 X142.145 Y136.792 E.3624 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y138.952 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y136.952 E.0677 F5245 ; infill
-G1 X163.208 Y136.952 E.89415 F5245 ; infill
-G1 X163.208 Y139.993 E.10293 F5245 ; infill
-G1 X149.805 Y163.208 E.90736 F5245 ; infill
+G1 X136.792 Y136.952 E.0677 ; infill
+G1 X163.208 Y136.952 E.89415 ; infill
+G1 X163.208 Y139.993 E.10293 ; infill
+G1 X149.805 Y163.208 E.90736 ; infill
 G1 X150.195 Y163.208 E.0132 ; infill
-G1 X136.792 Y139.993 E.90736 F5244 ; infill
-G1 X136.792 Y141.993 E.0677 F5243 ; infill
+G1 X136.792 Y139.993 E.90736 ; infill
+G1 X136.792 Y141.993 E.0677 ; infill
 ;LAYER_CHANGE:121
 ;Z:24.3
 ;HEIGHT:0.2
@@ -13240,35 +13079,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5862 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5862 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5862 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5861 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5861 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5860 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5860 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5860 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5860 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5859 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5859 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5858 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5858 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5858 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5857 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5857 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13279,35 +13118,35 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.574 E.89045 F5239 ; infill
-G1 X163.208 Y156.651 E.09894 F5238 ; infill
-G1 X136.792 Y156.651 E.89415 F5238 ; infill
-G1 X136.792 Y159.574 E.09894 F5238 ; infill
-G1 X149.945 Y136.792 E.89044 F5238 ; infill
+G1 X163.208 Y159.574 E.89045 ; infill
+G1 X163.208 Y156.651 E.09894 ; infill
+G1 X136.792 Y156.651 E.89415 ; infill
+G1 X136.792 Y159.574 E.09894 ; infill
+G1 X149.945 Y136.792 E.89044 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.418 Y136.792 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.669 Y163.208 E1.03247 F5238 ; infill
+G1 X157.669 Y163.208 E1.03247 ; infill
 G1 X157.605 Y163.208 E.00217 ; infill
-G1 X163.208 Y153.503 E.37932 F5237 ; infill
-G1 X163.208 Y150.038 E.11729 F5237 ; infill
-G1 X136.792 Y150.037 E.89415 F5237 ; infill
-G1 X136.792 Y153.503 E.11732 F5237 ; infill
-G1 X142.395 Y163.208 E.37932 F5237 ; infill
+G1 X163.208 Y153.503 E.37932 ; infill
+G1 X163.208 Y150.038 E.11729 ; infill
+G1 X136.792 Y150.037 E.89415 ; infill
+G1 X136.792 Y153.503 E.11732 ; infill
+G1 X142.395 Y163.208 E.37932 ; infill
 G1 X142.331 Y163.208 E.00217 ; infill
-G1 X157.582 Y136.792 E1.03247 F5237 ; infill
+G1 X157.582 Y136.792 E1.03247 ; infill
 M204 S15000 ; adjust acceleration
 G1 X157.691 Y136.792 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y146.347 E.37347 F5236 ; infill
-G1 X163.208 Y143.424 E.09894 F5236 ; infill
-G1 X136.792 Y143.424 E.89415 F5236 ; infill
-G1 X136.792 Y146.347 E.09894 F5236 ; infill
-G1 X142.309 Y136.792 E.37347 F5236 ; infill
+G1 X163.208 Y146.347 E.37347 ; infill
+G1 X163.208 Y143.424 E.09894 ; infill
+G1 X136.792 Y143.424 E.89415 ; infill
+G1 X136.792 Y146.347 E.09894 ; infill
+G1 X142.309 Y136.792 E.37347 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y138.276 F30000 ; move to first infill point
@@ -13315,12 +13154,12 @@ G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
 G1 X136.792 Y136.81 E.04962 ; infill
-G1 X163.208 Y136.81 E.89415 F5235 ; infill
-G1 X163.208 Y140.276 E.11732 F5235 ; infill
-G1 X149.968 Y163.208 E.89631 F5235 ; infill
+G1 X163.208 Y136.81 E.89415 ; infill
+G1 X163.208 Y140.276 E.11732 ; infill
+G1 X149.968 Y163.208 E.89631 ; infill
 G1 X150.032 Y163.208 E.00217 ; infill
-G1 X136.792 Y140.276 E.89631 F5235 ; infill
-G1 X136.792 Y138.276 E.0677 F5234 ; infill
+G1 X136.792 Y140.276 E.89631 ; infill
+G1 X136.792 Y138.276 E.0677 ; infill
 ;LAYER_CHANGE:122
 ;Z:24.5
 ;HEIGHT:0.2
@@ -13339,36 +13178,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5851 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5851 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5851 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5851 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5850 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5850 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5850 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5849 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M73 P76 R6
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5849 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5849 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5849 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5848 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5848 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5847 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5847 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5847 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13379,49 +13218,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y159.857 E.0677 F5230 ; infill
-M104 S221
-G1 X149.891 Y136.792 E.90151 F5230 ; infill
+G1 X163.208 Y159.857 E.0677 ; infill
+G1 X149.891 Y136.792 E.90151 ; infill
 G1 X150.109 Y136.792 E.00738 ; infill
-G1 X136.792 Y159.857 E.90151 F5230 ; infill
-G1 X136.792 Y163.123 E.11055 F5229 ; infill
-G1 X163.208 Y163.123 E.89415 F5229 ; infill
-G1 X163.208 Y161.123 E.0677 F5228 ; infill
+G1 X136.792 Y159.857 E.90151 ; infill
+G1 X136.792 Y163.123 E.11055 ; infill
+G1 X163.208 Y163.123 E.89415 ; infill
+G1 X163.208 Y161.123 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.768 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y153.786 E.36826 F5229 ; infill
-G1 X163.208 Y156.51 E.0922 F5229 ; infill
-G1 X136.792 Y156.51 E.89415 F5229 ; infill
-G1 X136.792 Y153.786 E.0922 F5228 ; infill
-G1 X142.232 Y163.208 E.36826 F5228 ; infill
+G1 X163.208 Y153.786 E.36826 ; infill
+G1 X163.208 Y156.51 E.0922 ; infill
+G1 X136.792 Y156.51 E.89415 ; infill
+G1 X136.792 Y153.786 E.0922 ; infill
+G1 X142.232 Y163.208 E.36826 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.494 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.745 Y136.792 E1.03247 F5228 ; infill
+G1 X157.745 Y136.792 E1.03247 ; infill
 G1 X157.528 Y136.792 E.00735 ; infill
-G1 X163.208 Y146.63 E.38452 F5228 ; infill
-G1 X163.208 Y149.896 E.11055 F5228 ; infill
-G1 X136.792 Y149.896 E.89415 F5228 ; infill
-G1 X136.792 Y146.63 E.11055 F5227 ; infill
-G1 X142.472 Y136.792 E.38452 F5227 ; infill
+G1 X163.208 Y146.63 E.38452 ; infill
+G1 X163.208 Y149.896 E.11055 ; infill
+G1 X136.792 Y149.896 E.89415 ; infill
+G1 X136.792 Y146.63 E.11055 ; infill
+G1 X142.472 Y136.792 E.38452 ; infill
 G1 X142.254 Y136.792 E.00738 ; infill
-G1 X157.506 Y163.208 E1.03249 F5228 ; infill
+G1 X157.506 Y163.208 E1.03249 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.131 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.559 E.88525 F5227 ; infill
-G1 X163.208 Y143.282 E.09217 F5227 ; infill
-G1 X136.792 Y143.282 E.89415 F5227 ; infill
-G1 X136.792 Y140.559 E.09217 F5226 ; infill
-G1 X149.869 Y163.208 E.88525 F5227 ; infill
+G1 X163.208 Y140.559 E.88525 ; infill
+G1 X163.208 Y143.282 E.09217 ; infill
+G1 X136.792 Y143.282 E.89415 ; infill
+G1 X136.792 Y140.559 E.09217 ; infill
+G1 X149.869 Y163.208 E.88525 ; infill
 ;LAYER_CHANGE:123
 ;Z:24.7
 ;HEIGHT:0.2
@@ -13440,35 +13278,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5842 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5842 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5842 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5841 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5841 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5841 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5841 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5840 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5840 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5840 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5840 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5839 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5839 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5839 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5839 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5838 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13479,48 +13317,48 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y160.14 E.0677 F5222 ; infill
-G1 X149.728 Y136.792 E.91256 F5223 ; infill
+G1 X163.208 Y160.14 E.0677 ; infill
+G1 X149.728 Y136.792 E.91256 ; infill
 G1 X150.272 Y136.792 E.01841 ; infill
-G1 X136.792 Y160.14 E.91256 F5222 ; infill
-G1 X136.792 Y162.982 E.0962 F5222 ; infill
-G1 X163.208 Y162.982 E.89415 F5222 ; infill
-G1 X163.208 Y160.982 E.0677 F5221 ; infill
+G1 X136.792 Y160.14 E.91256 ; infill
+G1 X136.792 Y162.982 E.0962 ; infill
+G1 X163.208 Y162.982 E.89415 ; infill
+G1 X163.208 Y160.982 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X157.931 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y154.068 E.35724 F5221 ; infill
-G1 X163.208 Y156.368 E.07785 F5221 ; infill
-G1 X136.792 Y156.368 E.89415 F5221 ; infill
-G1 X136.792 Y154.069 E.07782 F5220 ; infill
-G1 X142.069 Y163.208 E.35721 F5221 ; infill
+G1 X163.208 Y154.068 E.35724 ; infill
+G1 X163.208 Y156.368 E.07785 ; infill
+G1 X136.792 Y156.368 E.89415 ; infill
+G1 X136.792 Y154.069 E.07782 ; infill
+G1 X142.069 Y163.208 E.35721 ; infill
 M204 S15000 ; adjust acceleration
 G1 X142.658 Y163.208 F30000 ; move to first infill point
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X157.909 Y136.792 E1.03247 F5221 ; infill
+G1 X157.909 Y136.792 E1.03247 ; infill
 G1 X157.365 Y136.792 E.01841 ; infill
-G1 X163.208 Y146.913 E.39558 F5220 ; infill
-G1 X163.208 Y149.755 E.0962 F5220 ; infill
-G1 X136.792 Y149.755 E.89415 F5220 ; infill
-G1 X136.792 Y146.913 E.0962 F5220 ; infill
-G1 X142.635 Y136.792 E.39558 F5220 ; infill
+G1 X163.208 Y146.913 E.39558 ; infill
+G1 X163.208 Y149.755 E.0962 ; infill
+G1 X136.792 Y149.755 E.89415 ; infill
+G1 X136.792 Y146.913 E.0962 ; infill
+G1 X142.635 Y136.792 E.39558 ; infill
 G1 X142.091 Y136.792 E.01841 ; infill
-G1 X157.342 Y163.208 E1.03247 F5220 ; infill
+G1 X157.342 Y163.208 E1.03247 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X150.295 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y140.841 E.87421 F5220 ; infill
-G1 X163.208 Y143.141 E.07785 F5219 ; infill
-G1 X136.792 Y143.141 E.89415 F5219 ; infill
-G1 X136.792 Y140.841 E.07785 F5219 ; infill
-G1 X149.705 Y163.208 E.87421 F5219 ; infill
+G1 X163.208 Y140.841 E.87421 ; infill
+G1 X163.208 Y143.141 E.07785 ; infill
+G1 X136.792 Y143.141 E.89415 ; infill
+G1 X136.792 Y140.841 E.07785 ; infill
+G1 X149.705 Y163.208 E.87421 ; infill
 ;LAYER_CHANGE:124
 ;Z:24.9
 ;HEIGHT:0.2
@@ -13540,36 +13378,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5834 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5834 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5834 ; perimeter
-M104 S220
-G1 X163.494 Y136.446 E.81901 F5833 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5833 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5833 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5833 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5832 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5832 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5832 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5832 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5831 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5831 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5831 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5831 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5830 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13580,50 +13417,50 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y163.208 E.05528 F5215 ; infill
+G1 X163.208 Y163.208 E.05528 ; infill
 G1 X163.208 Y162.841 E.01242 ; infill
-G1 X136.792 Y162.84 E.89415 F5215 ; infill
-G1 X136.792 Y160.423 E.08181 F5215 ; infill
-G1 X150.435 Y136.792 E.92362 F5215 ; infill
+G1 X136.792 Y162.84 E.89415 ; infill
+G1 X136.792 Y160.423 E.08181 ; infill
+G1 X150.435 Y136.792 E.92362 ; infill
 G1 X149.565 Y136.792 E.02945 ; infill
-G1 X163.208 Y160.423 E.92362 F5215 ; infill
-G1 X163.208 Y158.423 E.0677 F5214 ; infill
+G1 X163.208 Y160.423 E.92362 ; infill
+G1 X163.208 Y158.423 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y145 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y143 E.0677 F5214 ; infill
-G1 X136.792 Y143 E.89415 F5214 ; infill
-G1 X136.792 Y141.124 E.0635 F5214 ; infill
-G1 X149.542 Y163.208 E.86315 F5214 ; infill
+G1 X163.208 Y143 E.0677 ; infill
+G1 X136.792 Y143 E.89415 ; infill
+G1 X136.792 Y141.124 E.0635 ; infill
+G1 X149.542 Y163.208 E.86315 ; infill
 G1 X150.458 Y163.208 E.03101 ; infill
-G1 X163.208 Y141.124 E.86315 F5214 ; infill
-G1 X163.208 Y139.124 E.0677 F5213 ; infill
+G1 X163.208 Y141.124 E.86315 ; infill
+G1 X163.208 Y139.124 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y145.195 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y147.195 E.0677 F5213 ; infill
-G1 X142.798 Y136.792 E.4066 F5214 ; infill
+G1 X136.792 Y147.195 E.0677 ; infill
+G1 X142.798 Y136.792 E.4066 ; infill
 G1 X141.928 Y136.792 E.02945 ; infill
-G1 X157.179 Y163.208 E1.03247 F5214 ; infill
+G1 X157.179 Y163.208 E1.03247 ; infill
 G1 X158.094 Y163.208 E.03097 ; infill
-G1 X163.208 Y154.351 E.34618 F5213 ; infill
-G1 X163.208 Y156.227 E.0635 F5213 ; infill
-G1 X136.792 Y156.227 E.89415 F5213 ; infill
-G1 X136.792 Y154.352 E.06347 F5212 ; infill
-G1 X141.905 Y163.208 E.34614 F5213 ; infill
+G1 X163.208 Y154.351 E.34618 ; infill
+G1 X163.208 Y156.227 E.0635 ; infill
+G1 X136.792 Y156.227 E.89415 ; infill
+G1 X136.792 Y154.352 E.06347 ; infill
+G1 X141.905 Y163.208 E.34614 ; infill
 G1 X142.821 Y163.208 E.03101 ; infill
-G1 X158.072 Y136.792 E1.03247 F5213 ; infill
+G1 X158.072 Y136.792 E1.03247 ; infill
 G1 X157.201 Y136.792 E.02948 ; infill
-G1 X163.208 Y147.196 E.40665 F5213 ; infill
-G1 X163.208 Y149.613 E.08181 F5213 ; infill
-G1 X136.792 Y149.613 E.89415 F5213 ; infill
-G1 X136.792 Y151.613 E.0677 F5212 ; infill
+G1 X163.208 Y147.196 E.40665 ; infill
+G1 X163.208 Y149.613 E.08181 ; infill
+G1 X136.792 Y149.613 E.89415 ; infill
+G1 X136.792 Y151.613 E.0677 ; infill
 ;LAYER_CHANGE:125
 ;Z:25.1
 ;HEIGHT:0.2
@@ -13642,35 +13479,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5827 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5827 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5827 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5826 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5826 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5826 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5826 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5826 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5826 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5826 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5826 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5826 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5826 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5826 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5825 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5825 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13681,53 +13518,51 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y163.208 E.0505 F5211 ; infill
+G1 X163.208 Y163.208 E.0505 ; infill
 G1 X163.208 Y162.699 E.01723 ; infill
-G1 X136.792 Y162.699 E.89415 F5211 ; infill
-G1 X136.792 Y160.706 E.06746 F5211 ; infill
-G1 X150.599 Y136.792 E.93469 F5211 ; infill
-G1 X149.401 Y136.792 E.04055 F5211 ; infill
-G1 X163.208 Y160.706 E.93469 F5211 ; infill
-G1 X163.208 Y158.706 E.0677 F5211 ; infill
+G1 X136.792 Y162.699 E.89415 ; infill
+G1 X136.792 Y160.706 E.06746 ; infill
+G1 X150.599 Y136.792 E.93469 ; infill
+G1 X149.401 Y136.792 E.04055 ; infill
+G1 X163.208 Y160.706 E.93469 ; infill
+G1 X163.208 Y158.706 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y144.858 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y142.858 E.0677 F5211 ; infill
-M104 S219
-M104 S218
-G1 X136.792 Y142.858 E.89415 F5211 ; infill
-G1 X136.792 Y141.407 E.04911 F5211 ; infill
+G1 X163.208 Y142.858 E.0677 ; infill
+G1 X136.792 Y142.858 E.89415 ; infill
+G1 X136.792 Y141.407 E.04911 ; infill
 M73 P78 R6
-G1 X149.379 Y163.208 E.8521 F5211 ; infill
-G1 X150.621 Y163.208 E.04204 F5211 ; infill
-G1 X163.208 Y141.407 E.8521 F5211 ; infill
-G1 X163.208 Y139.407 E.0677 F5210 ; infill
+G1 X149.379 Y163.208 E.8521 ; infill
+G1 X150.621 Y163.208 E.04204 ; infill
+G1 X163.208 Y141.407 E.8521 ; infill
+G1 X163.208 Y139.407 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y145.478 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y147.478 E.0677 F5210 ; infill
-G1 X142.962 Y136.792 E.41767 F5211 ; infill
-G1 X141.764 Y136.792 E.04055 F5211 ; infill
-G1 X157.016 Y163.208 E1.03249 F5211 ; infill
-G1 X158.258 Y163.208 E.04204 F5211 ; infill
-G1 X163.208 Y154.634 E.33511 F5211 ; infill
-G1 X163.208 Y156.085 E.04911 F5212 ; infill
-G1 X136.792 Y156.085 E.89415 F5211 ; infill
-G1 X136.792 Y154.634 E.04911 F5211 ; infill
-G1 X141.742 Y163.208 E.33511 F5211 ; infill
-G1 X142.984 Y163.208 E.04204 F5211 ; infill
-G1 X158.235 Y136.792 E1.03247 F5211 ; infill
-G1 X157.038 Y136.792 E.04052 F5210 ; infill
-G1 X163.208 Y147.478 E.41767 F5211 ; infill
-G1 X163.208 Y149.472 E.06749 F5211 ; infill
-G1 X136.792 Y149.472 E.89415 F5211 ; infill
-G1 X136.792 Y151.472 E.0677 F5211 ; infill
+G1 X136.792 Y147.478 E.0677 ; infill
+G1 X142.962 Y136.792 E.41767 ; infill
+G1 X141.764 Y136.792 E.04055 ; infill
+G1 X157.016 Y163.208 E1.03249 ; infill
+G1 X158.258 Y163.208 E.04204 ; infill
+G1 X163.208 Y154.634 E.33511 ; infill
+G1 X163.208 Y156.085 E.04911 ; infill
+G1 X136.792 Y156.085 E.89415 ; infill
+G1 X136.792 Y154.634 E.04911 ; infill
+G1 X141.742 Y163.208 E.33511 ; infill
+G1 X142.984 Y163.208 E.04204 ; infill
+G1 X158.235 Y136.792 E1.03247 ; infill
+G1 X157.038 Y136.792 E.04052 ; infill
+G1 X163.208 Y147.478 E.41767 ; infill
+G1 X163.208 Y149.472 E.06749 ; infill
+G1 X136.792 Y149.472 E.89415 ; infill
+G1 X136.792 Y151.472 E.0677 ; infill
 ;LAYER_CHANGE:126
 ;Z:25.3
 ;HEIGHT:0.2
@@ -13746,36 +13581,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5826 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5826 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5826 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5826 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5826 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5826 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5826 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5826 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5820 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5816 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5812 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5806 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M73 P78 R5
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5800 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5793 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5786 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5777 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13786,51 +13621,50 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X163.208 Y160.988 E.0677 F5168 ; infill
-G1 X149.238 Y136.792 E.94571 F5167 ; infill
-G1 X150.762 Y136.792 E.05159 F5159 ; infill
-G1 X136.792 Y160.988 E.94571 F5160 ; infill
-G1 X136.792 Y162.558 E.05314 F5160 ; infill
-M104 S217
-G1 X163.208 Y162.558 E.89415 F5151 ; infill
+G1 X163.208 Y160.988 E.0677 ; infill
+G1 X149.238 Y136.792 E.94571 ; infill
+G1 X150.762 Y136.792 E.05159 ; infill
+G1 X136.792 Y160.988 E.94571 ; infill
+G1 X136.792 Y162.558 E.05314 ; infill
+G1 X163.208 Y162.558 E.89415 ; infill
 G1 X163.208 Y163.208 E.022 ; infill
-G1 X161.858 Y163.208 E.0457 F5150 ; infill
+G1 X161.858 Y163.208 E.0457 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X152.784 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X150.784 Y163.208 E.0677 F5150 ; infill
-G1 X163.208 Y141.69 E.84105 F5150 ; infill
-G1 X163.208 Y142.717 E.03476 F5150 ; infill
-G1 X136.792 Y142.717 E.89415 F5141 ; infill
-G1 X136.792 Y141.69 E.03476 F5141 ; infill
-G1 X149.216 Y163.208 E.84105 F5131 ; infill
-G1 X147.216 Y163.208 E.0677 F5130 ; infill
+G1 X150.784 Y163.208 E.0677 ; infill
+G1 X163.208 Y141.69 E.84105 ; infill
+G1 X163.208 Y142.717 E.03476 ; infill
+G1 X136.792 Y142.717 E.89415 ; infill
+G1 X136.792 Y141.69 E.03476 ; infill
+G1 X149.216 Y163.208 E.84105 ; infill
+G1 X147.216 Y163.208 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y151.33 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y149.33 E.0677 F5130 ; infill
-G1 X163.208 Y149.33 E.89415 F5130 ; infill
-G1 X163.208 Y147.761 E.05311 F5130 ; infill
-G1 X156.875 Y136.792 E.42873 F5130 ; infill
-G1 X158.399 Y136.792 E.05159 F5130 ; infill
-G1 X143.148 Y163.208 E1.03247 F5120 ; infill
-G1 X141.579 Y163.208 E.05311 F5119 ; infill
-G1 X136.792 Y154.917 E.32406 F5119 ; infill
-G1 X136.792 Y155.944 E.03476 F5120 ; infill
-G1 X163.208 Y155.944 E.89415 F5108 ; infill
-G1 X163.208 Y154.917 E.03476 F5108 ; infill
-G1 X158.421 Y163.208 E.32406 F5108 ; infill
-G1 X156.852 Y163.208 E.05311 F5107 ; infill
-G1 X141.601 Y136.792 E1.03247 F5108 ; infill
-G1 X143.125 Y136.792 E.05159 F5107 ; infill
-G1 X136.792 Y147.761 E.42873 F5096 ; infill
-G1 X136.792 Y145.761 E.0677 F5095 ; infill
+G1 X136.792 Y149.33 E.0677 ; infill
+G1 X163.208 Y149.33 E.89415 ; infill
+G1 X163.208 Y147.761 E.05311 ; infill
+G1 X156.875 Y136.792 E.42873 ; infill
+G1 X158.399 Y136.792 E.05159 ; infill
+G1 X143.148 Y163.208 E1.03247 ; infill
+G1 X141.579 Y163.208 E.05311 ; infill
+G1 X136.792 Y154.917 E.32406 ; infill
+G1 X136.792 Y155.944 E.03476 ; infill
+G1 X163.208 Y155.944 E.89415 ; infill
+G1 X163.208 Y154.917 E.03476 ; infill
+G1 X158.421 Y163.208 E.32406 ; infill
+G1 X156.852 Y163.208 E.05311 ; infill
+G1 X141.601 Y136.792 E1.03247 ; infill
+G1 X143.125 Y136.792 E.05159 ; infill
+G1 X136.792 Y147.761 E.42873 ; infill
+G1 X136.792 Y145.761 E.0677 ; infill
 ;LAYER_CHANGE:127
 ;Z:25.5
 ;HEIGHT:0.2
@@ -13849,38 +13683,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5696 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5682 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5681 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5681 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5667 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5666 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5666 ; perimeter
-M104 S218
-G1 X163.901 Y136.039 E.84366 F5650 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5650 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5650 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5634 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5634 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-M104 S217
-G1 X164.775 Y164.775 E.89477 F5633 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5616 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
 M73 P79 R5
-G1 X135.225 Y135.225 E.89477 F5616 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5599 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13891,42 +13723,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X150.925 Y136.792 E.0677 F5008 ; infill
-G1 X136.792 Y161.271 E.95677 F5008 ; infill
-G1 X136.792 Y162.416 E.03876 F5008 ; infill
-G1 X163.208 Y162.416 E.89415 F5008 ; infill
-G1 X163.208 Y161.271 E.03876 F5007 ; infill
-G1 X149.075 Y136.792 E.95677 F4992 ; infill
-G1 X147.075 Y136.792 E.0677 F4991 ; infill
+G1 X150.925 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.271 E.95677 ; infill
+G1 X136.792 Y162.416 E.03876 ; infill
+G1 X163.208 Y162.416 E.89415 ; infill
+G1 X163.208 Y161.271 E.03876 ; infill
+G1 X149.075 Y136.792 E.95677 ; infill
+G1 X147.075 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X152.948 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X150.948 Y163.208 E.0677 F4991 ; infill
-G1 X163.208 Y141.973 E.82997 F4991 ; infill
+G1 X150.948 Y163.208 E.0677 ; infill
+G1 X163.208 Y141.973 E.82997 ; infill
 G1 X163.208 Y142.575 E.02038 ; infill
-G1 X136.792 Y142.575 E.89415 F4991 ; infill
+G1 X136.792 Y142.575 E.89415 ; infill
 G1 X136.792 Y141.973 E.02038 ; infill
-G1 X149.052 Y163.208 E.82997 F4974 ; infill
-G1 X143.311 Y163.208 E.19433 F4974 ; infill
-G1 X158.562 Y136.792 E1.03247 F4974 ; infill
-G1 X156.711 Y136.792 E.06265 F4974 ; infill
-G1 X163.208 Y148.044 E.4398 F4974 ; infill
-G1 X163.208 Y149.189 E.03876 F4973 ; infill
-G1 X136.792 Y149.189 E.89415 F4957 ; infill
-G1 X136.792 Y148.044 E.03876 F4956 ; infill
-G1 X143.288 Y136.792 E.43978 F4957 ; infill
-G1 X141.438 Y136.792 E.06262 F4956 ; infill
-G1 X156.689 Y163.208 E1.03247 F4956 ; infill
-G1 X158.584 Y163.208 E.06414 F4956 ; infill
-G1 X163.208 Y155.2 E.313 F4956 ; infill
+G1 X149.052 Y163.208 E.82997 ; infill
+G1 X143.311 Y163.208 E.19433 ; infill
+G1 X158.562 Y136.792 E1.03247 ; infill
+G1 X156.711 Y136.792 E.06265 ; infill
+G1 X163.208 Y148.044 E.4398 ; infill
+G1 X163.208 Y149.189 E.03876 ; infill
+G1 X136.792 Y149.189 E.89415 ; infill
+G1 X136.792 Y148.044 E.03876 ; infill
+G1 X143.288 Y136.792 E.43978 ; infill
+G1 X141.438 Y136.792 E.06262 ; infill
+G1 X156.689 Y163.208 E1.03247 ; infill
+G1 X158.584 Y163.208 E.06414 ; infill
+G1 X163.208 Y155.2 E.313 ; infill
 G1 X163.208 Y155.803 E.02041 ; infill
-G1 X136.792 Y155.803 E.89415 F4956 ; infill
+G1 X136.792 Y155.803 E.89415 ; infill
 G1 X136.792 Y155.2 E.02041 ; infill
-G1 X141.415 Y163.208 E.31299 F4939 ; infill
-G1 X139.415 Y163.208 E.0677 F4938 ; infill
+G1 X141.415 Y163.208 E.31299 ; infill
+G1 X139.415 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:128
 ;Z:25.7
 ;HEIGHT:0.2
@@ -13945,35 +13777,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5521 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5520 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5501 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5501 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5501 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5501 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5481 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5481 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5481 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5462 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5462 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5461 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5461 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5442 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5442 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5442 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -13984,43 +13816,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.088 Y136.792 E.0677 F4868 ; infill
-M104 S216
-G1 X136.792 Y161.554 E.96782 F4851 ; infill
+G1 X151.088 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.554 E.96782 ; infill
 G1 X136.792 Y162.275 E.0244 ; infill
-G1 X163.208 Y162.275 E.89415 F4851 ; infill
+G1 X163.208 Y162.275 E.89415 ; infill
 G1 X163.208 Y161.554 E.0244 ; infill
-G1 X148.911 Y136.792 E.96784 F4851 ; infill
-G1 X146.911 Y136.792 E.0677 F4850 ; infill
+G1 X148.911 Y136.792 E.96784 ; infill
+G1 X146.911 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.111 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.111 Y163.208 E.0677 F4834 ; infill
-G1 X163.208 Y142.256 E.81892 F4834 ; infill
+G1 X151.111 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.256 E.81892 ; infill
 G1 X163.208 Y142.434 E.00603 ; infill
-G1 X136.792 Y142.434 E.89415 F4834 ; infill
+G1 X136.792 Y142.434 E.89415 ; infill
 G1 X136.792 Y142.256 E.00603 ; infill
-G1 X148.889 Y163.208 E.81892 F4834 ; infill
-G1 X143.474 Y163.208 E.18329 F4833 ; infill
-G1 X158.725 Y136.792 E1.03247 F4817 ; infill
-G1 X156.548 Y136.792 E.07369 F4817 ; infill
-G1 X163.208 Y148.327 E.45085 F4817 ; infill
+G1 X148.889 Y163.208 E.81892 ; infill
+G1 X143.474 Y163.208 E.18329 ; infill
+G1 X158.725 Y136.792 E1.03247 ; infill
+G1 X156.548 Y136.792 E.07369 ; infill
+G1 X163.208 Y148.327 E.45085 ; infill
 G1 X163.208 Y149.048 E.0244 ; infill
-G1 X136.792 Y149.048 E.89415 F4817 ; infill
+G1 X136.792 Y149.048 E.89415 ; infill
 G1 X136.792 Y148.327 E.0244 ; infill
-G1 X143.452 Y136.792 E.45085 F4800 ; infill
-G1 X141.275 Y136.792 E.07369 F4800 ; infill
-G1 X156.526 Y163.208 E1.03247 F4800 ; infill
-G1 X158.748 Y163.208 E.07521 F4800 ; infill
-G1 X163.208 Y155.483 E.30193 F4800 ; infill
+G1 X143.452 Y136.792 E.45085 ; infill
+G1 X141.275 Y136.792 E.07369 ; infill
+G1 X156.526 Y163.208 E1.03247 ; infill
+G1 X158.748 Y163.208 E.07521 ; infill
+G1 X163.208 Y155.483 E.30193 ; infill
 G1 X163.208 Y155.661 E.00603 ; infill
-G1 X136.792 Y155.661 E.89415 F4800 ; infill
+G1 X136.792 Y155.661 E.89415 ; infill
 G1 X136.792 Y155.483 E.00603 ; infill
-G1 X141.252 Y163.208 E.30193 F4799 ; infill
-G1 X139.252 Y163.208 E.0677 F4799 ; infill
+G1 X141.252 Y163.208 E.30193 ; infill
+G1 X139.252 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:129
 ;Z:25.9
 ;HEIGHT:0.2
@@ -14039,37 +13870,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5347 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5347 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5346 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5328 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5328 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5328 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
 M73 P80 R5
-G1 X136.039 Y136.039 E.84548 F5310 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5309 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5309 ; perimeter
-M104 S216
-G1 X135.632 Y164.368 E.87012 F5291 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5291 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5291 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5290 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5273 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5272 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5272 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14080,42 +13910,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.252 Y136.792 E.0677 F4716 ; infill
-G1 X136.792 Y161.837 E.97889 F4700 ; infill
+G1 X151.252 Y136.792 E.0677 ; infill
+G1 X136.792 Y161.837 E.97889 ; infill
 G1 X136.792 Y162.133 E.01002 ; infill
-G1 X163.208 Y162.133 E.89415 F4700 ; infill
+G1 X163.208 Y162.133 E.89415 ; infill
 G1 X163.208 Y161.837 E.01002 ; infill
-G1 X148.748 Y136.792 E.97889 F4700 ; infill
-G1 X146.748 Y136.792 E.0677 F4684 ; infill
+G1 X148.748 Y136.792 E.97889 ; infill
+G1 X146.748 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.274 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.274 Y163.208 E.0677 F4684 ; infill
-G1 X163.208 Y142.538 E.80789 F4684 ; infill
+G1 X151.274 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.538 E.80789 ; infill
 G1 X163.208 Y142.293 E.00829 ; infill
-G1 X136.792 Y142.293 E.89415 F4684 ; infill
+G1 X136.792 Y142.293 E.89415 ; infill
 G1 X136.792 Y142.538 E.00829 ; infill
-G1 X148.726 Y163.208 E.80789 F4668 ; infill
-G1 X143.637 Y163.208 E.17226 F4668 ; infill
-G1 X158.888 Y136.792 E1.03247 F4668 ; infill
-G1 X156.385 Y136.792 E.08472 F4668 ; infill
-G1 X163.208 Y148.61 E.46191 F4668 ; infill
+G1 X148.726 Y163.208 E.80789 ; infill
+G1 X143.637 Y163.208 E.17226 ; infill
+G1 X158.888 Y136.792 E1.03247 ; infill
+G1 X156.385 Y136.792 E.08472 ; infill
+G1 X163.208 Y148.61 E.46191 ; infill
 G1 X163.208 Y148.906 E.01002 ; infill
-G1 X136.792 Y148.906 E.89415 F4668 ; infill
+G1 X136.792 Y148.906 E.89415 ; infill
 G1 X136.792 Y148.61 E.01002 ; infill
-G1 X143.615 Y136.792 E.46191 F4652 ; infill
-G1 X141.111 Y136.792 E.08476 F4652 ; infill
-G1 X156.362 Y163.208 E1.03247 F4652 ; infill
-G1 X158.911 Y163.208 E.08628 F4652 ; infill
-G1 X163.208 Y155.765 E.29091 F4652 ; infill
+G1 X143.615 Y136.792 E.46191 ; infill
+G1 X141.111 Y136.792 E.08476 ; infill
+G1 X156.362 Y163.208 E1.03247 ; infill
+G1 X158.911 Y163.208 E.08628 ; infill
+G1 X163.208 Y155.765 E.29091 ; infill
 G1 X163.208 Y155.52 E.00829 ; infill
-G1 X136.792 Y155.52 E.89415 F4651 ; infill
+G1 X136.792 Y155.52 E.89415 ; infill
 G1 X136.792 Y155.766 E.00833 ; infill
-G1 X141.089 Y163.208 E.29088 F4636 ; infill
-G1 X139.089 Y163.208 E.0677 F4636 ; infill
+G1 X141.089 Y163.208 E.29088 ; infill
+G1 X139.089 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:130
 ;Z:26.1
 ;HEIGHT:0.2
@@ -14134,36 +13964,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5182 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5182 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5165 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5165 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5165 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5148 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5148 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5148 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5132 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5132 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5132 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5117 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5117 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5116 ; perimeter
-M104 S215
-G1 X135.225 Y135.225 E.89477 F5102 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5102 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14174,46 +14003,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.415 Y136.792 E.0677 F4564 ; infill
-G1 X136.792 Y162.12 E.98995 F4552 ; infill
+G1 X151.415 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.12 E.98995 ; infill
 G1 X136.792 Y161.992 E.00433 ; infill
-G1 X163.208 Y161.992 E.89415 F4552 ; infill
+G1 X163.208 Y161.992 E.89415 ; infill
 G1 X163.208 Y162.12 E.00433 ; infill
-G1 X148.585 Y136.792 E.98995 F4540 ; infill
-G1 X146.585 Y136.792 E.0677 F4540 ; infill
+G1 X148.585 Y136.792 E.98995 ; infill
+G1 X146.585 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.438 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.438 Y163.208 E.0677 F4540 ; infill
-G1 X163.208 Y142.821 E.79682 F4540 ; infill
+G1 X151.438 Y163.208 E.0677 ; infill
+G1 X163.208 Y142.821 E.79682 ; infill
 G1 X163.208 Y142.151 E.02268 ; infill
-G1 X136.792 Y142.151 E.89415 F4529 ; infill
+G1 X136.792 Y142.151 E.89415 ; infill
 G1 X136.792 Y142.821 E.02268 ; infill
-G1 X148.562 Y163.208 E.79682 F4529 ; infill
-G1 X143.801 Y163.208 E.16115 F4529 ; infill
-G1 X159.052 Y136.792 E1.03247 F4518 ; infill
-G1 X156.222 Y136.792 E.09579 F4518 ; infill
-G1 X163.208 Y148.893 E.47296 F4518 ; infill
+G1 X148.562 Y163.208 E.79682 ; infill
+G1 X143.801 Y163.208 E.16115 ; infill
+G1 X159.052 Y136.792 E1.03247 ; infill
+G1 X156.222 Y136.792 E.09579 ; infill
+G1 X163.208 Y148.893 E.47296 ; infill
 G1 X163.208 Y148.765 E.00433 ; infill
-G1 X136.792 Y148.765 E.89415 F4508 ; infill
+G1 X136.792 Y148.765 E.89415 ; infill
 G1 X136.792 Y148.892 E.0043 ; infill
-G1 X143.778 Y136.792 E.47293 F4508 ; infill
-G1 X140.948 Y136.792 E.09579 F4508 ; infill
-M104 S219
-G1 X156.199 Y163.208 E1.03247 F4499 ; infill
-G1 X159.074 Y163.208 E.09732 F4498 ; infill
-G1 X163.208 Y156.048 E.27985 F4498 ; infill
-M104 S218
+G1 X143.778 Y136.792 E.47293 ; infill
+G1 X140.948 Y136.792 E.09579 ; infill
+G1 X156.199 Y163.208 E1.03247 ; infill
+G1 X159.074 Y163.208 E.09732 ; infill
+G1 X163.208 Y156.048 E.27985 ; infill
 G1 X163.208 Y155.378 E.02268 ; infill
-M104 S219
-G1 X136.792 Y155.378 E.89415 F4498 ; infill
+G1 X136.792 Y155.378 E.89415 ; infill
 M73 P81 R5
 G1 X136.792 Y156.049 E.02271 ; infill
-G1 X140.926 Y163.208 E.27982 F4489 ; infill
-G1 X138.926 Y163.208 E.0677 F4489 ; infill
+G1 X140.926 Y163.208 E.27982 ; infill
+G1 X138.926 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:131
 ;Z:26.3
 ;HEIGHT:0.2
@@ -14232,35 +14058,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5018 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5009 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5001 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5000 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F4992 ; perimeter
-G1 X136.039 Y163.961 E.84548 F4985 ; perimeter
-G1 X136.039 Y136.039 E.84548 F4984 ; perimeter
-G1 X163.901 Y136.039 E.84366 F4977 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F4971 ; perimeter
-G1 X135.632 Y164.368 E.87012 F4966 ; perimeter
-G1 X135.632 Y135.632 E.87012 F4960 ; perimeter
-G1 X164.308 Y135.632 E.86831 F4953 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F4946 ; perimeter
-G1 X135.225 Y164.775 E.89477 F4946 ; perimeter
-G1 X135.225 Y135.225 E.89477 F4952 ; perimeter
-G1 X164.715 Y135.225 E.89295 F4958 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14271,42 +14097,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.578 Y136.792 E.0677 F4435 ; infill
-G1 X136.792 Y162.403 E1.001 F4441 ; infill
+G1 X151.578 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.403 E1.001 ; infill
 G1 X136.792 Y161.85 E.01872 ; infill
-G1 X163.208 Y161.851 E.89415 F4448 ; infill
+G1 X163.208 Y161.851 E.89415 ; infill
 G1 X163.208 Y162.403 E.01868 ; infill
-G1 X148.421 Y136.792 E1.00102 F4452 ; infill
-G1 X146.421 Y136.792 E.0677 F4452 ; infill
+G1 X148.421 Y136.792 E1.00102 ; infill
+G1 X146.421 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.601 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.601 Y163.208 E.0677 F4453 ; infill
-G1 X163.208 Y143.104 E.78577 F4461 ; infill
-G1 X163.208 Y142.01 E.03703 F4460 ; infill
-G1 X136.792 Y142.01 E.89415 F4464 ; infill
-G1 X136.792 Y143.104 E.03703 F4464 ; infill
-G1 X148.399 Y163.208 E.78577 F4469 ; infill
-G1 X143.964 Y163.208 E.15012 F4469 ; infill
-G1 X159.215 Y136.792 E1.03247 F4480 ; infill
-G1 X156.058 Y136.792 E.10686 F4479 ; infill
-G1 X163.208 Y149.175 E.484 F4482 ; infill
+G1 X151.601 Y163.208 E.0677 ; infill
+G1 X163.208 Y143.104 E.78577 ; infill
+G1 X163.208 Y142.01 E.03703 ; infill
+G1 X136.792 Y142.01 E.89415 ; infill
+G1 X136.792 Y143.104 E.03703 ; infill
+G1 X148.399 Y163.208 E.78577 ; infill
+G1 X143.964 Y163.208 E.15012 ; infill
+G1 X159.215 Y136.792 E1.03247 ; infill
+G1 X156.058 Y136.792 E.10686 ; infill
+G1 X163.208 Y149.175 E.484 ; infill
 G1 X163.208 Y148.623 E.01868 ; infill
-G1 X136.792 Y148.623 E.89415 F4488 ; infill
+G1 X136.792 Y148.623 E.89415 ; infill
 G1 X136.792 Y149.175 E.01868 ; infill
-G1 X143.942 Y136.792 E.484 F4491 ; infill
-G1 X140.785 Y136.792 E.10686 F4491 ; infill
-G1 X156.036 Y163.208 E1.03247 F4498 ; infill
-G1 X159.238 Y163.208 E.10838 F4497 ; infill
-G1 X163.208 Y156.331 E.26878 F4499 ; infill
-G1 X163.208 Y155.237 E.03703 F4499 ; infill
-G1 X136.792 Y155.237 E.89415 F4505 ; infill
-G1 X136.792 Y156.332 E.03706 F4505 ; infill
-G1 X140.762 Y163.208 E.26875 F4507 ; infill
-G1 X138.762 Y163.208 E.0677 F4507 ; infill
+G1 X143.942 Y136.792 E.484 ; infill
+G1 X140.785 Y136.792 E.10686 ; infill
+G1 X156.036 Y163.208 E1.03247 ; infill
+G1 X159.238 Y163.208 E.10838 ; infill
+G1 X163.208 Y156.331 E.26878 ; infill
+G1 X163.208 Y155.237 E.03703 ; infill
+G1 X136.792 Y155.237 E.89415 ; infill
+G1 X136.792 Y156.332 E.03706 ; infill
+G1 X140.762 Y163.208 E.26875 ; infill
+G1 X138.762 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:132
 ;Z:26.5
 ;HEIGHT:0.2
@@ -14325,37 +14151,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5045 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5051 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5055 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5062 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5066 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5074 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5079 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5083 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5092 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5097 ; perimeter
-M104 S217
-G1 X135.632 Y135.632 E.87012 F5102 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5107 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-M104 S216
-G1 X164.775 Y164.775 E.89477 F5117 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5123 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5128 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5134 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14366,45 +14190,44 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.742 Y136.792 E.0677 F4592 ; infill
-G1 X136.792 Y162.685 E1.01205 F4602 ; infill
-G1 X136.792 Y161.709 E.03304 F4601 ; infill
-G1 X163.208 Y161.709 E.89415 F4607 ; infill
-M104 S223
-G1 X163.208 Y162.685 E.03304 F4606 ; infill
-G1 X148.258 Y136.792 E1.01205 F4611 ; infill
-G1 X146.258 Y136.792 E.0677 F4610 ; infill
+G1 X151.742 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.685 E1.01205 ; infill
+G1 X136.792 Y161.709 E.03304 ; infill
+G1 X163.208 Y161.709 E.89415 ; infill
+G1 X163.208 Y162.685 E.03304 ; infill
+G1 X148.258 Y136.792 E1.01205 ; infill
+G1 X146.258 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X153.764 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X151.764 Y163.208 E.0677 F4614 ; infill
-G1 X163.208 Y143.387 E.77471 F4620 ; infill
-G1 X163.208 Y141.868 E.05142 F4619 ; infill
+G1 X151.764 Y163.208 E.0677 ; infill
+G1 X163.208 Y143.387 E.77471 ; infill
+G1 X163.208 Y141.868 E.05142 ; infill
 M73 P81 R4
-G1 X136.792 Y141.868 E.89415 F4624 ; infill
+G1 X136.792 Y141.868 E.89415 ; infill
 M73 P82 R4
-G1 X136.792 Y143.387 E.05142 F4623 ; infill
-G1 X148.236 Y163.208 E.77471 F4628 ; infill
-G1 X144.127 Y163.208 E.13908 F4630 ; infill
-G1 X159.378 Y136.792 E1.03247 F4635 ; infill
-G1 X155.895 Y136.792 E.1179 F4637 ; infill
-G1 X163.208 Y149.458 E.49506 F4639 ; infill
-G1 X163.208 Y148.482 E.03304 F4638 ; infill
-G1 X136.792 Y148.482 E.89415 F4646 ; infill
-G1 X136.792 Y149.458 E.03304 F4645 ; infill
-G1 X144.105 Y136.792 E.49506 F4649 ; infill
-G1 X140.621 Y136.792 E.11793 F4649 ; infill
-G1 X155.873 Y163.208 E1.03249 F4656 ; infill
-G1 X159.401 Y163.208 E.11942 F4658 ; infill
-G1 X163.208 Y156.614 E.25773 F4659 ; infill
-G1 X163.208 Y155.096 E.05138 F4659 ; infill
-G1 X136.792 Y155.095 E.89415 F4665 ; infill
-G1 X136.792 Y156.614 E.05142 F4664 ; infill
-G1 X140.599 Y163.208 E.25773 F4667 ; infill
-G1 X138.599 Y163.208 E.0677 F4667 ; infill
+G1 X136.792 Y143.387 E.05142 ; infill
+G1 X148.236 Y163.208 E.77471 ; infill
+G1 X144.127 Y163.208 E.13908 ; infill
+G1 X159.378 Y136.792 E1.03247 ; infill
+G1 X155.895 Y136.792 E.1179 ; infill
+G1 X163.208 Y149.458 E.49506 ; infill
+G1 X163.208 Y148.482 E.03304 ; infill
+G1 X136.792 Y148.482 E.89415 ; infill
+G1 X136.792 Y149.458 E.03304 ; infill
+G1 X144.105 Y136.792 E.49506 ; infill
+G1 X140.621 Y136.792 E.11793 ; infill
+G1 X155.873 Y163.208 E1.03249 ; infill
+G1 X159.401 Y163.208 E.11942 ; infill
+G1 X163.208 Y156.614 E.25773 ; infill
+G1 X163.208 Y155.096 E.05138 ; infill
+G1 X136.792 Y155.095 E.89415 ; infill
+G1 X136.792 Y156.614 E.05142 ; infill
+G1 X140.599 Y163.208 E.25773 ; infill
+G1 X138.599 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:133
 ;Z:26.7
 ;HEIGHT:0.2
@@ -14423,35 +14246,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5226 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5231 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5235 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5241 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5248 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5254 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5254 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5259 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5268 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5271 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5277 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5282 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5288 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5296 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5299 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5305 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14462,42 +14285,42 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X151.905 Y136.792 E.0677 F4746 ; infill
-G1 X136.792 Y162.968 E1.0231 F4754 ; infill
-G1 X136.792 Y161.568 E.04739 F4755 ; infill
-G1 X163.208 Y161.568 E.89415 F4760 ; infill
-G1 X163.208 Y162.968 E.04739 F4759 ; infill
-G1 X148.095 Y136.792 E1.0231 F4766 ; infill
-G1 X144.268 Y136.792 E.12954 F4766 ; infill
-G1 X136.792 Y149.741 E.50611 F4770 ; infill
-G1 X136.792 Y148.34 E.04742 F4770 ; infill
-G1 X163.208 Y148.34 E.89415 F4774 ; infill
-G1 X163.208 Y149.741 E.04742 F4774 ; infill
-G1 X155.732 Y136.792 E.50611 F4778 ; infill
-G1 X159.542 Y136.792 E.12896 F4778 ; infill
-G1 X144.291 Y163.208 E1.03247 F4783 ; infill
-G1 X148.072 Y163.208 E.12798 F4786 ; infill
-G1 X136.792 Y143.67 E.76364 F4789 ; infill
-G1 X136.792 Y141.727 E.06577 F4788 ; infill
-G1 X163.208 Y141.727 E.89415 F4794 ; infill
-G1 X163.208 Y143.67 E.06577 F4794 ; infill
-G1 X151.928 Y163.208 E.76364 F4800 ; infill
-G1 X155.709 Y163.208 E.12798 F4800 ; infill
-G1 X140.458 Y136.792 E1.03247 F4807 ; infill
-G1 X138.458 Y136.792 E.0677 F4806 ; infill
+G1 X151.905 Y136.792 E.0677 ; infill
+G1 X136.792 Y162.968 E1.0231 ; infill
+G1 X136.792 Y161.568 E.04739 ; infill
+G1 X163.208 Y161.568 E.89415 ; infill
+G1 X163.208 Y162.968 E.04739 ; infill
+G1 X148.095 Y136.792 E1.0231 ; infill
+G1 X144.268 Y136.792 E.12954 ; infill
+G1 X136.792 Y149.741 E.50611 ; infill
+G1 X136.792 Y148.34 E.04742 ; infill
+G1 X163.208 Y148.34 E.89415 ; infill
+G1 X163.208 Y149.741 E.04742 ; infill
+G1 X155.732 Y136.792 E.50611 ; infill
+G1 X159.542 Y136.792 E.12896 ; infill
+G1 X144.291 Y163.208 E1.03247 ; infill
+G1 X148.072 Y163.208 E.12798 ; infill
+G1 X136.792 Y143.67 E.76364 ; infill
+G1 X136.792 Y141.727 E.06577 ; infill
+G1 X163.208 Y141.727 E.89415 ; infill
+G1 X163.208 Y143.67 E.06577 ; infill
+G1 X151.928 Y163.208 E.76364 ; infill
+G1 X155.709 Y163.208 E.12798 ; infill
+G1 X140.458 Y136.792 E1.03247 ; infill
+G1 X138.458 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X138.436 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.436 Y163.208 E.0677 F4806 ; infill
-G1 X136.792 Y156.897 E.24667 F4807 ; infill
-G1 X136.792 Y154.954 E.06577 F4808 ; infill
-G1 X163.208 Y154.954 E.89415 F4814 ; infill
-G1 X163.208 Y156.897 E.06577 F4813 ; infill
-G1 X159.564 Y163.208 E.24667 F4813 ; infill
-G1 X161.564 Y163.208 E.0677 F4814 ; infill
+G1 X140.436 Y163.208 E.0677 ; infill
+G1 X136.792 Y156.897 E.24667 ; infill
+G1 X136.792 Y154.954 E.06577 ; infill
+G1 X163.208 Y154.954 E.89415 ; infill
+G1 X163.208 Y156.897 E.06577 ; infill
+G1 X159.564 Y163.208 E.24667 ; infill
+G1 X161.564 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:134
 ;Z:26.9
 ;HEIGHT:0.2
@@ -14516,36 +14339,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5389 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5393 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5398 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5407 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5412 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5416 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5421 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5426 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5431 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5436 ; perimeter
-M104 S217
-G1 X135.632 Y135.632 E.87012 F5441 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5446 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5450 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5460 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5464 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5468 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 M73 P83 R4
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
@@ -14557,52 +14379,51 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.068 Y136.792 E.0677 F4891 ; infill
-G1 X136.792 Y163.208 E1.03289 F4899 ; infill
-G1 X136.792 Y161.426 E.06032 F4899 ; infill
-G1 X163.208 Y161.426 E.89415 F4902 ; infill
-G1 X163.208 Y163.208 E.06032 F4902 ; infill
-G1 X147.932 Y136.792 E1.03289 F4909 ; infill
-G1 X144.431 Y136.792 E.1185 F4909 ; infill
-G1 X136.792 Y150.024 E.51717 F4912 ; infill
-G1 X136.792 Y148.199 E.06177 F4912 ; infill
-G1 X163.208 Y148.199 E.89415 F4918 ; infill
-G1 X163.208 Y150.024 E.06177 F4918 ; infill
-G1 X155.568 Y136.792 E.51718 F4921 ; infill
-G1 X157.568 Y136.792 E.0677 F4921 ; infill
+G1 X152.068 Y136.792 E.0677 ; infill
+G1 X136.792 Y163.208 E1.03289 ; infill
+G1 X136.792 Y161.426 E.06032 ; infill
+G1 X163.208 Y161.426 E.89415 ; infill
+G1 X163.208 Y163.208 E.06032 ; infill
+G1 X147.932 Y136.792 E1.03289 ; infill
+G1 X144.431 Y136.792 E.1185 ; infill
+G1 X136.792 Y150.024 E.51717 ; infill
+G1 X136.792 Y148.199 E.06177 ; infill
+G1 X163.208 Y148.199 E.89415 ; infill
+G1 X163.208 Y150.024 E.06177 ; infill
+G1 X155.568 Y136.792 E.51718 ; infill
+G1 X157.568 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y138.797 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.205 Y136.792 E.06787 F4921 ; infill
-G1 X159.705 Y136.792 E.11847 F4921 ; infill
-G1 X144.454 Y163.208 E1.03247 F4929 ; infill
-G1 X147.909 Y163.208 E.11695 F4929 ; infill
-G1 X136.792 Y143.953 E.75259 F4932 ; infill
-G1 X136.792 Y141.585 E.08015 F4933 ; infill
-G1 X163.208 Y141.585 E.89415 F4939 ; infill
-G1 X163.208 Y143.953 E.08015 F4939 ; infill
-G1 X152.091 Y163.208 E.75259 F4943 ; infill
-G1 X155.546 Y163.208 E.11695 F4942 ; infill
-G1 X140.295 Y136.792 E1.03247 F4948 ; infill
-G1 X136.795 Y136.792 E.11847 F4949 ; infill
-G1 X136.792 Y138.797 E.06787 F4949 ; infill
+G1 X163.205 Y136.792 E.06787 ; infill
+G1 X159.705 Y136.792 E.11847 ; infill
+G1 X144.454 Y163.208 E1.03247 ; infill
+G1 X147.909 Y163.208 E.11695 ; infill
+G1 X136.792 Y143.953 E.75259 ; infill
+G1 X136.792 Y141.585 E.08015 ; infill
+G1 X163.208 Y141.585 E.89415 ; infill
+G1 X163.208 Y143.953 E.08015 ; infill
+G1 X152.091 Y163.208 E.75259 ; infill
+G1 X155.546 Y163.208 E.11695 ; infill
+G1 X140.295 Y136.792 E1.03247 ; infill
+G1 X136.795 Y136.792 E.11847 ; infill
+G1 X136.792 Y138.797 E.06787 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.272 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.272 Y163.208 E.0677 F4950 ; infill
-G1 X136.792 Y157.18 E.2356 F4952 ; infill
-G1 X136.792 Y154.813 E.08012 F4952 ; infill
-M104 S218
-G1 X163.208 Y154.813 E.89415 F4957 ; infill
-G1 X163.208 Y157.18 E.08012 F4958 ; infill
-G1 X159.727 Y163.208 E.23562 F4959 ; infill
-G1 X157.727 Y163.208 E.0677 F4959 ; infill
+G1 X140.272 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.18 E.2356 ; infill
+G1 X136.792 Y154.813 E.08012 ; infill
+G1 X163.208 Y154.813 E.89415 ; infill
+G1 X163.208 Y157.18 E.08012 ; infill
+G1 X159.727 Y163.208 E.23562 ; infill
+G1 X157.727 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:135
 ;Z:27.1
 ;HEIGHT:0.2
@@ -14621,35 +14442,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5547 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5551 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5555 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5560 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5565 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5572 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5574 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5579 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5585 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5589 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5594 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5601 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5607 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5611 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5616 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5622 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14660,55 +14481,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.232 Y136.792 E.0677 F5029 ; infill
-G1 X136.981 Y163.208 E1.03247 F5034 ; infill
+G1 X152.232 Y136.792 E.0677 ; infill
+G1 X136.981 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.0064 ; infill
-G1 X136.792 Y161.285 E.06509 F5033 ; infill
-G1 X163.208 Y161.285 E.89415 F5038 ; infill
-G1 X163.208 Y163.208 E.06509 F5039 ; infill
+G1 X136.792 Y161.285 E.06509 ; infill
+G1 X163.208 Y161.285 E.89415 ; infill
+G1 X163.208 Y163.208 E.06509 ; infill
 G1 X163.019 Y163.208 E.0064 ; infill
-G1 X147.768 Y136.792 E1.03247 F5046 ; infill
-G1 X144.595 Y136.792 E.1074 F5045 ; infill
-G1 X136.792 Y150.307 E.52824 F5048 ; infill
-G1 X136.792 Y148.058 E.07613 F5048 ; infill
-G1 X163.208 Y148.058 E.89415 F5051 ; infill
-G1 X163.208 Y150.307 E.07613 F5052 ; infill
-G1 X155.405 Y136.792 E.52824 F5054 ; infill
-G1 X157.405 Y136.792 E.0677 F5054 ; infill
+G1 X147.768 Y136.792 E1.03247 ; infill
+G1 X144.595 Y136.792 E.1074 ; infill
+G1 X136.792 Y150.307 E.52824 ; infill
+G1 X136.792 Y148.058 E.07613 ; infill
+G1 X163.208 Y148.058 E.89415 ; infill
+G1 X163.208 Y150.307 E.07613 ; infill
+G1 X155.405 Y136.792 E.52824 ; infill
+G1 X157.405 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y139.08 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.08 E.0677 F5056 ; infill
+G1 X163.208 Y137.08 E.0677 ; infill
 G1 X163.042 Y136.792 E.01125 ; infill
-G1 X159.868 Y136.792 E.10744 F5056 ; infill
-G1 X144.617 Y163.208 E1.03247 F5063 ; infill
-G1 X147.746 Y163.208 E.10591 F5063 ; infill
-G1 X136.792 Y144.235 E.74156 F5066 ; infill
-G1 X136.792 Y141.444 E.09447 F5066 ; infill
-G1 X163.208 Y141.444 E.89415 F5069 ; infill
-G1 X163.208 Y144.235 E.09447 F5069 ; infill
-G1 X152.254 Y163.208 E.74156 F5073 ; infill
-G1 X155.383 Y163.208 E.10591 F5074 ; infill
-G1 X140.132 Y136.792 E1.03247 F5080 ; infill
-G1 X136.958 Y136.792 E.10744 F5079 ; infill
+G1 X159.868 Y136.792 E.10744 ; infill
+G1 X144.617 Y163.208 E1.03247 ; infill
+G1 X147.746 Y163.208 E.10591 ; infill
+G1 X136.792 Y144.235 E.74156 ; infill
+G1 X136.792 Y141.444 E.09447 ; infill
+G1 X163.208 Y141.444 E.89415 ; infill
+G1 X163.208 Y144.235 E.09447 ; infill
+G1 X152.254 Y163.208 E.74156 ; infill
+G1 X155.383 Y163.208 E.10591 ; infill
+G1 X140.132 Y136.792 E1.03247 ; infill
+G1 X136.958 Y136.792 E.10744 ; infill
 G1 X136.792 Y137.079 E.01122 ; infill
-G1 X136.792 Y139.079 E.0677 F5079 ; infill
+G1 X136.792 Y139.079 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X142.109 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X140.109 Y163.208 E.0677 F5080 ; infill
-G1 X136.792 Y157.463 E.22455 F5083 ; infill
-G1 X136.792 Y154.671 E.09451 F5083 ; infill
-G1 X163.208 Y154.671 E.89415 F5087 ; infill
-G1 X163.208 Y157.462 E.09447 F5087 ; infill
-G1 X159.891 Y163.208 E.22458 F5090 ; infill
-G1 X157.891 Y163.208 E.0677 F5090 ; infill
+G1 X140.109 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.463 E.22455 ; infill
+G1 X136.792 Y154.671 E.09451 ; infill
+G1 X163.208 Y154.671 E.89415 ; infill
+G1 X163.208 Y157.462 E.09447 ; infill
+G1 X159.891 Y163.208 E.22458 ; infill
+G1 X157.891 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:136
 ;Z:27.3
 ;HEIGHT:0.2
@@ -14727,36 +14548,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5695 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5700 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
 M73 P84 R4
-G1 X136.446 Y136.446 E.82083 F5704 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5709 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5714 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5718 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5722 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5727 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5731 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5735 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5739 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5743 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5750 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5754 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5757 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5764 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14767,59 +14588,55 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X152.395 Y136.792 E.0677 F5156 ; infill
-M104 S218
-G1 X137.144 Y163.208 E1.03247 F5162 ; infill
+G1 X152.395 Y136.792 E.0677 ; infill
+G1 X137.144 Y163.208 E1.03247 ; infill
 G1 X136.792 Y163.208 E.01191 ; infill
-G1 X136.792 Y161.143 E.0699 F5161 ; infill
-G1 X163.208 Y161.143 E.89415 F5167 ; infill
-G1 X163.208 Y163.208 E.0699 F5167 ; infill
+G1 X136.792 Y161.143 E.0699 ; infill
+G1 X163.208 Y161.143 E.89415 ; infill
+G1 X163.208 Y163.208 E.0699 ; infill
 G1 X162.856 Y163.208 E.01191 ; infill
-G1 X147.605 Y136.792 E1.03247 F5172 ; infill
-G1 X144.758 Y136.792 E.09637 F5172 ; infill
-G1 X136.792 Y150.589 E.53926 F5174 ; infill
-G1 X136.792 Y147.916 E.09048 F5174 ; infill
-G1 X163.208 Y147.916 E.89415 F5178 ; infill
-G1 X163.208 Y150.59 E.09051 F5180 ; infill
-G1 X155.242 Y136.792 E.53929 F5182 ; infill
-G1 X157.242 Y136.792 E.0677 F5182 ; infill
+G1 X147.605 Y136.792 E1.03247 ; infill
+G1 X144.758 Y136.792 E.09637 ; infill
+G1 X136.792 Y150.589 E.53926 ; infill
+G1 X136.792 Y147.916 E.09048 ; infill
+G1 X163.208 Y147.916 E.89415 ; infill
+G1 X163.208 Y150.59 E.09051 ; infill
+G1 X155.242 Y136.792 E.53929 ; infill
+G1 X157.242 Y136.792 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X163.208 Y139.362 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X163.208 Y137.362 E.0677 F5182 ; infill
+G1 X163.208 Y137.362 E.0677 ; infill
 G1 X162.879 Y136.792 E.02228 ; infill
-G1 X160.032 Y136.792 E.09637 F5184 ; infill
-G1 X144.781 Y163.208 E1.03247 F5189 ; infill
-G1 X147.583 Y163.208 E.09484 F5189 ; infill
-G1 X136.792 Y144.518 E.73051 F5192 ; infill
-G1 X136.792 Y141.303 E.10882 F5193 ; infill
-G1 X163.208 Y141.303 E.89415 F5198 ; infill
-G1 X163.208 Y144.518 E.10882 F5198 ; infill
-G1 X152.417 Y163.208 E.73051 F5201 ; infill
-G1 X155.219 Y163.208 E.09484 F5202 ; infill
-G1 X139.968 Y136.792 E1.03247 F5203 ; infill
-G1 X137.121 Y136.792 E.09637 F5203 ; infill
+G1 X160.032 Y136.792 E.09637 ; infill
+G1 X144.781 Y163.208 E1.03247 ; infill
+G1 X147.583 Y163.208 E.09484 ; infill
+G1 X136.792 Y144.518 E.73051 ; infill
+G1 X136.792 Y141.303 E.10882 ; infill
+G1 X163.208 Y141.303 E.89415 ; infill
+G1 X163.208 Y144.518 E.10882 ; infill
+G1 X152.417 Y163.208 E.73051 ; infill
+G1 X155.219 Y163.208 E.09484 ; infill
+G1 X139.968 Y136.792 E1.03247 ; infill
+G1 X137.121 Y136.792 E.09637 ; infill
 G1 X136.792 Y137.362 E.02228 ; infill
-G1 X136.792 Y139.362 E.0677 F5203 ; infill
+G1 X136.792 Y139.362 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X141.946 Y163.208 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X139.946 Y163.208 E.0677 F5204 ; infill
-G1 X136.792 Y157.746 E.21349 F5205 ; infill
-G1 X136.792 Y154.53 E.10886 F5206 ; infill
-M104 S220
-G1 X163.208 Y154.53 E.89415 F5210 ; infill
-M104 S219
-G1 X163.208 Y157.745 E.10882 F5212 ; infill
-G1 X160.054 Y163.208 E.21352 F5213 ; infill
-M104 S220
-G1 X158.054 Y163.208 E.0677 F5213 ; infill
+G1 X139.946 Y163.208 E.0677 ; infill
+G1 X136.792 Y157.746 E.21349 ; infill
+G1 X136.792 Y154.53 E.10886 ; infill
+G1 X163.208 Y154.53 E.89415 ; infill
+G1 X163.208 Y157.745 E.10882 ; infill
+G1 X160.054 Y163.208 E.21352 ; infill
+G1 X158.054 Y163.208 E.0677 ; infill
 ;LAYER_CHANGE:137
 ;Z:27.5
 ;HEIGHT:0.2
@@ -14838,87 +14655,86 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5833 ; perimeter
-G1 X136.446 Y163.554 E.82083 F5837 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5841 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5844 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5850 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5854 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5858 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5860 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5865 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5870 ; perimeter
-G1 X135.632 Y135.632 E.87012 F5873 ; perimeter
-G1 X164.308 Y135.632 E.86831 F5879 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F5881 ; perimeter
-G1 X135.225 Y164.775 E.89477 F5888 ; perimeter
-G1 X135.225 Y135.225 E.89477 F5891 ; perimeter
-G1 X164.715 Y135.225 E.89295 F5897 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y139.645 F30000 ; move to first infill point
-M104 S222
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 ;TYPE:Internal infill
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y137.645 E.0677 F5275 ; infill
-G1 X137.285 Y136.792 E.03335 F5275 ; infill
-G1 X139.805 Y136.792 E.0853 F5275 ; infill
-G1 X155.056 Y163.208 E1.03247 F5282 ; infill
-G1 X152.581 Y163.208 E.08378 F5281 ; infill
-G1 X163.208 Y144.801 E.71944 F5285 ; infill
-G1 X163.208 Y147.775 E.10067 F5284 ; infill
-G1 X136.792 Y147.775 E.89415 F5288 ; infill
-G1 X136.792 Y144.801 E.10067 F5288 ; infill
-G1 X147.419 Y163.208 E.71944 F5291 ; infill
-G1 X144.944 Y163.208 E.08378 F5291 ; infill
-G1 X160.195 Y136.792 E1.03247 F5298 ; infill
-G1 X162.715 Y136.792 E.0853 F5298 ; infill
-G1 X163.208 Y137.645 E.03335 F5298 ; infill
-G1 X163.208 Y141.161 E.11901 F5298 ; infill
-G1 X136.792 Y141.161 E.89415 F5302 ; infill
+G1 X136.792 Y137.645 E.0677 ; infill
+G1 X137.285 Y136.792 E.03335 ; infill
+G1 X139.805 Y136.792 E.0853 ; infill
+G1 X155.056 Y163.208 E1.03247 ; infill
+G1 X152.581 Y163.208 E.08378 ; infill
+G1 X163.208 Y144.801 E.71944 ; infill
+G1 X163.208 Y147.775 E.10067 ; infill
+G1 X136.792 Y147.775 E.89415 ; infill
+G1 X136.792 Y144.801 E.10067 ; infill
+G1 X147.419 Y163.208 E.71944 ; infill
+G1 X144.944 Y163.208 E.08378 ; infill
+G1 X160.195 Y136.792 E1.03247 ; infill
+G1 X162.715 Y136.792 E.0853 ; infill
+G1 X163.208 Y137.645 E.03335 ; infill
+G1 X163.208 Y141.161 E.11901 ; infill
+G1 X136.792 Y141.161 E.89415 ; infill
 M73 P85 R4
-G1 X136.792 Y143.161 E.0677 F5301 ; infill
+G1 X136.792 Y143.161 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y152.872 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y150.872 E.0677 F5301 ; infill
-G1 X144.921 Y136.792 E.55032 F5305 ; infill
-G1 X147.442 Y136.792 E.08533 F5305 ; infill
-G1 X162.693 Y163.208 E1.03247 F5309 ; infill
-G1 X160.217 Y163.208 E.08381 F5309 ; infill
-G1 X163.208 Y158.028 E.20247 F5309 ; infill
-G1 X163.208 Y161.002 E.10067 F5310 ; infill
-G1 X136.792 Y161.002 E.89415 F5316 ; infill
-G1 X136.792 Y158.029 E.10063 F5316 ; infill
-G1 X139.782 Y163.208 E.20242 F5316 ; infill
-G1 X137.307 Y163.208 E.08378 F5316 ; infill
-G1 X152.558 Y136.792 E1.03247 F5320 ; infill
-G1 X155.078 Y136.792 E.0853 F5320 ; infill
-G1 X163.208 Y150.872 E.55034 F5324 ; infill
-G1 X163.208 Y154.388 E.11901 F5324 ; infill
-G1 X136.792 Y154.388 E.89415 F5328 ; infill
-G1 X136.792 Y156.388 E.0677 F5328 ; infill
+G1 X136.792 Y150.872 E.0677 ; infill
+G1 X144.921 Y136.792 E.55032 ; infill
+G1 X147.442 Y136.792 E.08533 ; infill
+G1 X162.693 Y163.208 E1.03247 ; infill
+G1 X160.217 Y163.208 E.08381 ; infill
+G1 X163.208 Y158.028 E.20247 ; infill
+G1 X163.208 Y161.002 E.10067 ; infill
+G1 X136.792 Y161.002 E.89415 ; infill
+G1 X136.792 Y158.029 E.10063 ; infill
+G1 X139.782 Y163.208 E.20242 ; infill
+G1 X137.307 Y163.208 E.08378 ; infill
+G1 X152.558 Y136.792 E1.03247 ; infill
+G1 X155.078 Y136.792 E.0853 ; infill
+G1 X163.208 Y150.872 E.55034 ; infill
+G1 X163.208 Y154.388 E.11901 ; infill
+G1 X136.792 Y154.388 E.89415 ; infill
+G1 X136.792 Y156.388 E.0677 ; infill
 ;LAYER_CHANGE:138
 ;Z:27.7
 ;HEIGHT:0.2
@@ -14937,37 +14753,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F5960 ; perimeter
-M104 S219
-G1 X136.446 Y163.554 E.82083 F5964 ; perimeter
-G1 X136.446 Y136.446 E.82083 F5968 ; perimeter
-G1 X163.494 Y136.446 E.81901 F5972 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F5976 ; perimeter
-G1 X136.039 Y163.961 E.84548 F5980 ; perimeter
-G1 X136.039 Y136.039 E.84548 F5987 ; perimeter
-G1 X163.901 Y136.039 E.84366 F5991 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F5994 ; perimeter
-G1 X135.632 Y164.368 E.87012 F5998 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6001 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6007 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-M104 S219
-G1 X164.775 Y164.775 E.89477 F6010 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6013 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6019 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6024 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -14978,23 +14792,23 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y137.928 E.0677 F5389 ; infill
-G1 X137.448 Y136.792 E.0444 F5389 ; infill
-G1 X139.642 Y136.792 E.07426 F5389 ; infill
-G1 X154.893 Y163.208 E1.03247 F5393 ; infill
-G1 X152.744 Y163.208 E.07274 F5393 ; infill
-G1 X163.208 Y145.084 E.70838 F5398 ; infill
-G1 X163.208 Y147.633 E.08628 F5398 ; infill
-G1 X136.792 Y147.633 E.89415 F5402 ; infill
-G1 X136.792 Y145.084 E.08628 F5401 ; infill
-G1 X147.256 Y163.208 E.70838 F5405 ; infill
-G1 X145.107 Y163.208 E.07274 F5405 ; infill
-G1 X160.358 Y136.792 E1.03247 F5409 ; infill
-G1 X162.552 Y136.792 E.07426 F5410 ; infill
-G1 X163.208 Y137.928 E.0444 F5410 ; infill
-G1 X163.208 Y141.02 E.10466 F5410 ; infill
-G1 X136.792 Y141.02 E.89415 F5415 ; infill
-G1 X136.792 Y143.02 E.0677 F5414 ; infill
+G1 X136.792 Y137.928 E.0677 ; infill
+G1 X137.448 Y136.792 E.0444 ; infill
+G1 X139.642 Y136.792 E.07426 ; infill
+G1 X154.893 Y163.208 E1.03247 ; infill
+G1 X152.744 Y163.208 E.07274 ; infill
+G1 X163.208 Y145.084 E.70838 ; infill
+G1 X163.208 Y147.633 E.08628 ; infill
+G1 X136.792 Y147.633 E.89415 ; infill
+G1 X136.792 Y145.084 E.08628 ; infill
+G1 X147.256 Y163.208 E.70838 ; infill
+G1 X145.107 Y163.208 E.07274 ; infill
+G1 X160.358 Y136.792 E1.03247 ; infill
+G1 X162.552 Y136.792 E.07426 ; infill
+G1 X163.208 Y137.928 E.0444 ; infill
+G1 X163.208 Y141.02 E.10466 ; infill
+G1 X136.792 Y141.02 E.89415 ; infill
+G1 X136.792 Y143.02 E.0677 ; infill
 M73 P85 R3
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15002,23 +14816,23 @@ G1 X136.792 Y149.155 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y151.155 E.0677 F5414 ; infill
-G1 X145.085 Y136.792 E.56139 F5417 ; infill
-G1 X147.278 Y136.792 E.07423 F5417 ; infill
-G1 X162.53 Y163.208 E1.03249 F5421 ; infill
-G1 X160.381 Y163.208 E.07274 F5422 ; infill
-G1 X163.208 Y158.311 E.1914 F5423 ; infill
-G1 X163.208 Y160.861 E.08631 F5423 ; infill
-G1 X136.792 Y160.861 E.89415 F5427 ; infill
-G1 X136.792 Y158.311 E.08631 F5427 ; infill
-G1 X139.619 Y163.208 E.1914 F5427 ; infill
-G1 X137.47 Y163.208 E.07274 F5427 ; infill
-G1 X152.721 Y136.792 E1.03247 F5427 ; infill
-G1 X154.915 Y136.792 E.07426 F5427 ; infill
-G1 X163.208 Y151.155 E.56139 F5427 ; infill
-G1 X163.208 Y154.247 E.10466 F5427 ; infill
-G1 X136.792 Y154.247 E.89415 F5427 ; infill
-G1 X136.792 Y156.247 E.0677 F5427 ; infill
+G1 X136.792 Y151.155 E.0677 ; infill
+G1 X145.085 Y136.792 E.56139 ; infill
+G1 X147.278 Y136.792 E.07423 ; infill
+G1 X162.53 Y163.208 E1.03249 ; infill
+G1 X160.381 Y163.208 E.07274 ; infill
+G1 X163.208 Y158.311 E.1914 ; infill
+G1 X163.208 Y160.861 E.08631 ; infill
+G1 X136.792 Y160.861 E.89415 ; infill
+G1 X136.792 Y158.311 E.08631 ; infill
+G1 X139.619 Y163.208 E.1914 ; infill
+G1 X137.47 Y163.208 E.07274 ; infill
+G1 X152.721 Y136.792 E1.03247 ; infill
+G1 X154.915 Y136.792 E.07426 ; infill
+G1 X163.208 Y151.155 E.56139 ; infill
+G1 X163.208 Y154.247 E.10466 ; infill
+G1 X136.792 Y154.247 E.89415 ; infill
+G1 X136.792 Y156.247 E.0677 ; infill
 ;LAYER_CHANGE:139
 ;Z:27.9
 ;HEIGHT:0.2
@@ -15037,36 +14851,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6066 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6066 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6066 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6066 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6066 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6066 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6066 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6065 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6065 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6065 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6065 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6065 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6065 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6065 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6065 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
 M73 P86 R3
-G1 X164.715 Y135.225 E.89295 F6064 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15077,46 +14891,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y138.211 E.0677 F5425 ; infill
-G1 X137.611 Y136.792 E.05546 F5425 ; infill
-G1 X139.478 Y136.792 E.0632 F5424 ; infill
-G1 X154.729 Y163.208 E1.03247 F5425 ; infill
-G1 X152.907 Y163.208 E.06167 F5425 ; infill
-G1 X163.208 Y145.367 E.69733 F5425 ; infill
-G1 X163.208 Y147.492 E.07193 F5424 ; infill
-G1 X136.792 Y147.492 E.89415 F5425 ; infill
-G1 X136.792 Y145.367 E.07193 F5424 ; infill
-G1 X147.093 Y163.208 E.69733 F5424 ; infill
-G1 X145.27 Y163.208 E.06171 F5424 ; infill
-G1 X160.521 Y136.792 E1.03247 F5424 ; infill
-G1 X162.389 Y136.792 E.06323 F5424 ; infill
-G1 X163.208 Y138.211 E.05546 F5424 ; infill
-G1 X163.208 Y140.878 E.09027 F5424 ; infill
-G1 X136.792 Y140.878 E.89415 F5424 ; infill
-G1 X136.792 Y142.878 E.0677 F5424 ; infill
+G1 X136.792 Y138.211 E.0677 ; infill
+G1 X137.611 Y136.792 E.05546 ; infill
+G1 X139.478 Y136.792 E.0632 ; infill
+G1 X154.729 Y163.208 E1.03247 ; infill
+G1 X152.907 Y163.208 E.06167 ; infill
+G1 X163.208 Y145.367 E.69733 ; infill
+G1 X163.208 Y147.492 E.07193 ; infill
+G1 X136.792 Y147.492 E.89415 ; infill
+G1 X136.792 Y145.367 E.07193 ; infill
+G1 X147.093 Y163.208 E.69733 ; infill
+G1 X145.27 Y163.208 E.06171 ; infill
+G1 X160.521 Y136.792 E1.03247 ; infill
+G1 X162.389 Y136.792 E.06323 ; infill
+G1 X163.208 Y138.211 E.05546 ; infill
+G1 X163.208 Y140.878 E.09027 ; infill
+G1 X136.792 Y140.878 E.89415 ; infill
+G1 X136.792 Y142.878 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y149.438 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y151.438 E.0677 F5424 ; infill
-G1 X145.248 Y136.792 E.57244 F5424 ; infill
-G1 X147.115 Y136.792 E.0632 F5424 ; infill
-G1 X162.366 Y163.208 E1.03247 F5424 ; infill
-G1 X160.544 Y163.208 E.06167 F5424 ; infill
-G1 X163.208 Y158.594 E.18034 F5424 ; infill
-G1 X163.208 Y160.719 E.07193 F5424 ; infill
-G1 X136.792 Y160.719 E.89415 F5424 ; infill
-G1 X136.792 Y158.594 E.07193 F5424 ; infill
-G1 X139.456 Y163.208 E.18034 F5424 ; infill
-G1 X137.634 Y163.208 E.06167 F5424 ; infill
-G1 X152.885 Y136.792 E1.03247 F5424 ; infill
-G1 X154.752 Y136.792 E.0632 F5423 ; infill
-G1 X163.208 Y151.438 E.57244 F5424 ; infill
-G1 X163.208 Y154.106 E.09031 F5423 ; infill
-G1 X136.792 Y154.106 E.89415 F5423 ; infill
-G1 X136.792 Y156.106 E.0677 F5423 ; infill
+G1 X136.792 Y151.438 E.0677 ; infill
+G1 X145.248 Y136.792 E.57244 ; infill
+G1 X147.115 Y136.792 E.0632 ; infill
+G1 X162.366 Y163.208 E1.03247 ; infill
+G1 X160.544 Y163.208 E.06167 ; infill
+G1 X163.208 Y158.594 E.18034 ; infill
+G1 X163.208 Y160.719 E.07193 ; infill
+G1 X136.792 Y160.719 E.89415 ; infill
+G1 X136.792 Y158.594 E.07193 ; infill
+G1 X139.456 Y163.208 E.18034 ; infill
+G1 X137.634 Y163.208 E.06167 ; infill
+G1 X152.885 Y136.792 E1.03247 ; infill
+G1 X154.752 Y136.792 E.0632 ; infill
+G1 X163.208 Y151.438 E.57244 ; infill
+G1 X163.208 Y154.106 E.09031 ; infill
+G1 X136.792 Y154.106 E.89415 ; infill
+G1 X136.792 Y156.106 E.0677 ; infill
 ;LAYER_CHANGE:140
 ;Z:28.1
 ;HEIGHT:0.2
@@ -15135,35 +14949,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6062 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6062 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6062 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6062 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6062 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6062 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6062 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6062 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6062 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6061 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6061 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6061 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6061 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6061 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6061 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6061 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15175,46 +14989,46 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:719.427
 G1 F8843
 G1 X136.792 Y136.792 E.01012 ; infill
-G1 X136.792 Y138.494 E.05761 F5422 ; infill
-G1 X137.775 Y136.792 E.06653 F5421 ; infill
-G1 X139.315 Y136.792 E.05213 F5421 ; infill
-G1 X154.566 Y163.208 E1.03247 F5421 ; infill
-G1 X153.071 Y163.208 E.0506 F5422 ; infill
-G1 X163.208 Y145.65 E.68626 F5421 ; infill
-G1 X163.208 Y147.351 E.05758 F5421 ; infill
-G1 X136.792 Y147.35 E.89415 F5421 ; infill
-G1 X136.792 Y145.65 E.05754 F5421 ; infill
-G1 X146.929 Y163.208 E.68626 F5421 ; infill
-G1 X145.434 Y163.208 E.0506 F5421 ; infill
-G1 X160.685 Y136.792 E1.03247 F5421 ; infill
-G1 X162.225 Y136.792 E.05213 F5421 ; infill
-G1 X163.208 Y138.494 E.06653 F5421 ; infill
-G1 X163.208 Y140.737 E.07592 F5421 ; infill
-G1 X136.792 Y140.737 E.89415 F5421 ; infill
-G1 X136.792 Y142.737 E.0677 F5421 ; infill
+G1 X136.792 Y138.494 E.05761 ; infill
+G1 X137.775 Y136.792 E.06653 ; infill
+G1 X139.315 Y136.792 E.05213 ; infill
+G1 X154.566 Y163.208 E1.03247 ; infill
+G1 X153.071 Y163.208 E.0506 ; infill
+G1 X163.208 Y145.65 E.68626 ; infill
+G1 X163.208 Y147.351 E.05758 ; infill
+G1 X136.792 Y147.35 E.89415 ; infill
+G1 X136.792 Y145.65 E.05754 ; infill
+G1 X146.929 Y163.208 E.68626 ; infill
+G1 X145.434 Y163.208 E.0506 ; infill
+G1 X160.685 Y136.792 E1.03247 ; infill
+G1 X162.225 Y136.792 E.05213 ; infill
+G1 X163.208 Y138.494 E.06653 ; infill
+G1 X163.208 Y140.737 E.07592 ; infill
+G1 X136.792 Y140.737 E.89415 ; infill
+G1 X136.792 Y142.737 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y149.721 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y151.721 E.0677 F5421 ; infill
-G1 X145.411 Y136.792 E.5835 F5421 ; infill
-G1 X146.952 Y136.792 E.05216 F5421 ; infill
-G1 X162.203 Y163.208 E1.03247 F5421 ; infill
-G1 X160.707 Y163.208 E.05064 F5420 ; infill
-G1 X163.208 Y158.877 E.16929 F5420 ; infill
-G1 X163.208 Y160.578 E.05758 F5420 ; infill
-G1 X136.792 Y160.578 E.89415 F5420 ; infill
-G1 X136.792 Y158.877 E.05758 F5420 ; infill
-G1 X139.293 Y163.208 E.16929 F5420 ; infill
-G1 X137.797 Y163.208 E.05064 F5420 ; infill
-G1 X153.048 Y136.792 E1.03247 F5420 ; infill
-G1 X154.589 Y136.792 E.05216 F5420 ; infill
-G1 X163.208 Y151.721 E.5835 F5420 ; infill
-G1 X163.208 Y153.964 E.07592 F5420 ; infill
-G1 X136.792 Y153.964 E.89415 F5420 ; infill
-G1 X136.792 Y155.964 E.0677 F5420 ; infill
+G1 X136.792 Y151.721 E.0677 ; infill
+G1 X145.411 Y136.792 E.5835 ; infill
+G1 X146.952 Y136.792 E.05216 ; infill
+G1 X162.203 Y163.208 E1.03247 ; infill
+G1 X160.707 Y163.208 E.05064 ; infill
+G1 X163.208 Y158.877 E.16929 ; infill
+G1 X163.208 Y160.578 E.05758 ; infill
+G1 X136.792 Y160.578 E.89415 ; infill
+G1 X136.792 Y158.877 E.05758 ; infill
+G1 X139.293 Y163.208 E.16929 ; infill
+G1 X137.797 Y163.208 E.05064 ; infill
+G1 X153.048 Y136.792 E1.03247 ; infill
+G1 X154.589 Y136.792 E.05216 ; infill
+G1 X163.208 Y151.721 E.5835 ; infill
+G1 X163.208 Y153.964 E.07592 ; infill
+G1 X136.792 Y153.964 E.89415 ; infill
+G1 X136.792 Y155.964 E.0677 ; infill
 ;LAYER_CHANGE:141
 ;Z:28.3
 ;HEIGHT:0.2
@@ -15233,37 +15047,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6059 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6059 ; perimeter
-M104 S221
-G1 X136.446 Y136.446 E.82083 F6059 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6058 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M73 P87 R3
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6058 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6058 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6058 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6058 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6058 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6058 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6058 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6058 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6057 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6057 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6057 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6057 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15274,46 +15087,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y138.777 E.06719 F5418 ; infill
-G1 X137.938 Y136.792 E.07758 F5419 ; infill
-G1 X139.152 Y136.792 E.04109 F5419 ; infill
-G1 X154.403 Y163.208 E1.03247 F5418 ; infill
-G1 X153.234 Y163.208 E.03957 F5418 ; infill
-G1 X163.208 Y145.933 E.6752 F5418 ; infill
-G1 X163.208 Y147.209 E.04319 F5418 ; infill
-G1 X136.792 Y147.209 E.89415 F5418 ; infill
-G1 X136.792 Y145.933 E.04319 F5418 ; infill
-G1 X146.766 Y163.208 E.6752 F5418 ; infill
-G1 X145.597 Y163.208 E.03957 F5418 ; infill
-G1 X160.848 Y136.792 E1.03247 F5418 ; infill
-G1 X162.062 Y136.792 E.04109 F5418 ; infill
-G1 X163.208 Y138.777 E.07758 F5418 ; infill
-G1 X163.208 Y140.595 E.06154 F5417 ; infill
-G1 X136.792 Y140.595 E.89415 F5418 ; infill
-G1 X136.792 Y142.595 E.0677 F5417 ; infill
+G1 X136.792 Y138.777 E.06719 ; infill
+G1 X137.938 Y136.792 E.07758 ; infill
+G1 X139.152 Y136.792 E.04109 ; infill
+G1 X154.403 Y163.208 E1.03247 ; infill
+G1 X153.234 Y163.208 E.03957 ; infill
+G1 X163.208 Y145.933 E.6752 ; infill
+G1 X163.208 Y147.209 E.04319 ; infill
+G1 X136.792 Y147.209 E.89415 ; infill
+G1 X136.792 Y145.933 E.04319 ; infill
+G1 X146.766 Y163.208 E.6752 ; infill
+G1 X145.597 Y163.208 E.03957 ; infill
+G1 X160.848 Y136.792 E1.03247 ; infill
+G1 X162.062 Y136.792 E.04109 ; infill
+G1 X163.208 Y138.777 E.07758 ; infill
+G1 X163.208 Y140.595 E.06154 ; infill
+G1 X136.792 Y140.595 E.89415 ; infill
+G1 X136.792 Y142.595 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y150.004 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y152.004 E.0677 F5417 ; infill
-G1 X145.575 Y136.792 E.59457 F5418 ; infill
-G1 X146.789 Y136.792 E.04109 F5418 ; infill
-G1 X162.04 Y163.208 E1.03247 F5418 ; infill
-G1 X160.871 Y163.208 E.03957 F5417 ; infill
-G1 X163.208 Y159.16 E.15822 F5417 ; infill
-G1 X163.208 Y160.436 E.04319 F5417 ; infill
-G1 X136.792 Y160.436 E.89415 F5417 ; infill
-G1 X136.792 Y159.16 E.04319 F5417 ; infill
-G1 X139.129 Y163.208 E.15822 F5417 ; infill
-G1 X137.96 Y163.208 E.03957 F5417 ; infill
-G1 X153.211 Y136.792 E1.03247 F5417 ; infill
-G1 X154.425 Y136.792 E.04109 F5417 ; infill
-G1 X163.208 Y152.004 E.59457 F5417 ; infill
-G1 X163.208 Y153.823 E.06157 F5417 ; infill
-G1 X136.792 Y153.823 E.89415 F5417 ; infill
-G1 X136.792 Y155.823 E.0677 F5417 ; infill
+G1 X136.792 Y152.004 E.0677 ; infill
+G1 X145.575 Y136.792 E.59457 ; infill
+G1 X146.789 Y136.792 E.04109 ; infill
+G1 X162.04 Y163.208 E1.03247 ; infill
+G1 X160.871 Y163.208 E.03957 ; infill
+G1 X163.208 Y159.16 E.15822 ; infill
+G1 X163.208 Y160.436 E.04319 ; infill
+G1 X136.792 Y160.436 E.89415 ; infill
+G1 X136.792 Y159.16 E.04319 ; infill
+G1 X139.129 Y163.208 E.15822 ; infill
+G1 X137.96 Y163.208 E.03957 ; infill
+G1 X153.211 Y136.792 E1.03247 ; infill
+G1 X154.425 Y136.792 E.04109 ; infill
+G1 X163.208 Y152.004 E.59457 ; infill
+G1 X163.208 Y153.823 E.06157 ; infill
+G1 X136.792 Y153.823 E.89415 ; infill
+G1 X136.792 Y155.823 E.0677 ; infill
 ;LAYER_CHANGE:142
 ;Z:28.5
 ;HEIGHT:0.2
@@ -15332,35 +15145,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6055 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6055 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6055 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6055 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6055 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6055 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6055 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6055 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6054 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6054 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6054 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6054 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6054 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6054 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6054 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6054 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15371,47 +15184,47 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y139.059 E.0677 F5415 ; infill
-G1 X138.101 Y136.792 E.08861 F5415 ; infill
+G1 X136.792 Y139.059 E.0677 ; infill
+G1 X138.101 Y136.792 E.08861 ; infill
 G1 X138.988 Y136.792 E.03002 ; infill
-G1 X154.24 Y163.208 E1.03249 F5415 ; infill
+G1 X154.24 Y163.208 E1.03249 ; infill
 G1 X153.397 Y163.208 E.02853 ; infill
-G1 X163.208 Y146.215 E.66418 F5415 ; infill
+G1 X163.208 Y146.215 E.66418 ; infill
 G1 X163.208 Y147.068 E.02887 ; infill
-G1 X136.792 Y147.068 E.89415 F5415 ; infill
+G1 X136.792 Y147.068 E.89415 ; infill
 G1 X136.792 Y146.215 E.02887 ; infill
-G1 X146.603 Y163.208 E.66418 F5415 ; infill
+G1 X146.603 Y163.208 E.66418 ; infill
 G1 X145.76 Y163.208 E.02853 ; infill
-G1 X161.011 Y136.792 E1.03247 F5415 ; infill
+G1 X161.011 Y136.792 E1.03247 ; infill
 G1 X161.899 Y136.792 E.03006 ; infill
-G1 X163.208 Y139.059 E.08861 F5415 ; infill
-G1 X163.208 Y140.454 E.04722 F5415 ; infill
-G1 X136.792 Y140.454 E.89415 F5415 ; infill
-G1 X136.792 Y142.454 E.0677 F5414 ; infill
+G1 X163.208 Y139.059 E.08861 ; infill
+G1 X163.208 Y140.454 E.04722 ; infill
+G1 X136.792 Y140.454 E.89415 ; infill
+G1 X136.792 Y142.454 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y150.287 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y152.287 E.0677 F5414 ; infill
-G1 X145.738 Y136.792 E.60563 F5415 ; infill
+G1 X136.792 Y152.287 E.0677 ; infill
+G1 X145.738 Y136.792 E.60563 ; infill
 G1 X146.625 Y136.792 E.03002 ; infill
-G1 X161.876 Y163.208 E1.03247 F5415 ; infill
+G1 X161.876 Y163.208 E1.03247 ; infill
 G1 X161.034 Y163.208 E.0285 ; infill
-G1 X163.208 Y159.442 E.14719 F5414 ; infill
+G1 X163.208 Y159.442 E.14719 ; infill
 G1 X163.208 Y160.295 E.02887 ; infill
-G1 X136.792 Y160.295 E.89415 F5414 ; infill
+G1 X136.792 Y160.295 E.89415 ; infill
 G1 X136.792 Y159.443 E.02884 ; infill
 M73 P88 R3
-G1 X138.966 Y163.208 E.14716 F5414 ; infill
+G1 X138.966 Y163.208 E.14716 ; infill
 G1 X138.124 Y163.208 E.0285 ; infill
-G1 X153.375 Y136.792 E1.03247 F5414 ; infill
+G1 X153.375 Y136.792 E1.03247 ; infill
 G1 X154.262 Y136.792 E.03002 ; infill
-G1 X163.208 Y152.287 E.60563 F5414 ; infill
-G1 X163.208 Y153.681 E.04719 F5414 ; infill
-G1 X136.792 Y153.681 E.89415 F5414 ; infill
-G1 X136.792 Y155.681 E.0677 F5414 ; infill
+G1 X163.208 Y152.287 E.60563 ; infill
+G1 X163.208 Y153.681 E.04719 ; infill
+G1 X136.792 Y153.681 E.89415 ; infill
+G1 X136.792 Y155.681 E.0677 ; infill
 ;LAYER_CHANGE:143
 ;Z:28.7
 ;HEIGHT:0.2
@@ -15430,35 +15243,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6052 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6052 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6052 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6052 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6052 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6052 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6051 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6051 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6051 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6051 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6051 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6051 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6051 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6051 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6051 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6050 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15469,47 +15282,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y139.342 E.0677 F5412 ; infill
-G1 X138.264 Y136.792 E.09966 F5413 ; infill
+G1 X136.792 Y139.342 E.0677 ; infill
+G1 X138.264 Y136.792 E.09966 ; infill
 G1 X138.825 Y136.792 E.01899 ; infill
-G1 X154.076 Y163.208 E1.03247 F5412 ; infill
+G1 X154.076 Y163.208 E1.03247 ; infill
 G1 X153.561 Y163.208 E.01743 ; infill
-G1 X163.208 Y146.498 E.65311 F5412 ; infill
+G1 X163.208 Y146.498 E.65311 ; infill
 G1 X163.208 Y146.926 E.01449 ; infill
-G1 X136.792 Y146.926 E.89415 F5412 ; infill
+G1 X136.792 Y146.926 E.89415 ; infill
 G1 X136.792 Y146.498 E.01449 ; infill
-G1 X146.439 Y163.208 E.65311 F5412 ; infill
+G1 X146.439 Y163.208 E.65311 ; infill
 G1 X145.924 Y163.208 E.01743 ; infill
-G1 X161.175 Y136.792 E1.03247 F5412 ; infill
+G1 X161.175 Y136.792 E1.03247 ; infill
 G1 X161.735 Y136.792 E.01896 ; infill
-G1 X163.208 Y139.342 E.09968 F5412 ; infill
-G1 X163.208 Y140.313 E.03287 F5411 ; infill
-G1 X136.792 Y140.313 E.89415 F5412 ; infill
-G1 X136.792 Y142.313 E.0677 F5412 ; infill
+G1 X163.208 Y139.342 E.09968 ; infill
+G1 X163.208 Y140.313 E.03287 ; infill
+G1 X136.792 Y140.313 E.89415 ; infill
+G1 X136.792 Y142.313 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y150.569 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y152.569 E.0677 F5412 ; infill
-G1 X145.901 Y136.792 E.61665 F5412 ; infill
+G1 X136.792 Y152.569 E.0677 ; infill
+G1 X145.901 Y136.792 E.61665 ; infill
 G1 X146.462 Y136.792 E.01899 ; infill
-G1 X161.713 Y163.208 E1.03247 F5412 ; infill
+G1 X161.713 Y163.208 E1.03247 ; infill
 G1 X161.197 Y163.208 E.01747 ; infill
-G1 X163.208 Y159.725 E.13614 F5411 ; infill
+G1 X163.208 Y159.725 E.13614 ; infill
 G1 X163.208 Y160.154 E.01452 ; infill
-G1 X136.792 Y160.153 E.89415 F5412 ; infill
+G1 X136.792 Y160.153 E.89415 ; infill
 G1 X136.792 Y159.726 E.01445 ; infill
-G1 X138.803 Y163.208 E.13611 F5411 ; infill
+G1 X138.803 Y163.208 E.13611 ; infill
 G1 X138.287 Y163.208 E.01747 ; infill
-G1 X153.538 Y136.792 E1.03247 F5411 ; infill
+G1 X153.538 Y136.792 E1.03247 ; infill
 G1 X154.099 Y136.792 E.01899 ; infill
-M104 S220
-G1 X163.208 Y152.569 E.61665 F5411 ; infill
-G1 X163.208 Y153.54 E.03287 F5411 ; infill
-G1 X136.792 Y153.54 E.89415 F5411 ; infill
-G1 X136.792 Y155.54 E.0677 F5411 ; infill
+G1 X163.208 Y152.569 E.61665 ; infill
+G1 X163.208 Y153.54 E.03287 ; infill
+G1 X136.792 Y153.54 E.89415 ; infill
+G1 X136.792 Y155.54 E.0677 ; infill
 ;LAYER_CHANGE:144
 ;Z:28.9
 ;HEIGHT:0.2
@@ -15528,35 +15340,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6049 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6049 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6049 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6049 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6048 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6048 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6048 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6048 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6048 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6048 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6048 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6048 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6048 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6048 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6047 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6047 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15567,44 +15379,43 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:719.427
 G1 F8843
-G1 X136.792 Y139.625 E.0677 F5409 ; infill
-G1 X138.428 Y136.792 E.11073 F5410 ; infill
+G1 X136.792 Y139.625 E.0677 ; infill
+G1 X138.428 Y136.792 E.11073 ; infill
 G1 X138.662 Y136.792 E.00792 ; infill
-G1 X153.913 Y163.208 E1.03247 F5410 ; infill
+G1 X153.913 Y163.208 E1.03247 ; infill
 G1 X153.724 Y163.208 E.0064 ; infill
-G1 X163.208 Y146.781 E.64205 F5409 ; infill
-M104 S218
-G1 X136.792 Y146.781 E.89415 F5409 ; infill
-G1 X146.276 Y163.208 E.64205 F5409 ; infill
+G1 X163.208 Y146.781 E.64205 ; infill
+G1 X136.792 Y146.781 E.89415 ; infill
+G1 X146.276 Y163.208 E.64205 ; infill
 G1 X146.087 Y163.208 E.0064 ; infill
 M73 P89 R3
-G1 X161.338 Y136.792 E1.03247 F5409 ; infill
+G1 X161.338 Y136.792 E1.03247 ; infill
 G1 X161.572 Y136.792 E.00792 ; infill
-G1 X163.208 Y139.625 E.11073 F5409 ; infill
+G1 X163.208 Y139.625 E.11073 ; infill
 G1 X163.208 Y140.171 E.01848 ; infill
-G1 X136.792 Y140.171 E.89415 F5409 ; infill
-G1 X136.792 Y142.171 E.0677 F5409 ; infill
+G1 X136.792 Y140.171 E.89415 ; infill
+G1 X136.792 Y142.171 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y150.852 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X136.792 Y152.852 E.0677 F5409 ; infill
-G1 X146.064 Y136.792 E.6277 F5409 ; infill
+G1 X136.792 Y152.852 E.0677 ; infill
+G1 X146.064 Y136.792 E.6277 ; infill
 G1 X146.299 Y136.792 E.00795 ; infill
-G1 X161.55 Y163.208 E1.03247 F5409 ; infill
+G1 X161.55 Y163.208 E1.03247 ; infill
 G1 X161.36 Y163.208 E.00643 ; infill
-G1 X163.208 Y160.012 E.12496 F5409 ; infill
-G1 X136.792 Y160.012 E.89415 F5409 ; infill
-G1 X138.639 Y163.208 E.12495 F5409 ; infill
+G1 X163.208 Y160.012 E.12496 ; infill
+G1 X136.792 Y160.012 E.89415 ; infill
+G1 X138.639 Y163.208 E.12495 ; infill
 G1 X138.45 Y163.208 E.0064 ; infill
-G1 X153.701 Y136.792 E1.03247 F5409 ; infill
+G1 X153.701 Y136.792 E1.03247 ; infill
 G1 X153.935 Y136.792 E.00792 ; infill
-G1 X163.208 Y152.852 E.62772 F5409 ; infill
+G1 X163.208 Y152.852 E.62772 ; infill
 G1 X163.208 Y153.398 E.01848 ; infill
-G1 X136.792 Y153.398 E.89415 F5409 ; infill
-G1 X136.792 Y155.398 E.0677 F5408 ; infill
+G1 X136.792 Y153.398 E.89415 ; infill
+G1 X136.792 Y155.398 E.0677 ; infill
 ;LAYER_CHANGE:145
 ;Z:29.1
 ;HEIGHT:0.2
@@ -15624,35 +15435,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6046 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6046 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6046 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6046 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6045 ; perimeter
-G1 X136.039 Y163.961 E.84548 F6045 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6045 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6045 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6045 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6045 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6045 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6045 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6045 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6045 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6044 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6044 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15663,46 +15474,46 @@ M204 S6000 ; adjust acceleration
 ;WIDTH:0.45
 ;REGION_AREA:676.43
 G1 F8843
-G1 X137.199 Y146.643 E.0677 F5407 ; infill
-G1 X162.801 Y146.643 E.8666 F5407 ; infill
-G1 X162.801 Y147.769 E.03811 F5407 ; infill
-G1 X154.122 Y162.801 E.58753 F5407 ; infill
+G1 X137.199 Y146.643 E.0677 ; infill
+G1 X162.801 Y146.643 E.8666 ; infill
+G1 X162.801 Y147.769 E.03811 ; infill
+G1 X154.122 Y162.801 E.58753 ; infill
 G1 X153.515 Y162.801 E.02055 ; infill
-G1 X138.734 Y137.199 E1.00065 F5407 ; infill
+G1 X138.734 Y137.199 E1.00065 ; infill
 G1 X138.356 Y137.199 E.01279 ; infill
-G1 X137.199 Y139.203 E.07833 F5406 ; infill
+G1 X137.199 Y139.203 E.07833 ; infill
 G1 X137.199 Y140.03 E.02799 ; infill
-G1 X162.801 Y140.03 E.8666 F5407 ; infill
+G1 X162.801 Y140.03 E.8666 ; infill
 G1 X162.801 Y139.203 E.02799 ; infill
-G1 X161.644 Y137.199 E.07833 F5406 ; infill
+G1 X161.644 Y137.199 E.07833 ; infill
 G1 X161.266 Y137.199 E.01279 ; infill
-G1 X146.485 Y162.801 E1.00065 F5407 ; infill
+G1 X146.485 Y162.801 E1.00065 ; infill
 G1 X145.878 Y162.801 E.02055 ; infill
-G1 X137.199 Y147.769 E.58753 F5406 ; infill
-G1 X137.199 Y149.769 E.0677 F5406 ; infill
+G1 X137.199 Y147.769 E.58753 ; infill
+G1 X137.199 Y149.769 E.0677 ; infill
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
 G1 X137.199 Y157.871 F30000 ; move to first infill point
 G1 E2 F2400 ;  ; unretract
 M204 S6000 ; adjust acceleration
 G1 F8843
-G1 X137.199 Y159.871 E.0677 F5406 ; infill
-G1 X162.801 Y159.871 E.8666 F5406 ; infill
-G1 X162.801 Y160.996 E.03808 F5406 ; infill
-G1 X161.759 Y162.801 E.07055 F5406 ; infill
+G1 X137.199 Y159.871 E.0677 ; infill
+G1 X162.801 Y159.871 E.8666 ; infill
+G1 X162.801 Y160.996 E.03808 ; infill
+G1 X161.759 Y162.801 E.07055 ; infill
 G1 X161.151 Y162.801 E.02058 ; infill
-G1 X146.37 Y137.199 E1.00065 F5406 ; infill
+G1 X146.37 Y137.199 E1.00065 ; infill
 G1 X145.993 Y137.199 E.01276 ; infill
-G1 X137.199 Y152.43 E.59531 F5406 ; infill
+G1 X137.199 Y152.43 E.59531 ; infill
 G1 X137.199 Y153.257 E.02799 ; infill
-G1 X162.801 Y153.257 E.8666 F5406 ; infill
+G1 X162.801 Y153.257 E.8666 ; infill
 G1 X162.801 Y152.43 E.02799 ; infill
-G1 X154.007 Y137.199 E.59531 F5406 ; infill
+G1 X154.007 Y137.199 E.59531 ; infill
 G1 X153.629 Y137.199 E.01279 ; infill
-G1 X138.849 Y162.801 E1.00064 F5406 ; infill
+G1 X138.849 Y162.801 E1.00064 ; infill
 G1 X138.241 Y162.801 E.02058 ; infill
-G1 X137.199 Y160.996 E.07055 F5406 ; infill
-G1 X137.199 Y162.801 E.0611 F5406 ; infill
+G1 X137.199 Y160.996 E.07055 ; infill
+G1 X137.199 Y162.801 E.0611 ; infill
 G1 X137.395 Y162.801 E.00663 ; infill
 M204 S15000 ; adjust acceleration
 G1 X136.792 Y162.997 F30000 ; move to first infill point
@@ -15712,7 +15523,7 @@ M204 S6000 ; adjust acceleration
 ;REGION_AREA:42.9887
 ;FILL_PATTERN:21
 G1 F9887
-G1 X136.793 Y137.003 E.78702 F6044 ; infill
+G1 X136.793 Y137.003 E.78702 ; infill
 ;WIDTH:0.44
 G1 F9068
 G1 X136.811 Y136.919 E.00284 ; infill
@@ -15725,7 +15536,7 @@ G1 F9068
 G1 X137.003 Y136.793 E.00295 ; infill
 ;WIDTH:0.405
 G1 F9938
-G1 X162.997 Y136.793 E.78296 F6075 ; infill
+G1 X162.997 Y136.793 E.78296 ; infill
 ;WIDTH:0.443
 G1 F9007
 G1 X163.084 Y136.812 E.00296 ; infill
@@ -15738,7 +15549,7 @@ G1 F8986
 G1 X163.208 Y137.003 E.00293 ; infill
 ;WIDTH:0.407
 G1 F9887
-G1 X163.207 Y162.997 E.78702 F6043 ; infill
+G1 X163.207 Y162.997 E.78702 ; infill
 ;WIDTH:0.44
 G1 F9068
 G1 X163.189 Y163.081 E.00284 ; infill
@@ -15751,7 +15562,7 @@ G1 F9046
 G1 X162.997 Y163.208 E.00297 ; infill
 ;WIDTH:0.407
 G1 F9887
-G1 X137.003 Y163.207 E.78702 F6043 ; infill
+G1 X137.003 Y163.207 E.78702 ; infill
 ;WIDTH:0.435
 G1 F9176
 G1 X136.931 Y163.192 E.0024 ; infill
@@ -15776,37 +15587,36 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F6042 ; perimeter
-G1 X136.446 Y163.554 E.82083 F6042 ; perimeter
-G1 X136.446 Y136.446 E.82083 F6042 ; perimeter
-G1 X163.494 Y136.446 E.81901 F6042 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F6042 ; perimeter
-M104 S219
-G1 X136.039 Y163.961 E.84548 F6042 ; perimeter
-G1 X136.039 Y136.039 E.84548 F6042 ; perimeter
-G1 X163.901 Y136.039 E.84366 F6042 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F6042 ; perimeter
-G1 X135.632 Y164.368 E.87012 F6041 ; perimeter
-G1 X135.632 Y135.632 E.87012 F6041 ; perimeter
-G1 X164.308 Y135.632 E.86831 F6041 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M73 P90 R2
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F6041 ; perimeter
-G1 X135.225 Y164.775 E.89477 F6041 ; perimeter
-G1 X135.225 Y135.225 E.89477 F6041 ; perimeter
-G1 X164.715 Y135.225 E.89295 F6041 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -15826,7 +15636,6 @@ G1 X136.839 Y161.471 E.12846 ; infill (bridge)
 G1 X136.839 Y160.893 E.02197 ; infill (bridge)
 G1 X140.767 Y163.161 E.17239 ; infill (bridge)
 G1 X141.768 Y163.161 E.03804 ; infill (bridge)
-M104 S219
 G1 X136.839 Y160.315 E.21632 ; infill (bridge)
 G1 X136.839 Y159.737 E.02197 ; infill (bridge)
 G1 X142.769 Y163.161 E.26025 ; infill (bridge)
@@ -15837,8 +15646,6 @@ G1 X144.771 Y163.161 E.34809 ; infill (bridge)
 G1 X145.772 Y163.161 E.03804 ; infill (bridge)
 G1 X136.839 Y158.004 E.39202 ; infill (bridge)
 G1 X136.839 Y157.426 E.02197 ; infill (bridge)
-M104 S220
-M104 S219
 G1 X146.773 Y163.161 E.43596 ; infill (bridge)
 G1 X147.773 Y163.161 E.03801 ; infill (bridge)
 G1 X136.839 Y156.848 E.47985 ; infill (bridge)
@@ -15857,20 +15664,16 @@ G1 X136.839 Y153.381 E.74342 ; infill (bridge)
 G1 X136.839 Y152.803 E.02197 ; infill (bridge)
 G1 X154.78 Y163.161 E.78735 ; infill (bridge)
 G1 X155.781 Y163.161 E.03804 ; infill (bridge)
-M104 S220
 G1 X136.839 Y152.225 E.83128 ; infill (bridge)
 G1 X136.839 Y151.647 E.02197 ; infill (bridge)
 G1 X156.782 Y163.161 E.87522 ; infill (bridge)
 G1 X157.782 Y163.161 E.03801 ; infill (bridge)
 G1 X136.839 Y151.069 E.91911 ; infill (bridge)
 G1 X136.839 Y150.492 E.02193 ; infill (bridge)
-M104 S220
 G1 X158.783 Y163.161 E.96303 ; infill (bridge)
 G1 X159.784 Y163.161 E.03804 ; infill (bridge)
-M104 S221
 G1 X136.839 Y149.914 E1.00696 ; infill (bridge)
 G1 X136.839 Y149.336 E.02197 ; infill (bridge)
-M104 S220
 G1 X160.785 Y163.161 E1.05089 ; infill (bridge)
 G1 X161.786 Y163.161 E.03804 ; infill (bridge)
 G1 X136.839 Y148.758 E1.09482 ; infill (bridge)
@@ -15881,68 +15684,52 @@ G1 X163.161 Y163.161 E.01421 ; infill (bridge)
 G1 X163.161 Y162.8 E.01372 ; infill (bridge)
 G1 X136.839 Y147.602 E1.15518 ; infill (bridge)
 G1 X136.839 Y147.024 E.02197 ; infill (bridge)
-M104 S221
 G1 X163.161 Y162.222 E1.15518 ; infill (bridge)
 G1 X163.161 Y161.644 E.02197 ; infill (bridge)
 G1 X136.839 Y146.446 E1.15518 ; infill (bridge)
 G1 X136.839 Y145.869 E.02193 ; infill (bridge)
-M104 S222
-M104 S221
 G1 X163.161 Y161.066 E1.15517 ; infill (bridge)
 G1 X163.161 Y160.488 E.02197 ; infill (bridge)
-M104 S221
 G1 X136.839 Y145.291 E1.15517 ; infill (bridge)
 G1 X136.839 Y144.713 E.02197 ; infill (bridge)
 G1 X163.161 Y159.91 E1.15517 ; infill (bridge)
 G1 X163.161 Y159.332 E.02197 ; infill (bridge)
 G1 X136.839 Y144.135 E1.15517 ; infill (bridge)
 G1 X136.839 Y143.557 E.02197 ; infill (bridge)
-M104 S222
 G1 X163.161 Y158.754 E1.15517 ; infill (bridge)
 G1 X163.161 Y158.177 E.02193 ; infill (bridge)
-M104 S223
 G1 X136.839 Y142.979 E1.15518 ; infill (bridge)
 G1 X136.839 Y142.401 E.02197 ; infill (bridge)
 G1 X163.161 Y157.599 E1.15518 ; infill (bridge)
 G1 X163.161 Y157.021 E.02197 ; infill (bridge)
-M104 S222
 G1 X136.839 Y141.823 E1.15518 ; infill (bridge)
 G1 X136.839 Y141.246 E.02193 ; infill (bridge)
-M104 S222
 G1 X163.161 Y156.443 E1.15517 ; infill (bridge)
 G1 X163.161 Y155.865 E.02197 ; infill (bridge)
 M73 P92 R2
 G1 X136.839 Y140.668 E1.15517 ; infill (bridge)
 G1 X136.839 Y140.09 E.02197 ; infill (bridge)
-M104 S223
 G1 X163.161 Y155.287 E1.15517 ; infill (bridge)
 G1 X163.161 Y154.709 E.02197 ; infill (bridge)
-M104 S224
 G1 X136.839 Y139.512 E1.15517 ; infill (bridge)
 G1 X136.839 Y138.934 E.02197 ; infill (bridge)
 G1 X163.161 Y154.131 E1.15517 ; infill (bridge)
 G1 X163.161 Y153.554 E.02193 ; infill (bridge)
-M104 S223
 G1 X136.839 Y138.356 E1.15518 ; infill (bridge)
 G1 X136.839 Y137.778 E.02197 ; infill (bridge)
-M104 S223
 G1 X163.161 Y152.976 E1.15518 ; infill (bridge)
 G1 X163.161 Y152.398 E.02197 ; infill (bridge)
 G1 X136.839 Y137.2 E1.15518 ; infill (bridge)
 G1 X136.839 Y136.839 E.01372 ; infill (bridge)
 G1 X137.213 Y136.839 E.01421 ; infill (bridge)
-M104 S224
 G1 X163.161 Y151.82 E1.13875 ; infill (bridge)
 G1 X163.161 Y151.242 E.02197 ; infill (bridge)
-M104 S225
 G1 X138.214 Y136.839 E1.09482 ; infill (bridge)
 G1 X139.215 Y136.839 E.03804 ; infill (bridge)
 G1 X163.161 Y150.664 E1.05089 ; infill (bridge)
-M104 S224
 G1 X163.161 Y150.086 E.02197 ; infill (bridge)
 G1 X140.216 Y136.839 E1.00696 ; infill (bridge)
 G1 X141.217 Y136.839 E.03804 ; infill (bridge)
-M104 S224
 G1 X163.161 Y149.508 E.96303 ; infill (bridge)
 G1 X163.161 Y148.931 E.02193 ; infill (bridge)
 M73 P92 R1
@@ -15950,21 +15737,17 @@ G1 X142.218 Y136.839 E.91911 ; infill (bridge)
 G1 X143.218 Y136.839 E.03801 ; infill (bridge)
 G1 X163.161 Y148.353 E.87522 ; infill (bridge)
 G1 X163.161 Y147.775 E.02197 ; infill (bridge)
-M104 S225
 G1 X144.219 Y136.839 E.83128 ; infill (bridge)
 G1 X145.22 Y136.839 E.03804 ; infill (bridge)
 M73 P93 R1
-M104 S226
 G1 X163.161 Y147.197 E.78735 ; infill (bridge)
 G1 X163.161 Y146.619 E.02197 ; infill (bridge)
 G1 X146.221 Y136.839 E.74342 ; infill (bridge)
 G1 X147.222 Y136.839 E.03804 ; infill (bridge)
-M104 S225
 G1 X163.161 Y146.041 E.69949 ; infill (bridge)
 G1 X163.161 Y145.463 E.02197 ; infill (bridge)
 G1 X148.223 Y136.839 E.65556 ; infill (bridge)
 G1 X149.224 Y136.839 E.03804 ; infill (bridge)
-M104 S225
 G1 X163.161 Y144.885 E.61163 ; infill (bridge)
 G1 X163.161 Y144.308 E.02193 ; infill (bridge)
 G1 X150.225 Y136.839 E.56772 ; infill (bridge)
@@ -15975,7 +15758,6 @@ G1 X152.227 Y136.839 E.47985 ; infill (bridge)
 G1 X153.227 Y136.839 E.03801 ; infill (bridge)
 G1 X163.161 Y142.574 E.43596 ; infill (bridge)
 G1 X163.161 Y141.996 E.02197 ; infill (bridge)
-M104 S226
 G1 X154.228 Y136.839 E.39202 ; infill (bridge)
 G1 X155.229 Y136.839 E.03804 ; infill (bridge)
 G1 X163.161 Y141.418 E.34809 ; infill (bridge)
@@ -15985,7 +15767,6 @@ G1 X157.231 Y136.839 E.03804 ; infill (bridge)
 G1 X163.161 Y140.263 E.26025 ; infill (bridge)
 G1 X163.161 Y139.685 E.02197 ; infill (bridge)
 G1 X158.232 Y136.839 E.21632 ; infill (bridge)
-M104 S227
 G1 X159.233 Y136.839 E.03804 ; infill (bridge)
 G1 X163.161 Y139.107 E.17239 ; infill (bridge)
 G1 X163.161 Y138.529 E.02197 ; infill (bridge)
@@ -16011,37 +15792,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8306 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8317 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8327 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8338 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-M104 S226
-G1 X163.961 Y163.961 E.84548 F8349 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8360 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8371 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8382 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8393 ; perimeter
-M104 S226
-G1 X135.632 Y164.368 E.87012 F8404 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8415 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8427 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8438 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8450 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8461 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8472 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -16055,190 +15834,184 @@ M204 S6000 ; adjust acceleration
 G1 F8766
 G1 X162.636 Y136.792 E.03646 ; infill
 G1 X162.056 Y136.792 E.01981 ; infill
-G1 X163.208 Y137.944 E.05563 F7515 ; infill
+G1 X163.208 Y137.944 E.05563 ; infill
 G1 X163.208 Y138.525 E.01984 ; infill
-G1 X161.475 Y136.792 E.08369 F7515 ; infill
+G1 X161.475 Y136.792 E.08369 ; infill
 G1 X160.894 Y136.792 E.01984 ; infill
-G1 X163.208 Y139.106 E.11175 F7517 ; infill
+G1 X163.208 Y139.106 E.11175 ; infill
 G1 X163.208 Y139.687 E.01984 ; infill
-G1 X160.313 Y136.792 E.1398 F7519 ; infill
+G1 X160.313 Y136.792 E.1398 ; infill
 G1 X159.733 Y136.792 E.01981 ; infill
-G1 X163.208 Y140.267 E.16781 F7521 ; infill
+G1 X163.208 Y140.267 E.16781 ; infill
 G1 X163.208 Y140.848 E.01984 ; infill
-G1 X159.152 Y136.792 E.19587 F7523 ; infill
+G1 X159.152 Y136.792 E.19587 ; infill
 G1 X158.571 Y136.792 E.01984 ; infill
-G1 X163.208 Y141.429 E.22393 F7526 ; infill
+G1 X163.208 Y141.429 E.22393 ; infill
 G1 X163.208 Y142.01 E.01984 ; infill
-G1 X157.99 Y136.792 E.25198 F7529 ; infill
+G1 X157.99 Y136.792 E.25198 ; infill
 G1 X157.409 Y136.792 E.01984 ; infill
-G1 X163.208 Y142.591 E.28004 F7533 ; infill
+G1 X163.208 Y142.591 E.28004 ; infill
 G1 X163.208 Y143.171 E.01981 ; infill
-G1 X156.829 Y136.792 E.30805 F7536 ; infill
+G1 X156.829 Y136.792 E.30805 ; infill
 G1 X156.248 Y136.792 E.01984 ; infill
-G1 X163.208 Y143.752 E.3361 F7540 ; infill
+G1 X163.208 Y143.752 E.3361 ; infill
 G1 X163.208 Y144.333 E.01984 ; infill
-G1 X155.667 Y136.792 E.36416 F7545 ; infill
+G1 X155.667 Y136.792 E.36416 ; infill
 G1 X155.086 Y136.792 E.01984 ; infill
-G1 X163.208 Y144.914 E.39222 F7549 ; infill
+G1 X163.208 Y144.914 E.39222 ; infill
 G1 X163.208 Y145.494 E.01981 ; infill
-G1 X154.506 Y136.792 E.42023 F7554 ; infill
+G1 X154.506 Y136.792 E.42023 ; infill
 G1 X153.925 Y136.792 E.01984 ; infill
-G1 X163.208 Y146.075 E.44828 F7560 ; infill
+G1 X163.208 Y146.075 E.44828 ; infill
 G1 X163.208 Y146.656 E.01984 ; infill
-G1 X153.344 Y136.792 E.47634 F7565 ; infill
+G1 X153.344 Y136.792 E.47634 ; infill
 G1 X152.763 Y136.792 E.01984 ; infill
-G1 X163.208 Y147.237 E.5044 F7571 ; infill
+G1 X163.208 Y147.237 E.5044 ; infill
 G1 X163.208 Y147.817 E.01981 ; infill
-M104 S227
-G1 X152.183 Y136.792 E.53241 F7577 ; infill
+G1 X152.183 Y136.792 E.53241 ; infill
 G1 X151.602 Y136.792 E.01984 ; infill
 M73 P94 R1
-G1 X163.208 Y148.398 E.56046 F7584 ; infill
+G1 X163.208 Y148.398 E.56046 ; infill
 G1 X163.208 Y148.979 E.01984 ; infill
-G1 X151.021 Y136.792 E.58852 F7590 ; infill
+G1 X151.021 Y136.792 E.58852 ; infill
 G1 X150.44 Y136.792 E.01984 ; infill
-G1 X163.208 Y149.56 E.61658 F7598 ; infill
+G1 X163.208 Y149.56 E.61658 ; infill
 G1 X163.208 Y150.141 E.01984 ; infill
-G1 X149.86 Y136.792 E.64461 F7605 ; infill
+G1 X149.86 Y136.792 E.64461 ; infill
 G1 X149.279 Y136.792 E.01984 ; infill
-G1 X163.208 Y150.721 E.67264 F7613 ; infill
+G1 X163.208 Y150.721 E.67264 ; infill
 G1 X163.208 Y151.302 E.01984 ; infill
-G1 X148.698 Y136.792 E.7007 F7621 ; infill
+G1 X148.698 Y136.792 E.7007 ; infill
 G1 X148.117 Y136.792 E.01984 ; infill
-G1 X163.208 Y151.883 E.72876 F7629 ; infill
+G1 X163.208 Y151.883 E.72876 ; infill
 G1 X163.208 Y152.464 E.01984 ; infill
-G1 X147.536 Y136.792 E.75682 F7638 ; infill
+G1 X147.536 Y136.792 E.75682 ; infill
 G1 X146.956 Y136.792 E.01981 ; infill
-G1 X163.208 Y153.044 E.78482 F7647 ; infill
+G1 X163.208 Y153.044 E.78482 ; infill
 G1 X163.208 Y153.625 E.01984 ; infill
-G1 X146.375 Y136.792 E.81288 F7656 ; infill
+G1 X146.375 Y136.792 E.81288 ; infill
 G1 X145.794 Y136.792 E.01984 ; infill
-G1 X163.208 Y154.206 E.84094 F7665 ; infill
+G1 X163.208 Y154.206 E.84094 ; infill
 G1 X163.208 Y154.787 E.01984 ; infill
-M104 S228
-G1 X145.213 Y136.792 E.869 F7675 ; infill
+G1 X145.213 Y136.792 E.869 ; infill
 G1 X144.633 Y136.792 E.01981 ; infill
-G1 X163.208 Y155.367 E.897 F7686 ; infill
+G1 X163.208 Y155.367 E.897 ; infill
 G1 X163.208 Y155.948 E.01984 ; infill
-M104 S227
-G1 X144.052 Y136.792 E.92506 F7696 ; infill
+G1 X144.052 Y136.792 E.92506 ; infill
 G1 X143.471 Y136.792 E.01984 ; infill
-G1 X163.208 Y156.529 E.95312 F7707 ; infill
+G1 X163.208 Y156.529 E.95312 ; infill
 G1 X163.208 Y157.11 E.01984 ; infill
-G1 X142.89 Y136.792 E.98118 F7718 ; infill
+G1 X142.89 Y136.792 E.98118 ; infill
 G1 X142.31 Y136.792 E.01981 ; infill
-G1 X163.208 Y157.69 E1.00918 F7729 ; infill
+G1 X163.208 Y157.69 E1.00918 ; infill
 G1 X163.208 Y158.271 E.01984 ; infill
-G1 X141.729 Y136.792 E1.03724 F7741 ; infill
+G1 X141.729 Y136.792 E1.03724 ; infill
 G1 X141.148 Y136.792 E.01984 ; infill
-M104 S227
-G1 X163.208 Y158.852 E1.0653 F7752 ; infill
+G1 X163.208 Y158.852 E1.0653 ; infill
 G1 X163.208 Y159.433 E.01984 ; infill
-G1 X140.567 Y136.792 E1.09336 F7765 ; infill
+G1 X140.567 Y136.792 E1.09336 ; infill
 G1 X139.986 Y136.792 E.01984 ; infill
-G1 X163.208 Y160.014 E1.12141 F7777 ; infill
+G1 X163.208 Y160.014 E1.12141 ; infill
 G1 X163.208 Y160.594 E.01981 ; infill
-G1 X139.406 Y136.792 E1.14942 F7778 ; infill
+G1 X139.406 Y136.792 E1.14942 ; infill
 G1 X138.825 Y136.792 E.01984 ; infill
-G1 X163.208 Y161.175 E1.17748 F7777 ; infill
+G1 X163.208 Y161.175 E1.17748 ; infill
 G1 X163.208 Y161.756 E.01984 ; infill
-G1 X138.244 Y136.792 E1.20553 F7777 ; infill
+G1 X138.244 Y136.792 E1.20553 ; infill
 G1 X137.663 Y136.792 E.01984 ; infill
-G1 X163.208 Y162.337 E1.23359 F7777 ; infill
+G1 X163.208 Y162.337 E1.23359 ; infill
 G1 X163.208 Y162.917 E.01981 ; infill
-G1 X137.083 Y136.792 E1.2616 F7776 ; infill
+G1 X137.083 Y136.792 E1.2616 ; infill
 G1 X136.792 Y136.792 E.00994 ; infill
 G1 X136.792 Y137.083 E.00994 ; infill
-G1 X162.917 Y163.208 E1.2616 F7776 ; infill
+G1 X162.917 Y163.208 E1.2616 ; infill
 G1 X162.337 Y163.208 E.01981 ; infill
-G1 X136.792 Y137.663 E1.23359 F7775 ; infill
+G1 X136.792 Y137.663 E1.23359 ; infill
 G1 X136.792 Y138.244 E.01984 ; infill
-M104 S228
-G1 X161.756 Y163.208 E1.20553 F7775 ; infill
+G1 X161.756 Y163.208 E1.20553 ; infill
 G1 X161.175 Y163.208 E.01984 ; infill
-G1 X136.792 Y138.825 E1.17748 F7774 ; infill
+G1 X136.792 Y138.825 E1.17748 ; infill
 G1 X136.792 Y139.406 E.01984 ; infill
-G1 X160.594 Y163.208 E1.14942 F7774 ; infill
+G1 X160.594 Y163.208 E1.14942 ; infill
 G1 X160.014 Y163.208 E.01981 ; infill
-G1 X136.792 Y139.986 E1.12141 F7774 ; infill
+G1 X136.792 Y139.986 E1.12141 ; infill
 G1 X136.792 Y140.567 E.01984 ; infill
-G1 X159.433 Y163.208 E1.09336 F7773 ; infill
+G1 X159.433 Y163.208 E1.09336 ; infill
 G1 X158.852 Y163.208 E.01984 ; infill
-G1 X136.792 Y141.148 E1.0653 F7773 ; infill
+G1 X136.792 Y141.148 E1.0653 ; infill
 G1 X136.792 Y141.729 E.01984 ; infill
-G1 X158.271 Y163.208 E1.03724 F7772 ; infill
+G1 X158.271 Y163.208 E1.03724 ; infill
 G1 X157.69 Y163.208 E.01984 ; infill
-G1 X136.792 Y142.31 E1.00918 F7772 ; infill
+G1 X136.792 Y142.31 E1.00918 ; infill
 G1 X136.792 Y142.89 E.01981 ; infill
-G1 X157.11 Y163.208 E.98118 F7772 ; infill
+G1 X157.11 Y163.208 E.98118 ; infill
 G1 X156.529 Y163.208 E.01984 ; infill
-G1 X136.792 Y143.471 E.95312 F7771 ; infill
+G1 X136.792 Y143.471 E.95312 ; infill
 G1 X136.792 Y144.052 E.01984 ; infill
-M104 S229
-G1 X155.948 Y163.208 E.92506 F7771 ; infill
+G1 X155.948 Y163.208 E.92506 ; infill
 G1 X155.367 Y163.208 E.01984 ; infill
-G1 X136.792 Y144.633 E.897 F7771 ; infill
+G1 X136.792 Y144.633 E.897 ; infill
 G1 X136.792 Y145.213 E.01981 ; infill
-G1 X154.787 Y163.208 E.869 F7770 ; infill
+G1 X154.787 Y163.208 E.869 ; infill
 G1 X154.206 Y163.208 E.01984 ; infill
-G1 X136.792 Y145.794 E.84094 F7770 ; infill
+G1 X136.792 Y145.794 E.84094 ; infill
 G1 X136.792 Y146.375 E.01984 ; infill
-G1 X153.625 Y163.208 E.81288 F7770 ; infill
+G1 X153.625 Y163.208 E.81288 ; infill
 G1 X153.044 Y163.208 E.01984 ; infill
-G1 X136.792 Y146.956 E.78482 F7770 ; infill
+G1 X136.792 Y146.956 E.78482 ; infill
 G1 X136.792 Y147.536 E.01981 ; infill
-G1 X152.464 Y163.208 E.75682 F7769 ; infill
+G1 X152.464 Y163.208 E.75682 ; infill
 G1 X151.883 Y163.208 E.01984 ; infill
-G1 X136.792 Y148.117 E.72876 F7769 ; infill
+G1 X136.792 Y148.117 E.72876 ; infill
 G1 X136.792 Y148.698 E.01984 ; infill
-G1 X151.302 Y163.208 E.7007 F7769 ; infill
+G1 X151.302 Y163.208 E.7007 ; infill
 G1 X150.721 Y163.208 E.01984 ; infill
-G1 X136.792 Y149.279 E.67264 F7769 ; infill
+G1 X136.792 Y149.279 E.67264 ; infill
 G1 X136.792 Y149.86 E.01984 ; infill
-G1 X150.141 Y163.208 E.64461 F7768 ; infill
+G1 X150.141 Y163.208 E.64461 ; infill
 G1 X149.56 Y163.208 E.01984 ; infill
-G1 X136.792 Y150.44 E.61658 F7768 ; infill
+G1 X136.792 Y150.44 E.61658 ; infill
 G1 X136.792 Y151.021 E.01984 ; infill
-G1 X148.979 Y163.208 E.58852 F7768 ; infill
+G1 X148.979 Y163.208 E.58852 ; infill
 G1 X148.398 Y163.208 E.01984 ; infill
-G1 X136.792 Y151.602 E.56046 F7768 ; infill
+G1 X136.792 Y151.602 E.56046 ; infill
 G1 X136.792 Y152.183 E.01984 ; infill
-G1 X147.817 Y163.208 E.53241 F7767 ; infill
+G1 X147.817 Y163.208 E.53241 ; infill
 G1 X147.237 Y163.208 E.01981 ; infill
-G1 X136.792 Y152.763 E.5044 F7767 ; infill
+G1 X136.792 Y152.763 E.5044 ; infill
 G1 X136.792 Y153.344 E.01984 ; infill
-G1 X146.656 Y163.208 E.47634 F7767 ; infill
+G1 X146.656 Y163.208 E.47634 ; infill
 G1 X146.075 Y163.208 E.01984 ; infill
-G1 X136.792 Y153.925 E.44828 F7767 ; infill
+G1 X136.792 Y153.925 E.44828 ; infill
 G1 X136.792 Y154.506 E.01984 ; infill
-G1 X145.494 Y163.208 E.42023 F7767 ; infill
+G1 X145.494 Y163.208 E.42023 ; infill
 G1 X144.914 Y163.208 E.01981 ; infill
-G1 X136.792 Y155.086 E.39222 F7767 ; infill
+G1 X136.792 Y155.086 E.39222 ; infill
 G1 X136.792 Y155.667 E.01984 ; infill
-G1 X144.333 Y163.208 E.36416 F7766 ; infill
+G1 X144.333 Y163.208 E.36416 ; infill
 G1 X143.752 Y163.208 E.01984 ; infill
 M73 P95 R1
-G1 X136.792 Y156.248 E.3361 F7766 ; infill
+G1 X136.792 Y156.248 E.3361 ; infill
 G1 X136.792 Y156.829 E.01984 ; infill
-G1 X143.171 Y163.208 E.30805 F7766 ; infill
+G1 X143.171 Y163.208 E.30805 ; infill
 G1 X142.591 Y163.208 E.01981 ; infill
-G1 X136.792 Y157.409 E.28004 F7766 ; infill
+G1 X136.792 Y157.409 E.28004 ; infill
 G1 X136.792 Y157.99 E.01984 ; infill
-G1 X142.01 Y163.208 E.25198 F7766 ; infill
+G1 X142.01 Y163.208 E.25198 ; infill
 G1 X141.429 Y163.208 E.01984 ; infill
-G1 X136.792 Y158.571 E.22393 F7766 ; infill
+G1 X136.792 Y158.571 E.22393 ; infill
 G1 X136.792 Y159.152 E.01984 ; infill
-G1 X140.848 Y163.208 E.19587 F7766 ; infill
+G1 X140.848 Y163.208 E.19587 ; infill
 G1 X140.267 Y163.208 E.01984 ; infill
-G1 X136.792 Y159.733 E.16781 F7766 ; infill
+G1 X136.792 Y159.733 E.16781 ; infill
 G1 X136.792 Y160.313 E.01981 ; infill
-G1 X139.687 Y163.208 E.1398 F7766 ; infill
+G1 X139.687 Y163.208 E.1398 ; infill
 G1 X139.106 Y163.208 E.01984 ; infill
-G1 X136.792 Y160.894 E.11175 F7765 ; infill
+G1 X136.792 Y160.894 E.11175 ; infill
 G1 X136.792 Y161.475 E.01984 ; infill
-G1 X138.525 Y163.208 E.08369 F7765 ; infill
+G1 X138.525 Y163.208 E.08369 ; infill
 G1 X137.944 Y163.208 E.01984 ; infill
-G1 X136.792 Y162.056 E.05563 F7766 ; infill
+G1 X136.792 Y162.056 E.05563 ; infill
 G1 X136.792 Y162.636 E.01981 ; infill
 G1 X137.547 Y163.391 E.03646 ; infill
 ;LAYER_CHANGE:148
@@ -16259,36 +16032,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8757 ; perimeter
-M104 S227
-G1 X136.446 Y163.554 E.82083 F8757 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8757 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8756 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8756 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8756 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8755 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8755 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8755 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8755 ; perimeter
-G1 X135.632 Y135.632 E.87012 F8754 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8754 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8754 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8753 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8753 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8753 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -16301,185 +16073,184 @@ M204 S6000 ; adjust acceleration
 G1 F8766
 G1 X137.364 Y136.792 E.03646 ; infill
 G1 X137.944 Y136.792 E.01981 ; infill
-G1 X136.792 Y137.944 E.05563 F7761 ; infill
+G1 X136.792 Y137.944 E.05563 ; infill
 G1 X136.792 Y138.525 E.01984 ; infill
-G1 X138.525 Y136.792 E.08369 F7761 ; infill
+G1 X138.525 Y136.792 E.08369 ; infill
 G1 X139.106 Y136.792 E.01984 ; infill
-G1 X136.792 Y139.106 E.11175 F7760 ; infill
+G1 X136.792 Y139.106 E.11175 ; infill
 G1 X136.792 Y139.687 E.01984 ; infill
-G1 X139.687 Y136.792 E.1398 F7761 ; infill
+G1 X139.687 Y136.792 E.1398 ; infill
 G1 X140.267 Y136.792 E.01981 ; infill
-G1 X136.792 Y140.267 E.16781 F7761 ; infill
+G1 X136.792 Y140.267 E.16781 ; infill
 G1 X136.792 Y140.848 E.01984 ; infill
-G1 X140.848 Y136.792 E.19587 F7761 ; infill
+G1 X140.848 Y136.792 E.19587 ; infill
 G1 X141.429 Y136.792 E.01984 ; infill
-G1 X136.792 Y141.429 E.22393 F7760 ; infill
+G1 X136.792 Y141.429 E.22393 ; infill
 G1 X136.792 Y142.01 E.01984 ; infill
-G1 X142.01 Y136.792 E.25198 F7761 ; infill
+G1 X142.01 Y136.792 E.25198 ; infill
 G1 X142.591 Y136.792 E.01984 ; infill
-G1 X136.792 Y142.591 E.28004 F7760 ; infill
+G1 X136.792 Y142.591 E.28004 ; infill
 G1 X136.792 Y143.171 E.01981 ; infill
-G1 X143.171 Y136.792 E.30805 F7760 ; infill
+G1 X143.171 Y136.792 E.30805 ; infill
 G1 X143.752 Y136.792 E.01984 ; infill
-G1 X136.792 Y143.752 E.3361 F7760 ; infill
+G1 X136.792 Y143.752 E.3361 ; infill
 G1 X136.792 Y144.333 E.01984 ; infill
-G1 X144.333 Y136.792 E.36416 F7760 ; infill
+G1 X144.333 Y136.792 E.36416 ; infill
 G1 X144.914 Y136.792 E.01984 ; infill
-G1 X136.792 Y144.914 E.39222 F7760 ; infill
+G1 X136.792 Y144.914 E.39222 ; infill
 G1 X136.792 Y145.494 E.01981 ; infill
-G1 X145.494 Y136.792 E.42023 F7760 ; infill
+G1 X145.494 Y136.792 E.42023 ; infill
 G1 X146.075 Y136.792 E.01984 ; infill
-G1 X136.792 Y146.075 E.44828 F7760 ; infill
+G1 X136.792 Y146.075 E.44828 ; infill
 G1 X136.792 Y146.656 E.01984 ; infill
-G1 X146.656 Y136.792 E.47634 F7760 ; infill
+G1 X146.656 Y136.792 E.47634 ; infill
 G1 X147.237 Y136.792 E.01984 ; infill
-G1 X136.792 Y147.237 E.5044 F7759 ; infill
+G1 X136.792 Y147.237 E.5044 ; infill
 G1 X136.792 Y147.817 E.01981 ; infill
-G1 X147.817 Y136.792 E.53241 F7759 ; infill
+G1 X147.817 Y136.792 E.53241 ; infill
 G1 X148.398 Y136.792 E.01984 ; infill
-G1 X136.792 Y148.398 E.56046 F7759 ; infill
+G1 X136.792 Y148.398 E.56046 ; infill
 G1 X136.792 Y148.979 E.01984 ; infill
-G1 X148.979 Y136.792 E.58852 F7759 ; infill
+G1 X148.979 Y136.792 E.58852 ; infill
 G1 X149.56 Y136.792 E.01984 ; infill
-G1 X136.792 Y149.56 E.61658 F7759 ; infill
+G1 X136.792 Y149.56 E.61658 ; infill
 G1 X136.792 Y150.14 E.01981 ; infill
-G1 X150.141 Y136.792 E.64461 F7759 ; infill
+G1 X150.141 Y136.792 E.64461 ; infill
 G1 X150.721 Y136.792 E.01981 ; infill
-G1 X136.792 Y150.721 E.67264 F7758 ; infill
+G1 X136.792 Y150.721 E.67264 ; infill
 G1 X136.792 Y151.302 E.01984 ; infill
-G1 X151.302 Y136.792 E.7007 F7758 ; infill
+G1 X151.302 Y136.792 E.7007 ; infill
 G1 X151.883 Y136.792 E.01984 ; infill
-G1 X136.792 Y151.883 E.72876 F7758 ; infill
+G1 X136.792 Y151.883 E.72876 ; infill
 G1 X136.792 Y152.464 E.01984 ; infill
-G1 X152.464 Y136.792 E.75682 F7758 ; infill
+G1 X152.464 Y136.792 E.75682 ; infill
 G1 X153.044 Y136.792 E.01981 ; infill
-G1 X136.792 Y153.044 E.78482 F7758 ; infill
+G1 X136.792 Y153.044 E.78482 ; infill
 G1 X136.792 Y153.625 E.01984 ; infill
-G1 X153.625 Y136.792 E.81288 F7757 ; infill
+G1 X153.625 Y136.792 E.81288 ; infill
 G1 X154.206 Y136.792 E.01984 ; infill
-G1 X136.792 Y154.206 E.84094 F7757 ; infill
+G1 X136.792 Y154.206 E.84094 ; infill
 G1 X136.792 Y154.787 E.01984 ; infill
-G1 X154.787 Y136.792 E.869 F7757 ; infill
+G1 X154.787 Y136.792 E.869 ; infill
 G1 X155.367 Y136.792 E.01981 ; infill
-G1 X136.792 Y155.367 E.897 F7757 ; infill
+G1 X136.792 Y155.367 E.897 ; infill
 G1 X136.792 Y155.948 E.01984 ; infill
-G1 X155.948 Y136.792 E.92506 F7756 ; infill
+G1 X155.948 Y136.792 E.92506 ; infill
 G1 X156.529 Y136.792 E.01984 ; infill
-G1 X136.792 Y156.529 E.95312 F7756 ; infill
+G1 X136.792 Y156.529 E.95312 ; infill
 G1 X136.792 Y157.11 E.01984 ; infill
-G1 X157.11 Y136.792 E.98118 F7756 ; infill
+G1 X157.11 Y136.792 E.98118 ; infill
 G1 X157.69 Y136.792 E.01981 ; infill
-G1 X136.792 Y157.69 E1.00918 F7755 ; infill
+G1 X136.792 Y157.69 E1.00918 ; infill
 G1 X136.792 Y158.271 E.01984 ; infill
-G1 X158.271 Y136.792 E1.03724 F7755 ; infill
+G1 X158.271 Y136.792 E1.03724 ; infill
 G1 X158.852 Y136.792 E.01984 ; infill
-G1 X136.792 Y158.852 E1.0653 F7755 ; infill
+G1 X136.792 Y158.852 E1.0653 ; infill
 G1 X136.792 Y159.433 E.01984 ; infill
-G1 X159.433 Y136.792 E1.09336 F7754 ; infill
+G1 X159.433 Y136.792 E1.09336 ; infill
 G1 X160.014 Y136.792 E.01984 ; infill
-G1 X136.792 Y160.014 E1.12141 F7754 ; infill
+G1 X136.792 Y160.014 E1.12141 ; infill
 G1 X136.792 Y160.594 E.01981 ; infill
-G1 X160.594 Y136.792 E1.14942 F7754 ; infill
+G1 X160.594 Y136.792 E1.14942 ; infill
 G1 X161.175 Y136.792 E.01984 ; infill
-G1 X136.792 Y161.175 E1.17748 F7753 ; infill
+G1 X136.792 Y161.175 E1.17748 ; infill
 G1 X136.792 Y161.756 E.01984 ; infill
-G1 X161.756 Y136.792 E1.20553 F7753 ; infill
+G1 X161.756 Y136.792 E1.20553 ; infill
 G1 X162.337 Y136.792 E.01984 ; infill
-G1 X136.792 Y162.337 E1.23359 F7753 ; infill
+G1 X136.792 Y162.337 E1.23359 ; infill
 G1 X136.792 Y162.917 E.01981 ; infill
 M73 P96 R1
-M104 S228
-G1 X162.917 Y136.792 E1.2616 F7752 ; infill
+G1 X162.917 Y136.792 E1.2616 ; infill
 G1 X163.208 Y136.792 E.00994 ; infill
 G1 X163.208 Y137.083 E.00994 ; infill
-G1 X137.083 Y163.208 E1.2616 F7752 ; infill
+G1 X137.083 Y163.208 E1.2616 ; infill
 G1 X137.663 Y163.208 E.01981 ; infill
-G1 X163.208 Y137.663 E1.23359 F7752 ; infill
+G1 X163.208 Y137.663 E1.23359 ; infill
 G1 X163.208 Y138.244 E.01984 ; infill
-G1 X138.244 Y163.208 E1.20553 F7751 ; infill
+G1 X138.244 Y163.208 E1.20553 ; infill
 G1 X138.825 Y163.208 E.01984 ; infill
-G1 X163.208 Y138.825 E1.17748 F7751 ; infill
+G1 X163.208 Y138.825 E1.17748 ; infill
 G1 X163.208 Y139.406 E.01984 ; infill
-G1 X139.406 Y163.208 E1.14942 F7751 ; infill
+G1 X139.406 Y163.208 E1.14942 ; infill
 G1 X139.986 Y163.208 E.01981 ; infill
-G1 X163.208 Y139.986 E1.12141 F7751 ; infill
+G1 X163.208 Y139.986 E1.12141 ; infill
 G1 X163.208 Y140.567 E.01984 ; infill
-G1 X140.567 Y163.208 E1.09336 F7750 ; infill
+G1 X140.567 Y163.208 E1.09336 ; infill
 G1 X141.148 Y163.208 E.01984 ; infill
-G1 X163.208 Y141.148 E1.0653 F7750 ; infill
+G1 X163.208 Y141.148 E1.0653 ; infill
 G1 X163.208 Y141.729 E.01984 ; infill
-G1 X141.729 Y163.208 E1.03724 F7750 ; infill
+G1 X141.729 Y163.208 E1.03724 ; infill
 G1 X142.31 Y163.208 E.01984 ; infill
-G1 X163.208 Y142.31 E1.00918 F7749 ; infill
+G1 X163.208 Y142.31 E1.00918 ; infill
 G1 X163.208 Y142.89 E.01981 ; infill
-G1 X142.89 Y163.208 E.98118 F7749 ; infill
+G1 X142.89 Y163.208 E.98118 ; infill
 G1 X143.471 Y163.208 E.01984 ; infill
-G1 X163.208 Y143.471 E.95312 F7749 ; infill
+G1 X163.208 Y143.471 E.95312 ; infill
 G1 X163.208 Y144.052 E.01984 ; infill
-G1 X144.052 Y163.208 E.92506 F7749 ; infill
+G1 X144.052 Y163.208 E.92506 ; infill
 G1 X144.633 Y163.208 E.01984 ; infill
-G1 X163.208 Y144.633 E.897 F7748 ; infill
+G1 X163.208 Y144.633 E.897 ; infill
 G1 X163.208 Y145.213 E.01981 ; infill
-G1 X145.213 Y163.208 E.869 F7748 ; infill
+G1 X145.213 Y163.208 E.869 ; infill
 G1 X145.794 Y163.208 E.01984 ; infill
-G1 X163.208 Y145.794 E.84094 F7748 ; infill
+G1 X163.208 Y145.794 E.84094 ; infill
 G1 X163.208 Y146.375 E.01984 ; infill
-G1 X146.375 Y163.208 E.81288 F7748 ; infill
+G1 X146.375 Y163.208 E.81288 ; infill
 G1 X146.956 Y163.208 E.01984 ; infill
-G1 X163.208 Y146.956 E.78482 F7748 ; infill
+G1 X163.208 Y146.956 E.78482 ; infill
 G1 X163.208 Y147.536 E.01981 ; infill
-G1 X147.536 Y163.208 E.75682 F7747 ; infill
+G1 X147.536 Y163.208 E.75682 ; infill
 G1 X148.117 Y163.208 E.01984 ; infill
-G1 X163.208 Y148.117 E.72876 F7747 ; infill
+G1 X163.208 Y148.117 E.72876 ; infill
 G1 X163.208 Y148.698 E.01984 ; infill
-G1 X148.698 Y163.208 E.7007 F7747 ; infill
+G1 X148.698 Y163.208 E.7007 ; infill
 G1 X149.279 Y163.208 E.01984 ; infill
 M73 P96 R0
-G1 X163.208 Y149.279 E.67264 F7747 ; infill
+G1 X163.208 Y149.279 E.67264 ; infill
 G1 X163.208 Y149.86 E.01984 ; infill
-G1 X149.859 Y163.208 E.64461 F7747 ; infill
+G1 X149.859 Y163.208 E.64461 ; infill
 G1 X150.44 Y163.208 E.01984 ; infill
-G1 X163.208 Y150.44 E.61658 F7747 ; infill
+G1 X163.208 Y150.44 E.61658 ; infill
 G1 X163.208 Y151.021 E.01984 ; infill
-G1 X151.021 Y163.208 E.58852 F7746 ; infill
+G1 X151.021 Y163.208 E.58852 ; infill
 G1 X151.602 Y163.208 E.01984 ; infill
-G1 X163.208 Y151.602 E.56046 F7746 ; infill
+G1 X163.208 Y151.602 E.56046 ; infill
 G1 X163.208 Y152.183 E.01984 ; infill
-G1 X152.183 Y163.208 E.53241 F7746 ; infill
+G1 X152.183 Y163.208 E.53241 ; infill
 G1 X152.763 Y163.208 E.01981 ; infill
-G1 X163.208 Y152.763 E.5044 F7746 ; infill
+G1 X163.208 Y152.763 E.5044 ; infill
 G1 X163.208 Y153.344 E.01984 ; infill
-G1 X153.344 Y163.208 E.47634 F7746 ; infill
+G1 X153.344 Y163.208 E.47634 ; infill
 G1 X153.925 Y163.208 E.01984 ; infill
-G1 X163.208 Y153.925 E.44828 F7746 ; infill
+G1 X163.208 Y153.925 E.44828 ; infill
 G1 X163.208 Y154.506 E.01984 ; infill
-G1 X154.506 Y163.208 E.42023 F7746 ; infill
+G1 X154.506 Y163.208 E.42023 ; infill
 G1 X155.086 Y163.208 E.01981 ; infill
-G1 X163.208 Y155.086 E.39222 F7746 ; infill
+G1 X163.208 Y155.086 E.39222 ; infill
 G1 X163.208 Y155.667 E.01984 ; infill
-G1 X155.667 Y163.208 E.36416 F7746 ; infill
+G1 X155.667 Y163.208 E.36416 ; infill
 G1 X156.248 Y163.208 E.01984 ; infill
-G1 X163.208 Y156.248 E.3361 F7746 ; infill
+G1 X163.208 Y156.248 E.3361 ; infill
 G1 X163.208 Y156.829 E.01984 ; infill
-G1 X156.829 Y163.208 E.30805 F7745 ; infill
+G1 X156.829 Y163.208 E.30805 ; infill
 G1 X157.409 Y163.208 E.01981 ; infill
-G1 X163.208 Y157.409 E.28004 F7745 ; infill
+G1 X163.208 Y157.409 E.28004 ; infill
 G1 X163.208 Y157.99 E.01984 ; infill
-G1 X157.99 Y163.208 E.25198 F7745 ; infill
+G1 X157.99 Y163.208 E.25198 ; infill
 G1 X158.571 Y163.208 E.01984 ; infill
-G1 X163.208 Y158.571 E.22393 F7745 ; infill
+G1 X163.208 Y158.571 E.22393 ; infill
 G1 X163.208 Y159.152 E.01984 ; infill
-G1 X159.152 Y163.208 E.19587 F7745 ; infill
+G1 X159.152 Y163.208 E.19587 ; infill
 G1 X159.733 Y163.208 E.01984 ; infill
-G1 X163.208 Y159.733 E.16781 F7745 ; infill
+G1 X163.208 Y159.733 E.16781 ; infill
 G1 X163.208 Y160.313 E.01981 ; infill
-G1 X160.313 Y163.208 E.1398 F7745 ; infill
+G1 X160.313 Y163.208 E.1398 ; infill
 G1 X160.894 Y163.208 E.01984 ; infill
-G1 X163.208 Y160.894 E.11175 F7745 ; infill
+G1 X163.208 Y160.894 E.11175 ; infill
 G1 X163.208 Y161.475 E.01984 ; infill
-G1 X161.475 Y163.208 E.08369 F7745 ; infill
+G1 X161.475 Y163.208 E.08369 ; infill
 G1 X162.056 Y163.208 E.01984 ; infill
-G1 X163.208 Y162.056 E.05563 F7745 ; infill
+G1 X163.208 Y162.056 E.05563 ; infill
 G1 X163.208 Y162.636 E.01981 ; infill
 G1 X162.453 Y163.391 E.03646 ; infill
 ;LAYER_CHANGE:149
@@ -16500,36 +16271,35 @@ M204 S6000 ; adjust acceleration
 ;TYPE:Perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X163.554 Y163.554 E.82083 F8734 ; perimeter
-G1 X136.446 Y163.554 E.82083 F8734 ; perimeter
-G1 X136.446 Y136.446 E.82083 F8734 ; perimeter
-G1 X163.494 Y136.446 E.81901 F8734 ; perimeter
+G1 X163.554 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y163.554 E.82083 ; perimeter
+G1 X136.446 Y136.446 E.82083 ; perimeter
+G1 X163.494 Y136.446 E.81901 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X163.961 Y136.039 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X163.961 Y163.961 E.84548 F8733 ; perimeter
-G1 X136.039 Y163.961 E.84548 F8733 ; perimeter
-G1 X136.039 Y136.039 E.84548 F8733 ; perimeter
-G1 X163.901 Y136.039 E.84366 F8733 ; perimeter
+G1 X163.961 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y163.961 E.84548 ; perimeter
+G1 X136.039 Y136.039 E.84548 ; perimeter
+G1 X163.901 Y136.039 E.84366 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.368 Y135.632 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 G1 F9886
-G1 X164.368 Y164.368 E.87012 F8733 ; perimeter
-G1 X135.632 Y164.368 E.87012 F8733 ; perimeter
-M104 S226
-G1 X135.632 Y135.632 E.87012 F8732 ; perimeter
-G1 X164.308 Y135.632 E.86831 F8732 ; perimeter
+G1 X164.368 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y164.368 E.87012 ; perimeter
+G1 X135.632 Y135.632 E.87012 ; perimeter
+G1 X164.308 Y135.632 E.86831 ; perimeter
 M204 S15000 ; adjust acceleration
 G1 X164.775 Y135.225 F30000 ; move to first perimeter point
 M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8732 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8732 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8732 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8732 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -16542,187 +16312,184 @@ M204 S6000 ; adjust acceleration
 G1 F8766
 G1 X162.636 Y136.792 E.03646 ; infill
 G1 X162.056 Y136.792 E.01981 ; infill
-G1 X163.208 Y137.944 E.05563 F7742 ; infill
+G1 X163.208 Y137.944 E.05563 ; infill
 G1 X163.208 Y138.525 E.01984 ; infill
-G1 X161.475 Y136.792 E.08369 F7742 ; infill
+G1 X161.475 Y136.792 E.08369 ; infill
 G1 X160.894 Y136.792 E.01984 ; infill
-G1 X163.208 Y139.106 E.11175 F7742 ; infill
+G1 X163.208 Y139.106 E.11175 ; infill
 G1 X163.208 Y139.687 E.01984 ; infill
-G1 X160.313 Y136.792 E.1398 F7742 ; infill
+G1 X160.313 Y136.792 E.1398 ; infill
 G1 X159.733 Y136.792 E.01981 ; infill
-G1 X163.208 Y140.267 E.16781 F7742 ; infill
+G1 X163.208 Y140.267 E.16781 ; infill
 G1 X163.208 Y140.848 E.01984 ; infill
 M73 P97 R0
-G1 X159.152 Y136.792 E.19587 F7742 ; infill
+G1 X159.152 Y136.792 E.19587 ; infill
 G1 X158.571 Y136.792 E.01984 ; infill
-G1 X163.208 Y141.429 E.22393 F7742 ; infill
+G1 X163.208 Y141.429 E.22393 ; infill
 G1 X163.208 Y142.01 E.01984 ; infill
-G1 X157.99 Y136.792 E.25198 F7742 ; infill
+G1 X157.99 Y136.792 E.25198 ; infill
 G1 X157.409 Y136.792 E.01984 ; infill
-G1 X163.208 Y142.591 E.28004 F7742 ; infill
+G1 X163.208 Y142.591 E.28004 ; infill
 G1 X163.208 Y143.171 E.01981 ; infill
-G1 X156.829 Y136.792 E.30805 F7742 ; infill
+G1 X156.829 Y136.792 E.30805 ; infill
 G1 X156.248 Y136.792 E.01984 ; infill
-G1 X163.208 Y143.752 E.3361 F7742 ; infill
+G1 X163.208 Y143.752 E.3361 ; infill
 G1 X163.208 Y144.333 E.01984 ; infill
-G1 X155.667 Y136.792 E.36416 F7742 ; infill
+G1 X155.667 Y136.792 E.36416 ; infill
 G1 X155.086 Y136.792 E.01984 ; infill
-G1 X163.208 Y144.914 E.39222 F7742 ; infill
+G1 X163.208 Y144.914 E.39222 ; infill
 G1 X163.208 Y145.494 E.01981 ; infill
-G1 X154.506 Y136.792 E.42023 F7742 ; infill
+G1 X154.506 Y136.792 E.42023 ; infill
 G1 X153.925 Y136.792 E.01984 ; infill
-G1 X163.208 Y146.075 E.44828 F7742 ; infill
+G1 X163.208 Y146.075 E.44828 ; infill
 G1 X163.208 Y146.656 E.01984 ; infill
-G1 X153.344 Y136.792 E.47634 F7742 ; infill
+G1 X153.344 Y136.792 E.47634 ; infill
 G1 X152.763 Y136.792 E.01984 ; infill
-G1 X163.208 Y147.237 E.5044 F7741 ; infill
+G1 X163.208 Y147.237 E.5044 ; infill
 G1 X163.208 Y147.817 E.01981 ; infill
-G1 X152.183 Y136.792 E.53241 F7741 ; infill
+G1 X152.183 Y136.792 E.53241 ; infill
 G1 X151.602 Y136.792 E.01984 ; infill
-G1 X163.208 Y148.398 E.56046 F7741 ; infill
+G1 X163.208 Y148.398 E.56046 ; infill
 G1 X163.208 Y148.979 E.01984 ; infill
-G1 X151.021 Y136.792 E.58852 F7741 ; infill
+G1 X151.021 Y136.792 E.58852 ; infill
 G1 X150.44 Y136.792 E.01984 ; infill
-G1 X163.208 Y149.56 E.61658 F7741 ; infill
+G1 X163.208 Y149.56 E.61658 ; infill
 G1 X163.208 Y150.141 E.01984 ; infill
-G1 X149.86 Y136.792 E.64461 F7741 ; infill
+G1 X149.86 Y136.792 E.64461 ; infill
 G1 X149.279 Y136.792 E.01984 ; infill
-G1 X163.208 Y150.721 E.67264 F7741 ; infill
+G1 X163.208 Y150.721 E.67264 ; infill
 G1 X163.208 Y151.302 E.01984 ; infill
-G1 X148.698 Y136.792 E.7007 F7741 ; infill
+G1 X148.698 Y136.792 E.7007 ; infill
 G1 X148.117 Y136.792 E.01984 ; infill
-G1 X163.208 Y151.883 E.72876 F7741 ; infill
+G1 X163.208 Y151.883 E.72876 ; infill
 G1 X163.208 Y152.464 E.01984 ; infill
-G1 X147.536 Y136.792 E.75682 F7741 ; infill
+G1 X147.536 Y136.792 E.75682 ; infill
 G1 X146.956 Y136.792 E.01981 ; infill
-G1 X163.208 Y153.044 E.78482 F7741 ; infill
+G1 X163.208 Y153.044 E.78482 ; infill
 G1 X163.208 Y153.625 E.01984 ; infill
-G1 X146.375 Y136.792 E.81288 F7740 ; infill
+G1 X146.375 Y136.792 E.81288 ; infill
 G1 X145.794 Y136.792 E.01984 ; infill
-G1 X163.208 Y154.206 E.84094 F7740 ; infill
+G1 X163.208 Y154.206 E.84094 ; infill
 G1 X163.208 Y154.787 E.01984 ; infill
-G1 X145.213 Y136.792 E.869 F7740 ; infill
+G1 X145.213 Y136.792 E.869 ; infill
 G1 X144.633 Y136.792 E.01981 ; infill
-G1 X163.208 Y155.367 E.897 F7740 ; infill
+G1 X163.208 Y155.367 E.897 ; infill
 G1 X163.208 Y155.948 E.01984 ; infill
-G1 X144.052 Y136.792 E.92506 F7740 ; infill
+G1 X144.052 Y136.792 E.92506 ; infill
 G1 X143.471 Y136.792 E.01984 ; infill
-G1 X163.208 Y156.529 E.95312 F7740 ; infill
+G1 X163.208 Y156.529 E.95312 ; infill
 G1 X163.208 Y157.11 E.01984 ; infill
-G1 X142.89 Y136.792 E.98118 F7740 ; infill
+G1 X142.89 Y136.792 E.98118 ; infill
 G1 X142.31 Y136.792 E.01981 ; infill
-G1 X163.208 Y157.69 E1.00918 F7740 ; infill
+G1 X163.208 Y157.69 E1.00918 ; infill
 G1 X163.208 Y158.271 E.01984 ; infill
-G1 X141.729 Y136.792 E1.03724 F7740 ; infill
+G1 X141.729 Y136.792 E1.03724 ; infill
 G1 X141.148 Y136.792 E.01984 ; infill
-G1 X163.208 Y158.852 E1.0653 F7740 ; infill
+G1 X163.208 Y158.852 E1.0653 ; infill
 G1 X163.208 Y159.433 E.01984 ; infill
-G1 X140.567 Y136.792 E1.09336 F7739 ; infill
+G1 X140.567 Y136.792 E1.09336 ; infill
 G1 X139.986 Y136.792 E.01984 ; infill
-G1 X163.208 Y160.014 E1.12141 F7739 ; infill
+G1 X163.208 Y160.014 E1.12141 ; infill
 G1 X163.208 Y160.594 E.01981 ; infill
-G1 X139.406 Y136.792 E1.14942 F7739 ; infill
+G1 X139.406 Y136.792 E1.14942 ; infill
 G1 X138.825 Y136.792 E.01984 ; infill
-G1 X163.208 Y161.175 E1.17748 F7739 ; infill
+G1 X163.208 Y161.175 E1.17748 ; infill
 G1 X163.208 Y161.756 E.01984 ; infill
-G1 X138.244 Y136.792 E1.20553 F7739 ; infill
+G1 X138.244 Y136.792 E1.20553 ; infill
 G1 X137.663 Y136.792 E.01984 ; infill
-G1 X163.208 Y162.337 E1.23359 F7739 ; infill
+G1 X163.208 Y162.337 E1.23359 ; infill
 G1 X163.208 Y162.917 E.01981 ; infill
-G1 X137.083 Y136.792 E1.2616 F7739 ; infill
+G1 X137.083 Y136.792 E1.2616 ; infill
 G1 X136.792 Y136.792 E.00994 ; infill
 G1 X136.792 Y137.083 E.00994 ; infill
-G1 X162.917 Y163.208 E1.2616 F7739 ; infill
+G1 X162.917 Y163.208 E1.2616 ; infill
 G1 X162.337 Y163.208 E.01981 ; infill
-M104 S227
-G1 X136.792 Y137.663 E1.23359 F7739 ; infill
+G1 X136.792 Y137.663 E1.23359 ; infill
 G1 X136.792 Y138.244 E.01984 ; infill
-G1 X161.756 Y163.208 E1.20553 F7739 ; infill
+G1 X161.756 Y163.208 E1.20553 ; infill
 G1 X161.175 Y163.208 E.01984 ; infill
-M104 S226
-G1 X136.792 Y138.825 E1.17748 F7739 ; infill
+G1 X136.792 Y138.825 E1.17748 ; infill
 G1 X136.792 Y139.406 E.01984 ; infill
-G1 X160.594 Y163.208 E1.14942 F7739 ; infill
+G1 X160.594 Y163.208 E1.14942 ; infill
 G1 X160.014 Y163.208 E.01981 ; infill
-G1 X136.792 Y139.986 E1.12141 F7738 ; infill
+G1 X136.792 Y139.986 E1.12141 ; infill
 G1 X136.792 Y140.567 E.01984 ; infill
-G1 X159.433 Y163.208 E1.09336 F7738 ; infill
+G1 X159.433 Y163.208 E1.09336 ; infill
 G1 X158.852 Y163.208 E.01984 ; infill
-G1 X136.792 Y141.148 E1.0653 F7738 ; infill
+G1 X136.792 Y141.148 E1.0653 ; infill
 G1 X136.792 Y141.729 E.01984 ; infill
-G1 X158.271 Y163.208 E1.03724 F7738 ; infill
+G1 X158.271 Y163.208 E1.03724 ; infill
 G1 X157.69 Y163.208 E.01984 ; infill
-G1 X136.792 Y142.31 E1.00918 F7738 ; infill
+G1 X136.792 Y142.31 E1.00918 ; infill
 G1 X136.792 Y142.89 E.01981 ; infill
-G1 X157.11 Y163.208 E.98118 F7738 ; infill
+G1 X157.11 Y163.208 E.98118 ; infill
 G1 X156.529 Y163.208 E.01984 ; infill
-G1 X136.792 Y143.471 E.95312 F7738 ; infill
+G1 X136.792 Y143.471 E.95312 ; infill
 G1 X136.792 Y144.052 E.01984 ; infill
-G1 X155.948 Y163.208 E.92506 F7738 ; infill
+G1 X155.948 Y163.208 E.92506 ; infill
 G1 X155.367 Y163.208 E.01984 ; infill
-G1 X136.792 Y144.633 E.897 F7738 ; infill
+G1 X136.792 Y144.633 E.897 ; infill
 G1 X136.792 Y145.213 E.01981 ; infill
-G1 X154.787 Y163.208 E.869 F7738 ; infill
+G1 X154.787 Y163.208 E.869 ; infill
 G1 X154.206 Y163.208 E.01984 ; infill
-G1 X136.792 Y145.794 E.84094 F7738 ; infill
+G1 X136.792 Y145.794 E.84094 ; infill
 G1 X136.792 Y146.375 E.01984 ; infill
-G1 X153.625 Y163.208 E.81288 F7738 ; infill
+G1 X153.625 Y163.208 E.81288 ; infill
 G1 X153.044 Y163.208 E.01984 ; infill
-G1 X136.792 Y146.956 E.78482 F7738 ; infill
+G1 X136.792 Y146.956 E.78482 ; infill
 G1 X136.792 Y147.536 E.01981 ; infill
-G1 X152.464 Y163.208 E.75682 F7738 ; infill
+G1 X152.464 Y163.208 E.75682 ; infill
 G1 X151.883 Y163.208 E.01984 ; infill
-G1 X136.792 Y148.117 E.72876 F7738 ; infill
+G1 X136.792 Y148.117 E.72876 ; infill
 G1 X136.792 Y148.698 E.01984 ; infill
-G1 X151.302 Y163.208 E.7007 F7738 ; infill
+G1 X151.302 Y163.208 E.7007 ; infill
 G1 X150.721 Y163.208 E.01984 ; infill
-G1 X136.792 Y149.279 E.67264 F7738 ; infill
+G1 X136.792 Y149.279 E.67264 ; infill
 G1 X136.792 Y149.86 E.01984 ; infill
 M73 P98 R0
-G1 X150.141 Y163.208 E.64461 F7738 ; infill
+G1 X150.141 Y163.208 E.64461 ; infill
 G1 X149.56 Y163.208 E.01984 ; infill
-G1 X136.792 Y150.44 E.61658 F7738 ; infill
+G1 X136.792 Y150.44 E.61658 ; infill
 G1 X136.792 Y151.021 E.01984 ; infill
-G1 X148.979 Y163.208 E.58852 F7738 ; infill
+G1 X148.979 Y163.208 E.58852 ; infill
 G1 X148.398 Y163.208 E.01984 ; infill
-G1 X136.792 Y151.602 E.56046 F7738 ; infill
+G1 X136.792 Y151.602 E.56046 ; infill
 G1 X136.792 Y152.183 E.01984 ; infill
-G1 X147.817 Y163.208 E.53241 F7738 ; infill
+G1 X147.817 Y163.208 E.53241 ; infill
 G1 X147.237 Y163.208 E.01981 ; infill
-G1 X136.792 Y152.763 E.5044 F7738 ; infill
+G1 X136.792 Y152.763 E.5044 ; infill
 G1 X136.792 Y153.344 E.01984 ; infill
-M104 S226
-G1 X146.656 Y163.208 E.47634 F7738 ; infill
+G1 X146.656 Y163.208 E.47634 ; infill
 G1 X146.075 Y163.208 E.01984 ; infill
-G1 X136.792 Y153.925 E.44828 F7738 ; infill
+G1 X136.792 Y153.925 E.44828 ; infill
 G1 X136.792 Y154.506 E.01984 ; infill
-G1 X145.494 Y163.208 E.42023 F7738 ; infill
+G1 X145.494 Y163.208 E.42023 ; infill
 G1 X144.914 Y163.208 E.01981 ; infill
-G1 X136.792 Y155.086 E.39222 F7738 ; infill
+G1 X136.792 Y155.086 E.39222 ; infill
 G1 X136.792 Y155.667 E.01984 ; infill
-G1 X144.333 Y163.208 E.36416 F7738 ; infill
+G1 X144.333 Y163.208 E.36416 ; infill
 G1 X143.752 Y163.208 E.01984 ; infill
-G1 X136.792 Y156.248 E.3361 F7738 ; infill
+G1 X136.792 Y156.248 E.3361 ; infill
 G1 X136.792 Y156.829 E.01984 ; infill
-G1 X143.171 Y163.208 E.30805 F7738 ; infill
+G1 X143.171 Y163.208 E.30805 ; infill
 G1 X142.591 Y163.208 E.01981 ; infill
-G1 X136.792 Y157.409 E.28004 F7738 ; infill
+G1 X136.792 Y157.409 E.28004 ; infill
 G1 X136.792 Y157.99 E.01984 ; infill
-G1 X142.01 Y163.208 E.25198 F7738 ; infill
+G1 X142.01 Y163.208 E.25198 ; infill
 G1 X141.429 Y163.208 E.01984 ; infill
-G1 X136.792 Y158.571 E.22393 F7738 ; infill
+G1 X136.792 Y158.571 E.22393 ; infill
 G1 X136.792 Y159.152 E.01984 ; infill
-G1 X140.848 Y163.208 E.19587 F7738 ; infill
+G1 X140.848 Y163.208 E.19587 ; infill
 G1 X140.267 Y163.208 E.01984 ; infill
-G1 X136.792 Y159.733 E.16781 F7738 ; infill
+G1 X136.792 Y159.733 E.16781 ; infill
 G1 X136.792 Y160.313 E.01981 ; infill
-G1 X139.687 Y163.208 E.1398 F7738 ; infill
+G1 X139.687 Y163.208 E.1398 ; infill
 G1 X139.106 Y163.208 E.01984 ; infill
-G1 X136.792 Y160.894 E.11175 F7738 ; infill
+G1 X136.792 Y160.894 E.11175 ; infill
 G1 X136.792 Y161.475 E.01984 ; infill
-G1 X138.525 Y163.208 E.08369 F7738 ; infill
+G1 X138.525 Y163.208 E.08369 ; infill
 G1 X137.944 Y163.208 E.01984 ; infill
-G1 X136.792 Y162.056 E.05563 F7738 ; infill
+G1 X136.792 Y162.056 E.05563 ; infill
 G1 X136.792 Y162.636 E.01981 ; infill
 G1 X137.547 Y163.391 E.03646 ; infill
 ;LAYER_CHANGE:150
@@ -16743,10 +16510,10 @@ M204 S6000 ; adjust acceleration
 ;TYPE:External perimeter
 ;WIDTH:0.407
 G1 F9886
-G1 X164.775 Y164.775 E.89477 F8726 ; perimeter
-G1 X135.225 Y164.775 E.89477 F8726 ; perimeter
-G1 X135.225 Y135.225 E.89477 F8726 ; perimeter
-G1 X164.715 Y135.225 E.89295 F8726 ; perimeter
+G1 X164.775 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y164.775 E.89477 ; perimeter
+G1 X135.225 Y135.225 E.89477 ; perimeter
+G1 X164.715 Y135.225 E.89295 ; perimeter
 G1 X164.774 Y135.621 F30000 ; move inwards before travel
 G1 E-2 F2400 ; retract
 M204 S15000 ; adjust acceleration
@@ -16764,7 +16531,6 @@ M204 S15000 ; adjust acceleration
 G1 X163.207 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-M104 S226
 G1 X164.614 Y163.207 E.06259 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
@@ -16807,19 +16573,19 @@ M204 S15000 ; adjust acceleration
 G1 X164.614 Y159.462 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X159.462 Y164.614 E.22919 F8400 ; infill
+G1 X159.462 Y164.614 E.22919 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X158.927 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y158.927 E.25299 F8400 ; infill
+G1 X164.614 Y158.927 E.25299 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y158.392 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X158.392 Y164.614 E.27679 F8400 ; infill
+G1 X158.392 Y164.614 E.27679 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X157.856 Y164.614 F30000 ; move to first infill point
@@ -16969,326 +16735,326 @@ M204 S15000 ; adjust acceleration
 G1 X145.016 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y145.016 E.87183 F8400 ; infill
+G1 X164.614 Y145.016 E.87183 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y144.481 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X144.481 Y164.614 E.89563 F8400 ; infill
+G1 X144.481 Y164.614 E.89563 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X143.946 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y143.946 E.91943 F8400 ; infill
+G1 X164.614 Y143.946 E.91943 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y143.411 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X143.411 Y164.614 E.94323 F8400 ; infill
+G1 X143.411 Y164.614 E.94323 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X142.876 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y142.876 E.96703 F8400 ; infill
+G1 X164.614 Y142.876 E.96703 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y142.341 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X142.341 Y164.614 E.99083 F8400 ; infill
+G1 X142.341 Y164.614 E.99083 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X141.806 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y141.806 E1.01463 F8400 ; infill
+G1 X164.614 Y141.806 E1.01463 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y141.271 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X141.271 Y164.614 E1.03843 F8400 ; infill
+G1 X141.271 Y164.614 E1.03843 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X140.736 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y140.736 E1.06223 F8400 ; infill
+G1 X164.614 Y140.736 E1.06223 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y140.201 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X140.201 Y164.614 E1.08603 F8400 ; infill
+G1 X140.201 Y164.614 E1.08603 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X139.666 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y139.666 E1.10983 F8400 ; infill
+G1 X164.614 Y139.666 E1.10983 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y139.131 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X139.131 Y164.614 E1.13363 F8400 ; infill
+G1 X139.131 Y164.614 E1.13363 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X138.596 Y164.614 F30000 ; move to first infill point
 M73 P99 R0
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y138.596 E1.15743 F8400 ; infill
+G1 X164.614 Y138.596 E1.15743 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y138.061 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X138.061 Y164.614 E1.18123 F8400 ; infill
+G1 X138.061 Y164.614 E1.18123 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X137.526 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y137.526 E1.20503 F8400 ; infill
+G1 X164.614 Y137.526 E1.20503 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y136.991 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X136.991 Y164.614 E1.22883 F8400 ; infill
+G1 X136.991 Y164.614 E1.22883 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.456 Y164.614 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.614 Y136.456 E1.25263 F8400 ; infill
+G1 X164.614 Y136.456 E1.25263 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.614 Y135.921 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.921 Y164.614 E1.27643 F8400 ; infill
+G1 X135.921 Y164.614 E1.27643 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.434 Y164.566 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X164.566 Y135.434 E1.29596 F8400 ; infill
+G1 X164.566 Y135.434 E1.29596 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X164.079 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y164.079 E1.27643 F8400 ; infill
+G1 X135.386 Y164.079 E1.27643 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y163.544 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X163.544 Y135.386 E1.25263 F8400 ; infill
+G1 X163.544 Y135.386 E1.25263 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X163.009 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y163.009 E1.22883 F8400 ; infill
+G1 X135.386 Y163.009 E1.22883 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y162.474 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X162.474 Y135.386 E1.20503 F8400 ; infill
+G1 X162.474 Y135.386 E1.20503 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X161.939 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y161.939 E1.18123 F8400 ; infill
+G1 X135.386 Y161.939 E1.18123 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y161.404 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X161.404 Y135.386 E1.15743 F8400 ; infill
+G1 X161.404 Y135.386 E1.15743 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X160.869 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y160.869 E1.13363 F8400 ; infill
+G1 X135.386 Y160.869 E1.13363 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y160.334 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X160.334 Y135.386 E1.10983 F8400 ; infill
+G1 X160.334 Y135.386 E1.10983 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X159.799 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y159.799 E1.08603 F8400 ; infill
+G1 X135.386 Y159.799 E1.08603 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y159.264 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X159.264 Y135.386 E1.06223 F8400 ; infill
+G1 X159.264 Y135.386 E1.06223 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X158.729 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y158.729 E1.03843 F8400 ; infill
+G1 X135.386 Y158.729 E1.03843 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y158.194 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X158.194 Y135.386 E1.01463 F8400 ; infill
+G1 X158.194 Y135.386 E1.01463 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X157.659 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y157.659 E.99083 F8400 ; infill
+G1 X135.386 Y157.659 E.99083 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y157.124 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X157.124 Y135.386 E.96703 F8400 ; infill
+G1 X157.124 Y135.386 E.96703 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X156.589 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y156.589 E.94323 F8400 ; infill
+G1 X135.386 Y156.589 E.94323 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y156.054 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X156.054 Y135.386 E.91943 F8400 ; infill
+G1 X156.054 Y135.386 E.91943 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X155.519 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y155.519 E.89563 F8400 ; infill
+G1 X135.386 Y155.519 E.89563 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y154.984 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X154.984 Y135.386 E.87183 F8400 ; infill
+G1 X154.984 Y135.386 E.87183 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X154.449 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y154.449 E.84803 F8400 ; infill
+G1 X135.386 Y154.449 E.84803 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y153.914 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X153.914 Y135.386 E.82423 F8400 ; infill
+G1 X153.914 Y135.386 E.82423 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X153.379 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y153.379 E.80043 F8400 ; infill
+G1 X135.386 Y153.379 E.80043 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y152.844 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X152.844 Y135.386 E.77663 F8400 ; infill
+G1 X152.844 Y135.386 E.77663 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X152.309 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y152.309 E.75283 F8400 ; infill
+G1 X135.386 Y152.309 E.75283 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y151.774 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X151.774 Y135.386 E.72903 F8400 ; infill
+G1 X151.774 Y135.386 E.72903 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X151.239 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y151.239 E.70523 F8400 ; infill
+G1 X135.386 Y151.239 E.70523 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y150.704 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X150.704 Y135.386 E.68143 F8400 ; infill
+G1 X150.704 Y135.386 E.68143 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X150.169 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y150.169 E.65763 F8400 ; infill
+G1 X135.386 Y150.169 E.65763 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y149.634 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X149.634 Y135.386 E.63383 F8400 ; infill
+G1 X149.634 Y135.386 E.63383 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X149.099 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y149.099 E.61003 F8400 ; infill
+G1 X135.386 Y149.099 E.61003 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y148.564 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X148.564 Y135.386 E.58623 F8400 ; infill
+G1 X148.564 Y135.386 E.58623 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X148.029 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y148.029 E.56243 F8400 ; infill
+G1 X135.386 Y148.029 E.56243 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y147.494 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X147.494 Y135.386 E.53863 F8400 ; infill
+G1 X147.494 Y135.386 E.53863 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X146.959 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y146.959 E.51483 F8400 ; infill
+G1 X135.386 Y146.959 E.51483 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y146.424 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X146.424 Y135.386 E.49103 F8400 ; infill
+G1 X146.424 Y135.386 E.49103 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X145.889 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y145.889 E.46723 F8400 ; infill
+G1 X135.386 Y145.889 E.46723 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y145.354 F30000 ; move to first infill point
@@ -17336,61 +17102,61 @@ M204 S15000 ; adjust acceleration
 G1 X141.608 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y141.608 E.27679 F8400 ; infill
+G1 X135.386 Y141.608 E.27679 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y141.073 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X141.073 Y135.386 E.25299 F8400 ; infill
+G1 X141.073 Y135.386 E.25299 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X140.538 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y140.538 E.22919 F8400 ; infill
+G1 X135.386 Y140.538 E.22919 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y140.003 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X140.003 Y135.386 E.20539 F8400 ; infill
+G1 X140.003 Y135.386 E.20539 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X139.468 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y139.468 E.18159 F8400 ; infill
+G1 X135.386 Y139.468 E.18159 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y138.933 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X138.933 Y135.386 E.15779 F8400 ; infill
+G1 X138.933 Y135.386 E.15779 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X138.398 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y138.398 E.13399 F8400 ; infill
+G1 X135.386 Y138.398 E.13399 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y137.863 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X137.863 Y135.386 E.11019 F8400 ; infill
+G1 X137.863 Y135.386 E.11019 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X137.328 Y135.386 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X135.386 Y137.328 E.08639 F8400 ; infill
+G1 X135.386 Y137.328 E.08639 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X135.386 Y136.793 F30000 ; move to first infill point
 M204 S3000 ; adjust acceleration
 G1 F8400
-G1 X136.793 Y135.386 E.06259 F8400 ; infill
+G1 X136.793 Y135.386 E.06259 ; infill
 M204 S6000 ; adjust acceleration
 M204 S15000 ; adjust acceleration
 G1 X136.258 Y135.386 F30000 ; move to first infill point
