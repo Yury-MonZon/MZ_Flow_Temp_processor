@@ -614,7 +614,8 @@ def process_moves_pressure_equalizer(moves):
     total_flow_dt = np.where(apply_clip, total_flow_dt + la_flows[last_idx] * excess, total_flow_dt)
     total_dt      = np.where(apply_clip, total_dt + excess, total_dt)
 
-    lookahead_flows = np.where(total_dt > 0, total_flow_dt / total_dt, la_flows).tolist()
+    with np.errstate(invalid='ignore'):
+        lookahead_flows = np.where(total_dt > 0, total_flow_dt / total_dt, la_flows).tolist()
 
     update_counter = 0
     plot_update_counter = 0
@@ -807,7 +808,8 @@ def smooth_array(arr, times, window_sec=2.0):
     np.cumsum(arr * dt, out=cum_wt[1:])
     total_t = cum_t[right] - cum_t[left]
     total_wt = cum_wt[right] - cum_wt[left]
-    return np.where(total_t > 0, total_wt / total_t, arr)
+    with np.errstate(invalid='ignore'):
+        return np.where(total_t > 0, total_wt / total_t, arr)
 
 
 def save_processed_gcode(filename, moves, mz_start=None, mz_end=None):

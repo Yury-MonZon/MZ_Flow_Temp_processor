@@ -149,19 +149,7 @@ Add these markers to your **Machine start G-code** and **Machine end G-code**:
 
 ### Required Parameters
 
-Add these as `; key = value` comments in your **Machine G-code** or printer profile:
-
-```
-; nozzle_temperature_range_high = 260
-; nozzle_temperature_range_low = 220
-; filament_diameter = 1.75
-; slow_down_min_speed = 30
-; filament_max_volumetric_speed = 12
-; nozzle_temperature_initial_layer = 240
-; initial_layer_print_height = 0.2
-```
-
-Or use preFlight's existing parameter names — the script maps them automatically:
+preFlight already includes all needed print settings in your G-code — the script maps them automatically:
 
 | preFlight parameter | Maps to |
 |---------------------|---------|
@@ -169,6 +157,8 @@ Or use preFlight's existing parameter names — the script maps them automatical
 | `; first_layer_temperature = 200` | `nozzle_temperature_range_low` + `nozzle_temperature_initial_layer` |
 | `; min_print_speed = 30` | `slow_down_min_speed` |
 | `; layer_height = 0.2` | `initial_layer_print_height` |
+| `; filament_diameter = 1.75` | (used directly) |
+| `; filament_max_volumetric_speed = 12` | (used directly) |
 
 The `mz_flow_temp_*` settings go in `printer_notes` (just like OrcaSlicer).
 
