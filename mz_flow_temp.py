@@ -99,8 +99,6 @@ RE_Z = re.compile(r"Z([-+]?[0-9]*\.?[0-9]+)")
 RE_E = re.compile(r"E([-+]?[0-9]*\.?[0-9]+)")
 RE_F = re.compile(r"F([-+]?[0-9]*\.?[0-9]+)")
 
-MIN_MOVE_TIME = 0.01  # seconds — moves shorter than this are exempt from feedrate clamping
-
 
 def filament_area(d):
     return math.pi * (d / 2) ** 2
@@ -117,6 +115,7 @@ class Move:
         "line_num",
         "raw",
         "flow",
+        "smoothed_flow",
         "smoothed_temp",
         "clamped_feedrate",
         "feedrate_was_clamped",
@@ -137,6 +136,7 @@ class Move:
         self.line_num = line_num
         self.raw = raw
         self.flow = 0.0
+        self.smoothed_flow = 0.0
         self.smoothed_temp = None
         self.clamped_feedrate = f
         self.feedrate_was_clamped = False
@@ -280,7 +280,7 @@ def update_realtime_plot():
         logging.debug(f"Plot update error: {e}")
 
 
-def add_data_point(time_val, flow, final_flow, final_temp, ideal_temp):
+def add_data_point(time_val, flow, final_flow, final_temp, max_flow, ideal_temp):
     global plotting_data
     plotting_data["times"].append(time_val)
     plotting_data["flows"].append(flow)
@@ -298,7 +298,6 @@ def parse_gcode(filename):
             if line.startswith("G90"):
                 continue
             if line.startswith("G91"):
-                logging.warning("G91 relative XYZ detected — not supported, coordinates may be incorrect")
                 continue
             if "M83" in line:
                 rel_e = True
@@ -332,6 +331,7 @@ def parse_gcode(filename):
     return moves
 
 
+# Global settings dictionary
 settings = {}
 
 
@@ -460,22 +460,12 @@ def parse_settings_from_gcode(filename):
 
 def process_moves_pressure_equalizer(moves):
     global settings
-    plotting_data["times"].clear()
-    plotting_data["flows"].clear()
-    plotting_data["final_flows"].clear()
-    plotting_data["final_temps"].clear()
-    plotting_data["ideal_temps"].clear()
+    # Use only settings for all configurable parameters
     area = filament_area(settings["filament_diameter"])
+    smoothed_temp = settings["nozzle_temperature_range_low"]
     global_time = 0.0
     last_update_time = 0.0
-    temp_range = settings["nozzle_temperature_range_high"] - settings["nozzle_temperature_range_low"]
-    LOOKAHEAD_TIME = max(
-        temp_range * settings["mz_flow_temp_sec_per_c_heating"],
-        temp_range * settings["mz_flow_temp_sec_per_c_cooling"],
-    )
-    logging.info(f"Lookahead time: {LOOKAHEAD_TIME:.1f}s (covers full temp range transition)")
-    # LOOKAHEAD_TIME = 10.0 # Uncomment this to get the previous version behavior with a fixed lookahead time - less precise
-    setup_realtime_plot()
+    LOOKAHEAD_TIME = 10.0
 
     # --- Vectorized calculation of move distances, times, and flows ---
     if len(moves) > 1:
@@ -498,56 +488,46 @@ def process_moves_pressure_equalizer(moves):
         dt = np.where(f > 0, dist_xyz / (f / 60.0), 0.0)
         global_times = np.cumsum(dt)
 
-        # Calculate flow rates for extruding moves
-        flow = np.zeros_like(e)
-        valid = (extruding) & (dt > 0) & (de > 0)
-        flow[valid] = (de[valid] * area) / dt[valid]
-
+        # Assign calculated values back to moves
         for i, m in enumerate(moves):
             m.dist_xyz = dist_xyz[i]
             m.move_time = dt[i]
             m.global_time = global_times[i]
+
+        # Calculate flow rates for extruding moves
+        flow = np.zeros_like(e)
+        valid = (extruding) & (dt > 0) & (de > 0)
+        flow[valid] = (de[valid] * area) / dt[valid]
+        for i, m in enumerate(moves):
             m.flow = flow[i]
     else:
         logging.info("Vectorized calculation skipped: not enough moves.")
 
-    # --- Lookahead flow calculation O(n) via searchsorted + cumulative sums ---
+    # --- Lookahead flow calculation for temperature smoothing ---
     logging.info("Calculating lookahead flows...")
-    la_global_times = np.array([m.global_time for m in moves])
-    la_flows = np.array([m.flow for m in moves])
-    la_move_times = np.array([m.move_time for m in moves])
-    la_extruding = np.array([m.extruding for m in moves], dtype=bool)
+    lookahead_flows = []
+    for i, move in enumerate(moves):
+        lookahead_flow = move.flow
+        t0 = move.global_time
+        t1 = t0 + LOOKAHEAD_TIME
+        total_flow = 0.0
+        total_time = 0.0
+        for j in range(i, len(moves)):
+            m2 = moves[j]
+            if not m2.extruding or m2.global_time > t1:
+                break
+            dt = m2.move_time
+            if dt > 0:
+                total_flow += m2.flow * dt
+                total_time += dt
+        if total_time > 0:
+            lookahead_flow = total_flow / total_time
+        lookahead_flows.append(lookahead_flow)
 
-    # For non-extruding moves contribute 0 to both sums
-    eff_flow_dt = np.where(la_extruding, la_flows * la_move_times, 0.0)
-    eff_dt = np.where(la_extruding, la_move_times, 0.0)
-
-    # Prefix sums — cum[i] = sum of [0..i)
-    cum_flow_dt = np.empty(len(moves) + 1)
-    cum_dt = np.empty(len(moves) + 1)
-    cum_flow_dt[0] = 0.0
-    cum_dt[0] = 0.0
-    np.cumsum(eff_flow_dt, out=cum_flow_dt[1:])
-    np.cumsum(eff_dt, out=cum_dt[1:])
-
-    # Right boundary index for each move: first index where global_time > t1
-    right_indices = np.searchsorted(la_global_times, la_global_times + LOOKAHEAD_TIME, side='right')
-
-    idx = np.arange(len(moves))
-    total_flow_dt = cum_flow_dt[right_indices] - cum_flow_dt[idx]
-    total_dt      = cum_dt[right_indices]      - cum_dt[idx]
-
-    # Clip correction: last move in each window may straddle t1
-    last_idx = np.clip(right_indices - 1, 0, len(moves) - 1)
-    t1_arr   = la_global_times + LOOKAHEAD_TIME
-    clipped  = np.minimum(la_move_times[last_idx], t1_arr - la_global_times[last_idx])
-    excess   = clipped - la_move_times[last_idx]  # negative - amount to remove
-    apply_clip = (right_indices > idx) & la_extruding[last_idx] & (la_move_times[last_idx] > 0)
-    total_flow_dt = np.where(apply_clip, total_flow_dt + la_flows[last_idx] * excess, total_flow_dt)
-    total_dt      = np.where(apply_clip, total_dt + excess, total_dt)
-
-    lookahead_flows = np.where(total_dt > 0, total_flow_dt / total_dt, la_flows).tolist()
-
+    setup_realtime_plot()
+    moves_with_time = []
+    for i, move in enumerate(moves):
+        moves_with_time.append((move, move.move_time, move.extruding, i))
     update_counter = 0
     plot_update_counter = 0
     first_update_done = False
@@ -565,17 +545,43 @@ def process_moves_pressure_equalizer(moves):
         "nozzle_temperature_initial_layer", settings["nozzle_temperature_range_low"]
     )
 
-    smoothed_temp = settings["nozzle_temperature_range_low"]
-    logging.info(f"Initial smoothed_temp: {smoothed_temp:.1f}C (nozzle_temperature_range_low)")
+    # Collect flows from the first 30 extruding moves from the second layer
+    second_layer_flows = []
+    for m in moves:
+        if m.extruding and m.flow > 0 and abs(m.z - first_layer_z) > 1e-5:
+            second_layer_flows.append(m.flow)
+            if len(second_layer_flows) >= 30:
+                break
+    if second_layer_flows:
+        avg_second_flow = sum(second_layer_flows) / len(second_layer_flows)
+        logging.info(f"Initial flow (second layer): {avg_second_flow:.3f} mm³/s")
+        if settings["filament_max_volumetric_speed"] > 0:
+            avg_second_temp = settings["nozzle_temperature_range_low"] + (
+                (
+                    settings["nozzle_temperature_range_high"]
+                    - settings["nozzle_temperature_range_low"]
+                )
+                * min(avg_second_flow, settings["filament_max_volumetric_speed"])
+                / settings["filament_max_volumetric_speed"]
+            )
+        else:
+            avg_second_temp = settings["nozzle_temperature_range_low"]
+    else:
+        avg_second_flow = 0.0
+        avg_second_temp = settings["nozzle_temperature_range_low"]
+
+    smoothed_temp = avg_second_temp
     last_update_time = 0.0
-    lookahead_flow = 0.0
+
     logging.info("Smoothing flows and adjusting temperature...")
-    for move_index, move in enumerate(moves):
-        dt = move.move_time
-        is_extruding = move.extruding
+    for idx, (move, dt, is_extruding, move_index) in enumerate(moves_with_time):
         global_time += dt
         if is_extruding:
             flow = move.flow
+            if not hasattr(move, "smoothed_flow") or move.smoothed_flow == 0.0:
+                move.smoothed_flow = flow
+            if not hasattr(move, "final_flow") or move.final_flow == 0.0:
+                move.final_flow = flow
         else:
             flow = 0.0
 
@@ -585,7 +591,12 @@ def process_moves_pressure_equalizer(moves):
             move.smoothed_temp = smoothed_temp
             move.max_allowed_flow = settings["filament_max_volumetric_speed"]
         else:
-            lookahead_flow = lookahead_flows[move_index]
+            # Always adjust temperature (ADJUST_TEMP is always True)
+            lookahead_flow = (
+                lookahead_flows[move_index]
+                if move_index < len(lookahead_flows)
+                else move.smoothed_flow
+            )
             if settings["filament_max_volumetric_speed"] > 0:
                 target_flow = min(
                     lookahead_flow, settings["filament_max_volumetric_speed"]
@@ -609,7 +620,7 @@ def process_moves_pressure_equalizer(moves):
             temp_diff = target_temp - smoothed_temp
             if abs(temp_diff) > max_temp_change:
                 smoothed_temp += math.copysign(max_temp_change, temp_diff)
-                last_update_time = global_time  # reset every step
+                last_update_time = global_time
             elif abs(temp_diff) > 0:
                 smoothed_temp = target_temp
                 last_update_time = global_time
@@ -641,13 +652,15 @@ def process_moves_pressure_equalizer(moves):
             move.max_allowed_flow = max_allowed_flow
 
         if is_extruding and flow > 0:
-            final_flow = min(lookahead_flow, move.max_allowed_flow)
+            final_flow = min(move.smoothed_flow, move.max_allowed_flow)
             move.final_flow = final_flow
             clamped_feedrate = move.f
             feedrate_was_clamped = False
-            if final_flow < flow and move.move_time >= MIN_MOVE_TIME:
-                clamped_feedrate = (final_flow / flow) * move.f
-                clamped_feedrate = max(clamped_feedrate, settings["slow_down_min_speed"] * 60)
+            if flow > 0 and final_flow < flow:
+                clamped_feedrate = (final_flow / flow) * move.f if flow > 0 else move.f
+                clamped_feedrate = max(
+                    clamped_feedrate, settings["slow_down_min_speed"] * 60
+                )
                 feedrate_was_clamped = True
             move.clamped_feedrate = clamped_feedrate
             move.feedrate_was_clamped = feedrate_was_clamped
@@ -669,6 +682,7 @@ def process_moves_pressure_equalizer(moves):
                     flow,
                     final_flow,
                     smoothed_temp,
+                    move.max_allowed_flow,
                     ideal_temp,
                 )
             plot_update_counter += 1
@@ -724,24 +738,23 @@ def smooth_array(arr, times, window_sec=2.0):
     window_sec: window size in seconds
     Returns: smoothed numpy array
     """
+    import numpy as np
+
     if len(arr) < 2:
         return arr
-
-    left  = np.searchsorted(times, times - window_sec / 2, side='left')
-    right = np.searchsorted(times, times + window_sec / 2, side='right')
-    # Weight by time interval between samples for accurate time-based average
-    dt = np.diff(times, prepend=times[0])
-    cum_t = np.empty(len(times) + 1)
-    cum_t[0] = 0.0
-    np.cumsum(dt, out=cum_t[1:])
-    cum_wt = np.empty(len(arr) + 1)
-    cum_wt[0] = 0.0
-    np.cumsum(arr * dt, out=cum_wt[1:])
-    total_t = cum_t[right] - cum_t[left]
-    total_wt = cum_wt[right] - cum_wt[left]
-    return np.where(total_t > 0, total_wt / total_t, arr)
+    smoothed = np.zeros_like(arr)
+    for i in range(len(arr)):
+        t0 = times[i] - window_sec / 2
+        t1 = times[i] + window_sec / 2
+        mask = (times >= t0) & (times <= t1)
+        if np.any(mask):
+            smoothed[i] = np.mean(arr[mask])
+        else:
+            smoothed[i] = arr[i]
+    return smoothed
 
 
+# Add debug logging for G-code output feedrate and flow
 def save_processed_gcode(filename, moves, mz_start=None, mz_end=None):
     logging.info(f"Saving processed G-code to {filename} ...")
     with open(filename, "r", encoding="utf-8", errors="ignore") as fin:
@@ -818,10 +831,6 @@ def get_marker_indices(filename):
     exec_end = next(
         (i for i, l in enumerate(all_lines) if "; EXECUTABLE_BLOCK_END" in l), None
     )
-
-    if exec_start is None or exec_end is None:
-        return None, None
-
     mz_start = next(
         (
             i
