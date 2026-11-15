@@ -1,4 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "matplotlib",
+#     "numpy",
+#     "psutil",
+#     "PyQt5",
+# ]
+# ///
 """mz_flow_temp.py
 
 Author: Yury MonZon
@@ -38,6 +47,10 @@ Requirements:
 - psutil
 
 Install dependencies:
+Recommended: install uv (https://docs.astral.sh/uv/) and run the script with
+  uv run --script mz_flow_temp.py <input.gcode>
+  uv installs the dependencies listed above into a cached environment.
+Or install them yourself:
 Linux: sudo apt install python3-matplotlib python3-numpy python3-pyqt5 python3-psutil
 Win: pip install matplotlib numpy PyQt5 psutil
 
@@ -48,7 +61,8 @@ to your slicer's post-processing command/script section.
 For OrcaSlicer, PrusaSlicer, or SuperSlicer:
 1. Go to Printer Settings > Output options > Post-processing scripts.
 2. Add a new script with the following command (adjust the path as needed):
-   python3 <path to script>/mz_flow_temp.py
+   uv run --script <path to script>/mz_flow_temp.py
+   (or: python3 <path to script>/mz_flow_temp.py if you installed the dependencies yourself)
 
 For Bambu Studio:
 1. Go to Preferences > Post-processing.

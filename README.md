@@ -19,7 +19,18 @@ Advanced G-code post-processor that intelligently smooths flow and adjusts tempe
 
 ### Installation
 
-**Python 3 required with these packages:**
+**Recommended: [uv](https://docs.astral.sh/uv/)**
+
+The script declares its dependencies inline ([PEP 723](https://peps.python.org/pep-0723/)), so with uv
+installed there is nothing else to set up. uv installs them into a cached environment on the first run:
+
+```bash
+uv run --script mz_flow_temp.py <input.gcode>
+```
+
+Install uv: `sudo pacman -S uv` (Arch/CachyOS), `pip install uv`, or see the [uv docs](https://docs.astral.sh/uv/getting-started/installation/).
+
+**Without uv, Python 3 is required with these packages:**
 - `numpy`
 - `matplotlib`
 - `PyQt5`
@@ -95,7 +106,12 @@ Set these values in your **Filament profile**:
 
 In **Print process > Others > Post-processing scripts**:
 
-**Linux/MacOS:**
+**Linux/MacOS (with uv):**
+```bash
+uv run --script <path to script>/mz_flow_temp.py
+```
+
+**Linux/MacOS (system Python with dependencies installed):**
 ```bash
 python <path to script>/mz_flow_temp.py
 ```
