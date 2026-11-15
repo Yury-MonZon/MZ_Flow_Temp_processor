@@ -75,10 +75,21 @@ And in your printer_notes or config block, include:
 
 """
 
+import os
 import sys
+
+# Slicer AppImages (e.g. OrcaSlicer 2.5+) put their bundled libraries first in
+# LD_LIBRARY_PATH. The bundled libexpat is older than the system one, which breaks
+# the system Python's pyexpat (and with it matplotlib). Re-exec once without it,
+# stashing the original value so the slicer can be relaunched with it later.
+SLICER_LD_VAR = "MZ_SLICER_LD_LIBRARY_PATH"
+if "LD_LIBRARY_PATH" in os.environ and SLICER_LD_VAR not in os.environ:
+    _env = dict(os.environ)
+    _env[SLICER_LD_VAR] = _env.pop("LD_LIBRARY_PATH")
+    os.execve(sys.executable, [sys.executable] + sys.argv, _env)
+
 import re
 import math
-import os
 import numpy as np
 import psutil
 import subprocess
@@ -927,9 +938,40 @@ def main():
                     f"Launching viewer process: {parent_exe} {viewer_filename}"
                 )
                 try:
-                    viewer_args = [str(parent_exe), str(viewer_filename)]
+                    viewer_env = dict(os.environ)
+                    slicer_ld = viewer_env.pop(SLICER_LD_VAR, None)
+                    # OrcaSlicer 2.5.x on Wayland segfaults (null GL call in
+                    # GCodeViewer::init) when a G-code file is passed on the
+                    # command line. Forcing the X11 backend (XWayland) avoids it.
+                    if viewer_env.get("WAYLAND_DISPLAY") or viewer_env.get(
+                        "XDG_SESSION_TYPE"
+                    ) == "wayland":
+                        viewer_env["GDK_BACKEND"] = "x11"
+                    appimage = viewer_env.get("APPIMAGE")
+                    if appimage and os.path.isfile(appimage):
+                        # Relaunch through the AppImage so its own launcher sets up
+                        # the environment and it gets its own mount (the current
+                        # mount disappears when the original slicer closes).
+                        for var in ("APPDIR", "APPIMAGE", "ARGV0", "OWD"):
+                            viewer_env.pop(var, None)
+                        viewer_args = [appimage, str(viewer_filename)]
+                    else:
+                        if slicer_ld is not None:
+                            viewer_env["LD_LIBRARY_PATH"] = slicer_ld
+                        viewer_args = [str(parent_exe), str(viewer_filename)]
                     logging.debug(f"Launching viewer process with args: {viewer_args}")
-                    proc = subprocess.Popen(viewer_args)
+                    # Fully detach the viewer: the slicer reads this script's
+                    # stdout/stderr pipes until EOF, so a child inheriting them
+                    # would block the slicer until the viewer is closed.
+                    proc = subprocess.Popen(
+                        viewer_args,
+                        env=viewer_env,
+                        stdin=subprocess.DEVNULL,
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        close_fds=True,
+                        start_new_session=True,
+                    )
                     logging.debug(f"subprocess.Popen returned: {proc}")
                 except Exception as e:
                     logging.warning(f"Failed to launch parent process: {e}")
