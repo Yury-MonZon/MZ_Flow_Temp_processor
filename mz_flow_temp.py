@@ -185,41 +185,39 @@ plot_lines = {}
 
 
 def get_parent_process_info():
-    """Return (name, exe_path) of the parent or grandparent process, or (None, None) if unavailable."""
+    """Return ("slicer", exe_path) of the nearest ancestor process that is a known
+    slicer, or (None, None) if none is found.
+
+    Walks all ancestors rather than a fixed depth: the slicer may sit behind a
+    shell and/or a launcher such as `uv run` (slicer -> sh -> uv -> python).
+    """
+    slicer_names = [
+        "orca",
+        "prusa",
+        "cura",
+        "super",
+        "bambu",
+        "ideamaker",
+        "slic3r",
+    ]
     try:
-        parent = psutil.Process(os.getppid())
+        ancestors = psutil.Process().parents()
     except (psutil.NoSuchProcess, psutil.AccessDenied) as e:
-        logging.warning(f"Could not access parent process: {e}")
+        logging.warning(f"Could not access parent processes: {e}")
         return None, None
 
-    grandparent = parent.parent()
-    if grandparent is not None and grandparent.exe().endswith(".exe"):
-        target_proc = parent  # windows
-    else:
-        target_proc = grandparent if grandparent else parent  # nix
-
-    try:
-        exe_path = target_proc.exe()
+    for proc in ancestors:
+        try:
+            exe_path = proc.exe()
+        except (psutil.AccessDenied, psutil.NoSuchProcess, psutil.ZombieProcess):
+            continue
         logging.info(f"Checked process executable path: {exe_path}")
-        slicer_names = [
-            "orca",
-            "prusa",
-            "cura",
-            "super",
-            "bambu",
-            "ideamaker",
-            "slic3r",
-        ]
-        exe_path_lower = exe_path.lower()
-        if any(slicer in exe_path_lower for slicer in slicer_names):
+        if any(slicer in exe_path.lower() for slicer in slicer_names):
             logging.info(f"Recognized slicer process: {exe_path}")
             return "slicer", exe_path
-        else:
-            logging.info(f"Process is not a recognized slicer: {exe_path}")
-            return None, None
-    except (psutil.AccessDenied, psutil.NoSuchProcess) as e:
-        logging.warning(f"Could not access process executable: {e}")
-        return None, None
+
+    logging.info("No recognized slicer among parent processes")
+    return None, None
 
 
 def setup_realtime_plot():
